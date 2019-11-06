@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49437D392371CBED000C8C49 /* SortTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49437D382371CBED000C8C49 /* SortTest.cpp */; };
+		49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */; };
 		495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE753208224F3000EA0E8 /* AppDelegate.m */; };
 		495CE757208224F3000EA0E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE756208224F3000EA0E8 /* ViewController.m */; };
 		495CE75A208224F3000EA0E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495CE758208224F3000EA0E8 /* Main.storyboard */; };
@@ -45,6 +46,8 @@
 /* Begin PBXFileReference section */
 		19BC9BA4508E81CCE1B1B4B9 /* libPods-Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49437D382371CBED000C8C49 /* SortTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortTest.cpp; sourceTree = "<group>"; };
+		49437D3B2372DF17000C8C49 /* TextUreTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextUreTestViewController.h; sourceTree = "<group>"; };
+		49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextUreTestViewController.m; sourceTree = "<group>"; };
 		495CE74F208224F3000EA0E8 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495CE752208224F3000EA0E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		495CE753208224F3000EA0E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,6 +139,15 @@
 			path = "算法排序";
 			sourceTree = "<group>";
 		};
+		49437D3A2372DEEF000C8C49 /* TextureTest */ = {
+			isa = PBXGroup;
+			children = (
+				49437D3B2372DF17000C8C49 /* TextUreTestViewController.h */,
+				49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */,
+			);
+			path = TextureTest;
+			sourceTree = "<group>";
+		};
 		495CE746208224F3000EA0E8 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +169,7 @@
 		495CE751208224F3000EA0E8 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				49437D3A2372DEEF000C8C49 /* TextureTest */,
 				4967EDE4235D488E00D7BCCF /* 数据结构&算法 */,
 				49934E2F2147987600DAB4D5 /* 动态修改APPicon */,
 				4990BAA2212FF2370044BCE1 /* AFNetworking探索 */,
@@ -440,6 +453,7 @@
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,
 				499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */,
 				4990BF1E21196E410000ADC5 /* Student.m in Sources */,
+				49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */,
 				4962F6B12123FF1C00CB305F /* Car.m in Sources */,
 				4962F6AE2121863E00CB305F /* Person2.m in Sources */,
 				4990BF2821198EE10000ADC5 /* NSObject+addProperty.m in Sources */,
