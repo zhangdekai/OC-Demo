@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493E0857238BCBED0079D893 /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E0856238BCBED0079D893 /* DelegateViewController.m */; };
 		49437D392371CBED000C8C49 /* SortTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49437D382371CBED000C8C49 /* SortTest.cpp */; };
 		49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */; };
 		495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE753208224F3000EA0E8 /* AppDelegate.m */; };
@@ -45,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		19BC9BA4508E81CCE1B1B4B9 /* libPods-Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		493E0855238BCBED0079D893 /* DelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
+		493E0856238BCBED0079D893 /* DelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
 		49437D382371CBED000C8C49 /* SortTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortTest.cpp; sourceTree = "<group>"; };
 		49437D3B2372DF17000C8C49 /* TextUreTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextUreTestViewController.h; sourceTree = "<group>"; };
 		49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextUreTestViewController.m; sourceTree = "<group>"; };
@@ -131,6 +134,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		493E0854238BCBCC0079D893 /* 设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				493E0859238BFBBC0079D893 /* Block */,
+				493E0858238BFBAB0079D893 /* 代理 */,
+			);
+			path = "设计模式";
+			sourceTree = "<group>";
+		};
+		493E0858238BFBAB0079D893 /* 代理 */ = {
+			isa = PBXGroup;
+			children = (
+				493E0855238BCBED0079D893 /* DelegateViewController.h */,
+				493E0856238BCBED0079D893 /* DelegateViewController.m */,
+			);
+			path = "代理";
+			sourceTree = "<group>";
+		};
+		493E0859238BFBBC0079D893 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
 		49437D2D2371C877000C8C49 /* 算法排序 */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +197,7 @@
 		495CE751208224F3000EA0E8 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				493E0854238BCBCC0079D893 /* 设计模式 */,
 				49437D3A2372DEEF000C8C49 /* TextureTest */,
 				4967EDE4235D488E00D7BCCF /* 数据结构&算法 */,
 				49934E2F2147987600DAB4D5 /* 动态修改APPicon */,
@@ -465,6 +494,7 @@
 				499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */,
 				49C7497420AD74DC009DC12D /* TableViewCell.m in Sources */,
 				4990BF2B211AD9330000ADC5 /* Person1.m in Sources */,
+				493E0857238BCBED0079D893 /* DelegateViewController.m in Sources */,
 				495CE762208224F5000EA0E8 /* main.m in Sources */,
 				4990BAA1212FE8100044BCE1 /* WebPTestViewController.m in Sources */,
 				4990BF1621183AE80000ADC5 /* Person+Test.m in Sources */,

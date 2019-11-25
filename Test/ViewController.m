@@ -26,7 +26,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate>
 
 @end
 
@@ -35,14 +35,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIView *aview = [[UIView alloc]init];
-    aview.layer.shouldRasterize = YES;
+    
+
+    
+    [self testAsyncTask];
     
     
-    
-    
-    
-    
+    /*
     [self testTree];
     
     
@@ -89,9 +88,49 @@
 //    NSArray *asds = [self photos_current_role_tag];
 //    NSLog(@"sdcsdcsdc :%@",asds);
     
+     */
+    
+    UITableView *tableView = [[UITableView alloc]init];
+    tableView.delegate = self;
+    
     
 }
 
+- (void)testAsyncTask1 {
+    
+    NSLog(@"1");
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"2");
+    });
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"3");
+    });
+    
+    NSLog(@"4");
+    
+    // 1 4 2 3
+    
+}
+- (void)testAsyncTask {
+    
+    NSLog(@"1");
+    
+    // dispatch_get_global_queue 两个参数管理优先级，默认的0，0 优先级最高，执行的任务，有可能在主线程之前了。
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+           NSLog(@"2");
+       });
+    
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"3");
+    });
+    
+    NSLog(@"4");
+    
+    // 1 2 4 3 or 1 4 2 3
+}
 - (void)testTree {
     
     NSArray *testTree = @[@"1",@"5",@"3",@"2",@"9",@"10",@"11",@"6"];
