@@ -27,6 +27,13 @@
 
 
 @interface ViewController ()<UITableViewDelegate>
+{
+    __strong Person1 *person;//强引用
+    __weak Person1 *person1;
+}
+
+
+@property (weak, nonatomic) IBOutlet UIButton *testcrashButton;
 
 @end
 
@@ -38,7 +45,7 @@
     
 
     
-    [self testAsyncTask];
+//    [self testAsyncTask];
     
     
     /*
@@ -93,6 +100,27 @@
     UITableView *tableView = [[UITableView alloc]init];
     tableView.delegate = self;
     
+    //FOUNDATION_EXPORT void NSLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2) NS_NO_TAIL_CALL;
+
+    NSLog(@"你上课胶凝材料");
+    
+    UIButton *button = [UIButton buttonWithType:(UIButtonTypeSystem)];
+    [self.view addSubview:button];
+    
+    [button setTitle:@"测试" forState:(UIControlStateNormal)];
+    button.frame = CGRectMake(100, 100, 200, 30);
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button addTarget:self action: @selector(testCrash:) forControlEvents:(UIControlEventTouchUpInside)];
+    
+    
+    
+}
+
+- (IBAction)testCrash:(id)sender {
+    
+    NSArray *array002 = @[@"1",@"2"];
+       
+    NSLog(array002[2]);
     
 }
 

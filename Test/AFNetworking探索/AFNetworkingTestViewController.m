@@ -10,6 +10,15 @@
 #import "AFNetworkingTestViewController.h"
 #import <AFNetworking.h>
 
+/*
+ 
+ AFNetworking到底做了什么？3.x版本 :http://www.cocoachina.com/articles/18277
+ 
+ 
+ 
+ 
+ */
+
 @interface AFNetworkingTestViewController ()
 
 @end

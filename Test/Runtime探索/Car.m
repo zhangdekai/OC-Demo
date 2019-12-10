@@ -28,5 +28,14 @@
     NSLog(@"I am Class Car , I can driving2 , I am class method ");
 }
 
+- (void)doesNotRecognizeSelector:(SEL)aSelector {
+    
+    
+    NSString *selString = NSStringFromSelector(aSelector);
+    
+    NSLog(@"没有找到%@ 方法", selString);
+    
+}
+
 
 @end

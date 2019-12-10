@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492554A6239DF4070008D6EF /* SDWebImageTestViewController.m */; };
 		493E0857238BCBED0079D893 /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E0856238BCBED0079D893 /* DelegateViewController.m */; };
+		493E085C238BFC550079D893 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E085B238BFC550079D893 /* BlockViewController.m */; };
+		49415D75239A329900660C57 /* iOS_APITestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D74239A329900660C57 /* iOS_APITestViewController.m */; };
+		49415D78239A5A0500660C57 /* NSExceptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D77239A5A0500660C57 /* NSExceptionManager.m */; };
+		49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D7A239B92B500660C57 /* YYWeakProxy.m */; };
 		49437D392371CBED000C8C49 /* SortTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49437D382371CBED000C8C49 /* SortTest.cpp */; };
 		49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */; };
 		495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE753208224F3000EA0E8 /* AppDelegate.m */; };
@@ -46,8 +51,18 @@
 
 /* Begin PBXFileReference section */
 		19BC9BA4508E81CCE1B1B4B9 /* libPods-Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		492554A5239DF4070008D6EF /* SDWebImageTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageTestViewController.h; sourceTree = "<group>"; };
+		492554A6239DF4070008D6EF /* SDWebImageTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageTestViewController.m; sourceTree = "<group>"; };
 		493E0855238BCBED0079D893 /* DelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
 		493E0856238BCBED0079D893 /* DelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
+		493E085A238BFC550079D893 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		493E085B238BFC550079D893 /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		49415D73239A329900660C57 /* iOS_APITestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS_APITestViewController.h; sourceTree = "<group>"; };
+		49415D74239A329900660C57 /* iOS_APITestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_APITestViewController.m; sourceTree = "<group>"; };
+		49415D76239A5A0500660C57 /* NSExceptionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSExceptionManager.h; sourceTree = "<group>"; };
+		49415D77239A5A0500660C57 /* NSExceptionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSExceptionManager.m; sourceTree = "<group>"; };
+		49415D79239B92B500660C57 /* YYWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		49415D7A239B92B500660C57 /* YYWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
 		49437D382371CBED000C8C49 /* SortTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortTest.cpp; sourceTree = "<group>"; };
 		49437D3B2372DF17000C8C49 /* TextUreTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextUreTestViewController.h; sourceTree = "<group>"; };
 		49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextUreTestViewController.m; sourceTree = "<group>"; };
@@ -134,6 +149,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		492554A4239DF3DD0008D6EF /* SDWebImage探索 */ = {
+			isa = PBXGroup;
+			children = (
+				492554A5239DF4070008D6EF /* SDWebImageTestViewController.h */,
+				492554A6239DF4070008D6EF /* SDWebImageTestViewController.m */,
+			);
+			path = "SDWebImage探索";
+			sourceTree = "<group>";
+		};
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,8 +179,23 @@
 		493E0859238BFBBC0079D893 /* Block */ = {
 			isa = PBXGroup;
 			children = (
+				493E085A238BFC550079D893 /* BlockViewController.h */,
+				493E085B238BFC550079D893 /* BlockViewController.m */,
 			);
 			path = Block;
+			sourceTree = "<group>";
+		};
+		49415D71239A325700660C57 /* iOS_API */ = {
+			isa = PBXGroup;
+			children = (
+				49415D73239A329900660C57 /* iOS_APITestViewController.h */,
+				49415D74239A329900660C57 /* iOS_APITestViewController.m */,
+				49415D76239A5A0500660C57 /* NSExceptionManager.h */,
+				49415D77239A5A0500660C57 /* NSExceptionManager.m */,
+				49415D79239B92B500660C57 /* YYWeakProxy.h */,
+				49415D7A239B92B500660C57 /* YYWeakProxy.m */,
+			);
+			path = iOS_API;
 			sourceTree = "<group>";
 		};
 		49437D2D2371C877000C8C49 /* 算法排序 */ = {
@@ -197,6 +236,8 @@
 		495CE751208224F3000EA0E8 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				492554A4239DF3DD0008D6EF /* SDWebImage探索 */,
+				49415D71239A325700660C57 /* iOS_API */,
 				493E0854238BCBCC0079D893 /* 设计模式 */,
 				49437D3A2372DEEF000C8C49 /* TextureTest */,
 				4967EDE4235D488E00D7BCCF /* 数据结构&算法 */,
@@ -486,16 +527,20 @@
 				4962F6B12123FF1C00CB305F /* Car.m in Sources */,
 				4962F6AE2121863E00CB305F /* Person2.m in Sources */,
 				4990BF2821198EE10000ADC5 /* NSObject+addProperty.m in Sources */,
+				49415D75239A329900660C57 /* iOS_APITestViewController.m in Sources */,
 				49934E3B21479A4C00DAB4D5 /* ChangeAppIconViewController.m in Sources */,
 				495CE757208224F3000EA0E8 /* ViewController.m in Sources */,
 				4962F6B421251C3000CB305F /* Student1.m in Sources */,
 				499FBF652110556900E08F8C /* Person.m in Sources */,
 				4962F6B72126CC5500CB305F /* RutimeMethodAndClassApi.m in Sources */,
+				49415D78239A5A0500660C57 /* NSExceptionManager.m in Sources */,
 				499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */,
+				492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */,
 				49C7497420AD74DC009DC12D /* TableViewCell.m in Sources */,
 				4990BF2B211AD9330000ADC5 /* Person1.m in Sources */,
 				493E0857238BCBED0079D893 /* DelegateViewController.m in Sources */,
 				495CE762208224F5000EA0E8 /* main.m in Sources */,
+				493E085C238BFC550079D893 /* BlockViewController.m in Sources */,
 				4990BAA1212FE8100044BCE1 /* WebPTestViewController.m in Sources */,
 				4990BF1621183AE80000ADC5 /* Person+Test.m in Sources */,
 				49B91E6220FC671E00FC4892 /* TestBlock.m in Sources */,
@@ -503,6 +548,7 @@
 				495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */,
 				49C7497720AD77FF009DC12D /* SubTableViewCell.m in Sources */,
 				49437D392371CBED000C8C49 /* SortTest.cpp in Sources */,
+				49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */,
 				4967EDE8235D493D00D7BCCF /* BinaryTreeNode.m in Sources */,
 				499FBF622110551300E08F8C /* KVOExploreViewController.m in Sources */,
 			);
@@ -649,6 +695,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9X97YKR3AP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Test/Test.pch;
 				INFOPLIST_FILE = Test/Info.plist;
@@ -657,7 +704,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Start.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = Start.Test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Test/Test-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -673,6 +720,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9X97YKR3AP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Test/Test.pch;
 				INFOPLIST_FILE = Test/Info.plist;
@@ -681,7 +729,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Start.Test;
+				PRODUCT_BUNDLE_IDENTIFIER = Start.Test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Test/Test-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

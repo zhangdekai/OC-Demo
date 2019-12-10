@@ -54,6 +54,31 @@ void buddle_sort(int a[], int n) {
     }
 }
 
+
+/*
+ 选择排序：O(n^2) O(1)
+ 
+ 维护一段有序数列，同时遍历待排序的数列，通常找最小的元素插入到有序数列中。重复直到待排序数列没有剩余元素。
+ 
+ */
+
+void select(int arr[], int s){
+//    int s = arr.size();
+    
+    for(int i = 0; i < s; i++){
+        int m = arr[i];
+        int index = i;
+        for(int j=i+1; j < s; j++) {
+            if(arr[j] < m) {//选出最大值
+                m = arr[j];
+                index = j;
+            }
+        }
+        swap(arr[i], arr[index]);
+    }
+
+}
+
 /*
  快速排序：O(n^2) O(log n)
  
@@ -163,30 +188,6 @@ void shell_sort(int a[], int n)
             }
         }
     }
-}
-
-/*
- 选择排序：O(n^2) O(1)
- 
- 维护一段有序数列，同时遍历待排序的数列，通常找最小的元素插入到有序数列中。重复直到待排序数列没有剩余元素。
- 
- */
-
-void select(int arr[], int s){
-//    int s = arr.size();
-    
-    for(int i=0;i<s;i++){
-        int m = arr[i];
-        int index = i;
-        for(int j=i+1;j<s;j++){
-            if(arr[j]<m){
-                m = arr[j];
-                index = j;
-            }
-        }
-        swap(arr[i], arr[index]);
-    }
-
 }
 
 /*

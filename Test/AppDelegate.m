@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "NSExceptionManager.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,8 @@
     self.window.rootViewController = rootVc;    
     
     [self.window makeKeyAndVisible];
+    
+    [NSExceptionManager getCrash];
     
     return YES;
 }

@@ -29,6 +29,9 @@ PODS:
   - PINRemoteImage/PINCache (3.0.0-beta.13):
     - PINCache (= 3.0.1-beta.6)
     - PINRemoteImage/Core
+  - SDWebImage (5.2.3):
+    - SDWebImage/Core (= 5.2.3)
+  - SDWebImage/Core (5.2.3)
   - Texture (2.8.1):
     - Texture/AssetsLibrary (= 2.8.1)
     - Texture/Core (= 2.8.1)
@@ -52,6 +55,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - SDWebImage
   - Texture
 
 SPEC REPOS:
@@ -61,6 +65,7 @@ SPEC REPOS:
     - PINCache
     - PINOperation
     - PINRemoteImage
+    - SDWebImage
     - Texture
 
 SPEC CHECKSUMS:
@@ -68,8 +73,9 @@ SPEC CHECKSUMS:
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  SDWebImage: 46a7f73228f84ce80990c786e4372cf4db5875ce
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
 
-PODFILE CHECKSUM: ec443f0cbcf1c779df4b3a34c702404bfc7fa9aa
+PODFILE CHECKSUM: bb8f82b453ff5bab4994b8954ba757d3f8e06b86
 
 COCOAPODS: 1.8.4
