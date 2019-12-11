@@ -31,7 +31,7 @@ void uncaughtEX(NSException *exception) {
 
 + (void)getCrash {
     
-    NSSetUncaughtExceptionHandler(<#NSUncaughtExceptionHandler * _Nullable#>)
+//    NSSetUncaughtExceptionHandler(<#NSUncaughtExceptionHandler * _Nullable#>)
     
     NSSetUncaughtExceptionHandler(&uncaughtEX);
     

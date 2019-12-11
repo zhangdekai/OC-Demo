@@ -8,6 +8,7 @@
 
 #import "TestBlock.h"
 
+
 //int age = 10;
 //static int age1 = 10;
 typedef void (^Block)(void);
@@ -20,6 +21,16 @@ typedef void (^Block)(void);
         NSLog(@"%@",self);
     };
     block();
+    
+    int age = 10;
+    void(^block1)(int,int) = ^ (int a, int b) {
+        NSLog(@"this is block,a = %d,b = %d",a,b);
+        NSLog(@"this is block,age = %d",age);
+    };
+    block1(3,5);
+    
+    
+    
 }
 - (instancetype)initWithName:(NSString *)name
 {

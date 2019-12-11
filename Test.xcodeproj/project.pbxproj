@@ -15,6 +15,7 @@
 		49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D7A239B92B500660C57 /* YYWeakProxy.m */; };
 		49437D392371CBED000C8C49 /* SortTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49437D382371CBED000C8C49 /* SortTest.cpp */; };
 		49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */; };
+		4946FAF423A0CD6600267FB0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */; };
 		495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE753208224F3000EA0E8 /* AppDelegate.m */; };
 		495CE757208224F3000EA0E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE756208224F3000EA0E8 /* ViewController.m */; };
 		495CE75A208224F3000EA0E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495CE758208224F3000EA0E8 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		49437D382371CBED000C8C49 /* SortTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortTest.cpp; sourceTree = "<group>"; };
 		49437D3B2372DF17000C8C49 /* TextUreTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextUreTestViewController.h; sourceTree = "<group>"; };
 		49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextUreTestViewController.m; sourceTree = "<group>"; };
+		4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		495CE74F208224F3000EA0E8 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495CE752208224F3000EA0E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		495CE753208224F3000EA0E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4946FAF423A0CD6600267FB0 /* CoreFoundation.framework in Frameworks */,
 				A65317C0F21C3B27266DD3EC /* libPods-Test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +420,7 @@
 		5EAFA43FE726B378EBC392F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */,
 				19BC9BA4508E81CCE1B1B4B9 /* libPods-Test.a */,
 			);
 			name = Frameworks;
