@@ -10,6 +10,8 @@
  
  NSProxy一点应用： https://www.cnblogs.com/chaochaobuhuifei55/p/9100006.html
  
+ 一个抽象的超类，它定义了一个对象的API，用来代替其他对象或不存在的对象。
+ 
  场景：使用 NSTimer or CADisplayLink 定时器时，target是自己的情况下被强引用，即使使用weakself也无效
 
  

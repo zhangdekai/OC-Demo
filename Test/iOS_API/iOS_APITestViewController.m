@@ -18,25 +18,18 @@
 
 @end
 
-//void uncaughtEX(NSException *exception) {
-//    NSLog(@"%s", __func__);
-//    
-//    NSLog(@"$$$ %@",exception);
-//    
-//    
-//}
+
 
 @implementation iOS_APITestViewController
-
-
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     NSObject *obj = [[NSObject alloc] init];
     
-    
+//    NSURLProtocol *Protocol = [NSURLProtocol alloc]initWithRequest:<#(nonnull NSURLRequest *)#> cachedResponse:<#(nullable NSCachedURLResponse *)#> client:<#(nullable id<NSURLProtocolClient>)#>
     
     
 //    NSException
