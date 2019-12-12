@@ -13,7 +13,6 @@
 		49415D75239A329900660C57 /* iOS_APITestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D74239A329900660C57 /* iOS_APITestViewController.m */; };
 		49415D78239A5A0500660C57 /* NSExceptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D77239A5A0500660C57 /* NSExceptionManager.m */; };
 		49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D7A239B92B500660C57 /* YYWeakProxy.m */; };
-		49437D392371CBED000C8C49 /* SortTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49437D382371CBED000C8C49 /* SortTest.cpp */; };
 		49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */; };
 		4946FAF423A0CD6600267FB0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */; };
 		495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE753208224F3000EA0E8 /* AppDelegate.m */; };
@@ -26,6 +25,9 @@
 		4962F6B12123FF1C00CB305F /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 4962F6B02123FF1C00CB305F /* Car.m */; };
 		4962F6B421251C3000CB305F /* Student1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4962F6B321251C3000CB305F /* Student1.m */; };
 		4962F6B72126CC5500CB305F /* RutimeMethodAndClassApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 4962F6B62126CC5500CB305F /* RutimeMethodAndClassApi.m */; };
+		4966B9E623A1EAEE00E02099 /* SortTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4966B9E523A1EAEE00E02099 /* SortTest.cpp */; };
+		4966B9E823A1ED0100E02099 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4966B9E723A1ED0100E02099 /* UIKit.framework */; };
+		4966B9EA23A1ED0700E02099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4966B9E923A1ED0600E02099 /* Foundation.framework */; };
 		4967EDE8235D493D00D7BCCF /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4967EDE7235D493D00D7BCCF /* BinaryTreeNode.m */; };
 		4990BAA1212FE8100044BCE1 /* WebPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4990BAA0212FE8100044BCE1 /* WebPTestViewController.m */; };
 		4990BAA5212FF2610044BCE1 /* AFNetworkingTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4990BAA4212FF2610044BCE1 /* AFNetworkingTestViewController.m */; };
@@ -64,7 +66,6 @@
 		49415D77239A5A0500660C57 /* NSExceptionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSExceptionManager.m; sourceTree = "<group>"; };
 		49415D79239B92B500660C57 /* YYWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		49415D7A239B92B500660C57 /* YYWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
-		49437D382371CBED000C8C49 /* SortTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortTest.cpp; sourceTree = "<group>"; };
 		49437D3B2372DF17000C8C49 /* TextUreTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextUreTestViewController.h; sourceTree = "<group>"; };
 		49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextUreTestViewController.m; sourceTree = "<group>"; };
 		4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -86,6 +87,9 @@
 		4962F6B321251C3000CB305F /* Student1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student1.m; sourceTree = "<group>"; };
 		4962F6B52126CC5500CB305F /* RutimeMethodAndClassApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RutimeMethodAndClassApi.h; sourceTree = "<group>"; };
 		4962F6B62126CC5500CB305F /* RutimeMethodAndClassApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RutimeMethodAndClassApi.m; sourceTree = "<group>"; };
+		4966B9E523A1EAEE00E02099 /* SortTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SortTest.cpp; sourceTree = "<group>"; };
+		4966B9E723A1ED0100E02099 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4966B9E923A1ED0600E02099 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4967EDE6235D493D00D7BCCF /* BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
 		4967EDE7235D493D00D7BCCF /* BinaryTreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
 		4990BA9F212FE8100044BCE1 /* WebPTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebPTestViewController.h; sourceTree = "<group>"; };
@@ -136,7 +140,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4946FAF423A0CD6600267FB0 /* CoreFoundation.framework in Frameworks */,
+				4966B9E823A1ED0100E02099 /* UIKit.framework in Frameworks */,
 				A65317C0F21C3B27266DD3EC /* libPods-Test.a in Frameworks */,
+				4966B9EA23A1ED0700E02099 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,14 +207,6 @@
 			path = iOS_API;
 			sourceTree = "<group>";
 		};
-		49437D2D2371C877000C8C49 /* 算法排序 */ = {
-			isa = PBXGroup;
-			children = (
-				49437D382371CBED000C8C49 /* SortTest.cpp */,
-			);
-			path = "算法排序";
-			sourceTree = "<group>";
-		};
 		49437D3A2372DEEF000C8C49 /* TextureTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,10 +268,18 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		4966B9E423A1EAD000E02099 /* 算法排序 */ = {
+			isa = PBXGroup;
+			children = (
+				4966B9E523A1EAEE00E02099 /* SortTest.cpp */,
+			);
+			path = "算法排序";
+			sourceTree = "<group>";
+		};
 		4967EDE4235D488E00D7BCCF /* 数据结构&算法 */ = {
 			isa = PBXGroup;
 			children = (
-				49437D2D2371C877000C8C49 /* 算法排序 */,
+				4966B9E423A1EAD000E02099 /* 算法排序 */,
 				4967EDE5235D489800D7BCCF /* 二叉树 */,
 			);
 			path = "数据结构&算法";
@@ -420,6 +426,8 @@
 		5EAFA43FE726B378EBC392F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4966B9E923A1ED0600E02099 /* Foundation.framework */,
+				4966B9E723A1ED0100E02099 /* UIKit.framework */,
 				4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */,
 				19BC9BA4508E81CCE1B1B4B9 /* libPods-Test.a */,
 			);
@@ -528,6 +536,7 @@
 				499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */,
 				4990BF1E21196E410000ADC5 /* Student.m in Sources */,
 				49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */,
+				4966B9E623A1EAEE00E02099 /* SortTest.cpp in Sources */,
 				4962F6B12123FF1C00CB305F /* Car.m in Sources */,
 				4962F6AE2121863E00CB305F /* Person2.m in Sources */,
 				4990BF2821198EE10000ADC5 /* NSObject+addProperty.m in Sources */,
@@ -551,7 +560,6 @@
 				4990BF2121196E730000ADC5 /* Student+Test.m in Sources */,
 				495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */,
 				49C7497720AD77FF009DC12D /* SubTableViewCell.m in Sources */,
-				49437D392371CBED000C8C49 /* SortTest.cpp in Sources */,
 				49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */,
 				4967EDE8235D493D00D7BCCF /* BinaryTreeNode.m in Sources */,
 				499FBF622110551300E08F8C /* KVOExploreViewController.m in Sources */,

@@ -26,6 +26,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 
+#import "TestBlock.h"
 
 @interface ViewController ()<UITableViewDelegate>
 {
@@ -34,7 +35,7 @@
 }
 
 
-@property (weak, nonatomic) IBOutlet UIButton *testcrashButton;
+//@property (weak, nonatomic) IBOutlet UIButton *testcrashButton;
 
 @end
 
@@ -43,87 +44,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-
-    
-//    [self testAsyncTask];
-    
-    
-    /*
-    [self testTree];
-    
-    
-    
-    
-    //test WebP
-    
-    UIImageView *imageview = [[UIImageView alloc]init];
-    imageview.frame = CGRectMake(0, 100, UIScreenWidth, 500);
-    [self.view addSubview:imageview];
-    
-//    imageview.image = [UIImage imageNamed:@"timg.jpeg"];
-    
-    imageview.image = [UIImage imageNamed:@"test-daqiao"];
-
-    
-    
-    
-    
-    
-//    NSString *string = @"string";
-//
-//
-//    id cls = [Person1 class];
-//    void *obj = &cls;
-//    [(__bridge id)obj test];
-
-    
-    
-    
-//    NSString *test = @"是的是的临床科室领导开车你老是";
-   
-  
-    
-//    NSObjectTestView *textRuntime = [[NSObjectTestView alloc]init];
-
-    
-    UIButton *takePhoto = [[UIButton alloc]initWithFrame:CGRectMake(100, 200, 100, 30)];
-    [takePhoto setTitle:@"去拍照" forState:0];
-    [takePhoto setTitleColor:[UIColor blackColor] forState:0];
-    [self.view addSubview:takePhoto];
-    [takePhoto addTarget:self action:@selector(takePhoto) forControlEvents:(UIControlEventTouchUpInside)];
-    
-//    NSArray *asds = [self photos_current_role_tag];
-//    NSLog(@"sdcsdcsdc :%@",asds);
-    
-     */
-    
-    UITableView *tableView = [[UITableView alloc]init];
-    tableView.delegate = self;
-    
-    //FOUNDATION_EXPORT void NSLog(NSString *format, ...) NS_FORMAT_FUNCTION(1,2) NS_NO_TAIL_CALL;
-
-    NSLog(@"你上课胶凝材料");
-    
-    UIButton *button = [UIButton buttonWithType:(UIButtonTypeSystem)];
-    [self.view addSubview:button];
-    
-    [button setTitle:@"测试" forState:(UIControlStateNormal)];
-    button.frame = CGRectMake(100, 100, 200, 30);
-    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [button addTarget:self action: @selector(testCrash:) forControlEvents:(UIControlEventTouchUpInside)];
-    
-    
-    
-    
 }
 
-- (IBAction)testCrash:(id)sender {
+
+
+- (IBAction)testBlock:(id)sender {
     
-    NSArray *array002 = @[@"1",@"2"];
+    TestBlock *block = [[TestBlock alloc]init];
        
-    NSLog(array002[2]);
-    
+    [block testBlock];
 }
 
 - (void)testAsyncTask1 {

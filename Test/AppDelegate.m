@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "NSExceptionManager.h"
+#import <UIKit/UIKit.h>
 
 @interface AppDelegate ()
 
@@ -23,8 +24,14 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    ViewController *vc = [[ViewController alloc]init];
+//     = [[ViewController alloc]init];
+    
+   ViewController *vc = (ViewController *)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ViewController"];
+    
+
+    
     UINavigationController *rootVc = [[UINavigationController alloc]initWithRootViewController:vc];
+    
     self.window.rootViewController = rootVc;    
     
     [self.window makeKeyAndVisible];

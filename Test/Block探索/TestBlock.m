@@ -16,15 +16,35 @@ typedef void (^Block)(void);
 
 @implementation TestBlock
 
-- (void)test
-{
+- (void)testBlock {
+    
+    [self test];
+    
+}
+
+- (void)test{
     
     // xcrun -sdk iphoneos clang -arch arm64 -rewrite-objc main.m 转化为c++
 
     void(^block)(void) = ^{
-        NSLog(@"%@",self);
+        NSLog(@"%@",@"hello");
     };
     block();
+    //2019-12-12 12:49:09.132859+0800 Test[1870:38442] <TestBlock: 0x6000014685a0>
+
+    
+    NSLog(@"%@",[block class]);
+    NSLog(@"%@",[[block class] superclass]);
+    NSLog(@"%@",[[[block class] superclass] superclass]);
+    NSLog(@"%@",[[[[block class] superclass] superclass]superclass]);
+
+    /*
+     2019-12-12 12:49:09.133027+0800 Test[1870:38442] __NSMallocBlock__
+     2019-12-12 12:49:09.133140+0800 Test[1870:38442] __NSMallocBlock
+     2019-12-12 12:49:09.133246+0800 Test[1870:38442] NSBlock
+     2019-12-12 12:49:09.133355+0800 Test[1870:38442] NSObject
+     */
+
     
     
     auto int a1 = 100;
