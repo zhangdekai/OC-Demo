@@ -13,6 +13,7 @@
 		49415D75239A329900660C57 /* iOS_APITestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D74239A329900660C57 /* iOS_APITestViewController.m */; };
 		49415D78239A5A0500660C57 /* NSExceptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D77239A5A0500660C57 /* NSExceptionManager.m */; };
 		49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D7A239B92B500660C57 /* YYWeakProxy.m */; };
+		4941C4C323A4C60E00C49D7E /* iOSAlgorithmTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4941C4C223A4C60E00C49D7E /* iOSAlgorithmTest.cpp */; };
 		49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */; };
 		4946FAF423A0CD6600267FB0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */; };
 		495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE753208224F3000EA0E8 /* AppDelegate.m */; };
@@ -66,6 +67,7 @@
 		49415D77239A5A0500660C57 /* NSExceptionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSExceptionManager.m; sourceTree = "<group>"; };
 		49415D79239B92B500660C57 /* YYWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		49415D7A239B92B500660C57 /* YYWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		4941C4C223A4C60E00C49D7E /* iOSAlgorithmTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = iOSAlgorithmTest.cpp; sourceTree = "<group>"; };
 		49437D3B2372DF17000C8C49 /* TextUreTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextUreTestViewController.h; sourceTree = "<group>"; };
 		49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextUreTestViewController.m; sourceTree = "<group>"; };
 		4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -272,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				4966B9E523A1EAEE00E02099 /* SortTest.cpp */,
+				4941C4C223A4C60E00C49D7E /* iOSAlgorithmTest.cpp */,
 			);
 			path = "算法排序";
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				49415D78239A5A0500660C57 /* NSExceptionManager.m in Sources */,
 				499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */,
 				492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */,
+				4941C4C323A4C60E00C49D7E /* iOSAlgorithmTest.cpp in Sources */,
 				49C7497420AD74DC009DC12D /* TableViewCell.m in Sources */,
 				4990BF2B211AD9330000ADC5 /* Person1.m in Sources */,
 				493E0857238BCBED0079D893 /* DelegateViewController.m in Sources */,

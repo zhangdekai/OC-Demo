@@ -7,6 +7,7 @@
 //
 
 #import "TestBlock.h"
+#import "Person.h"
 
 
 int age = 10;
@@ -18,19 +19,48 @@ typedef void (^Block)(void);
 
 - (void)testBlock {
     
-    [self test];
+//    [self test];
+    [self test05];
+//    [self test06];
+
     
 }
+
+- (void)test06 {
+    
+    Person *person = [[Person alloc]init];
+    
+    __weak Person *weakP = person;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        //3秒后——(null)
+        NSLog(@"3秒后——%@",weakP);//此处的weakP 是弱引用，block内部也是弱引用的 引用计数不变化;person对象没有强指针引用就会被释放
+    });
+    NSLog(@"dispatch_after调用结束");
+}
+
+- (void)test05 {
+    
+    Person *person = [[Person alloc]init];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        //3秒后——<Person: 0x600003c28ce0>
+        NSLog(@"3秒后——%@",person);//此处的person 是强引用，block内部也是强引用的 引用计数+1，person被copy到堆上了
+    });
+    NSLog(@"dispatch_after调用结束");
+}
+
 
 - (void)test{
     
     // xcrun -sdk iphoneos clang -arch arm64 -rewrite-objc main.m 转化为c++
 
+    int bb = 10;
     void(^block)(void) = ^{
         NSLog(@"%@",@"hello");
+        NSLog(@"%d",bb);
     };
     block();
-    //2019-12-12 12:49:09.132859+0800 Test[1870:38442] <TestBlock: 0x6000014685a0>
 
     
     NSLog(@"%@",[block class]);
@@ -183,7 +213,29 @@ typedef void (^Block)(void);
         NSLog(@"%p",weakPerson); // __block，__weak修饰的对象类型的局部变量
     };
     block();
+    /* 转化为C++
+    struct __main_block_impl_0 {
+      struct __block_impl impl;
+      struct __main_block_desc_0* Desc;
+      
+      int number;
+      NSObject *__strong object;
+      NSObject *__weak weakObj;
+      __Block_byref_age_0 *age; // by ref
+      __Block_byref_person_1 *person; // by ref
+      __Block_byref_weakPerson_2 *weakPerson; // by ref
+      
+      __main_block_impl_0(void *fp, struct __main_block_desc_0 *desc, int _number, NSObject *__strong _object, NSObject *__weak _weakObj, __Block_byref_age_0 *_age, __Block_byref_person_1 *_person, __Block_byref_weakPerson_2 *_weakPerson, int flags=0) : number(_number), object(_object), weakObj(_weakObj), age(_age->__forwarding), person(_person->__forwarding), weakPerson(_weakPerson->__forwarding) {
+     
+        impl.isa = &_NSConcreteStackBlock;
+        impl.Flags = flags;
+        impl.FuncPtr = fp;
+        Desc = desc;
+      }
+    };
     
+     */
 }
+
 
 @end

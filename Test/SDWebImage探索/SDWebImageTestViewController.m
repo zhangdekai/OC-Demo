@@ -9,6 +9,18 @@
 #import "SDWebImageTestViewController.h"
 #import <SDWebImage.h>
 
+/*
+ 
+ SDWebimage源码解读：https://www.jianshu.com/p/fc8e8994dde7
+ 
+ SDImageCache实现缓存
+ 内存缓存
+ 
+ disk缓存，存到沙盒
+ 
+ 
+ */
+
 @interface SDWebImageTestViewController ()
 
 @end
@@ -18,16 +30,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    
+    UIImageView *imageview = [[UIImageView alloc]init];
+    imageview.frame = CGRectMake(0, 100, UIScreenWidth, 300);
+    [self.view addSubview:imageview];
+    
+    [imageview sd_setImageWithURL:[NSURL URLWithString:@"http://attach.bbs.miui.com/forum/month_1012/10120514509c7244b23f4a2fa5.jpg"] placeholderImage:[UIImage imageNamed:@"sd_testimg"]];
+    
+    
+    
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)testNSCacheAndDict {
+    NSCache *cache = [[NSCache alloc]init];
+    
+    [cache setName:@"test_cache"];
+    
+    [cache setObject:@"你好擦车" forKey:@"key01"];
+    
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    
+    [dict setObject:@"testDict" forKey:@"dcit"];
 }
-*/
+
+
 
 @end
