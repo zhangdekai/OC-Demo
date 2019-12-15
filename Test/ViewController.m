@@ -25,6 +25,7 @@
 #import "BinaryTreeNode.h"
 
 #import <AVFoundation/AVFoundation.h>
+#import "TestBridgeViewController.h"
 
 #import "TestBlock.h"
 
@@ -57,6 +58,15 @@
        
     [block testBlock];
 }
+- (IBAction)testBridge:(id)sender {
+    
+    TestBridgeViewController *vc = [[TestBridgeViewController alloc]init];
+    [self presentViewController:vc animated:true completion:nil];
+    
+}
+
+
+
 
 - (void)testAsyncTask1 {
     

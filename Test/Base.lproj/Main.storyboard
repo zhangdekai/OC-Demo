@@ -26,11 +26,22 @@
                                     <action selector="testBlock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X53-l9-ErC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-qG-VCc">
+                                <rect key="frame" x="41" y="124" width="88" height="30"/>
+                                <state key="normal" title="测试__bridge"/>
+                                <connections>
+                                    <action selector="testBridge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2sb-hK-nzP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yhJ-qG-VCc" secondAttribute="trailing" constant="20" symbolic="YES" id="4Xf-0r-GQr"/>
+                            <constraint firstItem="yhJ-qG-VCc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="41" id="Ebg-u6-Sct"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aYE-u7-W5f" secondAttribute="trailing" constant="20" symbolic="YES" id="OS5-36-Ouj"/>
                             <constraint firstItem="aYE-u7-W5f" firstAttribute="top" secondItem="yPf-Qq-4Gz" secondAttribute="bottom" constant="77" id="Qte-8N-g4T"/>
                             <constraint firstItem="aYE-u7-W5f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="41" id="lyB-t0-Czd"/>
+                            <constraint firstItem="yhJ-qG-VCc" firstAttribute="top" secondItem="aYE-u7-W5f" secondAttribute="bottom" constant="17" id="mWl-tk-PnS"/>
                         </constraints>
                     </view>
                 </viewController>

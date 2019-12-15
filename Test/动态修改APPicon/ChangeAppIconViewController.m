@@ -23,7 +23,7 @@
 
 + (void)load
 {
-   
+   /*
     // runtime交换方法
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -35,7 +35,7 @@
         method_exchangeImplementations(presentM, presentSwizzlingM);
         
     });
-  
+  */
 }
 
 /**

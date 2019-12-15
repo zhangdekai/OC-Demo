@@ -15,6 +15,7 @@
 		49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D7A239B92B500660C57 /* YYWeakProxy.m */; };
 		4941C4C323A4C60E00C49D7E /* iOSAlgorithmTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4941C4C223A4C60E00C49D7E /* iOSAlgorithmTest.cpp */; };
 		49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */; };
+		4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4946D13823A5C5FD003DF518 /* TestBridgeViewController.m */; };
 		4946FAF423A0CD6600267FB0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */; };
 		495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE753208224F3000EA0E8 /* AppDelegate.m */; };
 		495CE757208224F3000EA0E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE756208224F3000EA0E8 /* ViewController.m */; };
@@ -70,6 +71,8 @@
 		4941C4C223A4C60E00C49D7E /* iOSAlgorithmTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = iOSAlgorithmTest.cpp; sourceTree = "<group>"; };
 		49437D3B2372DF17000C8C49 /* TextUreTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextUreTestViewController.h; sourceTree = "<group>"; };
 		49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextUreTestViewController.m; sourceTree = "<group>"; };
+		4946D13723A5C5FD003DF518 /* TestBridgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBridgeViewController.h; sourceTree = "<group>"; };
+		4946D13823A5C5FD003DF518 /* TestBridgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBridgeViewController.m; sourceTree = "<group>"; };
 		4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		495CE74F208224F3000EA0E8 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495CE752208224F3000EA0E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -218,6 +221,15 @@
 			path = TextureTest;
 			sourceTree = "<group>";
 		};
+		4946D13623A5C5CF003DF518 /* __bridge探索 */ = {
+			isa = PBXGroup;
+			children = (
+				4946D13723A5C5FD003DF518 /* TestBridgeViewController.h */,
+				4946D13823A5C5FD003DF518 /* TestBridgeViewController.m */,
+			);
+			path = "__bridge探索";
+			sourceTree = "<group>";
+		};
 		495CE746208224F3000EA0E8 = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +251,7 @@
 		495CE751208224F3000EA0E8 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				4946D13623A5C5CF003DF518 /* __bridge探索 */,
 				492554A4239DF3DD0008D6EF /* SDWebImage探索 */,
 				49415D71239A325700660C57 /* iOS_API */,
 				493E0854238BCBCC0079D893 /* 设计模式 */,
@@ -535,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4990BAA5212FF2610044BCE1 /* AFNetworkingTestViewController.m in Sources */,
+				4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */,
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,
 				499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */,
 				4990BF1E21196E410000ADC5 /* Student.m in Sources */,
