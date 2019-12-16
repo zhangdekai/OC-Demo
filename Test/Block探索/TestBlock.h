@@ -11,6 +11,8 @@
 @interface TestBlock : NSObject
 
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, assign) NSInteger count;
+
 
 - (void)testBlock;
 

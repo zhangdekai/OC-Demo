@@ -28,6 +28,8 @@
 #import "TestBridgeViewController.h"
 
 #import "TestBlock.h"
+#import "KVCTestClass.h"
+
 
 @interface ViewController ()<UITableViewDelegate>
 {
@@ -45,9 +47,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSMutableString *testString = [NSMutableString stringWithString:@"hello world"];
     
-    
+
 }
 
 
@@ -64,6 +65,14 @@
     [self presentViewController:vc animated:true completion:nil];
     
 }
+
+- (IBAction)testKVC:(id)sender {
+    
+    KVCTestClass *kvc = [[KVCTestClass alloc]init];
+    [kvc testKVC];
+}
+
+
 
 
 

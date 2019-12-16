@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492554A6239DF4070008D6EF /* SDWebImageTestViewController.m */; };
+		493CBEDB23A72F7600694F6E /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 493CBEDA23A72F7600694F6E /* Book.m */; };
 		493E0857238BCBED0079D893 /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E0856238BCBED0079D893 /* DelegateViewController.m */; };
 		493E085C238BFC550079D893 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E085B238BFC550079D893 /* BlockViewController.m */; };
 		49415D75239A329900660C57 /* iOS_APITestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D74239A329900660C57 /* iOS_APITestViewController.m */; };
@@ -16,6 +17,8 @@
 		4941C4C323A4C60E00C49D7E /* iOSAlgorithmTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4941C4C223A4C60E00C49D7E /* iOSAlgorithmTest.cpp */; };
 		49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */; };
 		4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4946D13823A5C5FD003DF518 /* TestBridgeViewController.m */; };
+		4946D13E23A625A2003DF518 /* OCAlgorithmTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4946D13D23A625A2003DF518 /* OCAlgorithmTest.m */; };
+		4946D14223A67F0A003DF518 /* KVCTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4946D14123A67F0A003DF518 /* KVCTestClass.m */; };
 		4946FAF423A0CD6600267FB0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */; };
 		495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE753208224F3000EA0E8 /* AppDelegate.m */; };
 		495CE757208224F3000EA0E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE756208224F3000EA0E8 /* ViewController.m */; };
@@ -58,6 +61,8 @@
 		19BC9BA4508E81CCE1B1B4B9 /* libPods-Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		492554A5239DF4070008D6EF /* SDWebImageTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageTestViewController.h; sourceTree = "<group>"; };
 		492554A6239DF4070008D6EF /* SDWebImageTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageTestViewController.m; sourceTree = "<group>"; };
+		493CBED923A72F7600694F6E /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		493CBEDA23A72F7600694F6E /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		493E0855238BCBED0079D893 /* DelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
 		493E0856238BCBED0079D893 /* DelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
 		493E085A238BFC550079D893 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
@@ -73,6 +78,10 @@
 		49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextUreTestViewController.m; sourceTree = "<group>"; };
 		4946D13723A5C5FD003DF518 /* TestBridgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBridgeViewController.h; sourceTree = "<group>"; };
 		4946D13823A5C5FD003DF518 /* TestBridgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBridgeViewController.m; sourceTree = "<group>"; };
+		4946D13C23A625A2003DF518 /* OCAlgorithmTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCAlgorithmTest.h; sourceTree = "<group>"; };
+		4946D13D23A625A2003DF518 /* OCAlgorithmTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCAlgorithmTest.m; sourceTree = "<group>"; };
+		4946D14023A67F0A003DF518 /* KVCTestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCTestClass.h; sourceTree = "<group>"; };
+		4946D14123A67F0A003DF518 /* KVCTestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCTestClass.m; sourceTree = "<group>"; };
 		4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		495CE74F208224F3000EA0E8 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495CE752208224F3000EA0E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -230,6 +239,17 @@
 			path = "__bridge探索";
 			sourceTree = "<group>";
 		};
+		4946D13F23A67EE1003DF518 /* KVC探索 */ = {
+			isa = PBXGroup;
+			children = (
+				4946D14023A67F0A003DF518 /* KVCTestClass.h */,
+				4946D14123A67F0A003DF518 /* KVCTestClass.m */,
+				493CBED923A72F7600694F6E /* Book.h */,
+				493CBEDA23A72F7600694F6E /* Book.m */,
+			);
+			path = "KVC探索";
+			sourceTree = "<group>";
+		};
 		495CE746208224F3000EA0E8 = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +284,7 @@
 				4990BF2221198CF20000ADC5 /* 关联对象 */,
 				4990BF13211839B90000ADC5 /* Category探索 */,
 				499FBF662112A59E00E08F8C /* Runloop探索 */,
+				4946D13F23A67EE1003DF518 /* KVC探索 */,
 				499FBF5F2110548800E08F8C /* KVO探索 */,
 				499FBF5E211053AA00E08F8C /* 继承测试 */,
 				499FBF5D2110535700E08F8C /* Block探索 */,
@@ -288,6 +309,8 @@
 			children = (
 				4966B9E523A1EAEE00E02099 /* SortTest.cpp */,
 				4941C4C223A4C60E00C49D7E /* iOSAlgorithmTest.cpp */,
+				4946D13C23A625A2003DF518 /* OCAlgorithmTest.h */,
+				4946D13D23A625A2003DF518 /* OCAlgorithmTest.m */,
 			);
 			path = "算法排序";
 			sourceTree = "<group>";
@@ -548,11 +571,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4990BAA5212FF2610044BCE1 /* AFNetworkingTestViewController.m in Sources */,
+				4946D13E23A625A2003DF518 /* OCAlgorithmTest.m in Sources */,
 				4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */,
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,
 				499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */,
 				4990BF1E21196E410000ADC5 /* Student.m in Sources */,
 				49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */,
+				4946D14223A67F0A003DF518 /* KVCTestClass.m in Sources */,
 				4966B9E623A1EAEE00E02099 /* SortTest.cpp in Sources */,
 				4962F6B12123FF1C00CB305F /* Car.m in Sources */,
 				4962F6AE2121863E00CB305F /* Person2.m in Sources */,
@@ -580,6 +605,7 @@
 				49C7497720AD77FF009DC12D /* SubTableViewCell.m in Sources */,
 				49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */,
 				4967EDE8235D493D00D7BCCF /* BinaryTreeNode.m in Sources */,
+				493CBEDB23A72F7600694F6E /* Book.m in Sources */,
 				499FBF622110551300E08F8C /* KVOExploreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

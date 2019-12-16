@@ -9,6 +9,10 @@
 #import "TestBlock.h"
 #import "Person.h"
 
+//#define WS(weakSelf) __weak typeof(&*self) weakSelf = self;
+
+#define  TSWeakSelf __weak typeof(self)weakSelf = self;
+
 
 int age = 10;
 static int age1 = 10;
@@ -18,6 +22,12 @@ typedef void (^Block)(void);
 @implementation TestBlock
 
 - (void)testBlock {
+    
+    
+    
+//    __weak typeof(self) weakSelf = self;
+    
+    
     
 //    [self test];
     [self test05];
@@ -55,10 +65,13 @@ typedef void (^Block)(void);
     
     // xcrun -sdk iphoneos clang -arch arm64 -rewrite-objc main.m 转化为c++
 
+    TSWeakSelf;
+    
     int bb = 10;
     void(^block)(void) = ^{
         NSLog(@"%@",@"hello");
         NSLog(@"%d",bb);
+        weakSelf.count = 100;
     };
     block();
 
