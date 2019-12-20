@@ -11,6 +11,14 @@
 #import "Person.h"
 #import <objc/runtime.h>
 
+/*
+ 
+ NSObject的扩展NSKeyValueObserving
+ 
+ 键值观察：
+ 
+ */
+
 @interface KVOExploreViewController ()
 
 @end
@@ -19,6 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     
     self.view.backgroundColor = [UIColor whiteColor];
 
@@ -32,7 +42,11 @@
     
     //打印地址
     NSLog(@"添加KVO监听之前 - p1 = %p, p2 = %p", [p1 methodForSelector: @selector(setAge:)],[p2 methodForSelector: @selector(setAge:)]);
+    
+    CGFloat ada = 0.23;
+    
 
+    ///Users/zhangdekai/Documents/development/flutter
     
     NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
     
@@ -57,6 +71,11 @@
   
     NSLog(@"监听到%@的%@改变了%@", object, keyPath,change);
 
+}
+
++ (BOOL)automaticallyNotifiesObserversForKey:(NSString *)key {
+    
+    return [super automaticallyNotifiesObserversForKey:key];
 }
 
 - (void)printMethod:(Class)cls {

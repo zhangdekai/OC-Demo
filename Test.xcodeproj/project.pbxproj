@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492554A6239DF4070008D6EF /* SDWebImageTestViewController.m */; };
+		493AE7BC23ACBDA800BDDACC /* SignalModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 493AE7BB23ACBDA800BDDACC /* SignalModelTest.m */; };
 		493CBEDB23A72F7600694F6E /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 493CBEDA23A72F7600694F6E /* Book.m */; };
 		493E0857238BCBED0079D893 /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E0856238BCBED0079D893 /* DelegateViewController.m */; };
 		493E085C238BFC550079D893 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E085B238BFC550079D893 /* BlockViewController.m */; };
@@ -61,6 +62,8 @@
 		19BC9BA4508E81CCE1B1B4B9 /* libPods-Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		492554A5239DF4070008D6EF /* SDWebImageTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageTestViewController.h; sourceTree = "<group>"; };
 		492554A6239DF4070008D6EF /* SDWebImageTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageTestViewController.m; sourceTree = "<group>"; };
+		493AE7BA23ACBDA800BDDACC /* SignalModelTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalModelTest.h; sourceTree = "<group>"; };
+		493AE7BB23ACBDA800BDDACC /* SignalModelTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignalModelTest.m; sourceTree = "<group>"; };
 		493CBED923A72F7600694F6E /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		493CBEDA23A72F7600694F6E /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		493E0855238BCBED0079D893 /* DelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
@@ -181,9 +184,19 @@
 			path = "SDWebImage探索";
 			sourceTree = "<group>";
 		};
+		493AE7B923ACBD8500BDDACC /* 单例 */ = {
+			isa = PBXGroup;
+			children = (
+				493AE7BA23ACBDA800BDDACC /* SignalModelTest.h */,
+				493AE7BB23ACBDA800BDDACC /* SignalModelTest.m */,
+			);
+			path = "单例";
+			sourceTree = "<group>";
+		};
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				493AE7B923ACBD8500BDDACC /* 单例 */,
 				493E0859238BFBBC0079D893 /* Block */,
 				493E0858238BFBAB0079D893 /* 代理 */,
 			);
@@ -571,6 +584,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4990BAA5212FF2610044BCE1 /* AFNetworkingTestViewController.m in Sources */,
+				493AE7BC23ACBDA800BDDACC /* SignalModelTest.m in Sources */,
 				4946D13E23A625A2003DF518 /* OCAlgorithmTest.m in Sources */,
 				4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */,
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,

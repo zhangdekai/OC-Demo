@@ -11,6 +11,11 @@
 #import "Person.h"
 #import "Book.h"
 
+/*
+ 键值编码（key value coding）NSObject的扩展方法集
+ 常用方法：https://www.jianshu.com/p/f70a2d19677d
+ */
+
 
 @implementation KVCTestClass
 
