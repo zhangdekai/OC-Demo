@@ -17,6 +17,8 @@
 		49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D7A239B92B500660C57 /* YYWeakProxy.m */; };
 		4941C4C323A4C60E00C49D7E /* iOSAlgorithmTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4941C4C223A4C60E00C49D7E /* iOSAlgorithmTest.cpp */; };
 		49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */; };
+		4944358C23B3884F002B4742 /* MyListTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4944358A23B3884F002B4742 /* MyListTest.cpp */; };
+		4945FBE723B10255002E9401 /* HashCTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4945FBE523B10255002E9401 /* HashCTest.cpp */; };
 		4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4946D13823A5C5FD003DF518 /* TestBridgeViewController.m */; };
 		4946D13E23A625A2003DF518 /* OCAlgorithmTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4946D13D23A625A2003DF518 /* OCAlgorithmTest.m */; };
 		4946D14223A67F0A003DF518 /* KVCTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4946D14123A67F0A003DF518 /* KVCTestClass.m */; };
@@ -79,6 +81,10 @@
 		4941C4C223A4C60E00C49D7E /* iOSAlgorithmTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = iOSAlgorithmTest.cpp; sourceTree = "<group>"; };
 		49437D3B2372DF17000C8C49 /* TextUreTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextUreTestViewController.h; sourceTree = "<group>"; };
 		49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextUreTestViewController.m; sourceTree = "<group>"; };
+		4944358A23B3884F002B4742 /* MyListTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyListTest.cpp; sourceTree = "<group>"; };
+		4944358B23B3884F002B4742 /* MyListTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyListTest.hpp; sourceTree = "<group>"; };
+		4945FBE523B10255002E9401 /* HashCTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HashCTest.cpp; sourceTree = "<group>"; };
+		4945FBE623B10255002E9401 /* HashCTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashCTest.hpp; sourceTree = "<group>"; };
 		4946D13723A5C5FD003DF518 /* TestBridgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBridgeViewController.h; sourceTree = "<group>"; };
 		4946D13823A5C5FD003DF518 /* TestBridgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBridgeViewController.m; sourceTree = "<group>"; };
 		4946D13C23A625A2003DF518 /* OCAlgorithmTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCAlgorithmTest.h; sourceTree = "<group>"; };
@@ -243,6 +249,24 @@
 			path = TextureTest;
 			sourceTree = "<group>";
 		};
+		4944358923B38828002B4742 /* 链表 */ = {
+			isa = PBXGroup;
+			children = (
+				4944358A23B3884F002B4742 /* MyListTest.cpp */,
+				4944358B23B3884F002B4742 /* MyListTest.hpp */,
+			);
+			path = "链表";
+			sourceTree = "<group>";
+		};
+		4945FBE423B10232002E9401 /* 哈希表 */ = {
+			isa = PBXGroup;
+			children = (
+				4945FBE523B10255002E9401 /* HashCTest.cpp */,
+				4945FBE623B10255002E9401 /* HashCTest.hpp */,
+			);
+			path = "哈希表";
+			sourceTree = "<group>";
+		};
 		4946D13623A5C5CF003DF518 /* __bridge探索 */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +355,8 @@
 		4967EDE4235D488E00D7BCCF /* 数据结构&算法 */ = {
 			isa = PBXGroup;
 			children = (
+				4944358923B38828002B4742 /* 链表 */,
+				4945FBE423B10232002E9401 /* 哈希表 */,
 				4966B9E423A1EAD000E02099 /* 算法排序 */,
 				4967EDE5235D489800D7BCCF /* 二叉树 */,
 			);
@@ -592,6 +618,7 @@
 				4990BF1E21196E410000ADC5 /* Student.m in Sources */,
 				49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */,
 				4946D14223A67F0A003DF518 /* KVCTestClass.m in Sources */,
+				4944358C23B3884F002B4742 /* MyListTest.cpp in Sources */,
 				4966B9E623A1EAEE00E02099 /* SortTest.cpp in Sources */,
 				4962F6B12123FF1C00CB305F /* Car.m in Sources */,
 				4962F6AE2121863E00CB305F /* Person2.m in Sources */,
@@ -610,6 +637,7 @@
 				4990BF2B211AD9330000ADC5 /* Person1.m in Sources */,
 				493E0857238BCBED0079D893 /* DelegateViewController.m in Sources */,
 				495CE762208224F5000EA0E8 /* main.m in Sources */,
+				4945FBE723B10255002E9401 /* HashCTest.cpp in Sources */,
 				493E085C238BFC550079D893 /* BlockViewController.m in Sources */,
 				4990BAA1212FE8100044BCE1 /* WebPTestViewController.m in Sources */,
 				4990BF1621183AE80000ADC5 /* Person+Test.m in Sources */,
