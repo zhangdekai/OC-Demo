@@ -26,6 +26,11 @@ void uncaughtEX(NSException *exception) {
     
 }
 
+void signalHandle(int flag) {
+    NSLog(@"%s  flag:%d", __func__, flag);
+    
+}
+
 @implementation NSExceptionManager
 
 
@@ -35,7 +40,11 @@ void uncaughtEX(NSException *exception) {
     
     NSSetUncaughtExceptionHandler(&uncaughtEX);
     
+    //信号捕获异常
+    signal(SIGHUP, signalHandle);
+    
 }
+
 
 
 @end

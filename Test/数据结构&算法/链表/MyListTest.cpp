@@ -48,11 +48,15 @@ struct MListNode {
 };
 #pragma mark - 链表的实现
 class MyLinkedList {
+    MListNode *head;//头
+    MListNode *tail;//尾
+    int list_size;
+    
 public:
     
     /** Initialize your data structure here. */
     MyLinkedList() {
-        
+        list_size = 0;
         head = new MListNode(-1);
         tail = new MListNode(-1);
         head->next = tail;//初始化外部不可见节点，后续节点插入头尾之间。
@@ -62,7 +66,7 @@ public:
     /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
     int get(int index) {
         
-        if (index < 0 || index > list_size-1) {
+        if (index < 0 || index > list_size) {
             return -1;
         }
         MListNode *node = findPre(index);
@@ -104,15 +108,13 @@ public:
         MListNode *pre = findPre(index);
         MListNode *cur = pre->next;
         pre->next = pre->next->next;
+        list_size--;
         
         delete cur;
         
     }
     
 private:
-    MListNode *head;//头
-    MListNode *tail;//尾
-    int list_size = 0;
     
     MListNode* findPre(int index) {
         MListNode *p = head;

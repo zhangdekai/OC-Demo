@@ -31,6 +31,8 @@
 #import "KVCTestClass.h"
 
 
+#import "MyListTest.hpp"
+
 @interface ViewController ()<UITableViewDelegate>
 {
     __strong Person1 *person;//强引用
@@ -46,9 +48,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
+        
     
 
 }

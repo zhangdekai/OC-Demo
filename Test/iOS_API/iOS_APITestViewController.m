@@ -31,16 +31,27 @@
     
 //    NSURLProtocol *Protocol = [NSURLProtocol alloc]initWithRequest:<#(nonnull NSURLRequest *)#> cachedResponse:<#(nullable NSCachedURLResponse *)#> client:<#(nullable id<NSURLProtocolClient>)#>
     
+
+    NSData *data = [[NSData alloc]initWithContentsOfFile:@""];
     
-//    NSException
+    NSData *base64data = [data base64EncodedDataWithOptions:0];
     
-    //signal(<#int#>, <#void (*)(int)#>)
+    [base64data writeToFile:@"" atomically:YES];
     
-   // NSSetUncaughtExceptionHandler(&uncaughtEX);
-    
-//    CALayer
 
 }
+
+- (void)testLayer {
+    
+    CALayer *aLayer = [[CALayer alloc]init];
+    
+    CALayer *bLayer = [CALayer layer];
+    
+    CAEmitterLayer *cLayer = [[CAEmitterLayer alloc]init];
+    
+
+}
+
 
 - (void)TestNSProxy {
     

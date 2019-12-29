@@ -60,7 +60,6 @@ public:
                     HashNode *node  = new HashNode(key);
                     temp->next = node;
                     return;
-        
                 }
                 
                 temp = temp->next;

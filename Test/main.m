@@ -15,6 +15,7 @@
 #import <objc/runtime.h>
 
 
+
 void run(id self, SEL _cmd);
 
 int someClassAboutRuntimeAPI(void);//向前声明方法
