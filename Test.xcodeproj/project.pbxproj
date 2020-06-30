@@ -37,6 +37,7 @@
 		4966B9E823A1ED0100E02099 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4966B9E723A1ED0100E02099 /* UIKit.framework */; };
 		4966B9EA23A1ED0700E02099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4966B9E923A1ED0600E02099 /* Foundation.framework */; };
 		4967EDE8235D493D00D7BCCF /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4967EDE7235D493D00D7BCCF /* BinaryTreeNode.m */; };
+		49749DE324A5FC7E0024E825 /* NSObject+tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 49749DE224A5FC7E0024E825 /* NSObject+tools.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4990BAA1212FE8100044BCE1 /* WebPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4990BAA0212FE8100044BCE1 /* WebPTestViewController.m */; };
 		4990BAA5212FF2610044BCE1 /* AFNetworkingTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4990BAA4212FF2610044BCE1 /* AFNetworkingTestViewController.m */; };
 		4990BF1621183AE80000ADC5 /* Person+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4990BF1521183AE80000ADC5 /* Person+Test.m */; };
@@ -115,6 +116,8 @@
 		4966B9E923A1ED0600E02099 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4967EDE6235D493D00D7BCCF /* BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
 		4967EDE7235D493D00D7BCCF /* BinaryTreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
+		49749DE124A5FC7E0024E825 /* NSObject+tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+tools.h"; sourceTree = "<group>"; };
+		49749DE224A5FC7E0024E825 /* NSObject+tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+tools.m"; sourceTree = "<group>"; };
 		4990BA9F212FE8100044BCE1 /* WebPTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebPTestViewController.h; sourceTree = "<group>"; };
 		4990BAA0212FE8100044BCE1 /* WebPTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebPTestViewController.m; sourceTree = "<group>"; };
 		4990BAA3212FF2610044BCE1 /* AFNetworkingTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingTestViewController.h; sourceTree = "<group>"; };
@@ -308,6 +311,7 @@
 		495CE751208224F3000EA0E8 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				49749DDF24A5FC130024E825 /* NSObject */,
 				4946D13623A5C5CF003DF518 /* __bridge探索 */,
 				492554A4239DF3DD0008D6EF /* SDWebImage探索 */,
 				49415D71239A325700660C57 /* iOS_API */,
@@ -370,6 +374,15 @@
 				4967EDE7235D493D00D7BCCF /* BinaryTreeNode.m */,
 			);
 			path = "二叉树";
+			sourceTree = "<group>";
+		};
+		49749DDF24A5FC130024E825 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				49749DE124A5FC7E0024E825 /* NSObject+tools.h */,
+				49749DE224A5FC7E0024E825 /* NSObject+tools.m */,
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 		4990BA9E212FE7ED0044BCE1 /* WebP探索 */ = {
@@ -636,6 +649,7 @@
 				49C7497420AD74DC009DC12D /* TableViewCell.m in Sources */,
 				4990BF2B211AD9330000ADC5 /* Person1.m in Sources */,
 				493E0857238BCBED0079D893 /* DelegateViewController.m in Sources */,
+				49749DE324A5FC7E0024E825 /* NSObject+tools.m in Sources */,
 				495CE762208224F5000EA0E8 /* main.m in Sources */,
 				4945FBE723B10255002E9401 /* HashCTest.cpp in Sources */,
 				493E085C238BFC550079D893 /* BlockViewController.m in Sources */,

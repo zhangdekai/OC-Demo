@@ -8,6 +8,7 @@
 
 #import "TestBlock.h"
 #import "Person.h"
+#import "NSObject+tools.h"
 
 //#define WS(weakSelf) __weak typeof(&*self) weakSelf = self;
 
@@ -19,6 +20,15 @@ static int age1 = 10;
 
 typedef void (^Block)(void);
 
+@interface TestBlock ()
+
+@property (nonatomic, strong) Person *person001;
+
+
+@end
+
+
+
 @implementation TestBlock
 
 - (void)testBlock {
@@ -27,11 +37,13 @@ typedef void (^Block)(void);
     
 //    __weak typeof(self) weakSelf = self;
     
+//    self.person001 = [Person alloc];
+    
     
     
 //    [self test];
-    [self test05];
-//    [self test06];
+//    [self test05];
+    [self test06];
 
     
 }
@@ -42,11 +54,26 @@ typedef void (^Block)(void);
     
     __weak Person *weakP = person;
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    
+    NSLog(@"引用计数:%ld", [person retainCount1]);
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        
+        NSLog(@"weakP 引用计数:%ld", [weakP retainCount1]);
+
+        __strong Person *strongP = weakP;
+        
+        NSLog(@"当前线程：%@",[NSThread currentThread]);
         //3秒后——(null)
-        NSLog(@"3秒后——%@",weakP);//此处的weakP 是弱引用，block内部也是弱引用的 引用计数不变化;person对象没有强指针引用就会被释放
+        //此处的weakP 是弱引用，block内部也是弱引用的 引用计数不变化;person对象没有强指针引用就会被释放
+        NSLog(@"3秒后——weakP=%@",weakP);
+        
+        NSLog(@"3秒后——strongP=%@",person);//调用了self.person 强引用
+
     });
     NSLog(@"dispatch_after调用结束");
+    NSLog(@"---引用计数:%ld", [person retainCount1]);
+    // 实例对象person 在此处弱引用了，出了此 }(作用域)就被释放了呢
 }
 
 - (void)test05 {
@@ -54,8 +81,10 @@ typedef void (^Block)(void);
     Person *person = [[Person alloc]init];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
         //3秒后——<Person: 0x600003c28ce0>
-        NSLog(@"3秒后——%@",person);//此处的person 是强引用，block内部也是强引用的 引用计数+1，person被copy到堆上了
+        //此处的person 是强引用，block内部也是强引用的 引用计数+1，person被copy到堆上了
+        NSLog(@"3秒后——person = %@",person);
     });
     NSLog(@"dispatch_after调用结束");
 }
@@ -194,8 +223,7 @@ typedef void (^Block)(void);
     }
     return self;
 }
-+ (void) test2
-{
++ (void) test2 {
     NSLog(@"类方法test2");
 }
 

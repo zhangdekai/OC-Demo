@@ -44,8 +44,8 @@
     NSLog(@"didChangeValueForKey: - end");
 }
 
-- (void)dealloc
-{
+
+- (void)dealloc {
     NSLog(@"person 被释放了呢");
 }
 
