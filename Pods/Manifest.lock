@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.2.0)
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
+  - MMKV (1.1.2):
+    - MMKVCore (~> 1.1.2)
+  - MMKVCore (1.1.2)
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
     - PINCache/Core (= 3.0.1-beta.6)
@@ -55,6 +58,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - MMKV (~> 1.1.2)
   - SDWebImage
   - Texture
 
@@ -62,6 +66,8 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
   trunk:
+    - MMKV
+    - MMKVCore
     - PINCache
     - PINOperation
     - PINRemoteImage
@@ -70,12 +76,14 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  MMKV: 319aede3b690572ad00bada5831146c63da3d009
+  MMKVCore: ae976ab3f019a3e4448f884353e0557b324ff136
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   SDWebImage: 46a7f73228f84ce80990c786e4372cf4db5875ce
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
 
-PODFILE CHECKSUM: 310f00b3b9b1c95031819495b6d933e8bf5081cc
+PODFILE CHECKSUM: e5b4b532fe5aa2baaac80958858add91d737c930
 
 COCOAPODS: 1.9.2
