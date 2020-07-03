@@ -36,13 +36,15 @@ static SignalModelTest *manager = nil;
 
 //2:@synchronized
 +(instancetype)shareInstance {
-    @synchronized (self) {//加锁
+    @synchronized (self) {//加锁 , 防止多线程竞态访问
         if (!manager) {
             manager = [[self alloc]init];
         }
     }
     return manager;
+    
 }
+
 
 + (instancetype)allocWithZone:(struct _NSZone *)zone {
     static dispatch_once_t onceToken;
