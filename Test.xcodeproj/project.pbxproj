@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491A0F2324AF448700CC4189 /* TestAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491A0F2224AF448700CC4189 /* TestAViewController.m */; };
+		491A0F2624AF44A200CC4189 /* TestBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491A0F2524AF44A200CC4189 /* TestBViewController.m */; };
+		491A0F2924AF44AB00CC4189 /* TestCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491A0F2824AF44AB00CC4189 /* TestCViewController.m */; };
 		492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492554A6239DF4070008D6EF /* SDWebImageTestViewController.m */; };
 		493AE7BC23ACBDA800BDDACC /* SignalModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 493AE7BB23ACBDA800BDDACC /* SignalModelTest.m */; };
 		493CBEDB23A72F7600694F6E /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 493CBEDA23A72F7600694F6E /* Book.m */; };
@@ -63,6 +66,12 @@
 
 /* Begin PBXFileReference section */
 		19BC9BA4508E81CCE1B1B4B9 /* libPods-Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		491A0F2124AF448700CC4189 /* TestAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAViewController.h; sourceTree = "<group>"; };
+		491A0F2224AF448700CC4189 /* TestAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAViewController.m; sourceTree = "<group>"; };
+		491A0F2424AF44A200CC4189 /* TestBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBViewController.h; sourceTree = "<group>"; };
+		491A0F2524AF44A200CC4189 /* TestBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBViewController.m; sourceTree = "<group>"; };
+		491A0F2724AF44AB00CC4189 /* TestCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCViewController.h; sourceTree = "<group>"; };
+		491A0F2824AF44AB00CC4189 /* TestCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCViewController.m; sourceTree = "<group>"; };
 		492554A5239DF4070008D6EF /* SDWebImageTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageTestViewController.h; sourceTree = "<group>"; };
 		492554A6239DF4070008D6EF /* SDWebImageTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageTestViewController.m; sourceTree = "<group>"; };
 		493AE7BA23ACBDA800BDDACC /* SignalModelTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalModelTest.h; sourceTree = "<group>"; };
@@ -184,6 +193,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		491A0F1C24AF3D2400CC4189 /* Crash防护 */ = {
+			isa = PBXGroup;
+			children = (
+				49415D76239A5A0500660C57 /* NSExceptionManager.h */,
+				49415D77239A5A0500660C57 /* NSExceptionManager.m */,
+			);
+			path = "Crash防护";
+			sourceTree = "<group>";
+		};
+		491A0F2024AF445300CC4189 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				491A0F2124AF448700CC4189 /* TestAViewController.h */,
+				491A0F2224AF448700CC4189 /* TestAViewController.m */,
+				491A0F2424AF44A200CC4189 /* TestBViewController.h */,
+				491A0F2524AF44A200CC4189 /* TestBViewController.m */,
+				491A0F2724AF44AB00CC4189 /* TestCViewController.h */,
+				491A0F2824AF44AB00CC4189 /* TestCViewController.m */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
 		492554A4239DF3DD0008D6EF /* SDWebImage探索 */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,8 +266,6 @@
 			children = (
 				49415D73239A329900660C57 /* iOS_APITestViewController.h */,
 				49415D74239A329900660C57 /* iOS_APITestViewController.m */,
-				49415D76239A5A0500660C57 /* NSExceptionManager.h */,
-				49415D77239A5A0500660C57 /* NSExceptionManager.m */,
 				49415D79239B92B500660C57 /* YYWeakProxy.h */,
 				49415D7A239B92B500660C57 /* YYWeakProxy.m */,
 			);
@@ -311,6 +340,7 @@
 		495CE751208224F3000EA0E8 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				491A0F1C24AF3D2400CC4189 /* Crash防护 */,
 				49749DDF24A5FC130024E825 /* NSObject */,
 				4946D13623A5C5CF003DF518 /* __bridge探索 */,
 				492554A4239DF3DD0008D6EF /* SDWebImage探索 */,
@@ -334,6 +364,7 @@
 				495CE753208224F3000EA0E8 /* AppDelegate.m */,
 				495CE755208224F3000EA0E8 /* ViewController.h */,
 				495CE756208224F3000EA0E8 /* ViewController.m */,
+				491A0F2024AF445300CC4189 /* VCs */,
 				495CE758208224F3000EA0E8 /* Main.storyboard */,
 				495CE75B208224F5000EA0E8 /* Assets.xcassets */,
 				495CE75D208224F5000EA0E8 /* LaunchScreen.storyboard */,
@@ -623,8 +654,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4990BAA5212FF2610044BCE1 /* AFNetworkingTestViewController.m in Sources */,
+				491A0F2624AF44A200CC4189 /* TestBViewController.m in Sources */,
 				493AE7BC23ACBDA800BDDACC /* SignalModelTest.m in Sources */,
 				4946D13E23A625A2003DF518 /* OCAlgorithmTest.m in Sources */,
+				491A0F2324AF448700CC4189 /* TestAViewController.m in Sources */,
 				4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */,
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,
 				499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */,
@@ -656,6 +689,7 @@
 				4990BAA1212FE8100044BCE1 /* WebPTestViewController.m in Sources */,
 				4990BF1621183AE80000ADC5 /* Person+Test.m in Sources */,
 				49B91E6220FC671E00FC4892 /* TestBlock.m in Sources */,
+				491A0F2924AF44AB00CC4189 /* TestCViewController.m in Sources */,
 				4990BF2121196E730000ADC5 /* Student+Test.m in Sources */,
 				495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */,
 				49C7497720AD77FF009DC12D /* SubTableViewCell.m in Sources */,

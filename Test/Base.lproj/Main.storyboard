@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,23 +40,62 @@
                                     <action selector="testKVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTS-sr-4Wm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk4-Lt-BQv">
+                                <rect key="frame" x="41" y="210" width="65" height="30"/>
+                                <state key="normal" title="跳转A VC"/>
+                                <connections>
+                                    <action selector="jumpToAVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UO2-fW-EEj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Fk4-Lt-BQv" secondAttribute="trailing" constant="20" symbolic="YES" id="3fw-uH-EdH"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yhJ-qG-VCc" secondAttribute="trailing" constant="20" symbolic="YES" id="4Xf-0r-GQr"/>
+                            <constraint firstItem="Fk4-Lt-BQv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="41" id="9jY-eV-0Ky"/>
                             <constraint firstItem="yhJ-qG-VCc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="41" id="Ebg-u6-Sct"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QBP-0u-3qU" secondAttribute="trailing" constant="20" symbolic="YES" id="NQ2-7o-gBp"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aYE-u7-W5f" secondAttribute="trailing" constant="20" symbolic="YES" id="OS5-36-Ouj"/>
                             <constraint firstItem="aYE-u7-W5f" firstAttribute="top" secondItem="yPf-Qq-4Gz" secondAttribute="bottom" constant="77" id="Qte-8N-g4T"/>
                             <constraint firstItem="QBP-0u-3qU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="41" id="XVL-0u-NLX"/>
                             <constraint firstItem="QBP-0u-3qU" firstAttribute="top" secondItem="yhJ-qG-VCc" secondAttribute="bottom" constant="8" id="Zpc-Hd-YIW"/>
                             <constraint firstItem="aYE-u7-W5f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="41" id="lyB-t0-Czd"/>
                             <constraint firstItem="yhJ-qG-VCc" firstAttribute="top" secondItem="aYE-u7-W5f" secondAttribute="bottom" constant="17" id="mWl-tk-PnS"/>
+                            <constraint firstItem="Fk4-Lt-BQv" firstAttribute="top" secondItem="QBP-0u-3qU" secondAttribute="bottom" constant="18" id="zS4-t9-rK2"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-476" y="64"/>
+            <point key="canvasLocation" x="-769" y="-36"/>
+        </scene>
+        <!--TestA View Controller-->
+        <scene sceneID="Igg-Ju-8Qx">
+            <objects>
+                <viewController storyboardIdentifier="TestAViewController" id="HYb-94-Dna" customClass="TestAViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GDd-Xg-2S2"/>
+                        <viewControllerLayoutGuide type="bottom" id="gog-gE-h9o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="adI-TI-bGd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHp-7c-dby">
+                                <rect key="frame" x="136.5" y="200" width="102" height="30"/>
+                                <state key="normal" title="测试Crash防护"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MHp-7c-dby" firstAttribute="top" secondItem="GDd-Xg-2S2" secondAttribute="bottom" constant="200" id="pQv-9o-dXN"/>
+                            <constraint firstItem="MHp-7c-dby" firstAttribute="centerX" secondItem="adI-TI-bGd" secondAttribute="centerX" id="tQJ-do-zuh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7U-4u-qZ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-70" y="-36"/>
         </scene>
     </scenes>
 </document>

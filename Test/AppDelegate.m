@@ -36,6 +36,8 @@
     
     [self.window makeKeyAndVisible];
     
+    
+    // Crash Test
     [NSExceptionManager getCrash];
     
     return YES;

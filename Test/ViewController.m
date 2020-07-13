@@ -33,6 +33,9 @@
 
 #import "MyListTest.hpp"
 
+#import "TestAViewController.h"
+
+
 @interface ViewController ()<UITableViewDelegate>
 {
     __strong Person1 *person;//强引用
@@ -74,7 +77,15 @@
     [kvc testKVC];
 }
 
-
+- (IBAction)jumpToAVC:(id)sender {
+    
+//    [UIStoryboard alloc]ini
+    
+    TestAViewController *VC = [[TestAViewController alloc]initWithNibName:@"TestAViewController" bundle:[NSBundle mainBundle]];
+    [self.navigationController pushViewController:VC animated:YES];
+    
+    
+}
 
 
 
