@@ -61,6 +61,26 @@
 		49B91E6220FC671E00FC4892 /* TestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B91E6120FC671E00FC4892 /* TestBlock.m */; };
 		49C7497420AD74DC009DC12D /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7497320AD74DC009DC12D /* TableViewCell.m */; };
 		49C7497720AD77FF009DC12D /* SubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7497620AD77FF009DC12D /* SubTableViewCell.m */; };
+		49CB9DB125E796B30006F119 /* MJBaseDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D8325E796B20006F119 /* MJBaseDemo.m */; };
+		49CB9DB225E796B30006F119 /* MutexDemo3.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D8425E796B20006F119 /* MutexDemo3.m */; };
+		49CB9DB325E796B30006F119 /* SemaphoreDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D8525E796B20006F119 /* SemaphoreDemo.m */; };
+		49CB9DB425E796B30006F119 /* MutexDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D8625E796B20006F119 /* MutexDemo.m */; };
+		49CB9DB525E796B30006F119 /* SynchronizedDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D8725E796B20006F119 /* SynchronizedDemo.m */; };
+		49CB9DB625E796B30006F119 /* NSConditionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D8925E796B20006F119 /* NSConditionDemo.m */; };
+		49CB9DB725E796B30006F119 /* NSConditionLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D8A25E796B20006F119 /* NSConditionLockDemo.m */; };
+		49CB9DB825E796B30006F119 /* NSLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D8B25E796B20006F119 /* NSLockDemo.m */; };
+		49CB9DB925E796B30006F119 /* OSUnfairLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D8F25E796B20006F119 /* OSUnfairLockDemo.m */; };
+		49CB9DBA25E796B30006F119 /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D9725E796B20006F119 /* OSSpinLockDemo.m */; };
+		49CB9DBB25E796B30006F119 /* SerialQueueDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D9925E796B20006F119 /* SerialQueueDemo.m */; };
+		49CB9DBC25E796B30006F119 /* MutexDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D9A25E796B20006F119 /* MutexDemo2.m */; };
+		49CB9DBD25E796B30006F119 /* OSSpinLockDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D9B25E796B20006F119 /* OSSpinLockDemo2.m */; };
+		49CB9DBE25E796B30006F119 /* SafeQuestionLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D9D25E796B20006F119 /* SafeQuestionLockViewController.m */; };
+		49CB9DBF25E796B30006F119 /* Thread&RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9DA025E796B30006F119 /* Thread&RunloopViewController.m */; };
+		49CB9DC025E796B30006F119 /* DispatchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9DA425E796B30006F119 /* DispatchGroupViewController.m */; };
+		49CB9DC125E796B30006F119 /* Sync&ASyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9DA625E796B30006F119 /* Sync&ASyncViewController.m */; };
+		49CB9DC225E796B30006F119 /* DispatchBarrierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9DAA25E796B30006F119 /* DispatchBarrierViewController.m */; };
+		49CB9DC325E796B30006F119 /* SafeQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9DAD25E796B30006F119 /* SafeQuestionViewController.m */; };
+		49CB9DC425E796B30006F119 /* SafeReadWriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9DAF25E796B30006F119 /* SafeReadWriteViewController.m */; };
 		A65317C0F21C3B27266DD3EC /* libPods-Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BC9BA4508E81CCE1B1B4B9 /* libPods-Test.a */; };
 /* End PBXBuildFile section */
 
@@ -165,6 +185,46 @@
 		49C7497320AD74DC009DC12D /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		49C7497520AD77FF009DC12D /* SubTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubTableViewCell.h; sourceTree = "<group>"; };
 		49C7497620AD77FF009DC12D /* SubTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubTableViewCell.m; sourceTree = "<group>"; };
+		49CB9D8325E796B20006F119 /* MJBaseDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBaseDemo.m; sourceTree = "<group>"; };
+		49CB9D8425E796B20006F119 /* MutexDemo3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutexDemo3.m; sourceTree = "<group>"; };
+		49CB9D8525E796B20006F119 /* SemaphoreDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SemaphoreDemo.m; sourceTree = "<group>"; };
+		49CB9D8625E796B20006F119 /* MutexDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutexDemo.m; sourceTree = "<group>"; };
+		49CB9D8725E796B20006F119 /* SynchronizedDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynchronizedDemo.m; sourceTree = "<group>"; };
+		49CB9D8825E796B20006F119 /* OSSpinLockDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSpinLockDemo.h; sourceTree = "<group>"; };
+		49CB9D8925E796B20006F119 /* NSConditionDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSConditionDemo.m; sourceTree = "<group>"; };
+		49CB9D8A25E796B20006F119 /* NSConditionLockDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockDemo.m; sourceTree = "<group>"; };
+		49CB9D8B25E796B20006F119 /* NSLockDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLockDemo.m; sourceTree = "<group>"; };
+		49CB9D8C25E796B20006F119 /* OSSpinLockDemo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSpinLockDemo2.h; sourceTree = "<group>"; };
+		49CB9D8D25E796B20006F119 /* MutexDemo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutexDemo2.h; sourceTree = "<group>"; };
+		49CB9D8E25E796B20006F119 /* SerialQueueDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerialQueueDemo.h; sourceTree = "<group>"; };
+		49CB9D8F25E796B20006F119 /* OSUnfairLockDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSUnfairLockDemo.m; sourceTree = "<group>"; };
+		49CB9D9025E796B20006F119 /* MJBaseDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBaseDemo.h; sourceTree = "<group>"; };
+		49CB9D9125E796B20006F119 /* SynchronizedDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynchronizedDemo.h; sourceTree = "<group>"; };
+		49CB9D9225E796B20006F119 /* MutexDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutexDemo.h; sourceTree = "<group>"; };
+		49CB9D9325E796B20006F119 /* SemaphoreDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SemaphoreDemo.h; sourceTree = "<group>"; };
+		49CB9D9425E796B20006F119 /* MutexDemo3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutexDemo3.h; sourceTree = "<group>"; };
+		49CB9D9525E796B20006F119 /* NSConditionLockDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSConditionLockDemo.h; sourceTree = "<group>"; };
+		49CB9D9625E796B20006F119 /* NSConditionDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSConditionDemo.h; sourceTree = "<group>"; };
+		49CB9D9725E796B20006F119 /* OSSpinLockDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo.m; sourceTree = "<group>"; };
+		49CB9D9825E796B20006F119 /* OSUnfairLockDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSUnfairLockDemo.h; sourceTree = "<group>"; };
+		49CB9D9925E796B20006F119 /* SerialQueueDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerialQueueDemo.m; sourceTree = "<group>"; };
+		49CB9D9A25E796B20006F119 /* MutexDemo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutexDemo2.m; sourceTree = "<group>"; };
+		49CB9D9B25E796B20006F119 /* OSSpinLockDemo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo2.m; sourceTree = "<group>"; };
+		49CB9D9C25E796B20006F119 /* NSLockDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLockDemo.h; sourceTree = "<group>"; };
+		49CB9D9D25E796B20006F119 /* SafeQuestionLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeQuestionLockViewController.m; sourceTree = "<group>"; };
+		49CB9D9E25E796B20006F119 /* SafeQuestionLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeQuestionLockViewController.h; sourceTree = "<group>"; };
+		49CB9DA025E796B30006F119 /* Thread&RunloopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Thread&RunloopViewController.m"; sourceTree = "<group>"; };
+		49CB9DA125E796B30006F119 /* Thread&RunloopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Thread&RunloopViewController.h"; sourceTree = "<group>"; };
+		49CB9DA325E796B30006F119 /* DispatchGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchGroupViewController.h; sourceTree = "<group>"; };
+		49CB9DA425E796B30006F119 /* DispatchGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupViewController.m; sourceTree = "<group>"; };
+		49CB9DA625E796B30006F119 /* Sync&ASyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Sync&ASyncViewController.m"; sourceTree = "<group>"; };
+		49CB9DA725E796B30006F119 /* Sync&ASyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sync&ASyncViewController.h"; sourceTree = "<group>"; };
+		49CB9DA925E796B30006F119 /* DispatchBarrierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchBarrierViewController.h; sourceTree = "<group>"; };
+		49CB9DAA25E796B30006F119 /* DispatchBarrierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchBarrierViewController.m; sourceTree = "<group>"; };
+		49CB9DAC25E796B30006F119 /* SafeQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeQuestionViewController.h; sourceTree = "<group>"; };
+		49CB9DAD25E796B30006F119 /* SafeQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeQuestionViewController.m; sourceTree = "<group>"; };
+		49CB9DAF25E796B30006F119 /* SafeReadWriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeReadWriteViewController.m; sourceTree = "<group>"; };
+		49CB9DB025E796B30006F119 /* SafeReadWriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeReadWriteViewController.h; sourceTree = "<group>"; };
 		63063FD3A09742A0721FFA8D /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		A82F59E1108743402F090498 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -340,6 +400,7 @@
 		495CE751208224F3000EA0E8 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				49CB9D8025E796850006F119 /* iOS——多线程 */,
 				491A0F1C24AF3D2400CC4189 /* Crash防护 */,
 				49749DDF24A5FC130024E825 /* NSObject */,
 				4946D13623A5C5CF003DF518 /* __bridge探索 */,
@@ -545,6 +606,117 @@
 			path = "Runloop探索";
 			sourceTree = "<group>";
 		};
+		49CB9D8025E796850006F119 /* iOS——多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				49CB9DAB25E796B30006F119 /* 安全隐患-存取钱 */,
+				49CB9D8125E796B20006F119 /* 存取钱加锁-安全 */,
+				49CB9DAE25E796B30006F119 /* 读写安全 */,
+				49CB9DA525E796B30006F119 /* 同步异步 */,
+				49CB9D9F25E796B30006F119 /* 线程&runloop */,
+				49CB9DA825E796B30006F119 /* dispatch_api */,
+				49CB9DA225E796B30006F119 /* dispatch_group */,
+			);
+			path = "iOS——多线程";
+			sourceTree = "<group>";
+		};
+		49CB9D8125E796B20006F119 /* 存取钱加锁-安全 */ = {
+			isa = PBXGroup;
+			children = (
+				49CB9D8225E796B20006F119 /* Locks */,
+				49CB9D9D25E796B20006F119 /* SafeQuestionLockViewController.m */,
+				49CB9D9E25E796B20006F119 /* SafeQuestionLockViewController.h */,
+			);
+			path = "存取钱加锁-安全";
+			sourceTree = "<group>";
+		};
+		49CB9D8225E796B20006F119 /* Locks */ = {
+			isa = PBXGroup;
+			children = (
+				49CB9D8325E796B20006F119 /* MJBaseDemo.m */,
+				49CB9D8425E796B20006F119 /* MutexDemo3.m */,
+				49CB9D8525E796B20006F119 /* SemaphoreDemo.m */,
+				49CB9D8625E796B20006F119 /* MutexDemo.m */,
+				49CB9D8725E796B20006F119 /* SynchronizedDemo.m */,
+				49CB9D8825E796B20006F119 /* OSSpinLockDemo.h */,
+				49CB9D8925E796B20006F119 /* NSConditionDemo.m */,
+				49CB9D8A25E796B20006F119 /* NSConditionLockDemo.m */,
+				49CB9D8B25E796B20006F119 /* NSLockDemo.m */,
+				49CB9D8C25E796B20006F119 /* OSSpinLockDemo2.h */,
+				49CB9D8D25E796B20006F119 /* MutexDemo2.h */,
+				49CB9D8E25E796B20006F119 /* SerialQueueDemo.h */,
+				49CB9D8F25E796B20006F119 /* OSUnfairLockDemo.m */,
+				49CB9D9025E796B20006F119 /* MJBaseDemo.h */,
+				49CB9D9125E796B20006F119 /* SynchronizedDemo.h */,
+				49CB9D9225E796B20006F119 /* MutexDemo.h */,
+				49CB9D9325E796B20006F119 /* SemaphoreDemo.h */,
+				49CB9D9425E796B20006F119 /* MutexDemo3.h */,
+				49CB9D9525E796B20006F119 /* NSConditionLockDemo.h */,
+				49CB9D9625E796B20006F119 /* NSConditionDemo.h */,
+				49CB9D9725E796B20006F119 /* OSSpinLockDemo.m */,
+				49CB9D9825E796B20006F119 /* OSUnfairLockDemo.h */,
+				49CB9D9925E796B20006F119 /* SerialQueueDemo.m */,
+				49CB9D9A25E796B20006F119 /* MutexDemo2.m */,
+				49CB9D9B25E796B20006F119 /* OSSpinLockDemo2.m */,
+				49CB9D9C25E796B20006F119 /* NSLockDemo.h */,
+			);
+			path = Locks;
+			sourceTree = "<group>";
+		};
+		49CB9D9F25E796B30006F119 /* 线程&runloop */ = {
+			isa = PBXGroup;
+			children = (
+				49CB9DA025E796B30006F119 /* Thread&RunloopViewController.m */,
+				49CB9DA125E796B30006F119 /* Thread&RunloopViewController.h */,
+			);
+			path = "线程&runloop";
+			sourceTree = "<group>";
+		};
+		49CB9DA225E796B30006F119 /* dispatch_group */ = {
+			isa = PBXGroup;
+			children = (
+				49CB9DA325E796B30006F119 /* DispatchGroupViewController.h */,
+				49CB9DA425E796B30006F119 /* DispatchGroupViewController.m */,
+			);
+			path = dispatch_group;
+			sourceTree = "<group>";
+		};
+		49CB9DA525E796B30006F119 /* 同步异步 */ = {
+			isa = PBXGroup;
+			children = (
+				49CB9DA625E796B30006F119 /* Sync&ASyncViewController.m */,
+				49CB9DA725E796B30006F119 /* Sync&ASyncViewController.h */,
+			);
+			path = "同步异步";
+			sourceTree = "<group>";
+		};
+		49CB9DA825E796B30006F119 /* dispatch_api */ = {
+			isa = PBXGroup;
+			children = (
+				49CB9DA925E796B30006F119 /* DispatchBarrierViewController.h */,
+				49CB9DAA25E796B30006F119 /* DispatchBarrierViewController.m */,
+			);
+			path = dispatch_api;
+			sourceTree = "<group>";
+		};
+		49CB9DAB25E796B30006F119 /* 安全隐患-存取钱 */ = {
+			isa = PBXGroup;
+			children = (
+				49CB9DAC25E796B30006F119 /* SafeQuestionViewController.h */,
+				49CB9DAD25E796B30006F119 /* SafeQuestionViewController.m */,
+			);
+			path = "安全隐患-存取钱";
+			sourceTree = "<group>";
+		};
+		49CB9DAE25E796B30006F119 /* 读写安全 */ = {
+			isa = PBXGroup;
+			children = (
+				49CB9DAF25E796B30006F119 /* SafeReadWriteViewController.m */,
+				49CB9DB025E796B30006F119 /* SafeReadWriteViewController.h */,
+			);
+			path = "读写安全";
+			sourceTree = "<group>";
+		};
 		5EAFA43FE726B378EBC392F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -654,47 +826,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				4990BAA5212FF2610044BCE1 /* AFNetworkingTestViewController.m in Sources */,
+				49CB9DB525E796B30006F119 /* SynchronizedDemo.m in Sources */,
 				491A0F2624AF44A200CC4189 /* TestBViewController.m in Sources */,
+				49CB9DB725E796B30006F119 /* NSConditionLockDemo.m in Sources */,
 				493AE7BC23ACBDA800BDDACC /* SignalModelTest.m in Sources */,
+				49CB9DC325E796B30006F119 /* SafeQuestionViewController.m in Sources */,
 				4946D13E23A625A2003DF518 /* OCAlgorithmTest.m in Sources */,
+				49CB9DBE25E796B30006F119 /* SafeQuestionLockViewController.m in Sources */,
+				49CB9DB225E796B30006F119 /* MutexDemo3.m in Sources */,
 				491A0F2324AF448700CC4189 /* TestAViewController.m in Sources */,
 				4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */,
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,
+				49CB9DBF25E796B30006F119 /* Thread&RunloopViewController.m in Sources */,
 				499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */,
 				4990BF1E21196E410000ADC5 /* Student.m in Sources */,
 				49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */,
 				4946D14223A67F0A003DF518 /* KVCTestClass.m in Sources */,
 				4944358C23B3884F002B4742 /* MyListTest.cpp in Sources */,
 				4966B9E623A1EAEE00E02099 /* SortTest.cpp in Sources */,
+				49CB9DB425E796B30006F119 /* MutexDemo.m in Sources */,
 				4962F6B12123FF1C00CB305F /* Car.m in Sources */,
+				49CB9DB125E796B30006F119 /* MJBaseDemo.m in Sources */,
 				4962F6AE2121863E00CB305F /* Person2.m in Sources */,
 				4990BF2821198EE10000ADC5 /* NSObject+addProperty.m in Sources */,
 				49415D75239A329900660C57 /* iOS_APITestViewController.m in Sources */,
 				49934E3B21479A4C00DAB4D5 /* ChangeAppIconViewController.m in Sources */,
+				49CB9DBB25E796B30006F119 /* SerialQueueDemo.m in Sources */,
 				495CE757208224F3000EA0E8 /* ViewController.m in Sources */,
 				4962F6B421251C3000CB305F /* Student1.m in Sources */,
+				49CB9DC025E796B30006F119 /* DispatchGroupViewController.m in Sources */,
 				499FBF652110556900E08F8C /* Person.m in Sources */,
+				49CB9DB825E796B30006F119 /* NSLockDemo.m in Sources */,
 				4962F6B72126CC5500CB305F /* RutimeMethodAndClassApi.m in Sources */,
 				49415D78239A5A0500660C57 /* NSExceptionManager.m in Sources */,
+				49CB9DBA25E796B30006F119 /* OSSpinLockDemo.m in Sources */,
+				49CB9DB325E796B30006F119 /* SemaphoreDemo.m in Sources */,
 				499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */,
 				492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */,
+				49CB9DC125E796B30006F119 /* Sync&ASyncViewController.m in Sources */,
 				4941C4C323A4C60E00C49D7E /* iOSAlgorithmTest.cpp in Sources */,
+				49CB9DBD25E796B30006F119 /* OSSpinLockDemo2.m in Sources */,
 				49C7497420AD74DC009DC12D /* TableViewCell.m in Sources */,
 				4990BF2B211AD9330000ADC5 /* Person1.m in Sources */,
 				493E0857238BCBED0079D893 /* DelegateViewController.m in Sources */,
 				49749DE324A5FC7E0024E825 /* NSObject+tools.m in Sources */,
 				495CE762208224F5000EA0E8 /* main.m in Sources */,
 				4945FBE723B10255002E9401 /* HashCTest.cpp in Sources */,
+				49CB9DBC25E796B30006F119 /* MutexDemo2.m in Sources */,
 				493E085C238BFC550079D893 /* BlockViewController.m in Sources */,
 				4990BAA1212FE8100044BCE1 /* WebPTestViewController.m in Sources */,
 				4990BF1621183AE80000ADC5 /* Person+Test.m in Sources */,
 				49B91E6220FC671E00FC4892 /* TestBlock.m in Sources */,
+				49CB9DB625E796B30006F119 /* NSConditionDemo.m in Sources */,
+				49CB9DC225E796B30006F119 /* DispatchBarrierViewController.m in Sources */,
 				491A0F2924AF44AB00CC4189 /* TestCViewController.m in Sources */,
+				49CB9DB925E796B30006F119 /* OSUnfairLockDemo.m in Sources */,
 				4990BF2121196E730000ADC5 /* Student+Test.m in Sources */,
 				495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */,
 				49C7497720AD77FF009DC12D /* SubTableViewCell.m in Sources */,
 				49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */,
 				4967EDE8235D493D00D7BCCF /* BinaryTreeNode.m in Sources */,
+				49CB9DC425E796B30006F119 /* SafeReadWriteViewController.m in Sources */,
 				493CBEDB23A72F7600694F6E /* Book.m in Sources */,
 				499FBF622110551300E08F8C /* KVOExploreViewController.m in Sources */,
 			);
