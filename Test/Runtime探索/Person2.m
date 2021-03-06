@@ -29,7 +29,7 @@ void cook(id self, SEL _cmd,id Num)//方法有问题
     NSLog(@"%@的%@方法动态实现了,参数为%@",self,NSStringFromSelector(_cmd),Num);
 }
 
-// 方法调用 之 2：动态解析方法 阶段
+//MARK： - 方法调用 之 2：动态解析方法 阶段
 + (BOOL)resolveInstanceMethod:(SEL)sel
 {
     
@@ -68,14 +68,13 @@ void cook(id self, SEL _cmd,id Num)//方法有问题
     
 }
 
-// 方法调用 之 2：动态解析方法 阶段
 + (BOOL)resolveClassMethod:(SEL)sel
 {
     
     return [super resolveClassMethod:sel];
 }
 
-// 方法调用 之 3：消息转发 阶段  最后一个阶段
+//MARK: - 方法调用 之 3：消息转发 阶段  最后一个阶段
 
 - (id)forwardingTargetForSelector:(SEL)aSelector
 {

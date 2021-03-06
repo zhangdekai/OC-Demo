@@ -9,10 +9,7 @@
 #import "NSExceptionManager.h"
 
 /*
- 
  可以用来捕获crash 上传crash 日志
- 
- 
  */
 
 void uncaughtEX(NSException *exception) {
@@ -53,7 +50,7 @@ void signalHandle(int flag) {
     NSSetUncaughtExceptionHandler(&uncaughtEX);
     
     // 2:信号捕获异常
-//    signal(SIGHUP, signalHandle);
+    signal(SIGHUP, signalHandle);
     
 }
 

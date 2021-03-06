@@ -21,7 +21,7 @@
 using namespace std;
 
 #pragma mark 交换swap 三种
-//交换
+//MARK: - temp 交换
 void swap(int &a, int &b) {
     int temp;
     temp = a;
@@ -29,13 +29,23 @@ void swap(int &a, int &b) {
     b = temp;
 }
 
-void swap1(int a, int b) {//加法交换化
+//MARK: -加法交换化
+void swap1(int a, int b) {
     a = a + b;
     b = a - b;
     a = a - b;
 }
 
-void swap2(int a, int b) {//3.异或（相同为0，不同为1. 可以理解为不进位加法）
+//MARK: - 异或交换（相同为0，不同为1. 可以理解为不进位加法）
+void swap2(int a, int b) {// 3 , 5  ==> 5 , 3
+    //转为二进制
+    //011 = 3 = a
+    //101 = 5 = b
+    //110 = a
+    //101 = b
+    //011 = b = 3
+    //110 = a
+    //101 = a = 5
     a = a ^ b;
     b = a ^ b;
     a = a ^ b;
@@ -44,13 +54,15 @@ void swap2(int a, int b) {//3.异或（相同为0，不同为1. 可以理解为�
 #pragma mark 冒泡排序：O(n^2)  O(1)
 /*
  冒泡排序：O(n^2)  O(1)
- 从第一个元素开始遍历，比较当前元素跟下一个元素的大小，如果不符合排序，交换位置。结束最后一个元素后，再从头开始不断遍历，直到完成排序。
- *  【冒泡排序】：相邻元素两两比较，比较完一趟，最值出现在末尾
+ 从第一个元素开始遍历，比较当前元素跟下一个元素的大小，
+ 如果不符合排序，交换位置。
+ 结束最后一个元素后，再从头开始不断遍历，直到完成排序。
+ 
+  *  【冒泡排序】：相邻元素两两比较，比较完一趟，最值出现在末尾
   *  第1趟：依次比较相邻的两个数，不断交换（小数放前，大数放后）逐个推进，最值最后出现在第n个元素位置
   *  第2趟：依次比较相邻的两个数，不断交换（小数放前，大数放后）逐个推进，最值最后出现在第n-1个元素位置
   *   ……   ……
   *  第n-1趟：依次比较相邻的两个数，不断交换（小数放前，大数放后）逐个推进，最值最后出现在第2个元素位置
-
  */
 void buddle_sort(int a[], int n) {
     
@@ -72,7 +84,8 @@ void buddle_sort(int a[], int n) {
 /*
  选择排序：O(n^2) O(1)
  
- 维护一段有序数列，同时遍历待排序的数列，通常找最小的元素插入到有序数列中。重复直到待排序数列没有剩余元素。
+ 维护一段有序数列，同时遍历待排序的数列，通常找最小的元素插入到有序数列中。
+ 重复直到待排序数列没有剩余元素。
  
   *  【选择排序】：最值出现在起始端
   *
@@ -80,7 +93,6 @@ void buddle_sort(int a[], int n) {
   *  第2趟：在剩下n-1个数中找到最小(大)数与第二个数交换位置
   *  重复这样的操作...依次与第三个、第四个...数交换位置
   *  第n-1趟，最终可实现数据的升序（降序）排列。
-
  */
 
 void select(int arr[], int s){
@@ -105,7 +117,9 @@ void select(int arr[], int s){
  
  利用了 divide & conquer 的思想。（分而治之）
 
- 在序列中任意选择一个数，然后把序列分成比这个数大的和比这个数小的两个子序列。不断重复以上步骤完成排序。
+ 1:在序列中任意选择一个数，
+ 2:然后把序列分成比这个数大的和比这个数小的两个子序列。
+ 3:不断重复以上步骤完成排序。
  */
 
 //快速排序
@@ -129,7 +143,8 @@ int partition(int arr[], int low, int high) {
     arr[low] = key;
     return low;
 }
-#pragma mark 快速排序：递归试
+
+#pragma mark - 快速排序：递归试
 //快速排序：递归试
 void quick_sort(int arr[], int low, int high) {
     int pos;
@@ -140,7 +155,7 @@ void quick_sort(int arr[], int low, int high) {
     }
 }
 
-#pragma mark 快速排序：非递归
+#pragma mark - 快速排序：非递归
 //快速排序：非递归
 void quick_sort2(int num[], int low, int high) {
     stack<int> s;
@@ -172,7 +187,7 @@ void quick_sort2(int num[], int low, int high) {
     }
 }
 
-#pragma mark 插入排序
+#pragma mark - 插入排序
 /*
  插入排序：最优情况是正向排序 -- O(n) 最差是逆向排序 O(n^2)  O(1)
  
@@ -194,7 +209,7 @@ void insert_sort(int a[], int n) {
         }
     }
 }
-#pragma mark 希尔排序：
+#pragma mark - 希尔排序：
 /*
  希尔排序：
  
@@ -203,8 +218,7 @@ void insert_sort(int a[], int n) {
  选择一个间距，将序列分成很多子序列并进行插入排序。降低间距并重复插入排序，直到间距降为1完成排序。
  */
 
-void shell_sort(int a[], int n)
-{
+void shell_sort(int a[], int n) {
     int gap;
     for( gap = n/2; gap > 0; gap /= 2){
         for(int i = gap; i < n; i ++){
@@ -215,7 +229,7 @@ void shell_sort(int a[], int n)
     }
 }
 
-#pragma mark 归并排序
+#pragma mark - 归并排序
 /*
  归并排序: O(n log n)  空间：O(n)
  利用了 divde & conquer 的思维方式，有时候也称为合并排序。
@@ -253,12 +267,6 @@ void merge_sort(int a[],int low, int high, int tmp[]) {
         merge(a, low, mid, high, tmp);
     }
 }
-
-
-
-
-
-
 
 
 /*

@@ -28,7 +28,7 @@ int main(int argc, char * argv[]) {
         
         UIView *view = [UIView alloc];
         view.layer.masksToBounds = YES;
-        view.frame
+//        view.frame
         
         CALayer *layer1 = [CALayer alloc];
 //        layer1.contents

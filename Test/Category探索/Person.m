@@ -8,6 +8,13 @@
 
 #import "Person.h"
 
+@interface Person ()
+
+@property(nonatomic, copy) NSArray *array;
+
+
+@end
+
 @implementation Person
 
 + (void)load

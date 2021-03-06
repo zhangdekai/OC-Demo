@@ -147,7 +147,6 @@ typedef void (^Block)(void);
         NSLog(@"this is block,a = %d,b = %d",a,b);
         NSLog(@"this is block,age = %d",age);
         NSLog(@"this is block,age = %d",age1);
-        
     };
     age = 20;
     age1 = 30;
@@ -188,11 +187,7 @@ typedef void (^Block)(void);
 }
 
 
-
-
-
-- (instancetype)initWithName:(NSString *)name
-{
+- (instancetype)initWithName:(NSString *)name {
     if (self = [super init]) {
         self.name = name;
         

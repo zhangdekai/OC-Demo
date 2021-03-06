@@ -34,10 +34,10 @@
 #import "MyListTest.hpp"
 
 #import "TestAViewController.h"
+#import "DispatchAPITestViewController.h"
 
 
-@interface ViewController ()<UITableViewDelegate>
-{
+@interface ViewController ()<UITableViewDelegate> {
     __strong Person1 *person;//强引用
     __weak Person1 *person1;
 }
@@ -51,12 +51,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        
     
-
+    Student1 *st1 = [[Student1 alloc]init];
+    [st1 driving];
+    
 }
-
-
 
 - (IBAction)testBlock:(id)sender {
     
@@ -64,6 +63,7 @@
        
     [block testBlock];
 }
+
 - (IBAction)testBridge:(id)sender {
     
     TestBridgeViewController *vc = [[TestBridgeViewController alloc]init];
@@ -87,6 +87,11 @@
     
 }
 
+- (IBAction)jumptoThread:(id)sender {
+    
+    DispatchAPITestViewController *vc = [[DispatchAPITestViewController alloc]init];
+    [self presentViewController:vc animated:true completion:nil];
+}
 
 
 

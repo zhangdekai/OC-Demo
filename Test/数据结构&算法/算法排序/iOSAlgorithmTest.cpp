@@ -16,7 +16,7 @@
 int maxCommonDivisor(int a, int b) {
     
     int max = 0;
-    for (int i = 1; i <=b; i++) {
+    for (int i = 1; i <= b; i++) {
         if (a % i == 0 && b % i == 0) {
             max = i;
         }
@@ -34,7 +34,8 @@ int maxCommonDivisor1(int a, int b) {
     }
     return b;
 }
-#pragma mark 模拟栈，特点：先进后出
+
+#pragma mark - 模拟栈，特点：先进后出
 //模拟栈，特点：先进后出
 static int data[1024];
 static int count = 0;
@@ -79,10 +80,10 @@ void testStack() {
         pop();
     }
 }
-#pragma mark 二分查找 最适合快速查找 O(log2n)
+#pragma mark - 二分查找 最适合快速查找 O(log2n)
 
 /* 原理：https://blog.csdn.net/NathanniuBee/article/details/83096258
- *  折半查找：优化查找时间（不用遍历全部数据）
+  *  折半查找：优化查找时间（不用遍历全部数据）
   *
   *  折半查找的原理：
   *   1> 数组必须是有序的
@@ -113,7 +114,7 @@ int findKeyIndex(int *arr, int length, int key) {
     return -1;
 }
 
-#pragma mark 字符串反转
+#pragma mark - 字符串反转
 /*
  给定字符串 "hello,world",实现将其反转。输出结果：dlrow,olleh
  */
@@ -132,9 +133,9 @@ void char_reverse(char *cha) {
         *(begin++) = *end;
         *(end--) = temp;
     }
-    
 }
-#pragma mark 合并有序数组
+
+#pragma mark - 合并有序数组
 /*
  给定两个有序整数数组 nums1 和 nums2，将 nums2 合并到 nums1 中，使得 num1 成为一个有序数组。
 

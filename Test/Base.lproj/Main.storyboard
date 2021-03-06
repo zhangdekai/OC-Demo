@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,32 +20,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYE-u7-W5f">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYE-u7-W5f">
                                 <rect key="frame" x="41" y="77" width="69" height="30"/>
                                 <state key="normal" title="测试Block"/>
                                 <connections>
                                     <action selector="testBlock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X53-l9-ErC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-qG-VCc">
-                                <rect key="frame" x="41" y="124" width="88" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-qG-VCc">
+                                <rect key="frame" x="41" y="124" width="92" height="30"/>
                                 <state key="normal" title="测试__bridge"/>
                                 <connections>
                                     <action selector="testBridge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2sb-hK-nzP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBP-0u-3qU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBP-0u-3qU">
                                 <rect key="frame" x="41" y="162" width="61" height="30"/>
                                 <state key="normal" title="测试KVC"/>
                                 <connections>
                                     <action selector="testKVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTS-sr-4Wm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk4-Lt-BQv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk4-Lt-BQv">
                                 <rect key="frame" x="41" y="210" width="65" height="30"/>
                                 <state key="normal" title="跳转A VC"/>
                                 <connections>
                                     <action selector="jumpToAVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UO2-fW-EEj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeV-5o-gCo">
+                                <rect key="frame" x="41" y="257" width="108" height="30"/>
+                                <state key="normal" title="跳转多线程测试"/>
+                                <connections>
+                                    <action selector="jumptoThread:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ENU-l5-nN0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,12 +61,14 @@
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Fk4-Lt-BQv" secondAttribute="trailing" constant="20" symbolic="YES" id="3fw-uH-EdH"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yhJ-qG-VCc" secondAttribute="trailing" constant="20" symbolic="YES" id="4Xf-0r-GQr"/>
                             <constraint firstItem="Fk4-Lt-BQv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="41" id="9jY-eV-0Ky"/>
+                            <constraint firstItem="MeV-5o-gCo" firstAttribute="top" secondItem="Fk4-Lt-BQv" secondAttribute="bottom" constant="17" id="BJy-An-RQf"/>
                             <constraint firstItem="yhJ-qG-VCc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="41" id="Ebg-u6-Sct"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QBP-0u-3qU" secondAttribute="trailing" constant="20" symbolic="YES" id="NQ2-7o-gBp"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aYE-u7-W5f" secondAttribute="trailing" constant="20" symbolic="YES" id="OS5-36-Ouj"/>
                             <constraint firstItem="aYE-u7-W5f" firstAttribute="top" secondItem="yPf-Qq-4Gz" secondAttribute="bottom" constant="77" id="Qte-8N-g4T"/>
                             <constraint firstItem="QBP-0u-3qU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="41" id="XVL-0u-NLX"/>
                             <constraint firstItem="QBP-0u-3qU" firstAttribute="top" secondItem="yhJ-qG-VCc" secondAttribute="bottom" constant="8" id="Zpc-Hd-YIW"/>
+                            <constraint firstItem="MeV-5o-gCo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="41" id="csZ-J1-Hkc"/>
                             <constraint firstItem="aYE-u7-W5f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="41" id="lyB-t0-Czd"/>
                             <constraint firstItem="yhJ-qG-VCc" firstAttribute="top" secondItem="aYE-u7-W5f" secondAttribute="bottom" constant="17" id="mWl-tk-PnS"/>
                             <constraint firstItem="Fk4-Lt-BQv" firstAttribute="top" secondItem="QBP-0u-3qU" secondAttribute="bottom" constant="18" id="zS4-t9-rK2"/>
@@ -81,12 +91,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHp-7c-dby">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHp-7c-dby">
                                 <rect key="frame" x="136.5" y="200" width="102" height="30"/>
                                 <state key="normal" title="测试Crash防护"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MHp-7c-dby" firstAttribute="top" secondItem="GDd-Xg-2S2" secondAttribute="bottom" constant="200" id="pQv-9o-dXN"/>
                             <constraint firstItem="MHp-7c-dby" firstAttribute="centerX" secondItem="adI-TI-bGd" secondAttribute="centerX" id="tQJ-do-zuh"/>
@@ -98,4 +108,9 @@
             <point key="canvasLocation" x="-70" y="-36"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

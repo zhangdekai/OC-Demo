@@ -10,35 +10,34 @@
 #import "RutimeMethodAndClassApi.h"
 #import "Car.h"
 #import <objc/runtime.h>
+#import "Student1.h"
 
 @implementation RutimeMethodAndClassApi
+
+//MARK: - object_isClass 用于判断一个OC对象是否为Class
+- (void)testA {
+    
+    Student1 *student = [[Student1 alloc]init];
+    
+    NSLog(@"%d",object_isClass(student));// 0
+    NSLog(@"%d",object_isClass([Student1 class]));// 1
+    NSLog(@"%d",object_isClass(object_getClass([Person1 class])));// 1 // 元类对象也是特殊的类对象
+}
+//MARK: - object_setClass
+
+//设置isa指向的Class，可以动态的修改类型。例如修改了person对象的类型，也就是说修改了person对象的isa指针的指向，中途让对象去调用其他类的同名方法。
+
+- (void)testB {
+    Student1 *student = [[Student1 alloc]init];
+    [student driving];
+    object_setClass(student, [Car class]);
+    [student driving];//最终其实调用了Car的run方法
+}
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        
-        /*
-         
-         6.用于判断一个OC对象是否为Class
-         
-         Student1 *student = [[Student1 alloc]init];
-         
-         NSLog(@"%d",object_isClass(student));// 0
-         NSLog(@"%d",object_isClass([Student1 class]));// 1
-         NSLog(@"%d",object_isClass(object_getClass([Person1 class])));// 1 // 元类对象也是特殊的类对象
-         
-         */
-        
-        /*
-         5.设置isa指向的Class，可以动态的修改类型。例如修改了person对象的类型，也就是说修改了person对象的isa指针的指向，中途让对象去调用其他类的同名方法。
-         
-         Student1 *student = [[Student1 alloc]init];
-         [student driving];
-         object_setClass(student, [Car class]);
-         [student driving];//最终其实调用了Car的run方法
-         
-         */
         
         /*
          
@@ -79,13 +78,12 @@
 }
 
 
-void run(id self, SEL _cmd)
-{
+void run(id self, SEL _cmd) {
     NSLog(@"%@ - %@", self,NSStringFromSelector(_cmd));
 }
-//方法相关API
-int someMethodsAboutRuntimeAPI()
-{
+
+//MARK: - 方法相关API
+int someMethodsAboutRuntimeAPI() {
     /*
      
      1. 获得一个实例方法、类方法
@@ -221,6 +219,41 @@ int someClassAboutRuntimeAPI()
     
     
     return 1;
+}
+
+//MARK: - 一份做好封装的Method Swizzling交换方法
+/*
+ 使用Method Swizzling有以下注意事项：
+
+ 尽可能在+load方法中交换方法
+ 最好使用单例保证只交换一次
+ 自定义方法名不能产生冲突
+ 对于系统方法要调用原始实现，避免对系统产生影响
+ 做好注释（因为方法交换比较绕）
+ 迫不得已情况下才去使用方法交换
+ */
+
++ (void)FXMethodSwizzlingWithClass:(Class)cls oriSEL:(SEL)oriSEL swizzledSEL:(SEL)swizzledSEL {
+    
+    if (!cls) NSLog(@"传入的交换类不能为空");
+    
+    Method oriMethod = class_getInstanceMethod(cls, oriSEL);
+    Method swiMethod = class_getInstanceMethod(cls, swizzledSEL);
+    
+    if (!oriMethod) {
+        class_addMethod(cls, oriSEL, method_getImplementation(swiMethod), method_getTypeEncoding(swiMethod));
+        method_setImplementation(swiMethod, imp_implementationWithBlock(^(id self, SEL _cmd) {
+            NSLog(@"方法未实现");
+        }));
+    }
+
+    BOOL didAddMethod = class_addMethod(cls, oriSEL, method_getImplementation(swiMethod), method_getTypeEncoding(swiMethod));
+    
+    if (didAddMethod) {
+        class_replaceMethod(cls, swizzledSEL, method_getImplementation(oriMethod), method_getTypeEncoding(oriMethod));
+    } else {
+        method_exchangeImplementations(oriMethod, swiMethod);
+    }
 }
 
 

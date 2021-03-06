@@ -21,10 +21,17 @@
         NSLog(@"----------------");
         NSLog(@"[super class] = %@", [super class]);
         NSLog(@"[super superclass] = %@", [super superclass]);
+        /*
+         [self class] = Student1
+         [self superclass] = Person1
+          ----------------
+         [super class] = Student1
+         [super superclass] = Person1
+         */
         
-        NSLog(@"%d",[Student1 isKindOfClass:[Student1 class]]);
-        NSLog(@"%d",[Student1 isKindOfClass:object_getClass([Student1 class])]);
-        NSLog(@"%d",[Student1 isKindOfClass:[NSObject class]]);
+        NSLog(@"%d",[Student1 isKindOfClass:[Student1 class]]);// 0
+        NSLog(@"%d",[Student1 isKindOfClass:object_getClass([Student1 class])]);// 1
+        NSLog(@"%d",[Student1 isKindOfClass:[NSObject class]]);// 1
         
      }
     return self;

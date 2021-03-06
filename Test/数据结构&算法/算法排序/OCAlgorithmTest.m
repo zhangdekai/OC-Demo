@@ -11,7 +11,7 @@
 
 @implementation OCAlgorithmTest
 
-#pragma mark 查找两个子视图的共同父视图
+#pragma mark - 查找两个子视图的共同父视图
 /*
  思路:分别记录两个子视图的所有父视图并保存到数组中，然后倒序寻找,直至找到第一个不一样的父视图。
  */
@@ -46,8 +46,8 @@
     NSLog(@"resultArray:%@",resultArray);
     
 }
-- (NSArray <UIView *>*)findSuperViews:(UIView *)view
-{
+- (NSArray <UIView *>*)findSuperViews:(UIView *)view {
+    
     UIView * temp = view.superview;
     
     NSMutableArray * result = [NSMutableArray array];

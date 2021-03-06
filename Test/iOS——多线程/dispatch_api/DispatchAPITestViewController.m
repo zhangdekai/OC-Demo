@@ -6,26 +6,27 @@
 //  Copyright © 2019 zhang dekai. All rights reserved.
 //
 
-#import "DispatchBarrierViewController.h"
+#import "DispatchAPITestViewController.h"
 
-@interface DispatchBarrierViewController ()
+@interface DispatchAPITestViewController ()
 
 @end
 
-@implementation DispatchBarrierViewController
+@implementation DispatchAPITestViewController
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self testBarrier];
-    [self testDispatchApply];
-    [self testSignl];
+//    [self testBarrier];
+//    [self testDispatchApply];
+//    [self testSignl];
+    [self testNSInvocationOperation];
     
 }
 
-
+//MARK: - dispatch_barrier_sync 同步阻塞，先执行前边的任务
 - (void)testBarrier {
     dispatch_queue_t queue = dispatch_queue_create(NULL, DISPATCH_QUEUE_CONCURRENT);
     dispatch_async(queue, ^{
@@ -66,9 +67,9 @@
      */
 }
 
+//MARK: - dispatch_apply:是同步的,可以在主线程走任务,如果想异步可以在外面包一层
 - (void)testDispatchApply {
     
-    //dispatch_apply:是同步的,可以在主线程走任务,如果想异步可以在外面包一层
     
     NSLog(@"----1");
     NSArray *array = @[@"1",@"2",@"3",@"4"];
@@ -129,11 +130,10 @@
      2019-12-10 12:11:34.640322+0800 iOS多线程[4170:118478] queue 串行——Thread：<NSThread: 0x600000ef1cc0>{number = 1, name = main}
      2019-12-10 12:11:34.640526+0800 iOS多线程[4170:118478] 元素：4----第3次
      */
-
-    
 }
 
-- (void)testSignl {//可实现类似 dispatch enter的功能。
+//MARK: - 信号量  //可实现类似 dispatch enter的功能。
+- (void)testSignl {
     
     dispatch_group_t group = dispatch_group_create();
     dispatch_queue_t queue = dispatch_queue_create(NULL, DISPATCH_QUEUE_CONCURRENT);
@@ -167,7 +167,9 @@
     
 }
 
+//MARK: - 信号量dispatch_semaphore_t 实现线程依赖
 - (void)testSignalDependence {
+    
     dispatch_group_t group = dispatch_group_create();
     dispatch_queue_t queue = dispatch_queue_create(NULL, DISPATCH_QUEUE_CONCURRENT);
     
@@ -185,7 +187,7 @@
     dispatch_group_async(group, queue, ^{
         
         //等待semaphore0的任务先完成，线程依赖（需要创建多个信号量），略有啰嗦。
-        dispatch_semaphore_wait(semaphore0,DISPATCH_TIME_FOREVER);
+        dispatch_semaphore_wait(semaphore0, DISPATCH_TIME_FOREVER);
         
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             [NSThread sleepForTimeInterval:2];
@@ -200,6 +202,37 @@
         NSLog(@"全部完成");
     });
     // 完成1 完成2 全部完成
+}
+
+- (void)testGCD {
+    
+    dispatch_block_t block = ^{
+        // 任务 打印字符串
+        NSLog(@"GCD 的一个简单block，无参 无返回值的");
+    };
+    dispatch_queue_t queue = dispatch_queue_create("com.film.test", NULL);
+    dispatch_async(queue, block);
+    
+    
+    dispatch_async(queue, ^{
+        // 任务 打印字符串
+        NSLog(@"GCD 的一个简单block，无参 无返回值的");
+    });
+}
+
+//MARK: - NSInvocationOperation
+- (void)testNSInvocationOperation {
+    // 处理事务
+    NSInvocationOperation *op = [[NSInvocationOperation alloc] initWithTarget:self
+    selector:@selector(handleInvocation:) object:@"Felix"];
+    // 创建队列
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    // 操作加入队列
+    [queue addOperation:op];
+}
+
+- (void)handleInvocation:(id)operation {
+    NSLog(@"%@ --- %@",operation, [NSThread currentThread]);
 }
 
 @end

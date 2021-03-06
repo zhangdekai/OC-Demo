@@ -134,7 +134,7 @@
 }
 
 
-// NSTimer 失效原因
+//MARK:- NSTimer 失效原因
 - (void)aNormalTimer
 {
     NSTimer *timer1 = [NSTimer timerWithTimeInterval:2.0 target:self selector:@selector(show) userInfo:nil repeats:YES];
@@ -165,9 +165,9 @@
     NSLog(@"%@",[NSRunLoop mainRunLoop]);
     
 }
-//使用GCD也可是创建计时器，而且更为精确
-- (void)aGCDTimer
-{
+
+//MARK: - 使用GCD也可是创建计时器，而且更为精确
+- (void)aGCDTimer {
     //创建队列
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
     //1.创建一个GCD定时器
@@ -195,15 +195,6 @@
     });
     // 启动
     dispatch_resume(timer);
-    
-    
-//    dispatch_queue_t qu = dispatch_get_global_queue(0, 0);
-//    dispatch_source_t time = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, qu);
-//    dispatch_source_set_timer(time, DISPATCH_TIME_NOW, 2.0 * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
-//    dispatch_source_set_event_handler(time, ^{
-//        NSLog(@"---%@--",[NSThread currentThread]);
-//    });
-//    dispatch_resume(time);
     
 }
 

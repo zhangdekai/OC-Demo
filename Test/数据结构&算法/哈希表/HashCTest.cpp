@@ -10,6 +10,8 @@
 #include <vector>
 
 using namespace std;
+
+
 /*
  不使用任何内建的哈希表库设计一个哈希集合
 
@@ -24,6 +26,7 @@ using namespace std;
  操作的总数目在[1, 10000]范围内。
  不要使用内建的哈希集合库。
  */
+
 #pragma mark - 设计哈希集合
 struct HashNode {
     int val;
