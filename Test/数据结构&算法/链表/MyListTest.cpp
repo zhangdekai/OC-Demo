@@ -8,8 +8,21 @@
 
 #include "MyListTest.hpp"
 #include <unordered_set>
+#include <string>
+#include <vector>
+#include <stack>
 
 using namespace std;
+
+class soulution012 {
+    
+public:
+    bool testA(int *a) {
+        
+        return true;
+    }
+    
+};
 
 //MARK: - 简书：https://www.jianshu.com/p/39dceb9e30b5
 
@@ -17,7 +30,6 @@ using namespace std;
 /*
  
  LeetCode：https://leetcode-cn.com/explore/learn/card/linked-list/193/singly-linked-list/741/
- 
  
  您可以选择使用单链表或双链表。单链表中的节点应该具有两个属性：val 和 next。val 是当前节点的值，next 是指向下一个节点的指针/引用。如果要使用双向链表，则还需要一个属性 prev 以指示链表中的上一个节点。假设链表中的所有节点都是 0-index 的。
  
@@ -153,9 +165,9 @@ private:
 /*
  * 1:哈希表：遍历，存储元素，遇到重复的 hash.contain()，便说明是链表有环 O(n), O(n)。
  * 2:快慢指针：while 循环，快指针从head->next开始，每次都两步，
-            慢指针从head开始，每次走一步，如果是环的话，肯定会相遇。
-   链接：https://leetcode-cn.com/problems/linked-list-cycle/solution/huan-xing-lian-biao-by-leetcode-solution/
-   */
+ 慢指针从head开始，每次走一步，如果是环的话，肯定会相遇。
+ 链接：https://leetcode-cn.com/problems/linked-list-cycle/solution/huan-xing-lian-biao-by-leetcode-solution/
+ */
 class MyLinkListWithCycle {
     //instance variables
     
@@ -191,9 +203,9 @@ public:
         }
         return false;
     }
-
+    
     /*
-    链接：https://leetcode-cn.com/problems/reverse-linked-list/solution/fan-zhuan-lian-biao-by-leetcode-solution-d1k2/
+     链接：https://leetcode-cn.com/problems/reverse-linked-list/solution/fan-zhuan-lian-biao-by-leetcode-solution-d1k2/
      */
     
     //MARK: - 反转链表  1→2→3→∅，我们想要把它改成 ∅←1←2←3
@@ -212,7 +224,7 @@ public:
     }
     
     //MARK: - 删除排序链表中的重复元素
-     MListNode * deleteDuplicates(MListNode *head) {
+    MListNode * deleteDuplicates(MListNode *head) {
         
         MListNode *current = head;
         
@@ -225,13 +237,54 @@ public:
         }
         return head;
     }
-
+    
     /*
      
-    链接：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/solution/shan-chu-pai-xu-lian-biao-zhong-de-zhong-fu-yuan-s/
-    */
-    
-    
-    
+     链接：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/solution/shan-chu-pai-xu-lian-biao-zhong-de-zhong-fu-yuan-s/
+     */
 };
+
+//MARK: - 链表的中间节点
+class Solution02 {
+public:
+    //1: 使用数组
+    MListNode* middleNode(MListNode* head) {
+        vector<MListNode*> A = {head};
+        while (A.back()->next != NULL)
+            A.push_back(A.back()->next);
+        return A[A.size() / 2];
+    }
+    //2: 单指针遍历两边，
+    MListNode* middleNode01(MListNode* head) {
+        int n = 0;
+        
+        MListNode* cur = head;
+        while (cur != nullptr) {
+            ++n;
+            cur = cur->next;
+        }
+        int k = 0;
+        cur = head;
+        while (k < n / 2) {// 取中间节点
+            ++k;
+            cur = cur->next;
+        }
+        return cur;
+    }
+    //3: 快慢指针，一个走一步，一个走2步，快的走完，慢的在中间。牛逼
+    MListNode* middleNode03(MListNode* head) {
+        MListNode* slow = head;
+        MListNode* fast = head;
+            while (fast != NULL && fast->next != NULL) {
+                slow = slow->next;
+                fast = fast->next->next;
+            }
+            return slow;
+        }
+    /*
+     
+     链接：https://leetcode-cn.com/problems/middle-of-the-linked-list/solution/lian-biao-de-zhong-jian-jie-dian-by-leetcode-solut/
+     */
+};
+
 

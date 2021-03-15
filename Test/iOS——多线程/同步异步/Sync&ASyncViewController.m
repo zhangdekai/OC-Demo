@@ -35,6 +35,12 @@
     
     NSLog(@"执行任务3");
     
+    [UIView animateWithDuration:3.0 animations:^{
+        
+        } completion:^(BOOL finished) {
+            
+        }];
+    
     // dispatch_sync立马在当前线程同步执行任务
 }
 

@@ -16,9 +16,6 @@ void uncaughtEX(NSException *exception) {
     
     NSLog(@"大家好，我拦截到了Crash:%@\n", exception);
     
-    //线程常住 一直处于runloop 保持不崩溃，添加弹窗操作，或者 上传crash 日志
-    
-    
     NSDictionary *userInfo = [exception userInfo];
     
     NSLog(@"Exception，Name:%@;\n Reason:%@; \n UserInfo:%@\n",[exception name],[exception reason], userInfo);
@@ -33,6 +30,16 @@ void uncaughtEX(NSException *exception) {
     
     NSLog(@"Exception callStackSymbols is :%@\n",stacks);
     
+    //线程常住 一直处于runloop 保持不崩溃，
+    //添加弹窗操作，或者 上传crash 日志
+    
+//    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+//    CFArrayRef *modes = CFRunLoopCopyAllModes(runLoop);
+//    for (NSString *runLoopMode in modes) {
+//        [self.connection scheduleInRunLoop:runLoop forMode:runLoopMode];
+//        [self.outputStream scheduleInRunLoop:runLoop forMode:runLoopMode];
+//    }
+    
 }
 
 void signalHandle(int flag) {
@@ -45,13 +52,13 @@ void signalHandle(int flag) {
 
 + (void)getCrash {
     
-//1:    NSSetUncaughtExceptionHandler(NSUncaughtExceptionHandler * _Nullable)
+
+    //1:NSSetUncaughtExceptionHandler(NSUncaughtExceptionHandler * _Nullable)
     
     NSSetUncaughtExceptionHandler(&uncaughtEX);
     
     // 2:信号捕获异常
     signal(SIGHUP, signalHandle);
-    
 }
 
 

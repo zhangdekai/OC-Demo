@@ -268,7 +268,7 @@
 			path = "Crash防护";
 			sourceTree = "<group>";
 		};
-		491A0F2024AF445300CC4189 /* VCs */ = {
+		491A0F2024AF445300CC4189 /* TestSomeVCs */ = {
 			isa = PBXGroup;
 			children = (
 				491A0F2124AF448700CC4189 /* TestAViewController.h */,
@@ -278,7 +278,7 @@
 				491A0F2724AF44AB00CC4189 /* TestCViewController.h */,
 				491A0F2824AF44AB00CC4189 /* TestCViewController.m */,
 			);
-			path = VCs;
+			path = TestSomeVCs;
 			sourceTree = "<group>";
 		};
 		492554A4239DF3DD0008D6EF /* SDWebImage探索 */ = {
@@ -308,6 +308,13 @@
 			path = StrongCopyWeak;
 			sourceTree = "<group>";
 		};
+		493904D825F4717C00C8C209 /* 通知 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "通知";
+			sourceTree = "<group>";
+		};
 		493AE7B923ACBD8500BDDACC /* 单例 */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +327,7 @@
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				493904D825F4717C00C8C209 /* 通知 */,
 				493AE7B923ACBD8500BDDACC /* 单例 */,
 				493E0859238BFBBC0079D893 /* Block */,
 				493E0858238BFBAB0079D893 /* 代理 */,
@@ -451,7 +459,7 @@
 				495CE753208224F3000EA0E8 /* AppDelegate.m */,
 				495CE755208224F3000EA0E8 /* ViewController.h */,
 				495CE756208224F3000EA0E8 /* ViewController.m */,
-				491A0F2024AF445300CC4189 /* VCs */,
+				491A0F2024AF445300CC4189 /* TestSomeVCs */,
 				495CE758208224F3000EA0E8 /* Main.storyboard */,
 				495CE75B208224F5000EA0E8 /* Assets.xcassets */,
 				495CE75D208224F5000EA0E8 /* LaunchScreen.storyboard */,

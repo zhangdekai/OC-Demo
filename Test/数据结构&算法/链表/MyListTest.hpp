@@ -11,4 +11,19 @@
 
 #include <stdio.h>
 
+struct MListNode;
+
+class MyLinkedList {
+    MListNode *head;//头
+    MListNode *tail;//尾
+    int list_size;
+    
+public:
+    
+    /** Initialize your data structure here. */
+    MyLinkedList();
+    int get(int index);
+    
+};
+
 #endif /* MyListTest_hpp */

@@ -52,8 +52,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    Student1 *st1 = [[Student1 alloc]init];
-    [st1 driving];
+    UIWindow *win = [[UIWindow alloc]init];
+    
+    UIView *view1 = [[UIView alloc]init];
+//    view1.userInteractionEnabled
+    
+    NSArray *a = @[@"1"];
+    NSMutableArray *b = [a mutableCopy];
+    NSNumber *c = [NSNumber numberWithInt:23];
+    
+    UIButton *but = [[UIButton alloc]init];
+    but.opaque = YES;
+    
+//    [[NSRunLoop currentRunLoop] run];
     
 }
 
