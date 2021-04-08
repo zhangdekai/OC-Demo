@@ -31,6 +31,15 @@ typedef void (^Block)(void);
 
 @implementation TestBlock
 
++ (void)initialize
+{
+    if (self == [TestBlock class]) {
+        
+        NSLog(@"%s", __func__);
+
+    }
+}
+
 - (void)testBlock {
     
     

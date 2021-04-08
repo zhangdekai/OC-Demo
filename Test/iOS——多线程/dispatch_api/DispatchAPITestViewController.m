@@ -10,9 +10,17 @@
 
 @interface DispatchAPITestViewController ()
 
+@property (nonatomic, copy) NSString *tempS;
+
+@property (nonatomic, strong) dispatch_semaphore_t sem;
+
 @end
 
+
+
 @implementation DispatchAPITestViewController
+
+
 
 - (void)viewDidLoad {
     
@@ -22,9 +30,70 @@
 //    [self testBarrier];
 //    [self testDispatchApply];
 //    [self testSignl];
-    [self testNSInvocationOperation];
+//    [self testNSInvocationOperation];
+    [self addButton];
+    
+    _tempS = @"1111";
     
 }
+
+- (void)addButton {
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 50, 30)];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.view addSubview:btn];
+    [btn setTitle:@"设置" forState:UIControlStateNormal];
+    
+    [btn addTarget:self action:@selector(setNumber) forControlEvents:(UIControlEventTouchUpInside)];
+}
+
+- (void)setNumber {
+    
+    _tempS = @"1923";
+    
+    NSLog(@"setNumber = %@", _tempS);
+    
+    BOOL a = [self returnResult];
+    
+    NSLog(@"a = %d", a);
+    
+}
+
+- (BOOL)returnResult {
+    
+    
+    _sem = dispatch_semaphore_create(0);
+    
+    __block BOOL a = false;
+
+    NSLog(@"out a = %d",a);
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_global_queue(0, 0), ^{
+            
+            NSLog(@"3秒后");
+            
+            a = true;
+
+            dispatch_semaphore_signal(self.sem);
+
+        });
+    // 此处需要配合 延迟中 异步线程 dispatch_get_global_queue 来使用，否则，使用 main的话，会阻塞主线程。
+    dispatch_semaphore_wait(_sem, DISPATCH_TIME_FOREVER);
+
+    return a;
+}
+
+- (void)handleA:(void (^ __nullable)(BOOL finished))completion  {
+    
+    completion(true);
+    
+//    [UIView animateWithDuration:(NSTimeInterval) animations:^{
+//        <#code#>
+//    } completion:^(BOOL finished) {
+//        <#code#>
+//    }]
+}
+
+
 
 //MARK: - dispatch_barrier_sync 同步阻塞，先执行前边的任务
 - (void)testBarrier {
@@ -40,7 +109,7 @@
     
     NSLog(@"before barrier");
     
-    dispatch_barrier_sync(queue, ^{//同步阻塞，先执行前边的任务，也可以通过别的同步手段处理
+    dispatch_barrier_sync(queue,^{//同步阻塞，先执行前边的任务，也可以通过别的同步手段处理
         NSLog(@"task - new");
     });
     
@@ -69,7 +138,6 @@
 
 //MARK: - dispatch_apply:是同步的,可以在主线程走任务,如果想异步可以在外面包一层
 - (void)testDispatchApply {
-    
     
     NSLog(@"----1");
     NSArray *array = @[@"1",@"2",@"3",@"4"];

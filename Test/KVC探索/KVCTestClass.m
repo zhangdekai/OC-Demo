@@ -19,6 +19,17 @@
 
 @implementation KVCTestClass
 
++ (void)load {
+    
+}
+
++ (void)initialize
+{
+    if (self == [KVCTestClass class]) {
+        
+    }
+}
+
 - (void)testKVC {
     
     [self setValue:@"测试01" forKey:@"key"];

@@ -13,6 +13,7 @@
 #import "RunloopTestViewController.h"
 #import "ChangeAppIconViewController.h"
 #import <CoreFoundation/CoreFoundation.h>
+#import "TestNSUseDefault.h"
 
 //#import "Person.h"
 #import "Person1.h"
@@ -52,19 +53,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIWindow *win = [[UIWindow alloc]init];
+    NSLog(@"user_test : %@", [[NSUserDefaults standardUserDefaults]valueForKey:@"user_test"]);
     
-    UIView *view1 = [[UIView alloc]init];
-//    view1.userInteractionEnabled
+    TestNSUseDefault *a = [[TestNSUseDefault alloc]init];
     
-    NSArray *a = @[@"1"];
-    NSMutableArray *b = [a mutableCopy];
-    NSNumber *c = [NSNumber numberWithInt:23];
-    
-    UIButton *but = [[UIButton alloc]init];
-    but.opaque = YES;
-    
-//    [[NSRunLoop currentRunLoop] run];
+    NSLog(@"user_test : %@", [[NSUserDefaults standardUserDefaults]valueForKey:@"user_test"]);
     
 }
 
@@ -73,6 +66,11 @@
     TestBlock *block = [[TestBlock alloc]init];
        
     [block testBlock];
+    
+    [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"user_test"];
+
+    exit(0);
+    
 }
 
 - (IBAction)testBridge:(id)sender {
