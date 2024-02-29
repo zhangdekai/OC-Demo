@@ -15,7 +15,16 @@
  
  NSObject的扩展NSKeyValueObserving
  
- 键值观察：
+ 1：Key-Value Observing  “键值监听”,对 NSObject 对象的属性值进行监听。
+ KVO（Key-Value Observing）是iOS中一种观察者模式的实现，用于观察对象属性值的变化。当对象的特定属性值发生变化时，注册的观察者会收到通知，并执行相应的操作。
+ 2：使用方法：
+ 1. 注册观察者：通过调用被观察对象的 addObserver:forKeyPath:options:context: 方法注册观察者。观察者需要实现 observeValueForKeyPath:ofObject:change:context: 方法来接收属性变化的通知。
+ 2. 实现观察者方法：在观察者类中实现 observeValueForKeyPath:ofObject:change:context: 方法，根据需要处理属性值的变化。在该方法中，你可以检查属性的变化情况，并采取适当的行动。
+ 3. 移除观察者：在不需要再观察属性变化时，务必记得调用被观察对象的 removeObserver:forKeyPath: 方法移除观察者，避免内存泄漏和不必要的通知。
+ 使用 KVO 可以方便地实现对象属性值的观察和响应，但是需要注意内存管理和线程安全等问题，以确保应用程序的稳定性和性能。
+ 
+ 总体而言，KVO 的实现是基于 Objective-C Runtime 提供的动态特性，它通过生成子类、重写 setter 方法以及添加观察者和通知机制来实现属性变化的观察。这种机制使得开发者可以轻松地在对象属性发生变化时进行相应的处理，而不需要手动进行检测和通知。
+ 
  
  */
 

@@ -28,6 +28,7 @@
 		4946D13E23A625A2003DF518 /* OCAlgorithmTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4946D13D23A625A2003DF518 /* OCAlgorithmTest.m */; };
 		4946D14223A67F0A003DF518 /* KVCTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4946D14123A67F0A003DF518 /* KVCTestClass.m */; };
 		4946FAF423A0CD6600267FB0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */; };
+		494B95092B8B59AF0052DC1E /* NotificationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494B95082B8B59AF0052DC1E /* NotificationTestViewController.m */; };
 		495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE753208224F3000EA0E8 /* AppDelegate.m */; };
 		495CE757208224F3000EA0E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495CE756208224F3000EA0E8 /* ViewController.m */; };
 		495CE75A208224F3000EA0E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495CE758208224F3000EA0E8 /* Main.storyboard */; };
@@ -129,6 +130,8 @@
 		4946D14023A67F0A003DF518 /* KVCTestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCTestClass.h; sourceTree = "<group>"; };
 		4946D14123A67F0A003DF518 /* KVCTestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCTestClass.m; sourceTree = "<group>"; };
 		4946FAF323A0CD6600267FB0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		494B95072B8B59AF0052DC1E /* NotificationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationTestViewController.h; sourceTree = "<group>"; };
+		494B95082B8B59AF0052DC1E /* NotificationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationTestViewController.m; sourceTree = "<group>"; };
 		495CE74F208224F3000EA0E8 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495CE752208224F3000EA0E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		495CE753208224F3000EA0E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -314,6 +317,8 @@
 		493904D825F4717C00C8C209 /* 通知 */ = {
 			isa = PBXGroup;
 			children = (
+				494B95072B8B59AF0052DC1E /* NotificationTestViewController.h */,
+				494B95082B8B59AF0052DC1E /* NotificationTestViewController.m */,
 			);
 			path = "通知";
 			sourceTree = "<group>";
@@ -886,6 +891,7 @@
 				4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */,
 				49E7923B2609BA51004A006B /* SemaphoreDemo.m in Sources */,
 				49E7923A2609BA51004A006B /* SerialQueueDemo.m in Sources */,
+				494B95092B8B59AF0052DC1E /* NotificationTestViewController.m in Sources */,
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,
 				493904AD25F2516A00C8C209 /* OCLockTestViewController.m in Sources */,
 				49CB9DBF25E796B30006F119 /* Thread&RunloopViewController.m in Sources */,

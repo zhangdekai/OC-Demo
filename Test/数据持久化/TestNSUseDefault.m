@@ -17,7 +17,10 @@
         
         
         [[NSUserDefaults standardUserDefaults]setBool:NO forKey:@"user_test"];
-        
+
+        [[NSUserDefaults standardUserDefaults]setValue:@"value" forKey:@"user_value"];
+        [[NSUserDefaults standardUserDefaults]setBool:NO forKey:@"user_test"];
+
         
     }
     return self;

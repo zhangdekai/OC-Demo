@@ -28,7 +28,6 @@
     
    ViewController *vc = (ViewController *)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ViewController"];
     
-
     
     UINavigationController *rootVc = [[UINavigationController alloc]initWithRootViewController:vc];
     
