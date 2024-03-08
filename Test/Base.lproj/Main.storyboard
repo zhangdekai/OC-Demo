@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" hidesBottomBarWhenPushed="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yPf-Qq-4Gz"/>
                         <viewControllerLayoutGuide type="bottom" id="1me-T5-5zB"/>
@@ -21,35 +21,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYE-u7-W5f">
-                                <rect key="frame" x="41" y="77" width="69" height="30"/>
+                                <rect key="frame" x="41" y="97" width="69" height="30"/>
                                 <state key="normal" title="测试Block"/>
                                 <connections>
                                     <action selector="testBlock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X53-l9-ErC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-qG-VCc">
-                                <rect key="frame" x="41" y="124" width="92" height="30"/>
+                                <rect key="frame" x="41" y="144" width="92" height="30"/>
                                 <state key="normal" title="测试__bridge"/>
                                 <connections>
                                     <action selector="testBridge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2sb-hK-nzP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBP-0u-3qU">
-                                <rect key="frame" x="41" y="162" width="61" height="30"/>
+                                <rect key="frame" x="41" y="182" width="61" height="30"/>
                                 <state key="normal" title="测试KVC"/>
                                 <connections>
                                     <action selector="testKVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTS-sr-4Wm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk4-Lt-BQv">
-                                <rect key="frame" x="41" y="210" width="65" height="30"/>
+                                <rect key="frame" x="41" y="230" width="65" height="30"/>
                                 <state key="normal" title="跳转A VC"/>
                                 <connections>
                                     <action selector="jumpToAVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UO2-fW-EEj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeV-5o-gCo">
-                                <rect key="frame" x="41" y="257" width="108" height="30"/>
+                                <rect key="frame" x="41" y="277" width="108" height="30"/>
                                 <state key="normal" title="跳转多线程测试"/>
                                 <connections>
                                     <action selector="jumptoThread:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ENU-l5-nN0"/>
@@ -92,7 +92,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHp-7c-dby">
-                                <rect key="frame" x="136.5" y="200" width="102" height="30"/>
+                                <rect key="frame" x="136.5" y="220" width="102" height="30"/>
                                 <state key="normal" title="测试Crash防护"/>
                             </button>
                         </subviews>

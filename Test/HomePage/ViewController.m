@@ -53,13 +53,46 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"user_test : %@", [[NSUserDefaults standardUserDefaults]valueForKey:@"user_test"]);
+
     
-    TestNSUseDefault *a = [[TestNSUseDefault alloc]init];
+
     
-    NSLog(@"user_test : %@", [[NSUserDefaults standardUserDefaults]valueForKey:@"user_test"]);
-    
+//    [self addCustomView];
+        
 }
+
+
+- (void)addCustomView{
+    
+    // 创建底部菜单栏
+        UITabBarController *tabBarController = [[UITabBarController alloc] init];
+        
+        // 创建4个子控制器
+        UIViewController *firstViewController = [[UIViewController alloc] init];
+        firstViewController.view.backgroundColor = [UIColor whiteColor];
+        firstViewController.tabBarItem.title = @"首页1";
+        
+        UIViewController *secondViewController = [[UIViewController alloc] init];
+        secondViewController.view.backgroundColor = [UIColor whiteColor];
+        secondViewController.tabBarItem.title = @"首页2";
+        
+        UIViewController *thirdViewController = [[UIViewController alloc] init];
+        thirdViewController.view.backgroundColor = [UIColor whiteColor];
+        thirdViewController.tabBarItem.title = @"首页3";
+        
+        UIViewController *fourthViewController = [[UIViewController alloc] init];
+        fourthViewController.view.backgroundColor = [UIColor yellowColor];
+        fourthViewController.tabBarItem.title = @"首页4";
+        
+        // 将子控制器添加到tabBarController中
+        tabBarController.viewControllers = @[firstViewController, secondViewController, thirdViewController, fourthViewController];
+        
+        // 将tabBarController添加到主视图控制器中
+        [self addChildViewController:tabBarController];
+        [self.view addSubview:tabBarController.view];
+}
+
+
 
 - (IBAction)testBlock:(id)sender {
     
@@ -69,7 +102,7 @@
     
     [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"user_test"];
 
-    exit(0);
+//    exit(0); // 退出App
     
 }
 

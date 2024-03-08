@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -45,6 +45,9 @@
 		4966B9EA23A1ED0700E02099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4966B9E923A1ED0600E02099 /* Foundation.framework */; };
 		4967EDE8235D493D00D7BCCF /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4967EDE7235D493D00D7BCCF /* BinaryTreeNode.m */; };
 		49749DE324A5FC7E0024E825 /* NSObject+tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 49749DE224A5FC7E0024E825 /* NSObject+tools.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4977E4E72B9706B800658FAA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4977E4E62B9706B800658FAA /* FirstViewController.m */; };
+		4977E4F12B9719AC00658FAA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4977E4F02B9719AC00658FAA /* SecondViewController.m */; };
+		4977E4F42B9719B700658FAA /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4977E4F32B9719B700658FAA /* ThirdViewController.m */; };
 		4990BAA1212FE8100044BCE1 /* WebPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4990BAA0212FE8100044BCE1 /* WebPTestViewController.m */; };
 		4990BAA5212FF2610044BCE1 /* AFNetworkingTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4990BAA4212FF2610044BCE1 /* AFNetworkingTestViewController.m */; };
 		4990BF1621183AE80000ADC5 /* Person+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4990BF1521183AE80000ADC5 /* Person+Test.m */; };
@@ -159,6 +162,13 @@
 		4967EDE7235D493D00D7BCCF /* BinaryTreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
 		49749DE124A5FC7E0024E825 /* NSObject+tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+tools.h"; sourceTree = "<group>"; };
 		49749DE224A5FC7E0024E825 /* NSObject+tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+tools.m"; sourceTree = "<group>"; };
+		4977E4E52B9706B800658FAA /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		4977E4E62B9706B800658FAA /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		4977E4EE2B97129400658FAA /* UIConstValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIConstValue.h; sourceTree = "<group>"; };
+		4977E4EF2B9719AC00658FAA /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		4977E4F02B9719AC00658FAA /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		4977E4F22B9719B700658FAA /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		4977E4F32B9719B700658FAA /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		4990BA9F212FE8100044BCE1 /* WebPTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebPTestViewController.h; sourceTree = "<group>"; };
 		4990BAA0212FE8100044BCE1 /* WebPTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebPTestViewController.m; sourceTree = "<group>"; };
 		4990BAA3212FF2610044BCE1 /* AFNetworkingTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingTestViewController.h; sourceTree = "<group>"; };
@@ -440,6 +450,8 @@
 		495CE751208224F3000EA0E8 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				4977E4E82B970F9600658FAA /* ConstValue */,
+				4977E4E42B97068A00658FAA /* HomePage */,
 				4960E3772615984700CF7CAB /* 数据持久化 */,
 				493904B025F3174B00C8C209 /* StrongCopyWeak */,
 				493904AA25F2514D00C8C209 /* iOS——锁 */,
@@ -466,8 +478,6 @@
 				499FBF5C2110532400E08F8C /* Class本质 */,
 				495CE752208224F3000EA0E8 /* AppDelegate.h */,
 				495CE753208224F3000EA0E8 /* AppDelegate.m */,
-				495CE755208224F3000EA0E8 /* ViewController.h */,
-				495CE756208224F3000EA0E8 /* ViewController.m */,
 				491A0F2024AF445300CC4189 /* TestSomeVCs */,
 				495CE758208224F3000EA0E8 /* Main.storyboard */,
 				495CE75B208224F5000EA0E8 /* Assets.xcassets */,
@@ -527,6 +537,29 @@
 				49749DE224A5FC7E0024E825 /* NSObject+tools.m */,
 			);
 			path = NSObject;
+			sourceTree = "<group>";
+		};
+		4977E4E42B97068A00658FAA /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				4977E4E52B9706B800658FAA /* FirstViewController.h */,
+				4977E4E62B9706B800658FAA /* FirstViewController.m */,
+				4977E4EF2B9719AC00658FAA /* SecondViewController.h */,
+				495CE755208224F3000EA0E8 /* ViewController.h */,
+				495CE756208224F3000EA0E8 /* ViewController.m */,
+				4977E4F02B9719AC00658FAA /* SecondViewController.m */,
+				4977E4F22B9719B700658FAA /* ThirdViewController.h */,
+				4977E4F32B9719B700658FAA /* ThirdViewController.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		4977E4E82B970F9600658FAA /* ConstValue */ = {
+			isa = PBXGroup;
+			children = (
+				4977E4EE2B97129400658FAA /* UIConstValue.h */,
+			);
+			path = ConstValue;
 			sourceTree = "<group>";
 		};
 		4990BA9E212FE7ED0044BCE1 /* WebP探索 */ = {
@@ -791,6 +824,7 @@
 				495CE74B208224F3000EA0E8 /* Sources */,
 				495CE74C208224F3000EA0E8 /* Frameworks */,
 				495CE74D208224F3000EA0E8 /* Resources */,
+				B4072564A7F455AE0CC7D95E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -852,6 +886,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B4072564A7F455AE0CC7D95E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F881B4534FCF05FDA14376F0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -887,15 +938,18 @@
 				49CB9DBE25E796B30006F119 /* SafeQuestionLockViewController.m in Sources */,
 				4960E37A2615987200CF7CAB /* TestNSUseDefault.m in Sources */,
 				491A0F2324AF448700CC4189 /* TestAViewController.m in Sources */,
+				4977E4F12B9719AC00658FAA /* SecondViewController.m in Sources */,
 				49E7923C2609BA51004A006B /* NSConditionDemo.m in Sources */,
 				4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */,
 				49E7923B2609BA51004A006B /* SemaphoreDemo.m in Sources */,
 				49E7923A2609BA51004A006B /* SerialQueueDemo.m in Sources */,
 				494B95092B8B59AF0052DC1E /* NotificationTestViewController.m in Sources */,
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,
+				4977E4F42B9719B700658FAA /* ThirdViewController.m in Sources */,
 				493904AD25F2516A00C8C209 /* OCLockTestViewController.m in Sources */,
 				49CB9DBF25E796B30006F119 /* Thread&RunloopViewController.m in Sources */,
 				499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */,
+				4977E4E72B9706B800658FAA /* FirstViewController.m in Sources */,
 				4990BF1E21196E410000ADC5 /* Student.m in Sources */,
 				49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */,
 				4946D14223A67F0A003DF518 /* KVCTestClass.m in Sources */,
@@ -1022,7 +1076,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1075,7 +1129,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1089,16 +1143,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9X97YKR3AP;
+				DEVELOPMENT_TEAM = TX7C33PXSE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Test/Test.pch;
 				INFOPLIST_FILE = Test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Start.Test1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.personal.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Test/Test-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1114,16 +1168,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9X97YKR3AP;
+				DEVELOPMENT_TEAM = TX7C33PXSE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Test/Test.pch;
 				INFOPLIST_FILE = Test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Start.Test1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.personal.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Test/Test-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

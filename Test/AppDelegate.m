@@ -11,35 +11,76 @@
 #import "NSExceptionManager.h"
 #import <UIKit/UIKit.h>
 
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
+
+
 @interface AppDelegate ()
+
+@property(nonatomic, strong) UITabBarController *tabBarController;
+
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    
-//     = [[ViewController alloc]init];
-    
-   ViewController *vc = (ViewController *)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ViewController"];
-    
-    
-    UINavigationController *rootVc = [[UINavigationController alloc]initWithRootViewController:vc];
-    
-    self.window.rootViewController = rootVc;    
+    self.window.rootViewController = [self customTabBarController];
     
     [self.window makeKeyAndVisible];
     
-    
-    // Crash Test
+
     [NSExceptionManager getCrash];
     
     return YES;
+}
+
+/// 配置 UITabBarController
+- (UITabBarController *)customTabBarController {
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc]init];
+    self.tabBarController = tabBarController;
+    
+    ViewController *vc = (ViewController *)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ViewController"];
+    
+    vc.tabBarItem.title = @"首页";
+    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor],NSFontAttributeName: [UIFont systemFontOfSize:14]} forState:(UIControlStateNormal)];
+    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blueColor]} forState:(UIControlStateSelected)];
+
+    vc.tabBarItem.image = [[UIImage imageNamed:@"home_clock"] imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
+
+    
+    FirstViewController *first = [[FirstViewController alloc]init];
+    first.tabBarItem.title = @"First";
+    first.tabBarItem.image = [[UIImage imageNamed:@"home_email"] imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
+    [first.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor],NSFontAttributeName: [UIFont systemFontOfSize:14]} forState:(UIControlStateNormal)];
+    [first.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor redColor]} forState:(UIControlStateSelected)];
+    
+    
+    SecondViewController *second = [[SecondViewController alloc]init];
+    second.tabBarItem.title = @"Second";
+    second.tabBarItem.image = [[UIImage imageNamed:@"home_yy"] imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
+    
+    [second.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor], NSFontAttributeName: [UIFont systemFontOfSize:14]} forState:(UIControlStateNormal)];
+    [second.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blueColor]} forState:(UIControlStateSelected)];
+
+    
+    ThirdViewController *third = [[ThirdViewController alloc]init];
+    third.tabBarItem.title = @"Third";
+    third.tabBarItem.image = [[UIImage imageNamed:@"home_abc"] imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
+    [third.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor],NSFontAttributeName: [UIFont systemFontOfSize:14]} forState:(UIControlStateNormal)];
+    [third.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blueColor]} forState:(UIControlStateSelected)];
+
+    
+    tabBarController.viewControllers = [NSArray arrayWithObjects:vc,first,second,third, nil];
+    
+    
+    return tabBarController;
 }
 
 

@@ -25,15 +25,18 @@
     [super viewDidLoad];
 
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]init];
+    
+    [manager GET:@"" parameters:nil headers:@{@"22":@"22"} progress:^(NSProgress * _Nonnull downloadProgress) {
+        NSLog(@"downloadProgress == %@",downloadProgress);
 
-    [manager GET:@"" parameters:nil
-        progress:^(NSProgress * _Nonnull downloadProgress) {
-            NSLog(@"%@",downloadProgress);
-        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            NSLog(@"responseObject");
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            NSLog(@"error");
-        }];
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"responseObject == %@", responseObject);
+
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"error == %@", error);
+
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {
