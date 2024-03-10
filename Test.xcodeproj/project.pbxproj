@@ -63,6 +63,7 @@
 		49934E3B21479A4C00DAB4D5 /* ChangeAppIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49934E3A21479A4C00DAB4D5 /* ChangeAppIconViewController.m */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* SecondVCModdel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* SecondVCModdel.m */; };
+		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
 		499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF522108669D00E08F8C /* NSObjectTestView.m */; };
 		499FBF622110551300E08F8C /* KVOExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF612110551300E08F8C /* KVOExploreViewController.m */; };
 		499FBF652110556900E08F8C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF642110556900E08F8C /* Person.m */; };
@@ -198,6 +199,7 @@
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* SecondVCModdel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCModdel.h; sourceTree = "<group>"; };
 		499836222B9D42D700613369 /* SecondVCModdel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCModdel.m; sourceTree = "<group>"; };
+		499836242B9D7A6800613369 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		499DC94720D9002700340C8E /* Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Bridging-Header.h"; sourceTree = "<group>"; };
 		499FBF512108669D00E08F8C /* NSObjectTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObjectTestView.h; sourceTree = "<group>"; };
 		499FBF522108669D00E08F8C /* NSObjectTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObjectTestView.m; sourceTree = "<group>"; };
@@ -442,6 +444,7 @@
 				495CE750208224F3000EA0E8 /* Products */,
 				10CD06219D7C3D3D275E5641 /* Pods */,
 				5EAFA43FE726B378EBC392F6 /* Frameworks */,
+				499836242B9D7A6800613369 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -889,6 +892,7 @@
 				49934E34214798AD00DAB4D5 /* dusk@3x.png in Resources */,
 				49934E372147991E00DAB4D5 /* leopard@2x.png in Resources */,
 				495CE75A208224F3000EA0E8 /* Main.storyboard in Resources */,
+				499836252B9D7A6800613369 /* README.md in Resources */,
 				49934E33214798AD00DAB4D5 /* dusk@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
