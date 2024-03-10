@@ -61,6 +61,8 @@
 		49934E372147991E00DAB4D5 /* leopard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49934E352147991E00DAB4D5 /* leopard@2x.png */; };
 		49934E382147991E00DAB4D5 /* leopard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49934E362147991E00DAB4D5 /* leopard@3x.png */; };
 		49934E3B21479A4C00DAB4D5 /* ChangeAppIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49934E3A21479A4C00DAB4D5 /* ChangeAppIconViewController.m */; };
+		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
+		499836232B9D42D700613369 /* SecondVCModdel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* SecondVCModdel.m */; };
 		499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF522108669D00E08F8C /* NSObjectTestView.m */; };
 		499FBF622110551300E08F8C /* KVOExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF612110551300E08F8C /* KVOExploreViewController.m */; };
 		499FBF652110556900E08F8C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF642110556900E08F8C /* Person.m */; };
@@ -192,6 +194,10 @@
 		49934E3921479A4C00DAB4D5 /* ChangeAppIconViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeAppIconViewController.h; sourceTree = "<group>"; };
 		49934E3A21479A4C00DAB4D5 /* ChangeAppIconViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeAppIconViewController.m; sourceTree = "<group>"; };
 		49934E3C21479C2900DAB4D5 /* Test.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.pch; sourceTree = "<group>"; };
+		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
+		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
+		499836212B9D42D700613369 /* SecondVCModdel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCModdel.h; sourceTree = "<group>"; };
+		499836222B9D42D700613369 /* SecondVCModdel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCModdel.m; sourceTree = "<group>"; };
 		499DC94720D9002700340C8E /* Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Bridging-Header.h"; sourceTree = "<group>"; };
 		499FBF512108669D00E08F8C /* NSObjectTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObjectTestView.h; sourceTree = "<group>"; };
 		499FBF522108669D00E08F8C /* NSObjectTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObjectTestView.m; sourceTree = "<group>"; };
@@ -545,9 +551,13 @@
 				4977E4E52B9706B800658FAA /* FirstViewController.h */,
 				4977E4E62B9706B800658FAA /* FirstViewController.m */,
 				4977E4EF2B9719AC00658FAA /* SecondViewController.h */,
+				4977E4F02B9719AC00658FAA /* SecondViewController.m */,
+				4998361E2B9D392400613369 /* SecondVCTableViewCell.h */,
+				4998361F2B9D392400613369 /* SecondVCTableViewCell.m */,
+				499836212B9D42D700613369 /* SecondVCModdel.h */,
+				499836222B9D42D700613369 /* SecondVCModdel.m */,
 				495CE755208224F3000EA0E8 /* ViewController.h */,
 				495CE756208224F3000EA0E8 /* ViewController.m */,
-				4977E4F02B9719AC00658FAA /* SecondViewController.m */,
 				4977E4F22B9719B700658FAA /* ThirdViewController.h */,
 				4977E4F32B9719B700658FAA /* ThirdViewController.m */,
 			);
@@ -932,6 +942,7 @@
 				493904B325F3179800C8C209 /* StrongCopyWeakTest.m in Sources */,
 				49E7923E2609BA51004A006B /* OSSpinLockDemo2.m in Sources */,
 				491A0F2624AF44A200CC4189 /* TestBViewController.m in Sources */,
+				499836232B9D42D700613369 /* SecondVCModdel.m in Sources */,
 				493AE7BC23ACBDA800BDDACC /* SignalModelTest.m in Sources */,
 				49CB9DC325E796B30006F119 /* SafeQuestionViewController.m in Sources */,
 				4946D13E23A625A2003DF518 /* OCAlgorithmTest.m in Sources */,
@@ -946,6 +957,7 @@
 				494B95092B8B59AF0052DC1E /* NotificationTestViewController.m in Sources */,
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,
 				4977E4F42B9719B700658FAA /* ThirdViewController.m in Sources */,
+				499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */,
 				493904AD25F2516A00C8C209 /* OCLockTestViewController.m in Sources */,
 				49CB9DBF25E796B30006F119 /* Thread&RunloopViewController.m in Sources */,
 				499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */,

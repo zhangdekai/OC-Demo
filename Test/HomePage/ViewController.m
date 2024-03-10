@@ -62,6 +62,8 @@
 }
 
 
+/// 另一种添加 UITabBarController 的方式，[self.view addSubview:tabBarController.view]
+///
 - (void)addCustomView{
     
     // 创建底部菜单栏
@@ -121,7 +123,6 @@
 
 - (IBAction)jumpToAVC:(id)sender {
     
-//    [UIStoryboard alloc]ini
     
     TestAViewController *VC = [[TestAViewController alloc]initWithNibName:@"TestAViewController" bundle:[NSBundle mainBundle]];
     [self.navigationController pushViewController:VC animated:YES];

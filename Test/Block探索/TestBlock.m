@@ -18,6 +18,7 @@
 int age = 10;
 static int age1 = 10;
 
+// define a void block
 typedef void (^Block)(void);
 
 @interface TestBlock ()
@@ -160,6 +161,8 @@ typedef void (^Block)(void);
     age = 20;
     age1 = 30;
     block(3,5);
+
+    
 }
 
 - (void)test04 {
