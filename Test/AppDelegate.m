@@ -14,6 +14,7 @@
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
+#import "DeviceManager.h"
 
 
 @interface AppDelegate ()
@@ -29,6 +30,9 @@
 
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    [[DeviceManager shareInstance] configDevice:[self hasSafeArea]];
+
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [self customTabBarController];
     
@@ -38,6 +42,18 @@
     [NSExceptionManager getCrash];
     
     return YES;
+}
+
+- (BOOL)hasSafeArea {
+    if (@available(iOS 11.0, *)) {
+        UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+        NSLog(@"111top == %f", window.safeAreaInsets.top);
+        if (window.safeAreaInsets.top > 20) {
+            return YES; // 说明有刘海
+        }
+    }
+    
+    return NO; // 说明没有刘海
 }
 
 /// 配置 UITabBarController
@@ -76,8 +92,9 @@
     [third.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor],NSFontAttributeName: [UIFont systemFontOfSize:14]} forState:(UIControlStateNormal)];
     [third.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blueColor]} forState:(UIControlStateSelected)];
 
+    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:first];
     
-    tabBarController.viewControllers = [NSArray arrayWithObjects:vc,first,second,third, nil];
+    tabBarController.viewControllers = [NSArray arrayWithObjects:vc,naVC,second,third, nil];
     
     
     return tabBarController;

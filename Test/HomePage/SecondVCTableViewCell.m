@@ -92,7 +92,7 @@
     
 }
 
-- (void)setModel:(SecondVCModdel *) model{
+- (void)setModel:(CommonDataModel *) model{
     
     _titleLabel.text = model.title;
     _subTitleLabel.text = model.subTitle;

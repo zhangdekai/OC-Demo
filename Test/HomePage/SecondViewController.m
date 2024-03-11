@@ -12,12 +12,10 @@
 @interface SecondViewController ()<UITableViewDelegate,UITableViewDataSource,SecondVCCellActionsDelagate>
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) NSMutableArray<SecondVCModdel *> *dataList;
+@property (nonatomic, strong) NSMutableArray<CommonDataModel *> *dataList;
 
 
 @end
-
-
 
 @implementation SecondViewController
 
@@ -39,7 +37,7 @@
     
     _dataList = [NSMutableArray array];
     for (int i = 0; i < 10; i++) {
-        SecondVCModdel *model = [[SecondVCModdel alloc]init];
+        CommonDataModel *model = [[CommonDataModel alloc]init];
         model.title = [NSString stringWithFormat:@"Title_%d", i];
         model.subTitle = [NSString stringWithFormat:@"SubTitle_%d", i];
         model.descrip = [NSString stringWithFormat:@"This is description at %d", i];
@@ -131,9 +129,18 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSLog(@"didSelectRowAtIndexPath indexPath.row == %ld", indexPath.row);
+}
+
+
+
 - (void) handleCellCommitAction:(NSIndexPath*) indexPath{
     NSLog(@"handleCellCommitAction indexPath.row == %ld", (long)indexPath.row);
 }
+
+#pragma - delegate
 
 - (void)handleAddButtonAction {
     NSLog(@"哈哈- 这里是cell delegate  add action 实现的地方");

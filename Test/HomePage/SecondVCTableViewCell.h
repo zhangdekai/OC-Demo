@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SecondVCModdel.h"
+#import "CommonDataModel.h"
 
 // 代理处理Cell 的点击事件
 // define a delagate
@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SecondVCTableViewCell : UITableViewCell
 
 
-- (void)setModel:(SecondVCModdel *) model;
+- (void)setModel:(CommonDataModel *) model;
 
 @property (nonatomic, copy) VoidBlock commitActionBlock;
 

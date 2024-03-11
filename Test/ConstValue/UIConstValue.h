@@ -12,6 +12,14 @@
 #define UIConstValue_h
 
 
+class <#class name#> {
+    <#instance variables#>
+    
+public:
+    <#member functions#>
+};
+
+
 
 
 #endif /* UIConstValue_h */

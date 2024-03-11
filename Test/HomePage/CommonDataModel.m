@@ -6,8 +6,8 @@
 //  Copyright © 2024 张德凯. All rights reserved.
 //
 
-#import "SecondVCModdel.h"
+#import "CommonDataModel.h"
 
-@implementation SecondVCModdel
+@implementation CommonDataModel
 
 @end
