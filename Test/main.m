@@ -15,6 +15,7 @@
 #import <objc/runtime.h>
 
 #include "MyListTest.hpp"
+#import "NSObject+HashTable.h"
 
 
 void run(id self, SEL _cmd);
@@ -27,11 +28,17 @@ int somePropertyAboutRuntimeApi(void);
 int main(int argc, char * argv[]) {
     
     @autoreleasepool {
+        
+        [NSObject testCase];
+        
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
 //        NSLog(@"%zd",class_getInstanceSize([Person1 class]));
                         
     }
     return 0;
 }
+
+
 
 

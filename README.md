@@ -1,15 +1,13 @@
-# OC-Demo
+## OC-Demo
 
-包含 OC 底层 Runtime探索  KVO，KVC，Category，Runloop,Block等。
+此Demo可用来复习 OC 一些知识，数据结构+ 算法练习。
 
-OC多线程case，各种锁，Crash 拦截，数据持久化等
+1: 包含 OC 底层 Runtime探索  KVO，KVC，Category，Runloop,Block等。
 
-简单数据结构+几个排序算法。
+2: OC多线程case，各种锁，Crash 拦截，数据持久化等
 
-一个简单的UITableView 应用case，包含custom cell, delegate,block 应用。
+3: 数据结构+几个排序算法+LeetCode算法题。
 
-一个简单的UIColllectionView 应用case，包含xib custom cell 应用。
+4: 一个简单的UITableView 应用case，包含custom cell, delegate,block 应用。
 
-此Demo可用来复习 OC 一些知识。
-
-不定时还会 commit
+5: 一个简单的UIColllectionView 应用case，包含xib custom cell 应用。

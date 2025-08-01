@@ -37,7 +37,7 @@
             
             i++;
             
-        }else{
+        } else {
             
             break;
         }
