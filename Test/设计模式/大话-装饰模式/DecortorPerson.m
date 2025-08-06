@@ -20,7 +20,7 @@
 }
 
 - (void)show {
-    NSLog(@"装扮的%@", self.name);
+    NSLog(@"装扮的好的 - %@", self.name);
 }
 
 - (void)testDecortorMode{
@@ -38,14 +38,22 @@
     // 装饰过程
     [hat decorate:person];
     [tShirt decorate:hat];
+    [pants decorate:tShirt];
     [shoes decorate:pants];
-    [hat decorate:shoes];
 
 
     // 展示最终装扮效果
     NSLog(@"开始展示装扮过程：");
-    [person show];
+    [shoes show];
     
+    /*
+     2025-08-06 20:05:40.279158+0800 Test[40901:14899338] 开始展示装扮过程：
+     2025-08-06 20:05:40.279296+0800 Test[40901:14899338] 穿上鞋子
+     2025-08-06 20:05:40.279406+0800 Test[40901:14899338] 穿上裤子
+     2025-08-06 20:05:40.279501+0800 Test[40901:14899338] 穿上TShirt
+     2025-08-06 20:05:40.279593+0800 Test[40901:14899338] 带上帽子
+     2025-08-06 20:05:40.279687+0800 Test[40901:14899338] 装扮的好的 - 小帅
+     */
     
 }
 

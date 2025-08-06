@@ -15,6 +15,10 @@
 		492E19762E3B54BF00747694 /* NSObject+HashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E19752E3B54BF00747694 /* NSObject+HashTable.m */; };
 		492E197A2E42086700747694 /* StrategyMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E19792E42086700747694 /* StrategyMode.m */; };
 		492E197C2E433EF000747694 /* Strategy.md in Resources */ = {isa = PBXBuildFile; fileRef = 492E197B2E433EF000747694 /* Strategy.md */; };
+		492E19852E43523800747694 /* DecortorPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E19842E43523800747694 /* DecortorPerson.m */; };
+		492E19872E43525900747694 /* Decorator.md in Resources */ = {isa = PBXBuildFile; fileRef = 492E19862E43525900747694 /* Decorator.md */; };
+		492E198A2E43553400747694 /* Finery.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E19892E43553400747694 /* Finery.m */; };
+		492E198D2E43768300747694 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E198B2E43768300747694 /* Person.m */; };
 		493904AD25F2516A00C8C209 /* OCLockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493904AC25F2516A00C8C209 /* OCLockTestViewController.m */; };
 		493904B325F3179800C8C209 /* StrongCopyWeakTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 493904B225F3179800C8C209 /* StrongCopyWeakTest.m */; };
 		493AE7BC23ACBDA800BDDACC /* SignalModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 493AE7BB23ACBDA800BDDACC /* SignalModelTest.m */; };
@@ -73,7 +77,6 @@
 		4998362E2B9F3FFD00613369 /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998362D2B9F3FFD00613369 /* DeviceManager.m */; };
 		499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF522108669D00E08F8C /* NSObjectTestView.m */; };
 		499FBF622110551300E08F8C /* KVOExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF612110551300E08F8C /* KVOExploreViewController.m */; };
-		499FBF652110556900E08F8C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF642110556900E08F8C /* Person.m */; };
 		499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF682112A7D000E08F8C /* RunloopTestViewController.m */; };
 		49B91E6220FC671E00FC4892 /* TestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B91E6120FC671E00FC4892 /* TestBlock.m */; };
 		49C7497420AD74DC009DC12D /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7497320AD74DC009DC12D /* TableViewCell.m */; };
@@ -117,6 +120,13 @@
 		492E19782E42086700747694 /* StrategyMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyMode.h; sourceTree = "<group>"; };
 		492E19792E42086700747694 /* StrategyMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyMode.m; sourceTree = "<group>"; };
 		492E197B2E433EF000747694 /* Strategy.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Strategy.md; sourceTree = "<group>"; };
+		492E19832E43523800747694 /* DecortorPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecortorPerson.h; sourceTree = "<group>"; };
+		492E19842E43523800747694 /* DecortorPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecortorPerson.m; sourceTree = "<group>"; };
+		492E19862E43525900747694 /* Decorator.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Decorator.md; sourceTree = "<group>"; };
+		492E19882E43553400747694 /* Finery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Finery.h; sourceTree = "<group>"; };
+		492E19892E43553400747694 /* Finery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Finery.m; sourceTree = "<group>"; };
+		492E198B2E43768300747694 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		492E198C2E43768300747694 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		493904AB25F2516A00C8C209 /* OCLockTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLockTestViewController.h; sourceTree = "<group>"; };
 		493904AC25F2516A00C8C209 /* OCLockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLockTestViewController.m; sourceTree = "<group>"; };
 		493904B125F3179800C8C209 /* StrongCopyWeakTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrongCopyWeakTest.h; sourceTree = "<group>"; };
@@ -223,8 +233,6 @@
 		499FBF522108669D00E08F8C /* NSObjectTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObjectTestView.m; sourceTree = "<group>"; };
 		499FBF602110551300E08F8C /* KVOExploreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOExploreViewController.h; sourceTree = "<group>"; };
 		499FBF612110551300E08F8C /* KVOExploreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOExploreViewController.m; sourceTree = "<group>"; };
-		499FBF632110556900E08F8C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		499FBF642110556900E08F8C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		499FBF672112A7D000E08F8C /* RunloopTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopTestViewController.h; sourceTree = "<group>"; };
 		499FBF682112A7D000E08F8C /* RunloopTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopTestViewController.m; sourceTree = "<group>"; };
 		49B91E6020FC671E00FC4892 /* TestBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBlock.h; sourceTree = "<group>"; };
@@ -350,6 +358,18 @@
 			path = "大话-策略模式";
 			sourceTree = "<group>";
 		};
+		492E197D2E4351F100747694 /* 大话-装饰模式 */ = {
+			isa = PBXGroup;
+			children = (
+				492E19862E43525900747694 /* Decorator.md */,
+				492E19832E43523800747694 /* DecortorPerson.h */,
+				492E19842E43523800747694 /* DecortorPerson.m */,
+				492E19882E43553400747694 /* Finery.h */,
+				492E19892E43553400747694 /* Finery.m */,
+			);
+			path = "大话-装饰模式";
+			sourceTree = "<group>";
+		};
 		493904AA25F2514D00C8C209 /* iOS——锁 */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +409,7 @@
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				492E197D2E4351F100747694 /* 大话-装饰模式 */,
 				492E19772E42080300747694 /* 大话-策略模式 */,
 				493904D825F4717C00C8C209 /* 通知 */,
 				493AE7B923ACBD8500BDDACC /* 单例 */,
@@ -640,8 +661,8 @@
 		4990BF13211839B90000ADC5 /* Category探索 */ = {
 			isa = PBXGroup;
 			children = (
-				499FBF632110556900E08F8C /* Person.h */,
-				499FBF642110556900E08F8C /* Person.m */,
+				492E198C2E43768300747694 /* Person.h */,
+				492E198B2E43768300747694 /* Person.m */,
 				4990BF1421183AE80000ADC5 /* Person+Test.h */,
 				4990BF1521183AE80000ADC5 /* Person+Test.m */,
 				4990BF1721183D4E0000ADC5 /* Person+Test2.h */,
@@ -940,6 +961,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49934E382147991E00DAB4D5 /* leopard@3x.png in Resources */,
+				492E19872E43525900747694 /* Decorator.md in Resources */,
 				495CE75F208224F5000EA0E8 /* LaunchScreen.storyboard in Resources */,
 				495CE75C208224F5000EA0E8 /* Assets.xcassets in Resources */,
 				4998362A2B9DF1E200613369 /* FirstVCCollectionViewCell.xib in Resources */,
@@ -1030,6 +1052,7 @@
 				4962F6B12123FF1C00CB305F /* Car.m in Sources */,
 				49E7923D2609BA51004A006B /* NSLockDemo.m in Sources */,
 				4962F6AE2121863E00CB305F /* Person2.m in Sources */,
+				492E198D2E43768300747694 /* Person.m in Sources */,
 				4990BF2821198EE10000ADC5 /* NSObject+addProperty.m in Sources */,
 				49415D75239A329900660C57 /* iOS_APITestViewController.m in Sources */,
 				49934E3B21479A4C00DAB4D5 /* ChangeAppIconViewController.m in Sources */,
@@ -1038,13 +1061,13 @@
 				49E7923F2609BA51004A006B /* SynchronizedDemo.m in Sources */,
 				49CB9DC025E796B30006F119 /* DispatchGroupViewController.m in Sources */,
 				49E792362609BA51004A006B /* MJBaseDemo.m in Sources */,
-				499FBF652110556900E08F8C /* Person.m in Sources */,
 				4962F6B72126CC5500CB305F /* RutimeMethodAndClassApi.m in Sources */,
 				49415D78239A5A0500660C57 /* NSExceptionManager.m in Sources */,
 				49E792392609BA51004A006B /* NSConditionLockDemo.m in Sources */,
 				49E792332609BA51004A006B /* OSSpinLockDemo.m in Sources */,
 				49E792342609BA51004A006B /* MutexDemo.m in Sources */,
 				499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */,
+				492E198A2E43553400747694 /* Finery.m in Sources */,
 				492E19732E3B2F4900747694 /* test01.cpp in Sources */,
 				492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */,
 				49E792382609BA51004A006B /* MutexDemo2.m in Sources */,
@@ -1053,6 +1076,7 @@
 				49C7497420AD74DC009DC12D /* TableViewCell.m in Sources */,
 				4990BF2B211AD9330000ADC5 /* Person1.m in Sources */,
 				493E0857238BCBED0079D893 /* DelegateViewController.m in Sources */,
+				492E19852E43523800747694 /* DecortorPerson.m in Sources */,
 				49749DE324A5FC7E0024E825 /* NSObject+tools.m in Sources */,
 				495CE762208224F5000EA0E8 /* main.m in Sources */,
 				4945FBE723B10255002E9401 /* HashCTest.cpp in Sources */,

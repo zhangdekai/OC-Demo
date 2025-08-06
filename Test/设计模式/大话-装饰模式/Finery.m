@@ -26,7 +26,7 @@
 
 
 - (void)show {
-    NSLog(@"帽子 ");
+    NSLog(@"带上帽子 ");
 
     [super show];
 }
@@ -37,7 +37,7 @@
 
 
 - (void)show {
-    NSLog(@"裤子 ");
+    NSLog(@"穿上裤子 ");
 
     [super show];
 }
@@ -48,7 +48,7 @@
 
 
 - (void)show {
-    NSLog(@"鞋子");
+    NSLog(@"穿上鞋子");
 
     [super show];
 }
@@ -59,7 +59,7 @@
 
 
 - (void)show {
-    NSLog(@"TShirt ");
+    NSLog(@"穿上TShirt ");
 
     [super show];
 }
