@@ -122,6 +122,8 @@
 }
 
 /*
+ 方法二：借用哈希表 NSDictionary 减少遍历
+ 
  这种实现利用了 NSDictionary 的哈希表特性，通过空间换时间的方式，高效解决了两数之和问题。
  核心思路：
  1: 遍历数组时，用 NSMutableDictionary 存储已访问过的数字（key）和其索引（value）

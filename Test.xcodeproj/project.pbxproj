@@ -13,6 +13,7 @@
 		492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492554A6239DF4070008D6EF /* SDWebImageTestViewController.m */; };
 		492E19732E3B2F4900747694 /* test01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 492E19722E3B2F4900747694 /* test01.cpp */; };
 		492E19762E3B54BF00747694 /* NSObject+HashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E19752E3B54BF00747694 /* NSObject+HashTable.m */; };
+		492E197A2E42086700747694 /* StrategyMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E19792E42086700747694 /* StrategyMode.m */; };
 		493904AD25F2516A00C8C209 /* OCLockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493904AC25F2516A00C8C209 /* OCLockTestViewController.m */; };
 		493904B325F3179800C8C209 /* StrongCopyWeakTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 493904B225F3179800C8C209 /* StrongCopyWeakTest.m */; };
 		493AE7BC23ACBDA800BDDACC /* SignalModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 493AE7BB23ACBDA800BDDACC /* SignalModelTest.m */; };
@@ -112,6 +113,8 @@
 		492E19722E3B2F4900747694 /* test01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test01.cpp; sourceTree = "<group>"; };
 		492E19742E3B54BF00747694 /* NSObject+HashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HashTable.h"; sourceTree = "<group>"; };
 		492E19752E3B54BF00747694 /* NSObject+HashTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HashTable.m"; sourceTree = "<group>"; };
+		492E19782E42086700747694 /* StrategyMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyMode.h; sourceTree = "<group>"; };
+		492E19792E42086700747694 /* StrategyMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyMode.m; sourceTree = "<group>"; };
 		493904AB25F2516A00C8C209 /* OCLockTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLockTestViewController.h; sourceTree = "<group>"; };
 		493904AC25F2516A00C8C209 /* OCLockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLockTestViewController.m; sourceTree = "<group>"; };
 		493904B125F3179800C8C209 /* StrongCopyWeakTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrongCopyWeakTest.h; sourceTree = "<group>"; };
@@ -335,6 +338,15 @@
 			path = LeetCode;
 			sourceTree = "<group>";
 		};
+		492E19772E42080300747694 /* 大话-策略模式 */ = {
+			isa = PBXGroup;
+			children = (
+				492E19782E42086700747694 /* StrategyMode.h */,
+				492E19792E42086700747694 /* StrategyMode.m */,
+			);
+			path = "大话-策略模式";
+			sourceTree = "<group>";
+		};
 		493904AA25F2514D00C8C209 /* iOS——锁 */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +386,7 @@
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				492E19772E42080300747694 /* 大话-策略模式 */,
 				493904D825F4717C00C8C209 /* 通知 */,
 				493AE7B923ACBD8500BDDACC /* 单例 */,
 				493E0859238BFBBC0079D893 /* Block */,
@@ -1043,6 +1056,7 @@
 				49E792352609BA51004A006B /* OSUnfairLockDemo.m in Sources */,
 				4990BAA1212FE8100044BCE1 /* WebPTestViewController.m in Sources */,
 				4998362E2B9F3FFD00613369 /* DeviceManager.m in Sources */,
+				492E197A2E42086700747694 /* StrategyMode.m in Sources */,
 				4990BF1621183AE80000ADC5 /* Person+Test.m in Sources */,
 				49B91E6220FC671E00FC4892 /* TestBlock.m in Sources */,
 				49CB9DC225E796B30006F119 /* DispatchAPITestViewController.m in Sources */,
