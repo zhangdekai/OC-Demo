@@ -14,6 +14,7 @@
 		492E19732E3B2F4900747694 /* test01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 492E19722E3B2F4900747694 /* test01.cpp */; };
 		492E19762E3B54BF00747694 /* NSObject+HashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E19752E3B54BF00747694 /* NSObject+HashTable.m */; };
 		492E197A2E42086700747694 /* StrategyMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E19792E42086700747694 /* StrategyMode.m */; };
+		492E197C2E433EF000747694 /* Strategy.md in Resources */ = {isa = PBXBuildFile; fileRef = 492E197B2E433EF000747694 /* Strategy.md */; };
 		493904AD25F2516A00C8C209 /* OCLockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493904AC25F2516A00C8C209 /* OCLockTestViewController.m */; };
 		493904B325F3179800C8C209 /* StrongCopyWeakTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 493904B225F3179800C8C209 /* StrongCopyWeakTest.m */; };
 		493AE7BC23ACBDA800BDDACC /* SignalModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 493AE7BB23ACBDA800BDDACC /* SignalModelTest.m */; };
@@ -115,6 +116,7 @@
 		492E19752E3B54BF00747694 /* NSObject+HashTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HashTable.m"; sourceTree = "<group>"; };
 		492E19782E42086700747694 /* StrategyMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyMode.h; sourceTree = "<group>"; };
 		492E19792E42086700747694 /* StrategyMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyMode.m; sourceTree = "<group>"; };
+		492E197B2E433EF000747694 /* Strategy.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Strategy.md; sourceTree = "<group>"; };
 		493904AB25F2516A00C8C209 /* OCLockTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLockTestViewController.h; sourceTree = "<group>"; };
 		493904AC25F2516A00C8C209 /* OCLockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLockTestViewController.m; sourceTree = "<group>"; };
 		493904B125F3179800C8C209 /* StrongCopyWeakTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrongCopyWeakTest.h; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 		492E19772E42080300747694 /* 大话-策略模式 */ = {
 			isa = PBXGroup;
 			children = (
+				492E197B2E433EF000747694 /* Strategy.md */,
 				492E19782E42086700747694 /* StrategyMode.h */,
 				492E19792E42086700747694 /* StrategyMode.m */,
 			);
@@ -943,6 +946,7 @@
 				49934E34214798AD00DAB4D5 /* dusk@3x.png in Resources */,
 				49934E372147991E00DAB4D5 /* leopard@2x.png in Resources */,
 				495CE75A208224F3000EA0E8 /* Main.storyboard in Resources */,
+				492E197C2E433EF000747694 /* Strategy.md in Resources */,
 				499836252B9D7A6800613369 /* README.md in Resources */,
 				49934E33214798AD00DAB4D5 /* dusk@2x.png in Resources */,
 			);
