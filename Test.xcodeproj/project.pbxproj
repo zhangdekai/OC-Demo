@@ -75,7 +75,6 @@
 		4993646A2E44AB2400BC350C /* SimpleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364662E44AB2400BC350C /* SimpleFactory.m */; };
 		4993646F2E44AE7200BC350C /* ConcreteFactoryA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993646B2E44AE7200BC350C /* ConcreteFactoryA.m */; };
 		499364702E44AE7200BC350C /* ConcreteFactoryB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993646C2E44AE7200BC350C /* ConcreteFactoryB.m */; };
-		499364762E44BBEA00BC350C /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364732E44BBE900BC350C /* Main.m */; };
 		499364772E44BBEA00BC350C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364752E44BBEA00BC350C /* User.m */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
@@ -242,9 +241,9 @@
 		4993646D2E44AE7200BC350C /* ConcreteFactoryA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteFactoryA.h; sourceTree = "<group>"; };
 		4993646E2E44AE7200BC350C /* ConcreteFactoryB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteFactoryB.h; sourceTree = "<group>"; };
 		499364712E44AE9D00BC350C /* Factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
-		499364732E44BBE900BC350C /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = "<group>"; };
 		499364742E44BBEA00BC350C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		499364752E44BBEA00BC350C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		4993647B2E44C3D700BC350C /* PrototypeModeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeModeTest.h; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -777,7 +776,7 @@
 		499364722E44BBC600BC350C /* 大话-原型模式 */ = {
 			isa = PBXGroup;
 			children = (
-				499364732E44BBE900BC350C /* Main.m */,
+				4993647B2E44C3D700BC350C /* PrototypeModeTest.h */,
 				499364742E44BBEA00BC350C /* User.h */,
 				499364752E44BBEA00BC350C /* User.m */,
 			);
@@ -1101,7 +1100,6 @@
 				4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */,
 				49E7923B2609BA51004A006B /* SemaphoreDemo.m in Sources */,
 				49E7923A2609BA51004A006B /* SerialQueueDemo.m in Sources */,
-				499364762E44BBEA00BC350C /* Main.m in Sources */,
 				499364672E44AB2400BC350C /* ConcreteProductB.m in Sources */,
 				494B95092B8B59AF0052DC1E /* NotificationTestViewController.m in Sources */,
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,

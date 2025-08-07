@@ -21,6 +21,7 @@
 #import "CommonDataModel.h"
 #import "FirstVCCollectionViewCell.h"
 #import "DeviceManager.h"
+#import "PrototypeModeTest.h"
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -57,6 +58,10 @@
         model.title = [NSString stringWithFormat:@"Title_%d", i];
         model.subTitle = [NSString stringWithFormat:@"SubTitle_%d", i];
         model.descrip = [NSString stringWithFormat:@"This is description at %d", i];
+        if(i == 0){
+            model.title = @"原型模式";
+            model.subTitle = @"测试";
+        }
         [_dataList addObject:model];
     }
     
@@ -127,13 +132,17 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    NSLog(@"collectionView didSelectItemAtIndexPath == %ld", indexPath.row);
+    NSLog(@"collectionView didSelectItemAtIndexPath row == %ld section==%ld", indexPath.row, indexPath.section);
+    
+    if(indexPath.row == 0 && indexPath.section == 0){
+        testPrototypeMain();
+    }
 }
 
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    return CGSizeMake(UIScreenWidth / 3 - 20, 154);
+    return CGSizeMake(UIScreenWidth / 2 - 20, 154);
 }
 
 

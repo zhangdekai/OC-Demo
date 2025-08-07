@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "User.h"
 
-int testPrototypeMain(int argc, const char * argv[]) {
+int testPrototypeMain(void) {
     @autoreleasepool {
         // 1. 创建原始对象（原型）
         ProtoTypeUser *originalUser = [[ProtoTypeUser alloc] initWithName:@"张三" age:25];

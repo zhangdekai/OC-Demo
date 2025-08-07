@@ -31,6 +31,7 @@
     self.contentView.layer.borderWidth = 0.5;
     self.contentView.layer.borderColor = [[UIColor lightGrayColor] CGColor];
     
+    
 }
 
 - (void)setCellModel:(CommonDataModel*) model{
@@ -38,7 +39,7 @@
     _titleLable.text = model.title;
     _subTitleLabel.text = model.subTitle;
     _desLabel.text = model.descrip;
-    
+    [_uploadButton setTitle:@"Test" forState:(UIControlStateNormal)];
 }
 
 @end
