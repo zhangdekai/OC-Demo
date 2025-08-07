@@ -127,6 +127,9 @@
 		492E19892E43553400747694 /* Finery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Finery.m; sourceTree = "<group>"; };
 		492E198B2E43768300747694 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		492E198C2E43768300747694 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		492E198E2E4389A400747694 /* Agent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Agent.h; sourceTree = "<group>"; };
+		492E198F2E4389A400747694 /* MovieStar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieStar.h; sourceTree = "<group>"; };
+		492E19902E4389A400747694 /* StarProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarProtocol.h; sourceTree = "<group>"; };
 		493904AB25F2516A00C8C209 /* OCLockTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLockTestViewController.h; sourceTree = "<group>"; };
 		493904AC25F2516A00C8C209 /* OCLockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLockTestViewController.m; sourceTree = "<group>"; };
 		493904B125F3179800C8C209 /* StrongCopyWeakTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrongCopyWeakTest.h; sourceTree = "<group>"; };
@@ -424,6 +427,9 @@
 			children = (
 				493E0855238BCBED0079D893 /* DelegateViewController.h */,
 				493E0856238BCBED0079D893 /* DelegateViewController.m */,
+				492E198E2E4389A400747694 /* Agent.h */,
+				492E198F2E4389A400747694 /* MovieStar.h */,
+				492E19902E4389A400747694 /* StarProtocol.h */,
 			);
 			path = "代理";
 			sourceTree = "<group>";
