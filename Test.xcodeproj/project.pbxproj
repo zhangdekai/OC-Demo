@@ -244,6 +244,8 @@
 		499364742E44BBEA00BC350C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		499364752E44BBEA00BC350C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		4993647B2E44C3D700BC350C /* PrototypeModeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeModeTest.h; sourceTree = "<group>"; };
+		4993647D2E4588C800BC350C /* Prototype.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Prototype.md; sourceTree = "<group>"; };
+		4993647E2E458A0C00BC350C /* Factory.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Factory.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -758,6 +760,7 @@
 			children = (
 				499364632E44AB2300BC350C /* Client.m */,
 				4993646D2E44AE7200BC350C /* ConcreteFactoryA.h */,
+				4993647E2E458A0C00BC350C /* Factory.md */,
 				4993646B2E44AE7200BC350C /* ConcreteFactoryA.m */,
 				4993646E2E44AE7200BC350C /* ConcreteFactoryB.h */,
 				4993646C2E44AE7200BC350C /* ConcreteFactoryB.m */,
@@ -779,6 +782,7 @@
 				4993647B2E44C3D700BC350C /* PrototypeModeTest.h */,
 				499364742E44BBEA00BC350C /* User.h */,
 				499364752E44BBEA00BC350C /* User.m */,
+				4993647D2E4588C800BC350C /* Prototype.md */,
 			);
 			path = "大话-原型模式";
 			sourceTree = "<group>";
