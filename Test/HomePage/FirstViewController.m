@@ -22,6 +22,7 @@
 #import "FirstVCCollectionViewCell.h"
 #import "DeviceManager.h"
 #import "PrototypeModeTest.h"
+#import "TemplateTest.h"
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -61,6 +62,10 @@
         if(i == 0){
             model.title = @"原型模式";
             model.subTitle = @"测试";
+        } else if (i== 1){
+                model.title = @"模版模式";
+                model.subTitle = @"测试";
+            
         }
         [_dataList addObject:model];
     }
@@ -133,10 +138,14 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     NSLog(@"collectionView didSelectItemAtIndexPath row == %ld section==%ld", indexPath.row, indexPath.section);
-    
-    if(indexPath.row == 0 && indexPath.section == 0){
-        testPrototypeMain();
+    if(indexPath.section == 0){
+        if(indexPath.row == 0){
+            testPrototypeMain();
+        }else if(indexPath.row == 1){
+            testTemplateMain();
+        }
     }
+    
 }
 
 
