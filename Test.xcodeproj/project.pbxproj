@@ -256,6 +256,7 @@
 		499364862E459C4700BC350C /* Tea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tea.h; sourceTree = "<group>"; };
 		499364872E459C4700BC350C /* Coffee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coffee.h; sourceTree = "<group>"; };
 		4993648E2E45AD1600BC350C /* TemplateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateTest.h; sourceTree = "<group>"; };
+		499364912E45AE6800BC350C /* TemplateTest.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TemplateTest.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -809,6 +810,7 @@
 				4993648E2E45AD1600BC350C /* TemplateTest.h */,
 				499364862E459C4700BC350C /* Tea.h */,
 				499364812E459C4600BC350C /* Tea.m */,
+				499364912E45AE6800BC350C /* TemplateTest.md */,
 			);
 			path = "大话-模版模式";
 			sourceTree = "<group>";
