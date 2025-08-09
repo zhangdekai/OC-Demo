@@ -13,7 +13,7 @@
  Sample Demo for UICollectionView:
  
  create cell by xib, add constrants
-
+ 
  
  */
 
@@ -23,6 +23,7 @@
 #import "DeviceManager.h"
 #import "PrototypeModeTest.h"
 #import "TemplateTest.h"
+#import "FacadeTest.h"
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -48,7 +49,7 @@
     [self initCollectionView];
     
     [_collectionView reloadData];
-
+    
 }
 
 - (void)initData {
@@ -61,10 +62,14 @@
         model.descrip = [NSString stringWithFormat:@"This is description at %d", i];
         if(i == 0){
             model.title = @"原型模式";
-            model.subTitle = @"测试";
+            model.subTitle = @"Prototype测试";
         } else if (i== 1){
-                model.title = @"模版模式";
-                model.subTitle = @"测试";
+            model.title = @"模版模式";
+            model.subTitle = @"Template测试";
+            
+        }else if (i== 2){
+            model.title = @"外观模式";
+            model.subTitle = @"Facade测试";
             
         }
         [_dataList addObject:model];
@@ -76,7 +81,7 @@
 - (void)addNavigationBar {
     
     UINavigationItem *item = [[UINavigationItem alloc]initWithTitle:@"UICollectionView"];
-        
+    
     _navigationBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, [DeviceManager shareInstance].navigationBarStateH, UIScreenWidth, 44)];
     _navigationBar.items = @[item];
     _navigationBar.barTintColor = [UIColor yellowColor];
@@ -90,22 +95,22 @@
         
         UICollectionViewFlowLayout *flowLayout  = [[UICollectionViewFlowLayout alloc]init];
         
-//        flowLayout.itemSize = CGSizeMake(UIScreenWidth / 3.0 - 30, 153);
+        //        flowLayout.itemSize = CGSizeMake(UIScreenWidth / 3.0 - 30, 153);
         flowLayout.minimumLineSpacing = 15; // 纵向
-//        flowLayout.minimumInteritemSpacing = 10;
+        //        flowLayout.minimumInteritemSpacing = 10;
         
         CGRect rect = self.view.bounds;
-//        rect.origin.y = CGRectGetMaxY(_navigationBar.frame);
+        //        rect.origin.y = CGRectGetMaxY(_navigationBar.frame);
         
         _collectionView = [[UICollectionView alloc]initWithFrame: rect collectionViewLayout:flowLayout];
-             
+        
         [self.view addSubview:_collectionView];
-            
+        
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         
         [_collectionView registerNib:[UINib nibWithNibName:@"FirstVCCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"FirstVCCollectionViewCell"];
-            
+        
     }
 }
 
@@ -143,6 +148,8 @@
             testPrototypeMain();
         }else if(indexPath.row == 1){
             testTemplateMain();
+        } else if(indexPath.row == 2){
+            testFacadeMain();
         }
     }
     

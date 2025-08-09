@@ -79,6 +79,10 @@
 		499364882E459C4700BC350C /* Tea.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364812E459C4600BC350C /* Tea.m */; };
 		499364892E459C4700BC350C /* Beverage.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364822E459C4600BC350C /* Beverage.m */; };
 		4993648B2E459C4700BC350C /* Coffee.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364842E459C4700BC350C /* Coffee.m */; };
+		4993649C2E46EDAC00BC350C /* SmartHomeFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364942E46EDAB00BC350C /* SmartHomeFacade.m */; };
+		4993649D2E46EDAC00BC350C /* Curtain.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364972E46EDAB00BC350C /* Curtain.m */; };
+		4993649F2E46EDAC00BC350C /* TV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993649A2E46EDAC00BC350C /* TV.m */; };
+		499364A02E46EDAC00BC350C /* AirConditioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993649B2E46EDAC00BC350C /* AirConditioner.m */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
 		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
@@ -257,6 +261,15 @@
 		499364872E459C4700BC350C /* Coffee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coffee.h; sourceTree = "<group>"; };
 		4993648E2E45AD1600BC350C /* TemplateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateTest.h; sourceTree = "<group>"; };
 		499364912E45AE6800BC350C /* TemplateTest.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TemplateTest.md; sourceTree = "<group>"; };
+		499364932E46EDAA00BC350C /* SmartHomeFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartHomeFacade.h; sourceTree = "<group>"; };
+		499364942E46EDAB00BC350C /* SmartHomeFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartHomeFacade.m; sourceTree = "<group>"; };
+		499364952E46EDAB00BC350C /* Curtain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Curtain.h; sourceTree = "<group>"; };
+		499364962E46EDAB00BC350C /* AirConditioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirConditioner.h; sourceTree = "<group>"; };
+		499364972E46EDAB00BC350C /* Curtain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Curtain.m; sourceTree = "<group>"; };
+		499364992E46EDAC00BC350C /* TV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TV.h; sourceTree = "<group>"; };
+		4993649A2E46EDAC00BC350C /* TV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TV.m; sourceTree = "<group>"; };
+		4993649B2E46EDAC00BC350C /* AirConditioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirConditioner.m; sourceTree = "<group>"; };
+		499364A12E46EDD300BC350C /* FacadeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacadeTest.h; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -448,6 +461,7 @@
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499364922E46ED8300BC350C /* 大话-建造者模式 */,
 				499364802E459C0700BC350C /* 大话-外观模式 */,
 				4993647F2E45984F00BC350C /* 大话-模版模式 */,
 				499364722E44BBC600BC350C /* 大话-原型模式 */,
@@ -818,8 +832,24 @@
 		499364802E459C0700BC350C /* 大话-外观模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499364962E46EDAB00BC350C /* AirConditioner.h */,
+				4993649B2E46EDAC00BC350C /* AirConditioner.m */,
+				499364952E46EDAB00BC350C /* Curtain.h */,
+				499364972E46EDAB00BC350C /* Curtain.m */,
+				499364A12E46EDD300BC350C /* FacadeTest.h */,
+				499364932E46EDAA00BC350C /* SmartHomeFacade.h */,
+				499364942E46EDAB00BC350C /* SmartHomeFacade.m */,
+				499364992E46EDAC00BC350C /* TV.h */,
+				4993649A2E46EDAC00BC350C /* TV.m */,
 			);
 			path = "大话-外观模式";
+			sourceTree = "<group>";
+		};
+		499364922E46ED8300BC350C /* 大话-建造者模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "大话-建造者模式";
 			sourceTree = "<group>";
 		};
 		4998362B2B9F3FDB00613369 /* Common */ = {
@@ -1139,6 +1169,7 @@
 				4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */,
 				49E7923B2609BA51004A006B /* SemaphoreDemo.m in Sources */,
 				49E7923A2609BA51004A006B /* SerialQueueDemo.m in Sources */,
+				4993649C2E46EDAC00BC350C /* SmartHomeFacade.m in Sources */,
 				499364672E44AB2400BC350C /* ConcreteProductB.m in Sources */,
 				494B95092B8B59AF0052DC1E /* NotificationTestViewController.m in Sources */,
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,
@@ -1172,6 +1203,7 @@
 				49E792332609BA51004A006B /* OSSpinLockDemo.m in Sources */,
 				49E792342609BA51004A006B /* MutexDemo.m in Sources */,
 				499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */,
+				4993649D2E46EDAC00BC350C /* Curtain.m in Sources */,
 				492E198A2E43553400747694 /* Finery.m in Sources */,
 				492E19732E3B2F4900747694 /* test01.cpp in Sources */,
 				492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */,
@@ -1179,6 +1211,7 @@
 				49CB9DC125E796B30006F119 /* Sync&ASyncViewController.m in Sources */,
 				499364892E459C4700BC350C /* Beverage.m in Sources */,
 				4941C4C323A4C60E00C49D7E /* iOSAlgorithmTest.cpp in Sources */,
+				499364A02E46EDAC00BC350C /* AirConditioner.m in Sources */,
 				49C7497420AD74DC009DC12D /* TableViewCell.m in Sources */,
 				4990BF2B211AD9330000ADC5 /* Person1.m in Sources */,
 				493E0857238BCBED0079D893 /* DelegateViewController.m in Sources */,
@@ -1197,6 +1230,7 @@
 				4990BF1621183AE80000ADC5 /* Person+Test.m in Sources */,
 				49B91E6220FC671E00FC4892 /* TestBlock.m in Sources */,
 				49CB9DC225E796B30006F119 /* DispatchAPITestViewController.m in Sources */,
+				4993649F2E46EDAC00BC350C /* TV.m in Sources */,
 				491A0F2924AF44AB00CC4189 /* TestCViewController.m in Sources */,
 				4990BF2121196E730000ADC5 /* Student+Test.m in Sources */,
 				495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */,
