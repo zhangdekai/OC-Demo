@@ -24,6 +24,7 @@
 #import "PrototypeModeTest.h"
 #import "TemplateTest.h"
 #import "FacadeTest.h"
+#import "BuilderModeTest.h"
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -70,6 +71,10 @@
         }else if (i== 2){
             model.title = @"外观模式";
             model.subTitle = @"Facade测试";
+            
+        }else if (i== 3){
+            model.title = @"建造者模式";
+            model.subTitle = @"Builder测试";
             
         }
         [_dataList addObject:model];
@@ -150,6 +155,8 @@
             testTemplateMain();
         } else if(indexPath.row == 2){
             testFacadeMain();
+        }else if(indexPath.row == 3){
+            testBuilderModeMain();
         }
     }
     

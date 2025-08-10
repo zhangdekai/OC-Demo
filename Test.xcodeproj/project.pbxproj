@@ -83,6 +83,10 @@
 		4993649D2E46EDAC00BC350C /* Curtain.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364972E46EDAB00BC350C /* Curtain.m */; };
 		4993649F2E46EDAC00BC350C /* TV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993649A2E46EDAC00BC350C /* TV.m */; };
 		499364A02E46EDAC00BC350C /* AirConditioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993649B2E46EDAC00BC350C /* AirConditioner.m */; };
+		499364AE2E48947D00BC350C /* Computer.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364A32E48947B00BC350C /* Computer.m */; };
+		499364B02E48947D00BC350C /* MacBookBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364A72E48947C00BC350C /* MacBookBuilder.m */; };
+		499364B12E48947D00BC350C /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364AA2E48947C00BC350C /* Director.m */; };
+		499364B22E48947D00BC350C /* ThinkPadBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364AB2E48947C00BC350C /* ThinkPadBuilder.m */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
 		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
@@ -271,6 +275,17 @@
 		4993649B2E46EDAC00BC350C /* AirConditioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirConditioner.m; sourceTree = "<group>"; };
 		499364A12E46EDD300BC350C /* FacadeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacadeTest.h; sourceTree = "<group>"; };
 		499364A22E48918800BC350C /* FacadeTest.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FacadeTest.md; sourceTree = "<group>"; };
+		499364A32E48947B00BC350C /* Computer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Computer.m; sourceTree = "<group>"; };
+		499364A52E48947B00BC350C /* ThinkPadBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThinkPadBuilder.h; sourceTree = "<group>"; };
+		499364A62E48947B00BC350C /* Director.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
+		499364A72E48947C00BC350C /* MacBookBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacBookBuilder.m; sourceTree = "<group>"; };
+		499364A82E48947C00BC350C /* Computer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Computer.h; sourceTree = "<group>"; };
+		499364A92E48947C00BC350C /* BuilderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuilderProtocol.h; sourceTree = "<group>"; };
+		499364AA2E48947C00BC350C /* Director.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
+		499364AB2E48947C00BC350C /* ThinkPadBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThinkPadBuilder.m; sourceTree = "<group>"; };
+		499364AC2E48947C00BC350C /* MacBookBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacBookBuilder.h; sourceTree = "<group>"; };
+		499364AD2E48947D00BC350C /* BuilderModeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuilderModeTest.h; sourceTree = "<group>"; };
+		499364B32E48975400BC350C /* BuilderMode.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BuilderMode.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -850,6 +865,17 @@
 		499364922E46ED8300BC350C /* 大话-建造者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499364AD2E48947D00BC350C /* BuilderModeTest.h */,
+				499364A92E48947C00BC350C /* BuilderProtocol.h */,
+				499364A82E48947C00BC350C /* Computer.h */,
+				499364A32E48947B00BC350C /* Computer.m */,
+				499364A62E48947B00BC350C /* Director.h */,
+				499364AA2E48947C00BC350C /* Director.m */,
+				499364AC2E48947C00BC350C /* MacBookBuilder.h */,
+				499364A72E48947C00BC350C /* MacBookBuilder.m */,
+				499364A52E48947B00BC350C /* ThinkPadBuilder.h */,
+				499364AB2E48947C00BC350C /* ThinkPadBuilder.m */,
+				499364B32E48975400BC350C /* BuilderMode.md */,
 			);
 			path = "大话-建造者模式";
 			sourceTree = "<group>";
@@ -1162,6 +1188,7 @@
 				49CB9DC325E796B30006F119 /* SafeQuestionViewController.m in Sources */,
 				4993646A2E44AB2400BC350C /* SimpleFactory.m in Sources */,
 				4946D13E23A625A2003DF518 /* OCAlgorithmTest.m in Sources */,
+				499364B12E48947D00BC350C /* Director.m in Sources */,
 				49CB9DBE25E796B30006F119 /* SafeQuestionLockViewController.m in Sources */,
 				4960E37A2615987200CF7CAB /* TestNSUseDefault.m in Sources */,
 				499836292B9DF1E200613369 /* FirstVCCollectionViewCell.m in Sources */,
@@ -1188,6 +1215,7 @@
 				4944358C23B3884F002B4742 /* MyListTest.cpp in Sources */,
 				4966B9E623A1EAEE00E02099 /* SortTest.cpp in Sources */,
 				4962F6B12123FF1C00CB305F /* Car.m in Sources */,
+				499364B22E48947D00BC350C /* ThinkPadBuilder.m in Sources */,
 				49E7923D2609BA51004A006B /* NSLockDemo.m in Sources */,
 				4962F6AE2121863E00CB305F /* Person2.m in Sources */,
 				492E198D2E43768300747694 /* Person.m in Sources */,
@@ -1199,6 +1227,7 @@
 				49E7923F2609BA51004A006B /* SynchronizedDemo.m in Sources */,
 				49CB9DC025E796B30006F119 /* DispatchGroupViewController.m in Sources */,
 				49E792362609BA51004A006B /* MJBaseDemo.m in Sources */,
+				499364AE2E48947D00BC350C /* Computer.m in Sources */,
 				4962F6B72126CC5500CB305F /* RutimeMethodAndClassApi.m in Sources */,
 				49415D78239A5A0500660C57 /* NSExceptionManager.m in Sources */,
 				49E792392609BA51004A006B /* NSConditionLockDemo.m in Sources */,
@@ -1241,6 +1270,7 @@
 				492E19762E3B54BF00747694 /* NSObject+HashTable.m in Sources */,
 				4967EDE8235D493D00D7BCCF /* BinaryTreeNode.m in Sources */,
 				49CB9DC425E796B30006F119 /* SafeReadWriteViewController.m in Sources */,
+				499364B02E48947D00BC350C /* MacBookBuilder.m in Sources */,
 				493CBEDB23A72F7600694F6E /* Book.m in Sources */,
 				49E792372609BA51004A006B /* MutexDemo3.m in Sources */,
 				499364682E44AB2400BC350C /* Client.m in Sources */,
