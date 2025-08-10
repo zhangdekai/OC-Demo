@@ -40,7 +40,7 @@
     _subTitleLabel.text = model.subTitle;
     _desLabel.text = model.descrip;
     [_uploadButton setTitle:@"Test" forState:(UIControlStateNormal)];
-    [_uploadButton setEnabled:false];
+//    [_uploadButton setEnabled:false];
 }
 
 @end

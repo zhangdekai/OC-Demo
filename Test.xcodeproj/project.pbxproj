@@ -270,6 +270,7 @@
 		4993649A2E46EDAC00BC350C /* TV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TV.m; sourceTree = "<group>"; };
 		4993649B2E46EDAC00BC350C /* AirConditioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirConditioner.m; sourceTree = "<group>"; };
 		499364A12E46EDD300BC350C /* FacadeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacadeTest.h; sourceTree = "<group>"; };
+		499364A22E48918800BC350C /* FacadeTest.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FacadeTest.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -840,6 +841,7 @@
 				499364932E46EDAA00BC350C /* SmartHomeFacade.h */,
 				499364942E46EDAB00BC350C /* SmartHomeFacade.m */,
 				499364992E46EDAC00BC350C /* TV.h */,
+				499364A22E48918800BC350C /* FacadeTest.md */,
 				4993649A2E46EDAC00BC350C /* TV.m */,
 			);
 			path = "大话-外观模式";
