@@ -28,6 +28,8 @@
 #import "ObserverModeTest.h"
 #import "PublisherSubscribeModeTest.h"
 #import "AbstractFactoryModeTest.h"
+#import "StateModeTest.h"
+
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -88,6 +90,10 @@
         }else if (i== 6){
             model.title = @"抽象工厂模式";
             model.subTitle = @"Abstract Factory测试";
+            
+        }else if (i== 7){
+            model.title = @"状态模式";
+            model.subTitle = @"State测试";
             
         }
         [_dataList addObject:model];
@@ -176,6 +182,8 @@
             testObserveModeMain();
         }else if(indexPath.row == 6){
             testAbstractFactoryMain();
+        }else if(indexPath.row == 7){
+            testStateModeMain();
         }
         
     }

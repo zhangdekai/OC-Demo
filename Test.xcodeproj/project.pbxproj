@@ -97,6 +97,11 @@
 		499364E42E49C99F00BC350C /* ConcreteProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364E12E49C99E00BC350C /* ConcreteProducts.m */; };
 		499364E52E49C99F00BC350C /* ConcreteFactories.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364E22E49C99E00BC350C /* ConcreteFactories.m */; };
 		499364E92E49D79C00BC350C /* ReflectionClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364E82E49D79C00BC350C /* ReflectionClass.m */; };
+		499364F82E49FEBC00BC350C /* PaidState.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364EB2E49FEBA00BC350C /* PaidState.m */; };
+		499364F92E49FEBC00BC350C /* PendingPaymentState.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364EC2E49FEBA00BC350C /* PendingPaymentState.m */; };
+		499364FA2E49FEBC00BC350C /* ShippedState.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364F12E49FEBB00BC350C /* ShippedState.m */; };
+		499364FC2E49FEBD00BC350C /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364F52E49FEBC00BC350C /* Order.m */; };
+		499364FD2E49FEBD00BC350C /* CompletedState.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364F72E49FEBC00BC350C /* CompletedState.m */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
 		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
@@ -324,6 +329,19 @@
 		499364E62E49CFCE00BC350C /* AbstractFactoryMode.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AbstractFactoryMode.md; sourceTree = "<group>"; };
 		499364E72E49D79C00BC350C /* ReflectionClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReflectionClass.h; sourceTree = "<group>"; };
 		499364E82E49D79C00BC350C /* ReflectionClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReflectionClass.m; sourceTree = "<group>"; };
+		499364EB2E49FEBA00BC350C /* PaidState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaidState.m; sourceTree = "<group>"; };
+		499364EC2E49FEBA00BC350C /* PendingPaymentState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingPaymentState.m; sourceTree = "<group>"; };
+		499364ED2E49FEBA00BC350C /* StateModeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateModeTest.h; sourceTree = "<group>"; };
+		499364EE2E49FEBB00BC350C /* OrderState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderState.h; sourceTree = "<group>"; };
+		499364EF2E49FEBB00BC350C /* ShippedState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShippedState.h; sourceTree = "<group>"; };
+		499364F02E49FEBB00BC350C /* PaidState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaidState.h; sourceTree = "<group>"; };
+		499364F12E49FEBB00BC350C /* ShippedState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShippedState.m; sourceTree = "<group>"; };
+		499364F22E49FEBB00BC350C /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		499364F32E49FEBC00BC350C /* PendingPaymentState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendingPaymentState.h; sourceTree = "<group>"; };
+		499364F52E49FEBC00BC350C /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		499364F62E49FEBC00BC350C /* CompletedState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedState.h; sourceTree = "<group>"; };
+		499364F72E49FEBC00BC350C /* CompletedState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedState.m; sourceTree = "<group>"; };
+		499364FE2E4A077C00BC350C /* StateModeTest.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = StateModeTest.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -515,6 +533,7 @@
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499364EA2E49FE7800BC350C /* 大话-状态模式 */,
 				499364DA2E49C96400BC350C /* 大话-抽象工厂模式 */,
 				499364BB2E489F3F00BC350C /* 大话-观察者模式 */,
 				499364B42E489F3700BC350C /* 大话-代理模式 */,
@@ -970,6 +989,26 @@
 			path = "大话-抽象工厂模式";
 			sourceTree = "<group>";
 		};
+		499364EA2E49FE7800BC350C /* 大话-状态模式 */ = {
+			isa = PBXGroup;
+			children = (
+				499364F62E49FEBC00BC350C /* CompletedState.h */,
+				499364F72E49FEBC00BC350C /* CompletedState.m */,
+				499364F22E49FEBB00BC350C /* Order.h */,
+				499364F52E49FEBC00BC350C /* Order.m */,
+				499364EE2E49FEBB00BC350C /* OrderState.h */,
+				499364F02E49FEBB00BC350C /* PaidState.h */,
+				499364EB2E49FEBA00BC350C /* PaidState.m */,
+				499364F32E49FEBC00BC350C /* PendingPaymentState.h */,
+				499364EC2E49FEBA00BC350C /* PendingPaymentState.m */,
+				499364EF2E49FEBB00BC350C /* ShippedState.h */,
+				499364F12E49FEBB00BC350C /* ShippedState.m */,
+				499364ED2E49FEBA00BC350C /* StateModeTest.h */,
+				499364FE2E4A077C00BC350C /* StateModeTest.md */,
+			);
+			path = "大话-状态模式";
+			sourceTree = "<group>";
+		};
 		4998362B2B9F3FDB00613369 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -1284,6 +1323,7 @@
 				499364B12E48947D00BC350C /* Director.m in Sources */,
 				49CB9DBE25E796B30006F119 /* SafeQuestionLockViewController.m in Sources */,
 				4960E37A2615987200CF7CAB /* TestNSUseDefault.m in Sources */,
+				499364FC2E49FEBD00BC350C /* Order.m in Sources */,
 				499836292B9DF1E200613369 /* FirstVCCollectionViewCell.m in Sources */,
 				491A0F2324AF448700CC4189 /* TestAViewController.m in Sources */,
 				4977E4F12B9719AC00658FAA /* SecondViewController.m in Sources */,
@@ -1329,11 +1369,13 @@
 				49E792392609BA51004A006B /* NSConditionLockDemo.m in Sources */,
 				499364E52E49C99F00BC350C /* ConcreteFactories.m in Sources */,
 				49E792332609BA51004A006B /* OSSpinLockDemo.m in Sources */,
+				499364F82E49FEBC00BC350C /* PaidState.m in Sources */,
 				49E792342609BA51004A006B /* MutexDemo.m in Sources */,
 				499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */,
 				4993649D2E46EDAC00BC350C /* Curtain.m in Sources */,
 				492E198A2E43553400747694 /* Finery.m in Sources */,
 				492E19732E3B2F4900747694 /* test01.cpp in Sources */,
+				499364F92E49FEBC00BC350C /* PendingPaymentState.m in Sources */,
 				492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */,
 				49E792382609BA51004A006B /* MutexDemo2.m in Sources */,
 				49CB9DC125E796B30006F119 /* Sync&ASyncViewController.m in Sources */,
@@ -1347,6 +1389,7 @@
 				499364E92E49D79C00BC350C /* ReflectionClass.m in Sources */,
 				49749DE324A5FC7E0024E825 /* NSObject+tools.m in Sources */,
 				495CE762208224F5000EA0E8 /* main.m in Sources */,
+				499364FD2E49FEBD00BC350C /* CompletedState.m in Sources */,
 				4945FBE723B10255002E9401 /* HashCTest.cpp in Sources */,
 				499364882E459C4700BC350C /* Tea.m in Sources */,
 				493E085C238BFC550079D893 /* BlockViewController.m in Sources */,
@@ -1375,6 +1418,7 @@
 				49E792372609BA51004A006B /* MutexDemo3.m in Sources */,
 				499364682E44AB2400BC350C /* Client.m in Sources */,
 				499FBF622110551300E08F8C /* KVOExploreViewController.m in Sources */,
+				499364FA2E49FEBC00BC350C /* ShippedState.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

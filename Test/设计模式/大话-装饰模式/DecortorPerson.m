@@ -23,7 +23,7 @@
     NSLog(@"装扮的好的 - %@", self.name);
 }
 
-- (void)testDecortorMode{
+- (void)testDecortorMode {
     
     // 创建一个人
     DecortorPerson *person = [[DecortorPerson alloc]initWithName:@"小帅"];
