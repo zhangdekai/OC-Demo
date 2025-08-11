@@ -29,6 +29,7 @@
 #import "PublisherSubscribeModeTest.h"
 #import "AbstractFactoryModeTest.h"
 #import "StateModeTest.h"
+#import "AdapterModeTest.h"
 
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -94,6 +95,10 @@
         }else if (i== 7){
             model.title = @"状态模式";
             model.subTitle = @"State测试";
+            
+        }else if (i== 8){
+            model.title = @"适配器模式";
+            model.subTitle = @"Adapter测试";
             
         }
         [_dataList addObject:model];
@@ -184,6 +189,8 @@
             testAbstractFactoryMain();
         }else if(indexPath.row == 7){
             testStateModeMain();
+        }else if(indexPath.row == 8){
+            testAdapterModeMain();
         }
         
     }
