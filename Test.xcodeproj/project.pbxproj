@@ -94,6 +94,8 @@
 		499364D52E49A79500BC350C /* Subscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364CD2E49A79300BC350C /* Subscriber.m */; };
 		499364D62E49A79500BC350C /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364D02E49A79300BC350C /* Publisher.m */; };
 		499364D82E49A79500BC350C /* PublishSubscribeCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364D42E49A79500BC350C /* PublishSubscribeCenter.m */; };
+		499364E42E49C99F00BC350C /* ConcreteProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364E12E49C99E00BC350C /* ConcreteProducts.m */; };
+		499364E52E49C99F00BC350C /* ConcreteFactories.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364E22E49C99E00BC350C /* ConcreteFactories.m */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
 		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
@@ -311,6 +313,14 @@
 		499364D22E49A79400BC350C /* Subscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subscriber.h; sourceTree = "<group>"; };
 		499364D42E49A79500BC350C /* PublishSubscribeCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishSubscribeCenter.m; sourceTree = "<group>"; };
 		499364D92E49ADBA00BC350C /* PublishSubscribeMode.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PublishSubscribeMode.md; sourceTree = "<group>"; };
+		499364DB2E49C99D00BC350C /* AbstractProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractProducts.h; sourceTree = "<group>"; };
+		499364DC2E49C99E00BC350C /* ConcreteProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteProducts.h; sourceTree = "<group>"; };
+		499364DD2E49C99E00BC350C /* ConcreteFactories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteFactories.h; sourceTree = "<group>"; };
+		499364DE2E49C99E00BC350C /* AbstractFactoryModeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractFactoryModeTest.h; sourceTree = "<group>"; };
+		499364E02E49C99E00BC350C /* AbstractFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractFactory.h; sourceTree = "<group>"; };
+		499364E12E49C99E00BC350C /* ConcreteProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteProducts.m; sourceTree = "<group>"; };
+		499364E22E49C99E00BC350C /* ConcreteFactories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteFactories.m; sourceTree = "<group>"; };
+		499364E62E49CFCE00BC350C /* AbstractFactoryMode.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AbstractFactoryMode.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -502,6 +512,7 @@
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499364DA2E49C96400BC350C /* 大话-抽象工厂模式 */,
 				499364BB2E489F3F00BC350C /* 大话-观察者模式 */,
 				499364B42E489F3700BC350C /* 大话-代理模式 */,
 				499364922E46ED8300BC350C /* 大话-建造者模式 */,
@@ -939,6 +950,21 @@
 			path = "发布订阅模式";
 			sourceTree = "<group>";
 		};
+		499364DA2E49C96400BC350C /* 大话-抽象工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				499364E02E49C99E00BC350C /* AbstractFactory.h */,
+				499364DE2E49C99E00BC350C /* AbstractFactoryModeTest.h */,
+				499364E62E49CFCE00BC350C /* AbstractFactoryMode.md */,
+				499364DB2E49C99D00BC350C /* AbstractProducts.h */,
+				499364DD2E49C99E00BC350C /* ConcreteFactories.h */,
+				499364E22E49C99E00BC350C /* ConcreteFactories.m */,
+				499364DC2E49C99E00BC350C /* ConcreteProducts.h */,
+				499364E12E49C99E00BC350C /* ConcreteProducts.m */,
+			);
+			path = "大话-抽象工厂模式";
+			sourceTree = "<group>";
+		};
 		4998362B2B9F3FDB00613369 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -1259,6 +1285,7 @@
 				49E7923C2609BA51004A006B /* NSConditionDemo.m in Sources */,
 				4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */,
 				49E7923B2609BA51004A006B /* SemaphoreDemo.m in Sources */,
+				499364E42E49C99F00BC350C /* ConcreteProducts.m in Sources */,
 				49E7923A2609BA51004A006B /* SerialQueueDemo.m in Sources */,
 				4993649C2E46EDAC00BC350C /* SmartHomeFacade.m in Sources */,
 				499364672E44AB2400BC350C /* ConcreteProductB.m in Sources */,
@@ -1295,6 +1322,7 @@
 				4962F6B72126CC5500CB305F /* RutimeMethodAndClassApi.m in Sources */,
 				49415D78239A5A0500660C57 /* NSExceptionManager.m in Sources */,
 				49E792392609BA51004A006B /* NSConditionLockDemo.m in Sources */,
+				499364E52E49C99F00BC350C /* ConcreteFactories.m in Sources */,
 				49E792332609BA51004A006B /* OSSpinLockDemo.m in Sources */,
 				49E792342609BA51004A006B /* MutexDemo.m in Sources */,
 				499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */,
