@@ -25,6 +25,8 @@
 #import "TemplateTest.h"
 #import "FacadeTest.h"
 #import "BuilderModeTest.h"
+#import "ObserverModeTest.h"
+#import "PublisherSubscribeModeTest.h"
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
@@ -75,6 +77,13 @@
         }else if (i== 3){
             model.title = @"建造者模式";
             model.subTitle = @"Builder测试";
+            
+        }else if (i== 4){
+            model.title = @"观察者模式";
+            model.subTitle = @"Observe测试";
+        }else if (i== 5){
+            model.title = @"发布/订阅模式";
+            model.subTitle = @"Publish测试";
             
         }
         [_dataList addObject:model];
@@ -157,6 +166,10 @@
             testFacadeMain();
         }else if(indexPath.row == 3){
             testBuilderModeMain();
+        }else if(indexPath.row == 4){
+            testObserveModeMain();
+        }else if(indexPath.row == 5){
+            testObserveModeMain();
         }
     }
     
