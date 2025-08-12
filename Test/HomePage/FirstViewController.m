@@ -32,6 +32,7 @@
 #import "AdapterModeTest.h"
 #import "MementoPatternTest.h"
 #import "CompositePatternTest.h"
+#import "IteratorPatternTest.h"
 
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -61,6 +62,55 @@
     
 }
 
+- (void)setModelData:(int)i model:(CommonDataModel *)model {
+    if(i == 0){
+        model.title = @"原型模式";
+        model.subTitle = @"Prototype测试";
+    } else if (i== 1){
+        model.title = @"模版模式";
+        model.subTitle = @"Template测试";
+        
+    }else if (i== 2){
+        model.title = @"外观模式";
+        model.subTitle = @"Facade测试";
+        
+    }else if (i== 3){
+        model.title = @"建造者模式";
+        model.subTitle = @"Builder测试";
+        
+    }else if (i== 4){
+        model.title = @"观察者模式";
+        model.subTitle = @"Observe测试";
+    }else if (i== 5){
+        model.title = @"发布/订阅模式";
+        model.subTitle = @"Publish测试";
+    }else if (i== 6){
+        model.title = @"抽象工厂模式";
+        model.subTitle = @"Abstract Factory测试";
+        
+    }else if (i== 7){
+        model.title = @"状态模式";
+        model.subTitle = @"State测试";
+        
+    }else if (i== 8){
+        model.title = @"适配器模式";
+        model.subTitle = @"Adapter测试";
+        
+    }else if (i== 9){
+        model.title = @"备忘录模式";
+        model.subTitle = @"Memento测试";
+        
+    }else if (i== 10){
+        model.title = @"组合模式";
+        model.subTitle = @"Composite测试";
+        
+    }else if (i== 11){
+        model.title = @"迭代器模式";
+        model.subTitle = @"Iterator测试";
+        
+    }
+}
+
 - (void)initData {
     
     _dataList = [NSMutableArray array];
@@ -69,48 +119,7 @@
         model.title = [NSString stringWithFormat:@"Title_%d", i];
         model.subTitle = [NSString stringWithFormat:@"SubTitle_%d", i];
         model.descrip = [NSString stringWithFormat:@"This is description at %d", i];
-        if(i == 0){
-            model.title = @"原型模式";
-            model.subTitle = @"Prototype测试";
-        } else if (i== 1){
-            model.title = @"模版模式";
-            model.subTitle = @"Template测试";
-            
-        }else if (i== 2){
-            model.title = @"外观模式";
-            model.subTitle = @"Facade测试";
-            
-        }else if (i== 3){
-            model.title = @"建造者模式";
-            model.subTitle = @"Builder测试";
-            
-        }else if (i== 4){
-            model.title = @"观察者模式";
-            model.subTitle = @"Observe测试";
-        }else if (i== 5){
-            model.title = @"发布/订阅模式";
-            model.subTitle = @"Publish测试";
-        }else if (i== 6){
-            model.title = @"抽象工厂模式";
-            model.subTitle = @"Abstract Factory测试";
-            
-        }else if (i== 7){
-            model.title = @"状态模式";
-            model.subTitle = @"State测试";
-            
-        }else if (i== 8){
-            model.title = @"适配器模式";
-            model.subTitle = @"Adapter测试";
-            
-        }else if (i== 9){
-            model.title = @"备忘录模式";
-            model.subTitle = @"Memento测试";
-            
-        }else if (i== 10){
-            model.title = @"组合模式";
-            model.subTitle = @"Composite测试";
-            
-        }
+        [self setModelData:i model:model];
         [_dataList addObject:model];
     }
     
@@ -179,34 +188,39 @@
     return cell;
 }
 
+- (void)didSelectRow:(NSIndexPath * _Nonnull)indexPath {
+    if(indexPath.row == 0){
+        testPrototypeMain();
+    }else if(indexPath.row == 1){
+        testTemplateMain();
+    } else if(indexPath.row == 2){
+        testFacadeMain();
+    }else if(indexPath.row == 3){
+        testBuilderModeMain();
+    }else if(indexPath.row == 4){
+        testObserveModeMain();
+    }else if(indexPath.row == 5){
+        testObserveModeMain();
+    }else if(indexPath.row == 6){
+        testAbstractFactoryMain();
+    }else if(indexPath.row == 7){
+        testStateModeMain();
+    }else if(indexPath.row == 8){
+        testAdapterModeMain();
+    }else if(indexPath.row == 9){
+        testMementoPatternMain();
+    }else if(indexPath.row == 10){
+        testCompositePatternMain();
+    }else if(indexPath.row == 11){
+        testIteratorPatternMain();
+    }
+}
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     NSLog(@"collectionView didSelectItemAtIndexPath row == %ld section==%ld", indexPath.row, indexPath.section);
     if(indexPath.section == 0){
-        if(indexPath.row == 0){
-            testPrototypeMain();
-        }else if(indexPath.row == 1){
-            testTemplateMain();
-        } else if(indexPath.row == 2){
-            testFacadeMain();
-        }else if(indexPath.row == 3){
-            testBuilderModeMain();
-        }else if(indexPath.row == 4){
-            testObserveModeMain();
-        }else if(indexPath.row == 5){
-            testObserveModeMain();
-        }else if(indexPath.row == 6){
-            testAbstractFactoryMain();
-        }else if(indexPath.row == 7){
-            testStateModeMain();
-        }else if(indexPath.row == 8){
-            testAdapterModeMain();
-        }else if(indexPath.row == 9){
-            testMementoPatternMain();
-        }else if(indexPath.row == 10){
-            testCompositePatternMain();
-        }
-        
+        [self didSelectRow:indexPath];
     }
     
 }

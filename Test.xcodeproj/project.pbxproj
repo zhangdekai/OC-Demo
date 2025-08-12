@@ -111,6 +111,8 @@
 		499365262E4B187500BC350C /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365222E4B187400BC350C /* File.m */; };
 		499365272E4B187500BC350C /* Folder.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365232E4B187400BC350C /* Folder.m */; };
 		499365282E4B187500BC350C /* FileSystemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365242E4B187400BC350C /* FileSystemComponent.m */; };
+		499365352E4B5FDB00BC350C /* ConcreteIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993652D2E4B5FD900BC350C /* ConcreteIterator.m */; };
+		499365362E4B5FDB00BC350C /* ConcreteAggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365302E4B5FDA00BC350C /* ConcreteAggregate.m */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
 		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
@@ -376,6 +378,14 @@
 		499365232E4B187400BC350C /* Folder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Folder.m; sourceTree = "<group>"; };
 		499365242E4B187400BC350C /* FileSystemComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSystemComponent.m; sourceTree = "<group>"; };
 		499365292E4B309D00BC350C /* CompositePattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CompositePattern.md; sourceTree = "<group>"; };
+		4993652D2E4B5FD900BC350C /* ConcreteIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteIterator.m; sourceTree = "<group>"; };
+		4993652E2E4B5FD900BC350C /* ConcreteIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteIterator.h; sourceTree = "<group>"; };
+		4993652F2E4B5FDA00BC350C /* ConcreteAggregate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteAggregate.h; sourceTree = "<group>"; };
+		499365302E4B5FDA00BC350C /* ConcreteAggregate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteAggregate.m; sourceTree = "<group>"; };
+		499365312E4B5FDA00BC350C /* IteratorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IteratorProtocol.h; sourceTree = "<group>"; };
+		499365332E4B5FDB00BC350C /* AggregateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AggregateProtocol.h; sourceTree = "<group>"; };
+		499365342E4B5FDB00BC350C /* IteratorPatternTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IteratorPatternTest.h; sourceTree = "<group>"; };
+		499365382E4B647F00BC350C /* IteeratorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IteeratorPattern.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -567,6 +577,7 @@
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				4993652C2E4B5FA200BC350C /* 大话-迭代器模式 */,
 				4993651C2E4B183700BC350C /* 大话-组合模式 */,
 				4993650E2E4AE8F200BC350C /* 大话-备忘录模式 */,
 				499364FF2E4A3A0900BC350C /* 大话-适配器模式 */,
@@ -1092,6 +1103,21 @@
 			path = "大话-组合模式";
 			sourceTree = "<group>";
 		};
+		4993652C2E4B5FA200BC350C /* 大话-迭代器模式 */ = {
+			isa = PBXGroup;
+			children = (
+				499365332E4B5FDB00BC350C /* AggregateProtocol.h */,
+				4993652F2E4B5FDA00BC350C /* ConcreteAggregate.h */,
+				499365302E4B5FDA00BC350C /* ConcreteAggregate.m */,
+				4993652E2E4B5FD900BC350C /* ConcreteIterator.h */,
+				4993652D2E4B5FD900BC350C /* ConcreteIterator.m */,
+				499365342E4B5FDB00BC350C /* IteratorPatternTest.h */,
+				499365312E4B5FDA00BC350C /* IteratorProtocol.h */,
+				499365382E4B647F00BC350C /* IteeratorPattern.md */,
+			);
+			path = "大话-迭代器模式";
+			sourceTree = "<group>";
+		};
 		4998362B2B9F3FDB00613369 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -1441,6 +1467,7 @@
 				4962F6AE2121863E00CB305F /* Person2.m in Sources */,
 				492E198D2E43768300747694 /* Person.m in Sources */,
 				4990BF2821198EE10000ADC5 /* NSObject+addProperty.m in Sources */,
+				499365362E4B5FDB00BC350C /* ConcreteAggregate.m in Sources */,
 				49415D75239A329900660C57 /* iOS_APITestViewController.m in Sources */,
 				49934E3B21479A4C00DAB4D5 /* ChangeAppIconViewController.m in Sources */,
 				495CE757208224F3000EA0E8 /* ViewController.m in Sources */,
@@ -1459,6 +1486,7 @@
 				49E792342609BA51004A006B /* MutexDemo.m in Sources */,
 				499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */,
 				4993649D2E46EDAC00BC350C /* Curtain.m in Sources */,
+				499365352E4B5FDB00BC350C /* ConcreteIterator.m in Sources */,
 				492E198A2E43553400747694 /* Finery.m in Sources */,
 				492E19732E3B2F4900747694 /* test01.cpp in Sources */,
 				499364F92E49FEBC00BC350C /* PendingPaymentState.m in Sources */,
