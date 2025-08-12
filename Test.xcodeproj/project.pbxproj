@@ -105,6 +105,9 @@
 		499365092E4A3A2400BC350C /* FLACPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365032E4A3A2200BC350C /* FLACPlayer.m */; };
 		4993650A2E4A3A2400BC350C /* FLACAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365052E4A3A2300BC350C /* FLACAdapter.m */; };
 		4993650C2E4A3A2400BC350C /* MP3Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365082E4A3A2400BC350C /* MP3Player.m */; };
+		499365172E4AF0B500BC350C /* TextMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993650F2E4AF0B200BC350C /* TextMemento.m */; };
+		499365192E4AF0B500BC350C /* TextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365142E4AF0B400BC350C /* TextEditor.m */; };
+		4993651A2E4AF0B500BC350C /* HistoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365162E4AF0B400BC350C /* HistoryManager.m */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
 		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
@@ -354,6 +357,14 @@
 		499365062E4A3A2300BC350C /* AdapterModeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdapterModeTest.h; sourceTree = "<group>"; };
 		499365082E4A3A2400BC350C /* MP3Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MP3Player.m; sourceTree = "<group>"; };
 		4993650D2E4A3E4300BC350C /* AdapterModeTest.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AdapterModeTest.md; sourceTree = "<group>"; };
+		4993650F2E4AF0B200BC350C /* TextMemento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextMemento.m; sourceTree = "<group>"; };
+		499365102E4AF0B300BC350C /* HistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryManager.h; sourceTree = "<group>"; };
+		499365122E4AF0B300BC350C /* MementoPatternTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MementoPatternTest.h; sourceTree = "<group>"; };
+		499365132E4AF0B400BC350C /* TextEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEditor.h; sourceTree = "<group>"; };
+		499365142E4AF0B400BC350C /* TextEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEditor.m; sourceTree = "<group>"; };
+		499365152E4AF0B400BC350C /* TextMemento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextMemento.h; sourceTree = "<group>"; };
+		499365162E4AF0B400BC350C /* HistoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryManager.m; sourceTree = "<group>"; };
+		4993651B2E4AF1E300BC350C /* MementoPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MementoPattern.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -545,6 +556,7 @@
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				4993650E2E4AE8F200BC350C /* 大话-备忘录模式 */,
 				499364FF2E4A3A0900BC350C /* 大话-适配器模式 */,
 				499364EA2E49FE7800BC350C /* 大话-状态模式 */,
 				499364DA2E49C96400BC350C /* 大话-抽象工厂模式 */,
@@ -1038,6 +1050,21 @@
 			path = "大话-适配器模式";
 			sourceTree = "<group>";
 		};
+		4993650E2E4AE8F200BC350C /* 大话-备忘录模式 */ = {
+			isa = PBXGroup;
+			children = (
+				499365102E4AF0B300BC350C /* HistoryManager.h */,
+				499365162E4AF0B400BC350C /* HistoryManager.m */,
+				499365122E4AF0B300BC350C /* MementoPatternTest.h */,
+				499365132E4AF0B400BC350C /* TextEditor.h */,
+				499365142E4AF0B400BC350C /* TextEditor.m */,
+				499365152E4AF0B400BC350C /* TextMemento.h */,
+				4993650F2E4AF0B200BC350C /* TextMemento.m */,
+				4993651B2E4AF1E300BC350C /* MementoPattern.md */,
+			);
+			path = "大话-备忘录模式";
+			sourceTree = "<group>";
+		};
 		4998362B2B9F3FDB00613369 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -1366,6 +1393,7 @@
 				499364672E44AB2400BC350C /* ConcreteProductB.m in Sources */,
 				494B95092B8B59AF0052DC1E /* NotificationTestViewController.m in Sources */,
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,
+				499365172E4AF0B500BC350C /* TextMemento.m in Sources */,
 				4977E4F42B9719B700658FAA /* ThirdViewController.m in Sources */,
 				499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */,
 				493904AD25F2516A00C8C209 /* OCLockTestViewController.m in Sources */,
@@ -1437,10 +1465,12 @@
 				4993649F2E46EDAC00BC350C /* TV.m in Sources */,
 				491A0F2924AF44AB00CC4189 /* TestCViewController.m in Sources */,
 				4990BF2121196E730000ADC5 /* Student+Test.m in Sources */,
+				4993651A2E4AF0B500BC350C /* HistoryManager.m in Sources */,
 				499364D52E49A79500BC350C /* Subscriber.m in Sources */,
 				495CE754208224F3000EA0E8 /* AppDelegate.m in Sources */,
 				49C7497720AD77FF009DC12D /* SubTableViewCell.m in Sources */,
 				49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */,
+				499365192E4AF0B500BC350C /* TextEditor.m in Sources */,
 				492E19762E3B54BF00747694 /* NSObject+HashTable.m in Sources */,
 				4967EDE8235D493D00D7BCCF /* BinaryTreeNode.m in Sources */,
 				499365092E4A3A2400BC350C /* FLACPlayer.m in Sources */,

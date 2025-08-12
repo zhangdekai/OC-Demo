@@ -30,6 +30,7 @@
 #import "AbstractFactoryModeTest.h"
 #import "StateModeTest.h"
 #import "AdapterModeTest.h"
+#import "MementoPatternTest.h"
 
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -99,6 +100,10 @@
         }else if (i== 8){
             model.title = @"适配器模式";
             model.subTitle = @"Adapter测试";
+            
+        }else if (i== 9){
+            model.title = @"备忘录模式";
+            model.subTitle = @"Memento测试";
             
         }
         [_dataList addObject:model];
@@ -191,6 +196,8 @@
             testStateModeMain();
         }else if(indexPath.row == 8){
             testAdapterModeMain();
+        }else if(indexPath.row == 9){
+            testMementoPatternMain();
         }
         
     }
