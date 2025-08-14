@@ -74,7 +74,7 @@
 ## 系统化整理：GoF (Gang of four) 的经典定义
 1994 年，“四人组”（GoF）在《设计模式：可复用面向对象软件的基础》中，将结构性设计模式作为三大类设计模式之一（另外两类是创建型、行为型），系统定义了 7 种经典模式：
 
-!(结构性设计模式)(/结构性设计模式.png)
+!(结构性设计模式)(结构性设计模式.png)
 
 
 /Users/zhangdekai/Documents/GitHub/OC-Bottom-Data-algorithm/Test/设计模式/结构性设计模式.png
