@@ -33,6 +33,7 @@
 #import "MementoPatternTest.h"
 #import "CompositePatternTest.h"
 #import "IteratorPatternTest.h"
+#import "BridgePatternTest.h"
 
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -107,6 +108,10 @@
     }else if (i== 11){
         model.title = @"迭代器模式";
         model.subTitle = @"Iterator测试";
+        
+    }else if (i== 12){
+        model.title = @"桥接模式";
+        model.subTitle = @"Bridge测试";
         
     }
 }
@@ -213,6 +218,8 @@
         testCompositePatternMain();
     }else if(indexPath.row == 11){
         testIteratorPatternMain();
+    }else if(indexPath.row == 12){
+        testBridgePatternMain();
     }
 }
 

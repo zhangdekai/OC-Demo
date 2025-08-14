@@ -20,48 +20,48 @@
  */
 
 
-static SignalModelTest *manager = nil;
+static SignalModelTest *instance = nil;
 
 @implementation SignalModelTest
 
-//1： GCD once
+//1： 方式 1：dispatch_once（推荐，线程安全）
 +(instancetype)shareManager {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        manager = [[self alloc]init];
+        instance = [[self alloc]init];
     });
      
-    return manager;
+    return instance;
 }
 
 //2:@synchronized
 +(instancetype)shareInstance {
     @synchronized (self) {//加锁 , 防止多线程竞态访问
-        if (!manager) {
-            manager = [[self alloc]init];
+        if (!instance) {
+            instance = [[self alloc]init];
         }
     }
-    return manager;
+    return instance;
     
 }
 
-
+// 3. 重写allocWithZone: 防止通过alloc创建新实例
 + (instancetype)allocWithZone:(struct _NSZone *)zone {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        manager = [super allocWithZone:zone];
+        instance = [super allocWithZone:zone];
     });
-    return manager;
+    return instance;
 }
 
-#pragma mark - NSCopying,NSMutableCopying
-
+// 重写copyWithZone: 防止通过copy创建新实例
 - (nonnull id)copyWithZone:(nullable NSZone *)zone {
-    return manager;
+    return instance;
 }
 
+// 重写mutableCopyWithZone:防止通过mutableCopy创建新实例
 - (nonnull id)mutableCopyWithZone:(nullable NSZone *)zone {
-    return manager;
+    return instance;
 }
 
 @end

@@ -21,7 +21,6 @@
 		492E198D2E43768300747694 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E198B2E43768300747694 /* Person.m */; };
 		493904AD25F2516A00C8C209 /* OCLockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493904AC25F2516A00C8C209 /* OCLockTestViewController.m */; };
 		493904B325F3179800C8C209 /* StrongCopyWeakTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 493904B225F3179800C8C209 /* StrongCopyWeakTest.m */; };
-		493AE7BC23ACBDA800BDDACC /* SignalModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 493AE7BB23ACBDA800BDDACC /* SignalModelTest.m */; };
 		493CBEDB23A72F7600694F6E /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 493CBEDA23A72F7600694F6E /* Book.m */; };
 		493E085C238BFC550079D893 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E085B238BFC550079D893 /* BlockViewController.m */; };
 		49415D75239A329900660C57 /* iOS_APITestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D74239A329900660C57 /* iOS_APITestViewController.m */; };
@@ -113,6 +112,13 @@
 		499365282E4B187500BC350C /* FileSystemComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365242E4B187400BC350C /* FileSystemComponent.m */; };
 		499365352E4B5FDB00BC350C /* ConcreteIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993652D2E4B5FD900BC350C /* ConcreteIterator.m */; };
 		499365362E4B5FDB00BC350C /* ConcreteAggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365302E4B5FDA00BC350C /* ConcreteAggregate.m */; };
+		4993653C2E4C564C00BC350C /* SignalModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993653A2E4C564C00BC350C /* SignalModelTest.m */; };
+		4993654C2E4C7D3C00BC350C /* SMSMessageSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365422E4C7D3900BC350C /* SMSMessageSender.m */; };
+		4993654D2E4C7D3C00BC350C /* UrgentMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365432E4C7D3900BC350C /* UrgentMessage.m */; };
+		4993654E2E4C7D3C00BC350C /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365452E4C7D3A00BC350C /* Message.m */; };
+		4993654F2E4C7D3C00BC350C /* EmailMessageSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365462E4C7D3A00BC350C /* EmailMessageSender.m */; };
+		499365512E4C7D3C00BC350C /* NormalMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993654B2E4C7D3C00BC350C /* NormalMessage.m */; };
+		499365552E4E098000BC350C /* 结构性设计模式.png in Resources */ = {isa = PBXBuildFile; fileRef = 499365542E4E097F00BC350C /* 结构性设计模式.png */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
 		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
@@ -175,8 +181,6 @@
 		493904AC25F2516A00C8C209 /* OCLockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLockTestViewController.m; sourceTree = "<group>"; };
 		493904B125F3179800C8C209 /* StrongCopyWeakTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrongCopyWeakTest.h; sourceTree = "<group>"; };
 		493904B225F3179800C8C209 /* StrongCopyWeakTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrongCopyWeakTest.m; sourceTree = "<group>"; };
-		493AE7BA23ACBDA800BDDACC /* SignalModelTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalModelTest.h; sourceTree = "<group>"; };
-		493AE7BB23ACBDA800BDDACC /* SignalModelTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignalModelTest.m; sourceTree = "<group>"; };
 		493CBED923A72F7600694F6E /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		493CBEDA23A72F7600694F6E /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		493E085A238BFC550079D893 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
@@ -386,6 +390,24 @@
 		499365332E4B5FDB00BC350C /* AggregateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AggregateProtocol.h; sourceTree = "<group>"; };
 		499365342E4B5FDB00BC350C /* IteratorPatternTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IteratorPatternTest.h; sourceTree = "<group>"; };
 		499365382E4B647F00BC350C /* IteeratorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IteeratorPattern.md; sourceTree = "<group>"; };
+		4993653A2E4C564C00BC350C /* SignalModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalModelTest.m; sourceTree = "<group>"; };
+		4993653B2E4C564C00BC350C /* SignalModelTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalModelTest.h; sourceTree = "<group>"; };
+		4993653D2E4C596100BC350C /* SingletonPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SingletonPattern.md; sourceTree = "<group>"; };
+		4993653F2E4C7D3700BC350C /* UrgentMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrgentMessage.h; sourceTree = "<group>"; };
+		499365402E4C7D3800BC350C /* MessageSenderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageSenderProtocol.h; sourceTree = "<group>"; };
+		499365412E4C7D3800BC350C /* BridgePatternTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgePatternTest.h; sourceTree = "<group>"; };
+		499365422E4C7D3900BC350C /* SMSMessageSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSMessageSender.m; sourceTree = "<group>"; };
+		499365432E4C7D3900BC350C /* UrgentMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrgentMessage.m; sourceTree = "<group>"; };
+		499365442E4C7D3900BC350C /* SMSMessageSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSMessageSender.h; sourceTree = "<group>"; };
+		499365452E4C7D3A00BC350C /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		499365462E4C7D3A00BC350C /* EmailMessageSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailMessageSender.m; sourceTree = "<group>"; };
+		499365472E4C7D3B00BC350C /* NormalMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalMessage.h; sourceTree = "<group>"; };
+		499365482E4C7D3B00BC350C /* EmailMessageSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailMessageSender.h; sourceTree = "<group>"; };
+		4993654A2E4C7D3C00BC350C /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		4993654B2E4C7D3C00BC350C /* NormalMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalMessage.m; sourceTree = "<group>"; };
+		499365522E4DE8D600BC350C /* BridgePattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BridgePattern.md; sourceTree = "<group>"; };
+		499365532E4DFC5100BC350C /* DesignPattern起源分类.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "DesignPattern起源分类.md"; sourceTree = "<group>"; };
+		499365542E4E097F00BC350C /* 结构性设计模式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "结构性设计模式.png"; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -565,18 +587,11 @@
 			path = "通知";
 			sourceTree = "<group>";
 		};
-		493AE7B923ACBD8500BDDACC /* 单例 */ = {
-			isa = PBXGroup;
-			children = (
-				493AE7BA23ACBDA800BDDACC /* SignalModelTest.h */,
-				493AE7BB23ACBDA800BDDACC /* SignalModelTest.m */,
-			);
-			path = "单例";
-			sourceTree = "<group>";
-		};
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				4993653E2E4C7CFB00BC350C /* 大话-桥接模式 */,
+				499365392E4C564B00BC350C /* 大话-单例模式 */,
 				4993652C2E4B5FA200BC350C /* 大话-迭代器模式 */,
 				4993651C2E4B183700BC350C /* 大话-组合模式 */,
 				4993650E2E4AE8F200BC350C /* 大话-备忘录模式 */,
@@ -593,8 +608,9 @@
 				492E197D2E4351F100747694 /* 大话-装饰模式 */,
 				492E19772E42080300747694 /* 大话-策略模式 */,
 				493904D825F4717C00C8C209 /* 通知 */,
-				493AE7B923ACBD8500BDDACC /* 单例 */,
 				493E0859238BFBBC0079D893 /* Block */,
+				499365532E4DFC5100BC350C /* DesignPattern起源分类.md */,
+				499365542E4E097F00BC350C /* 结构性设计模式.png */,
 			);
 			path = "设计模式";
 			sourceTree = "<group>";
@@ -1118,6 +1134,36 @@
 			path = "大话-迭代器模式";
 			sourceTree = "<group>";
 		};
+		499365392E4C564B00BC350C /* 大话-单例模式 */ = {
+			isa = PBXGroup;
+			children = (
+				4993653A2E4C564C00BC350C /* SignalModelTest.m */,
+				4993653B2E4C564C00BC350C /* SignalModelTest.h */,
+				4993653D2E4C596100BC350C /* SingletonPattern.md */,
+			);
+			path = "大话-单例模式";
+			sourceTree = "<group>";
+		};
+		4993653E2E4C7CFB00BC350C /* 大话-桥接模式 */ = {
+			isa = PBXGroup;
+			children = (
+				499365412E4C7D3800BC350C /* BridgePatternTest.h */,
+				499365482E4C7D3B00BC350C /* EmailMessageSender.h */,
+				499365462E4C7D3A00BC350C /* EmailMessageSender.m */,
+				4993654A2E4C7D3C00BC350C /* Message.h */,
+				499365452E4C7D3A00BC350C /* Message.m */,
+				499365402E4C7D3800BC350C /* MessageSenderProtocol.h */,
+				499365472E4C7D3B00BC350C /* NormalMessage.h */,
+				4993654B2E4C7D3C00BC350C /* NormalMessage.m */,
+				499365442E4C7D3900BC350C /* SMSMessageSender.h */,
+				499365422E4C7D3900BC350C /* SMSMessageSender.m */,
+				4993653F2E4C7D3700BC350C /* UrgentMessage.h */,
+				499365432E4C7D3900BC350C /* UrgentMessage.m */,
+				499365522E4DE8D600BC350C /* BridgePattern.md */,
+			);
+			path = "大话-桥接模式";
+			sourceTree = "<group>";
+		};
 		4998362B2B9F3FDB00613369 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -1363,6 +1409,7 @@
 				4998362A2B9DF1E200613369 /* FirstVCCollectionViewCell.xib in Resources */,
 				49934E34214798AD00DAB4D5 /* dusk@3x.png in Resources */,
 				49934E372147991E00DAB4D5 /* leopard@2x.png in Resources */,
+				499365552E4E098000BC350C /* 结构性设计模式.png in Resources */,
 				495CE75A208224F3000EA0E8 /* Main.storyboard in Resources */,
 				492E197C2E433EF000747694 /* Strategy.md in Resources */,
 				499836252B9D7A6800613369 /* README.md in Resources */,
@@ -1423,7 +1470,6 @@
 				499836232B9D42D700613369 /* CommonDataModel.m in Sources */,
 				4993646F2E44AE7200BC350C /* ConcreteFactoryA.m in Sources */,
 				499364D82E49A79500BC350C /* PublishSubscribeCenter.m in Sources */,
-				493AE7BC23ACBDA800BDDACC /* SignalModelTest.m in Sources */,
 				49CB9DC325E796B30006F119 /* SafeQuestionViewController.m in Sources */,
 				499364BA2E489F3700BC350C /* DelegateViewController.m in Sources */,
 				4993646A2E44AB2400BC350C /* SimpleFactory.m in Sources */,
@@ -1450,6 +1496,7 @@
 				4977E4F42B9719B700658FAA /* ThirdViewController.m in Sources */,
 				499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */,
 				493904AD25F2516A00C8C209 /* OCLockTestViewController.m in Sources */,
+				4993654C2E4C7D3C00BC350C /* SMSMessageSender.m in Sources */,
 				49CB9DBF25E796B30006F119 /* Thread&RunloopViewController.m in Sources */,
 				499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */,
 				499364C92E48A6E000BC350C /* Newspaper.m in Sources */,
@@ -1463,6 +1510,7 @@
 				4962F6B12123FF1C00CB305F /* Car.m in Sources */,
 				499364B22E48947D00BC350C /* ThinkPadBuilder.m in Sources */,
 				499364CA2E48A6E000BC350C /* NewsSubject.m in Sources */,
+				499365512E4C7D3C00BC350C /* NormalMessage.m in Sources */,
 				49E7923D2609BA51004A006B /* NSLockDemo.m in Sources */,
 				4962F6AE2121863E00CB305F /* Person2.m in Sources */,
 				492E198D2E43768300747694 /* Person.m in Sources */,
@@ -1476,6 +1524,7 @@
 				49CB9DC025E796B30006F119 /* DispatchGroupViewController.m in Sources */,
 				49E792362609BA51004A006B /* MJBaseDemo.m in Sources */,
 				499364AE2E48947D00BC350C /* Computer.m in Sources */,
+				4993654F2E4C7D3C00BC350C /* EmailMessageSender.m in Sources */,
 				4962F6B72126CC5500CB305F /* RutimeMethodAndClassApi.m in Sources */,
 				49415D78239A5A0500660C57 /* NSExceptionManager.m in Sources */,
 				49E792392609BA51004A006B /* NSConditionLockDemo.m in Sources */,
@@ -1491,10 +1540,12 @@
 				492E19732E3B2F4900747694 /* test01.cpp in Sources */,
 				499364F92E49FEBC00BC350C /* PendingPaymentState.m in Sources */,
 				492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */,
+				4993654D2E4C7D3C00BC350C /* UrgentMessage.m in Sources */,
 				49E792382609BA51004A006B /* MutexDemo2.m in Sources */,
 				4993650A2E4A3A2400BC350C /* FLACAdapter.m in Sources */,
 				49CB9DC125E796B30006F119 /* Sync&ASyncViewController.m in Sources */,
 				499364892E459C4700BC350C /* Beverage.m in Sources */,
+				4993653C2E4C564C00BC350C /* SignalModelTest.m in Sources */,
 				4941C4C323A4C60E00C49D7E /* iOSAlgorithmTest.cpp in Sources */,
 				499364A02E46EDAC00BC350C /* AirConditioner.m in Sources */,
 				49C7497420AD74DC009DC12D /* TableViewCell.m in Sources */,
@@ -1509,6 +1560,7 @@
 				499364882E459C4700BC350C /* Tea.m in Sources */,
 				493E085C238BFC550079D893 /* BlockViewController.m in Sources */,
 				49E792352609BA51004A006B /* OSUnfairLockDemo.m in Sources */,
+				4993654E2E4C7D3C00BC350C /* Message.m in Sources */,
 				4990BAA1212FE8100044BCE1 /* WebPTestViewController.m in Sources */,
 				4993648B2E459C4700BC350C /* Coffee.m in Sources */,
 				4998362E2B9F3FFD00613369 /* DeviceManager.m in Sources */,
