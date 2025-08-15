@@ -34,6 +34,7 @@
 #import "CompositePatternTest.h"
 #import "IteratorPatternTest.h"
 #import "BridgePatternTest.h"
+#import "CommandPatternTest.h"
 
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -112,6 +113,10 @@
     }else if (i== 12){
         model.title = @"桥接模式";
         model.subTitle = @"Bridge测试";
+        
+    }else if (i== 13){
+        model.title = @"命令模式";
+        model.subTitle = @"Command测试";
         
     }
 }
@@ -220,6 +225,8 @@
         testIteratorPatternMain();
     }else if(indexPath.row == 12){
         testBridgePatternMain();
+    }else if(indexPath.row == 13){
+        testCommandPatternMain();
     }
 }
 

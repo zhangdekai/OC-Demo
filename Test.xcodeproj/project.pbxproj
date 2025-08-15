@@ -119,6 +119,13 @@
 		4993654F2E4C7D3C00BC350C /* EmailMessageSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365462E4C7D3A00BC350C /* EmailMessageSender.m */; };
 		499365512E4C7D3C00BC350C /* NormalMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993654B2E4C7D3C00BC350C /* NormalMessage.m */; };
 		499365552E4E098000BC350C /* 结构性设计模式.png in Resources */ = {isa = PBXBuildFile; fileRef = 499365542E4E097F00BC350C /* 结构性设计模式.png */; };
+		499365682E4F1DFD00BC350C /* Light.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365582E4F1DF900BC350C /* Light.m */; };
+		499365692E4F1DFD00BC350C /* RemoteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993655A2E4F1DFA00BC350C /* RemoteControl.m */; };
+		4993656A2E4F1DFD00BC350C /* TVOnCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993655B2E4F1DFA00BC350C /* TVOnCommand.m */; };
+		4993656D2E4F1DFD00BC350C /* LightOffCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993655F2E4F1DFB00BC350C /* LightOffCommand.m */; };
+		4993656E2E4F1DFD00BC350C /* LightOnCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365632E4F1DFC00BC350C /* LightOnCommand.m */; };
+		4993656F2E4F1DFD00BC350C /* TVOffCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365662E4F1DFD00BC350C /* TVOffCommand.m */; };
+		499365722E4F1EE200BC350C /* FamilyTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365702E4F1EE200BC350C /* FamilyTV.m */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
 		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
@@ -408,6 +415,23 @@
 		499365522E4DE8D600BC350C /* BridgePattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BridgePattern.md; sourceTree = "<group>"; };
 		499365532E4DFC5100BC350C /* DesignPattern起源分类.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "DesignPattern起源分类.md"; sourceTree = "<group>"; };
 		499365542E4E097F00BC350C /* 结构性设计模式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "结构性设计模式.png"; sourceTree = "<group>"; };
+		499365572E4F1DF900BC350C /* LightOffCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightOffCommand.h; sourceTree = "<group>"; };
+		499365582E4F1DF900BC350C /* Light.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Light.m; sourceTree = "<group>"; };
+		499365592E4F1DFA00BC350C /* LightOnCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightOnCommand.h; sourceTree = "<group>"; };
+		4993655A2E4F1DFA00BC350C /* RemoteControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteControl.m; sourceTree = "<group>"; };
+		4993655B2E4F1DFA00BC350C /* TVOnCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVOnCommand.m; sourceTree = "<group>"; };
+		4993655D2E4F1DFB00BC350C /* RemoteControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteControl.h; sourceTree = "<group>"; };
+		4993655F2E4F1DFB00BC350C /* LightOffCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightOffCommand.m; sourceTree = "<group>"; };
+		499365602E4F1DFB00BC350C /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		499365612E4F1DFC00BC350C /* TVOffCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVOffCommand.h; sourceTree = "<group>"; };
+		499365622E4F1DFC00BC350C /* TVOnCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVOnCommand.h; sourceTree = "<group>"; };
+		499365632E4F1DFC00BC350C /* LightOnCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightOnCommand.m; sourceTree = "<group>"; };
+		499365642E4F1DFC00BC350C /* CommandPatternTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandPatternTest.h; sourceTree = "<group>"; };
+		499365652E4F1DFD00BC350C /* Light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Light.h; sourceTree = "<group>"; };
+		499365662E4F1DFD00BC350C /* TVOffCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVOffCommand.m; sourceTree = "<group>"; };
+		499365702E4F1EE200BC350C /* FamilyTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyTV.m; sourceTree = "<group>"; };
+		499365712E4F1EE200BC350C /* FamilyTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyTV.h; sourceTree = "<group>"; };
+		499365732E4F355600BC350C /* CommandPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CommandPattern.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -590,6 +614,7 @@
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499365562E4E0C7800BC350C /* 大话-命令模式 */,
 				4993653E2E4C7CFB00BC350C /* 大话-桥接模式 */,
 				499365392E4C564B00BC350C /* 大话-单例模式 */,
 				4993652C2E4B5FA200BC350C /* 大话-迭代器模式 */,
@@ -1164,6 +1189,30 @@
 			path = "大话-桥接模式";
 			sourceTree = "<group>";
 		};
+		499365562E4E0C7800BC350C /* 大话-命令模式 */ = {
+			isa = PBXGroup;
+			children = (
+				499365602E4F1DFB00BC350C /* Command.h */,
+				499365642E4F1DFC00BC350C /* CommandPatternTest.h */,
+				499365652E4F1DFD00BC350C /* Light.h */,
+				499365582E4F1DF900BC350C /* Light.m */,
+				499365572E4F1DF900BC350C /* LightOffCommand.h */,
+				4993655F2E4F1DFB00BC350C /* LightOffCommand.m */,
+				499365592E4F1DFA00BC350C /* LightOnCommand.h */,
+				499365632E4F1DFC00BC350C /* LightOnCommand.m */,
+				4993655D2E4F1DFB00BC350C /* RemoteControl.h */,
+				4993655A2E4F1DFA00BC350C /* RemoteControl.m */,
+				499365712E4F1EE200BC350C /* FamilyTV.h */,
+				499365702E4F1EE200BC350C /* FamilyTV.m */,
+				499365612E4F1DFC00BC350C /* TVOffCommand.h */,
+				499365662E4F1DFD00BC350C /* TVOffCommand.m */,
+				499365622E4F1DFC00BC350C /* TVOnCommand.h */,
+				4993655B2E4F1DFA00BC350C /* TVOnCommand.m */,
+				499365732E4F355600BC350C /* CommandPattern.md */,
+			);
+			path = "大话-命令模式";
+			sourceTree = "<group>";
+		};
 		4998362B2B9F3FDB00613369 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -1467,6 +1516,7 @@
 				493904B325F3179800C8C209 /* StrongCopyWeakTest.m in Sources */,
 				49E7923E2609BA51004A006B /* OSSpinLockDemo2.m in Sources */,
 				491A0F2624AF44A200CC4189 /* TestBViewController.m in Sources */,
+				4993656D2E4F1DFD00BC350C /* LightOffCommand.m in Sources */,
 				499836232B9D42D700613369 /* CommonDataModel.m in Sources */,
 				4993646F2E44AE7200BC350C /* ConcreteFactoryA.m in Sources */,
 				499364D82E49A79500BC350C /* PublishSubscribeCenter.m in Sources */,
@@ -1498,11 +1548,13 @@
 				493904AD25F2516A00C8C209 /* OCLockTestViewController.m in Sources */,
 				4993654C2E4C7D3C00BC350C /* SMSMessageSender.m in Sources */,
 				49CB9DBF25E796B30006F119 /* Thread&RunloopViewController.m in Sources */,
+				499365682E4F1DFD00BC350C /* Light.m in Sources */,
 				499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */,
 				499364C92E48A6E000BC350C /* Newspaper.m in Sources */,
 				499364702E44AE7200BC350C /* ConcreteFactoryB.m in Sources */,
 				4977E4E72B9706B800658FAA /* FirstViewController.m in Sources */,
 				4990BF1E21196E410000ADC5 /* Student.m in Sources */,
+				499365692E4F1DFD00BC350C /* RemoteControl.m in Sources */,
 				49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */,
 				4946D14223A67F0A003DF518 /* KVCTestClass.m in Sources */,
 				4944358C23B3884F002B4742 /* MyListTest.cpp in Sources */,
@@ -1510,6 +1562,7 @@
 				4962F6B12123FF1C00CB305F /* Car.m in Sources */,
 				499364B22E48947D00BC350C /* ThinkPadBuilder.m in Sources */,
 				499364CA2E48A6E000BC350C /* NewsSubject.m in Sources */,
+				4993656A2E4F1DFD00BC350C /* TVOnCommand.m in Sources */,
 				499365512E4C7D3C00BC350C /* NormalMessage.m in Sources */,
 				49E7923D2609BA51004A006B /* NSLockDemo.m in Sources */,
 				4962F6AE2121863E00CB305F /* Person2.m in Sources */,
@@ -1536,12 +1589,14 @@
 				499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */,
 				4993649D2E46EDAC00BC350C /* Curtain.m in Sources */,
 				499365352E4B5FDB00BC350C /* ConcreteIterator.m in Sources */,
+				4993656E2E4F1DFD00BC350C /* LightOnCommand.m in Sources */,
 				492E198A2E43553400747694 /* Finery.m in Sources */,
 				492E19732E3B2F4900747694 /* test01.cpp in Sources */,
 				499364F92E49FEBC00BC350C /* PendingPaymentState.m in Sources */,
 				492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */,
 				4993654D2E4C7D3C00BC350C /* UrgentMessage.m in Sources */,
 				49E792382609BA51004A006B /* MutexDemo2.m in Sources */,
+				4993656F2E4F1DFD00BC350C /* TVOffCommand.m in Sources */,
 				4993650A2E4A3A2400BC350C /* FLACAdapter.m in Sources */,
 				49CB9DC125E796B30006F119 /* Sync&ASyncViewController.m in Sources */,
 				499364892E459C4700BC350C /* Beverage.m in Sources */,
@@ -1562,6 +1617,7 @@
 				49E792352609BA51004A006B /* OSUnfairLockDemo.m in Sources */,
 				4993654E2E4C7D3C00BC350C /* Message.m in Sources */,
 				4990BAA1212FE8100044BCE1 /* WebPTestViewController.m in Sources */,
+				499365722E4F1EE200BC350C /* FamilyTV.m in Sources */,
 				4993648B2E459C4700BC350C /* Coffee.m in Sources */,
 				4998362E2B9F3FFD00613369 /* DeviceManager.m in Sources */,
 				492E197A2E42086700747694 /* StrategyMode.m in Sources */,
