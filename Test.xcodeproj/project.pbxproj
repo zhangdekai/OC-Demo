@@ -126,6 +126,10 @@
 		4993656E2E4F1DFD00BC350C /* LightOnCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365632E4F1DFC00BC350C /* LightOnCommand.m */; };
 		4993656F2E4F1DFD00BC350C /* TVOffCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365662E4F1DFD00BC350C /* TVOffCommand.m */; };
 		499365722E4F1EE200BC350C /* FamilyTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365702E4F1EE200BC350C /* FamilyTV.m */; };
+		499365802E4F3FF600BC350C /* CEO.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365762E4F3FF400BC350C /* CEO.m */; };
+		499365812E4F3FF600BC350C /* DepartmentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365782E4F3FF500BC350C /* DepartmentManager.m */; };
+		499365822E4F3FF600BC350C /* TeamLeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993657A2E4F3FF500BC350C /* TeamLeader.m */; };
+		499365832E4F3FF600BC350C /* AbstractApprover.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993657D2E4F3FF500BC350C /* AbstractApprover.m */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
 		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
@@ -432,6 +436,16 @@
 		499365702E4F1EE200BC350C /* FamilyTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyTV.m; sourceTree = "<group>"; };
 		499365712E4F1EE200BC350C /* FamilyTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyTV.h; sourceTree = "<group>"; };
 		499365732E4F355600BC350C /* CommandPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CommandPattern.md; sourceTree = "<group>"; };
+		499365762E4F3FF400BC350C /* CEO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEO.m; sourceTree = "<group>"; };
+		499365772E4F3FF400BC350C /* CEO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEO.h; sourceTree = "<group>"; };
+		499365782E4F3FF500BC350C /* DepartmentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartmentManager.m; sourceTree = "<group>"; };
+		499365792E4F3FF500BC350C /* ChainOfResponsibiltyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainOfResponsibiltyTest.h; sourceTree = "<group>"; };
+		4993657A2E4F3FF500BC350C /* TeamLeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamLeader.m; sourceTree = "<group>"; };
+		4993657B2E4F3FF500BC350C /* TeamLeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamLeader.h; sourceTree = "<group>"; };
+		4993657C2E4F3FF500BC350C /* DepartmentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartmentManager.h; sourceTree = "<group>"; };
+		4993657D2E4F3FF500BC350C /* AbstractApprover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractApprover.m; sourceTree = "<group>"; };
+		4993657E2E4F3FF600BC350C /* AbstractApprover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractApprover.h; sourceTree = "<group>"; };
+		499365842E4F4AD800BC350C /* ChainOfResponsibilityPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ChainOfResponsibilityPattern.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -614,6 +628,7 @@
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499365742E4F3FA100BC350C /* 大话-职责链模式 */,
 				499365562E4E0C7800BC350C /* 大话-命令模式 */,
 				4993653E2E4C7CFB00BC350C /* 大话-桥接模式 */,
 				499365392E4C564B00BC350C /* 大话-单例模式 */,
@@ -1213,6 +1228,23 @@
 			path = "大话-命令模式";
 			sourceTree = "<group>";
 		};
+		499365742E4F3FA100BC350C /* 大话-职责链模式 */ = {
+			isa = PBXGroup;
+			children = (
+				4993657E2E4F3FF600BC350C /* AbstractApprover.h */,
+				4993657D2E4F3FF500BC350C /* AbstractApprover.m */,
+				499365772E4F3FF400BC350C /* CEO.h */,
+				499365762E4F3FF400BC350C /* CEO.m */,
+				499365792E4F3FF500BC350C /* ChainOfResponsibiltyTest.h */,
+				4993657C2E4F3FF500BC350C /* DepartmentManager.h */,
+				499365782E4F3FF500BC350C /* DepartmentManager.m */,
+				4993657B2E4F3FF500BC350C /* TeamLeader.h */,
+				4993657A2E4F3FF500BC350C /* TeamLeader.m */,
+				499365842E4F4AD800BC350C /* ChainOfResponsibilityPattern.md */,
+			);
+			path = "大话-职责链模式";
+			sourceTree = "<group>";
+		};
 		4998362B2B9F3FDB00613369 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -1520,6 +1552,7 @@
 				499836232B9D42D700613369 /* CommonDataModel.m in Sources */,
 				4993646F2E44AE7200BC350C /* ConcreteFactoryA.m in Sources */,
 				499364D82E49A79500BC350C /* PublishSubscribeCenter.m in Sources */,
+				499365812E4F3FF600BC350C /* DepartmentManager.m in Sources */,
 				49CB9DC325E796B30006F119 /* SafeQuestionViewController.m in Sources */,
 				499364BA2E489F3700BC350C /* DelegateViewController.m in Sources */,
 				4993646A2E44AB2400BC350C /* SimpleFactory.m in Sources */,
@@ -1589,6 +1622,7 @@
 				499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */,
 				4993649D2E46EDAC00BC350C /* Curtain.m in Sources */,
 				499365352E4B5FDB00BC350C /* ConcreteIterator.m in Sources */,
+				499365832E4F3FF600BC350C /* AbstractApprover.m in Sources */,
 				4993656E2E4F1DFD00BC350C /* LightOnCommand.m in Sources */,
 				492E198A2E43553400747694 /* Finery.m in Sources */,
 				492E19732E3B2F4900747694 /* test01.cpp in Sources */,
@@ -1628,6 +1662,7 @@
 				499364C72E48A6E000BC350C /* NewsAgency.m in Sources */,
 				4993649F2E46EDAC00BC350C /* TV.m in Sources */,
 				491A0F2924AF44AB00CC4189 /* TestCViewController.m in Sources */,
+				499365802E4F3FF600BC350C /* CEO.m in Sources */,
 				4990BF2121196E730000ADC5 /* Student+Test.m in Sources */,
 				499365282E4B187500BC350C /* FileSystemComponent.m in Sources */,
 				4993651A2E4AF0B500BC350C /* HistoryManager.m in Sources */,
@@ -1636,6 +1671,7 @@
 				49C7497720AD77FF009DC12D /* SubTableViewCell.m in Sources */,
 				49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */,
 				499365192E4AF0B500BC350C /* TextEditor.m in Sources */,
+				499365822E4F3FF600BC350C /* TeamLeader.m in Sources */,
 				492E19762E3B54BF00747694 /* NSObject+HashTable.m in Sources */,
 				4967EDE8235D493D00D7BCCF /* BinaryTreeNode.m in Sources */,
 				499365092E4A3A2400BC350C /* FLACPlayer.m in Sources */,

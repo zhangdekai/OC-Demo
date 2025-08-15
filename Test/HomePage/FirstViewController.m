@@ -35,6 +35,7 @@
 #import "IteratorPatternTest.h"
 #import "BridgePatternTest.h"
 #import "CommandPatternTest.h"
+#import "ChainOfResponsibiltyTest.h"
 
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -117,6 +118,10 @@
     }else if (i== 13){
         model.title = @"命令模式";
         model.subTitle = @"Command测试";
+        
+    }else if (i== 14){
+        model.title = @"职责链模式";
+        model.subTitle = @"Chain of Responsibilty测试";
         
     }
 }
@@ -227,6 +232,8 @@
         testBridgePatternMain();
     }else if(indexPath.row == 13){
         testCommandPatternMain();
+    }else if(indexPath.row == 14){
+        testChainOfResponsibiltyMain();
     }
 }
 
