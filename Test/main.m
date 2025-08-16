@@ -32,9 +32,7 @@ int main(int argc, char * argv[]) {
     @autoreleasepool {
         
 //        [NSObject testCase];
-        
-        DecortorPerson *p = [[DecortorPerson alloc]init];
-        [p testDecortorMode];
+
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
 //        NSLog(@"%zd",class_getInstanceSize([Person1 class]));

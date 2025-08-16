@@ -36,6 +36,10 @@
 #import "BridgePatternTest.h"
 #import "CommandPatternTest.h"
 #import "ChainOfResponsibiltyTest.h"
+#import "MediatorPatternTest.h"
+#import "DecortorPerson.h"
+#import "DecortorPatternTest.h"
+
 
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -53,7 +57,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"UICollectionView";
+    self.navigationItem.title = @"设计模式";
     
     //    [self addNavigationBar];
     
@@ -122,6 +126,13 @@
     }else if (i== 14){
         model.title = @"职责链模式";
         model.subTitle = @"Chain of Responsibilty测试";
+    }else if (i== 15){
+        model.title = @"中介者模式";
+        model.subTitle = @"Mediator测试";
+        
+    }else if (i== 16){
+        model.title = @"装饰者模式";
+        model.subTitle = @"Decortor测试";
         
     }
 }
@@ -129,7 +140,7 @@
 - (void)initData {
     
     _dataList = [NSMutableArray array];
-    for (int i = 0; i < 20; i++) {
+    for (int i = 0; i < 25; i++) {
         CommonDataModel *model = [[CommonDataModel alloc]init];
         model.title = [NSString stringWithFormat:@"Title_%d", i];
         model.subTitle = [NSString stringWithFormat:@"SubTitle_%d", i];
@@ -234,6 +245,11 @@
         testCommandPatternMain();
     }else if(indexPath.row == 14){
         testChainOfResponsibiltyMain();
+    }else if(indexPath.row == 15){
+        testMediatorPatternMain();
+    }else if(indexPath.row == 16){
+        testDecortorPattern();
+        
     }
 }
 
@@ -243,22 +259,16 @@
     if(indexPath.section == 0){
         [self didSelectRow:indexPath];
     }
-    
 }
-
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     return CGSizeMake(UIScreenWidth / 2 - 20, 154);
 }
 
-
-
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
     
     return  UIEdgeInsetsMake(0, 15, 0, 15);
 }
-
-
 
 @end

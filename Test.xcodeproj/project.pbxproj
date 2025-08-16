@@ -130,6 +130,10 @@
 		499365812E4F3FF600BC350C /* DepartmentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365782E4F3FF500BC350C /* DepartmentManager.m */; };
 		499365822E4F3FF600BC350C /* TeamLeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993657A2E4F3FF500BC350C /* TeamLeader.m */; };
 		499365832E4F3FF600BC350C /* AbstractApprover.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993657D2E4F3FF500BC350C /* AbstractApprover.m */; };
+		4993658F2E4F614700BC350C /* Colleague.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365862E4F614600BC350C /* Colleague.m */; };
+		499365922E4F614700BC350C /* ChatRoomMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993658C2E4F614700BC350C /* ChatRoomMediator.m */; };
+		499365952E4F61FC00BC350C /* ChatUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365932E4F61FB00BC350C /* ChatUser.m */; };
+		499365992E5084DB00BC350C /* 模式对比.png in Resources */ = {isa = PBXBuildFile; fileRef = 499365982E5084DA00BC350C /* 模式对比.png */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
 		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
@@ -446,6 +450,17 @@
 		4993657D2E4F3FF500BC350C /* AbstractApprover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractApprover.m; sourceTree = "<group>"; };
 		4993657E2E4F3FF600BC350C /* AbstractApprover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractApprover.h; sourceTree = "<group>"; };
 		499365842E4F4AD800BC350C /* ChainOfResponsibilityPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ChainOfResponsibilityPattern.md; sourceTree = "<group>"; };
+		499365862E4F614600BC350C /* Colleague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colleague.m; sourceTree = "<group>"; };
+		499365892E4F614600BC350C /* MediatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediatorProtocol.h; sourceTree = "<group>"; };
+		4993658A2E4F614600BC350C /* ChatRoomMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomMediator.h; sourceTree = "<group>"; };
+		4993658B2E4F614600BC350C /* MediatorPatternTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediatorPatternTest.h; sourceTree = "<group>"; };
+		4993658C2E4F614700BC350C /* ChatRoomMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomMediator.m; sourceTree = "<group>"; };
+		4993658E2E4F614700BC350C /* Colleague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colleague.h; sourceTree = "<group>"; };
+		499365932E4F61FB00BC350C /* ChatUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatUser.m; sourceTree = "<group>"; };
+		499365942E4F61FC00BC350C /* ChatUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatUser.h; sourceTree = "<group>"; };
+		499365962E4F64D100BC350C /* DecortorPatternTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecortorPatternTest.h; sourceTree = "<group>"; };
+		499365972E507DD000BC350C /* MediatorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MediatorPattern.md; sourceTree = "<group>"; };
+		499365982E5084DA00BC350C /* 模式对比.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "模式对比.png"; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -594,6 +609,7 @@
 				492E19842E43523800747694 /* DecortorPerson.m */,
 				492E19882E43553400747694 /* Finery.h */,
 				492E19892E43553400747694 /* Finery.m */,
+				499365962E4F64D100BC350C /* DecortorPatternTest.h */,
 			);
 			path = "大话-装饰模式";
 			sourceTree = "<group>";
@@ -628,6 +644,7 @@
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499365852E4F60F900BC350C /* 大话-中介者模式 */,
 				499365742E4F3FA100BC350C /* 大话-职责链模式 */,
 				499365562E4E0C7800BC350C /* 大话-命令模式 */,
 				4993653E2E4C7CFB00BC350C /* 大话-桥接模式 */,
@@ -1245,6 +1262,23 @@
 			path = "大话-职责链模式";
 			sourceTree = "<group>";
 		};
+		499365852E4F60F900BC350C /* 大话-中介者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				499365942E4F61FC00BC350C /* ChatUser.h */,
+				499365932E4F61FB00BC350C /* ChatUser.m */,
+				499365892E4F614600BC350C /* MediatorProtocol.h */,
+				4993658A2E4F614600BC350C /* ChatRoomMediator.h */,
+				4993658C2E4F614700BC350C /* ChatRoomMediator.m */,
+				4993658E2E4F614700BC350C /* Colleague.h */,
+				499365862E4F614600BC350C /* Colleague.m */,
+				4993658B2E4F614600BC350C /* MediatorPatternTest.h */,
+				499365972E507DD000BC350C /* MediatorPattern.md */,
+				499365982E5084DA00BC350C /* 模式对比.png */,
+			);
+			path = "大话-中介者模式";
+			sourceTree = "<group>";
+		};
 		4998362B2B9F3FDB00613369 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -1488,6 +1522,7 @@
 				495CE75F208224F5000EA0E8 /* LaunchScreen.storyboard in Resources */,
 				495CE75C208224F5000EA0E8 /* Assets.xcassets in Resources */,
 				4998362A2B9DF1E200613369 /* FirstVCCollectionViewCell.xib in Resources */,
+				499365992E5084DB00BC350C /* 模式对比.png in Resources */,
 				49934E34214798AD00DAB4D5 /* dusk@3x.png in Resources */,
 				49934E372147991E00DAB4D5 /* leopard@2x.png in Resources */,
 				499365552E4E098000BC350C /* 结构性设计模式.png in Resources */,
@@ -1589,6 +1624,7 @@
 				4990BF1E21196E410000ADC5 /* Student.m in Sources */,
 				499365692E4F1DFD00BC350C /* RemoteControl.m in Sources */,
 				49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */,
+				499365922E4F614700BC350C /* ChatRoomMediator.m in Sources */,
 				4946D14223A67F0A003DF518 /* KVCTestClass.m in Sources */,
 				4944358C23B3884F002B4742 /* MyListTest.cpp in Sources */,
 				4966B9E623A1EAEE00E02099 /* SortTest.cpp in Sources */,
@@ -1597,6 +1633,7 @@
 				499364CA2E48A6E000BC350C /* NewsSubject.m in Sources */,
 				4993656A2E4F1DFD00BC350C /* TVOnCommand.m in Sources */,
 				499365512E4C7D3C00BC350C /* NormalMessage.m in Sources */,
+				4993658F2E4F614700BC350C /* Colleague.m in Sources */,
 				49E7923D2609BA51004A006B /* NSLockDemo.m in Sources */,
 				4962F6AE2121863E00CB305F /* Person2.m in Sources */,
 				492E198D2E43768300747694 /* Person.m in Sources */,
@@ -1672,6 +1709,7 @@
 				49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */,
 				499365192E4AF0B500BC350C /* TextEditor.m in Sources */,
 				499365822E4F3FF600BC350C /* TeamLeader.m in Sources */,
+				499365952E4F61FC00BC350C /* ChatUser.m in Sources */,
 				492E19762E3B54BF00747694 /* NSObject+HashTable.m in Sources */,
 				4967EDE8235D493D00D7BCCF /* BinaryTreeNode.m in Sources */,
 				499365092E4A3A2400BC350C /* FLACPlayer.m in Sources */,
