@@ -362,7 +362,7 @@
 		499364EB2E49FEBA00BC350C /* PaidState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaidState.m; sourceTree = "<group>"; };
 		499364EC2E49FEBA00BC350C /* PendingPaymentState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingPaymentState.m; sourceTree = "<group>"; };
 		499364ED2E49FEBA00BC350C /* StateModeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateModeTest.h; sourceTree = "<group>"; };
-		499364EE2E49FEBB00BC350C /* OrderState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderState.h; sourceTree = "<group>"; };
+		499364EE2E49FEBB00BC350C /* OrderStateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderStateProtocol.h; sourceTree = "<group>"; };
 		499364EF2E49FEBB00BC350C /* ShippedState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShippedState.h; sourceTree = "<group>"; };
 		499364F02E49FEBB00BC350C /* PaidState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaidState.h; sourceTree = "<group>"; };
 		499364F12E49FEBB00BC350C /* ShippedState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShippedState.m; sourceTree = "<group>"; };
@@ -461,6 +461,7 @@
 		499365962E4F64D100BC350C /* DecortorPatternTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecortorPatternTest.h; sourceTree = "<group>"; };
 		499365972E507DD000BC350C /* MediatorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MediatorPattern.md; sourceTree = "<group>"; };
 		499365982E5084DA00BC350C /* 模式对比.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "模式对比.png"; sourceTree = "<group>"; };
+		4993659A2E534AD300BC350C /* DeleggatePattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DeleggatePattern.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -1051,11 +1052,12 @@
 		499364B42E489F3700BC350C /* 大话-代理模式 */ = {
 			isa = PBXGroup;
 			children = (
-				499364B52E489F3700BC350C /* DelegateViewController.h */,
 				499364B62E489F3700BC350C /* StarProtocol.h */,
 				499364B72E489F3700BC350C /* MovieStar.h */,
 				499364B82E489F3700BC350C /* Agent.h */,
+				499364B52E489F3700BC350C /* DelegateViewController.h */,
 				499364B92E489F3700BC350C /* DelegateViewController.m */,
+				4993659A2E534AD300BC350C /* DeleggatePattern.md */,
 			);
 			path = "大话-代理模式";
 			sourceTree = "<group>";
@@ -1117,7 +1119,7 @@
 				499364F72E49FEBC00BC350C /* CompletedState.m */,
 				499364F22E49FEBB00BC350C /* Order.h */,
 				499364F52E49FEBC00BC350C /* Order.m */,
-				499364EE2E49FEBB00BC350C /* OrderState.h */,
+				499364EE2E49FEBB00BC350C /* OrderStateProtocol.h */,
 				499364F02E49FEBB00BC350C /* PaidState.h */,
 				499364EB2E49FEBA00BC350C /* PaidState.m */,
 				499364F32E49FEBC00BC350C /* PendingPaymentState.h */,

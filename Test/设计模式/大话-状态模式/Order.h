@@ -1,10 +1,10 @@
 #import <Foundation/Foundation.h>
-#import "OrderState.h"
+#import "OrderStateProtocol.h"
 
 // 订单类
 @interface Order : NSObject
 
-@property (nonatomic, strong) id<OrderState> state;
+@property (nonatomic, strong) id<OrderStateProtocol> state;
 @property (nonatomic, copy) NSString *orderId;
 
 - (instancetype)initWithOrderId:(NSString *)orderId;

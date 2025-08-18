@@ -26,6 +26,9 @@ int testChainOfResponsibiltyMain(void) {
         
         NSLog(@"\n=== 报销25000元 ===");
         [teamLeader approve:25000];
+        
+        // 直接找李经理, 跨越职责找上上层，，，
+        [deptManager approve:3000];
     }
     return 0;
 }

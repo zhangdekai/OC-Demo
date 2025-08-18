@@ -3,7 +3,7 @@
 @class Order;
 
 // 订单状态协议
-@protocol OrderState <NSObject>
+@protocol OrderStateProtocol <NSObject>
 
 // 支付订单
 - (void)payOrder:(Order *)order;

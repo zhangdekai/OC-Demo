@@ -17,6 +17,7 @@
 #import "Agent.h"
 
 @implementation Agent
+
 - (instancetype)initWithStar:(MovieStar *)star {
     if (self = [super init]) {
         _star = star;

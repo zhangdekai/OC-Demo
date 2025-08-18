@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
-#import "OrderState.h"
+#import "OrderStateProtocol.h"
 
 // 已完成状态
-@interface CompletedState : NSObject <OrderState>
+@interface CompletedState : NSObject <OrderStateProtocol>
 
 @end

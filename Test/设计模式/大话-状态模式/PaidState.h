@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
-#import "OrderState.h"
+#import "OrderStateProtocol.h"
 
 // 已支付状态
-@interface PaidState : NSObject <OrderState>
+@interface PaidState : NSObject <OrderStateProtocol>
 
 @end
