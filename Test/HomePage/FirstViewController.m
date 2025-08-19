@@ -39,6 +39,8 @@
 #import "MediatorPatternTest.h"
 #import "DecortorPerson.h"
 #import "DecortorPatternTest.h"
+#import "FlyweightPatternTest.h"
+#import "InterpretPatternTest.h"
 
 
 
@@ -133,6 +135,14 @@
     }else if (i== 16){
         model.title = @"装饰者模式";
         model.subTitle = @"Decortor测试";
+        
+    }else if (i== 17){
+        model.title = @"享元模式";
+        model.subTitle = @"Flyweight测试";
+        
+    }else if (i== 18){
+        model.title = @"解释器模式";
+        model.subTitle = @"Interpret测试";
         
     }
 }
@@ -249,6 +259,12 @@
         testMediatorPatternMain();
     }else if(indexPath.row == 16){
         testDecortorPattern();
+        
+    }else if(indexPath.row == 17){
+        testFlyweightPatternMain();
+        
+    }else if(indexPath.row == 18){
+        testInterpretPatternMain();
         
     }
 }

@@ -134,6 +134,12 @@
 		499365922E4F614700BC350C /* ChatRoomMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993658C2E4F614700BC350C /* ChatRoomMediator.m */; };
 		499365952E4F61FC00BC350C /* ChatUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365932E4F61FB00BC350C /* ChatUser.m */; };
 		499365992E5084DB00BC350C /* 模式对比.png in Resources */ = {isa = PBXBuildFile; fileRef = 499365982E5084DA00BC350C /* 模式对比.png */; };
+		499365A22E5351C700BC350C /* CharacterFlyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993659C2E5351C600BC350C /* CharacterFlyweight.m */; };
+		499365A32E5351C700BC350C /* CharacterFlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993659E2E5351C600BC350C /* CharacterFlyweightFactory.m */; };
+		499365B42E54521F00BC350C /* SubtractExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365A92E54521D00BC350C /* SubtractExpression.m */; };
+		499365B52E54521F00BC350C /* AddExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365AB2E54521E00BC350C /* AddExpression.m */; };
+		499365B62E54521F00BC350C /* NumberExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365AC2E54521E00BC350C /* NumberExpression.m */; };
+		499365B92E5452A200BC350C /* InterpretContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365B72E5452A100BC350C /* InterpretContext.m */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
 		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
@@ -462,6 +468,23 @@
 		499365972E507DD000BC350C /* MediatorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MediatorPattern.md; sourceTree = "<group>"; };
 		499365982E5084DA00BC350C /* 模式对比.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "模式对比.png"; sourceTree = "<group>"; };
 		4993659A2E534AD300BC350C /* DeleggatePattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DeleggatePattern.md; sourceTree = "<group>"; };
+		4993659C2E5351C600BC350C /* CharacterFlyweight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterFlyweight.m; sourceTree = "<group>"; };
+		4993659D2E5351C600BC350C /* CharacterFlyweightFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterFlyweightFactory.h; sourceTree = "<group>"; };
+		4993659E2E5351C600BC350C /* CharacterFlyweightFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterFlyweightFactory.m; sourceTree = "<group>"; };
+		4993659F2E5351C600BC350C /* CharacterFlyweight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterFlyweight.h; sourceTree = "<group>"; };
+		499365A12E5351C700BC350C /* FlyweightPatternTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyweightPatternTest.h; sourceTree = "<group>"; };
+		499365A52E5355E100BC350C /* FlyweightPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FlyweightPattern.md; sourceTree = "<group>"; };
+		499365A92E54521D00BC350C /* SubtractExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubtractExpression.m; sourceTree = "<group>"; };
+		499365AA2E54521E00BC350C /* ExpressionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpressionProtocol.h; sourceTree = "<group>"; };
+		499365AB2E54521E00BC350C /* AddExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddExpression.m; sourceTree = "<group>"; };
+		499365AC2E54521E00BC350C /* NumberExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberExpression.m; sourceTree = "<group>"; };
+		499365AE2E54521F00BC350C /* SubtractExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubtractExpression.h; sourceTree = "<group>"; };
+		499365AF2E54521F00BC350C /* InterpretPatternTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterpretPatternTest.h; sourceTree = "<group>"; };
+		499365B02E54521F00BC350C /* AddExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddExpression.h; sourceTree = "<group>"; };
+		499365B12E54521F00BC350C /* NumberExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberExpression.h; sourceTree = "<group>"; };
+		499365B72E5452A100BC350C /* InterpretContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterpretContext.m; sourceTree = "<group>"; };
+		499365B82E5452A100BC350C /* InterpretContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterpretContext.h; sourceTree = "<group>"; };
+		499365BA2E5462F100BC350C /* InterpretPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = InterpretPattern.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -645,6 +668,8 @@
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499365A62E5451E300BC350C /* 大话-解释器模式 */,
+				4993659B2E53519600BC350C /* 大话-享元模式 */,
 				499365852E4F60F900BC350C /* 大话-中介者模式 */,
 				499365742E4F3FA100BC350C /* 大话-职责链模式 */,
 				499365562E4E0C7800BC350C /* 大话-命令模式 */,
@@ -1281,6 +1306,37 @@
 			path = "大话-中介者模式";
 			sourceTree = "<group>";
 		};
+		4993659B2E53519600BC350C /* 大话-享元模式 */ = {
+			isa = PBXGroup;
+			children = (
+				4993659F2E5351C600BC350C /* CharacterFlyweight.h */,
+				4993659C2E5351C600BC350C /* CharacterFlyweight.m */,
+				4993659D2E5351C600BC350C /* CharacterFlyweightFactory.h */,
+				4993659E2E5351C600BC350C /* CharacterFlyweightFactory.m */,
+				499365A12E5351C700BC350C /* FlyweightPatternTest.h */,
+				499365A52E5355E100BC350C /* FlyweightPattern.md */,
+			);
+			path = "大话-享元模式";
+			sourceTree = "<group>";
+		};
+		499365A62E5451E300BC350C /* 大话-解释器模式 */ = {
+			isa = PBXGroup;
+			children = (
+				499365AA2E54521E00BC350C /* ExpressionProtocol.h */,
+				499365B02E54521F00BC350C /* AddExpression.h */,
+				499365AB2E54521E00BC350C /* AddExpression.m */,
+				499365B82E5452A100BC350C /* InterpretContext.h */,
+				499365B72E5452A100BC350C /* InterpretContext.m */,
+				499365AF2E54521F00BC350C /* InterpretPatternTest.h */,
+				499365B12E54521F00BC350C /* NumberExpression.h */,
+				499365AC2E54521E00BC350C /* NumberExpression.m */,
+				499365AE2E54521F00BC350C /* SubtractExpression.h */,
+				499365A92E54521D00BC350C /* SubtractExpression.m */,
+				499365BA2E5462F100BC350C /* InterpretPattern.md */,
+			);
+			path = "大话-解释器模式";
+			sourceTree = "<group>";
+		};
 		4998362B2B9F3FDB00613369 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -1586,17 +1642,20 @@
 				49E7923E2609BA51004A006B /* OSSpinLockDemo2.m in Sources */,
 				491A0F2624AF44A200CC4189 /* TestBViewController.m in Sources */,
 				4993656D2E4F1DFD00BC350C /* LightOffCommand.m in Sources */,
+				499365B62E54521F00BC350C /* NumberExpression.m in Sources */,
 				499836232B9D42D700613369 /* CommonDataModel.m in Sources */,
 				4993646F2E44AE7200BC350C /* ConcreteFactoryA.m in Sources */,
 				499364D82E49A79500BC350C /* PublishSubscribeCenter.m in Sources */,
 				499365812E4F3FF600BC350C /* DepartmentManager.m in Sources */,
 				49CB9DC325E796B30006F119 /* SafeQuestionViewController.m in Sources */,
 				499364BA2E489F3700BC350C /* DelegateViewController.m in Sources */,
+				499365A32E5351C700BC350C /* CharacterFlyweightFactory.m in Sources */,
 				4993646A2E44AB2400BC350C /* SimpleFactory.m in Sources */,
 				4946D13E23A625A2003DF518 /* OCAlgorithmTest.m in Sources */,
 				499364D62E49A79500BC350C /* Publisher.m in Sources */,
 				499364B12E48947D00BC350C /* Director.m in Sources */,
 				49CB9DBE25E796B30006F119 /* SafeQuestionLockViewController.m in Sources */,
+				499365B92E5452A200BC350C /* InterpretContext.m in Sources */,
 				4960E37A2615987200CF7CAB /* TestNSUseDefault.m in Sources */,
 				499364FC2E49FEBD00BC350C /* Order.m in Sources */,
 				499836292B9DF1E200613369 /* FirstVCCollectionViewCell.m in Sources */,
@@ -1642,6 +1701,7 @@
 				4990BF2821198EE10000ADC5 /* NSObject+addProperty.m in Sources */,
 				499365362E4B5FDB00BC350C /* ConcreteAggregate.m in Sources */,
 				49415D75239A329900660C57 /* iOS_APITestViewController.m in Sources */,
+				499365B52E54521F00BC350C /* AddExpression.m in Sources */,
 				49934E3B21479A4C00DAB4D5 /* ChangeAppIconViewController.m in Sources */,
 				495CE757208224F3000EA0E8 /* ViewController.m in Sources */,
 				4962F6B421251C3000CB305F /* Student1.m in Sources */,
@@ -1691,6 +1751,7 @@
 				4993654E2E4C7D3C00BC350C /* Message.m in Sources */,
 				4990BAA1212FE8100044BCE1 /* WebPTestViewController.m in Sources */,
 				499365722E4F1EE200BC350C /* FamilyTV.m in Sources */,
+				499365A22E5351C700BC350C /* CharacterFlyweight.m in Sources */,
 				4993648B2E459C4700BC350C /* Coffee.m in Sources */,
 				4998362E2B9F3FFD00613369 /* DeviceManager.m in Sources */,
 				492E197A2E42086700747694 /* StrategyMode.m in Sources */,
@@ -1711,6 +1772,7 @@
 				49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */,
 				499365192E4AF0B500BC350C /* TextEditor.m in Sources */,
 				499365822E4F3FF600BC350C /* TeamLeader.m in Sources */,
+				499365B42E54521F00BC350C /* SubtractExpression.m in Sources */,
 				499365952E4F61FC00BC350C /* ChatUser.m in Sources */,
 				492E19762E3B54BF00747694 /* NSObject+HashTable.m in Sources */,
 				4967EDE8235D493D00D7BCCF /* BinaryTreeNode.m in Sources */,
