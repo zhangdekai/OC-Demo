@@ -140,6 +140,17 @@
 		499365B52E54521F00BC350C /* AddExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365AB2E54521E00BC350C /* AddExpression.m */; };
 		499365B62E54521F00BC350C /* NumberExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365AC2E54521E00BC350C /* NumberExpression.m */; };
 		499365B92E5452A200BC350C /* InterpretContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365B72E5452A100BC350C /* InterpretContext.m */; };
+		499365CC2E5471B000BC350C /* Lion.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365BD2E5471AB00BC350C /* Lion.m */; };
+		499365CD2E5471B000BC350C /* Elephant.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365C02E5471AC00BC350C /* Elephant.m */; };
+		499365CF2E5471B000BC350C /* Tourist.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365C42E5471AD00BC350C /* Tourist.m */; };
+		499365D02E5471B000BC350C /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365C52E5471AE00BC350C /* Monkey.m */; };
+		499365D12E5471B000BC350C /* Veterinarian.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365C72E5471AE00BC350C /* Veterinarian.m */; };
+		499365D22E5471B000BC350C /* Zoo.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365CB2E5471B000BC350C /* Zoo.m */; };
+		499365E22E55877000BC350C /* ImageFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365D42E55876D00BC350C /* ImageFile.m */; };
+		499365E32E55877000BC350C /* InfoVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365D52E55876D00BC350C /* InfoVisitor.m */; };
+		499365E42E55877000BC350C /* SizeVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365D62E55876D00BC350C /* SizeVisitor.m */; };
+		499365E52E55877000BC350C /* TextFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365D92E55876E00BC350C /* TextFile.m */; };
+		499365E72E55877000BC350C /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365DE2E55876F00BC350C /* FileManager.m */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
 		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
@@ -485,6 +496,35 @@
 		499365B72E5452A100BC350C /* InterpretContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterpretContext.m; sourceTree = "<group>"; };
 		499365B82E5452A100BC350C /* InterpretContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterpretContext.h; sourceTree = "<group>"; };
 		499365BA2E5462F100BC350C /* InterpretPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = InterpretPattern.md; sourceTree = "<group>"; };
+		499365BC2E5471AB00BC350C /* Veterinarian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Veterinarian.h; sourceTree = "<group>"; };
+		499365BD2E5471AB00BC350C /* Lion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lion.m; sourceTree = "<group>"; };
+		499365BE2E5471AC00BC350C /* Zoo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zoo.h; sourceTree = "<group>"; };
+		499365BF2E5471AC00BC350C /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
+		499365C02E5471AC00BC350C /* Elephant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Elephant.m; sourceTree = "<group>"; };
+		499365C12E5471AD00BC350C /* AnimalProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalProtocol.h; sourceTree = "<group>"; };
+		499365C32E5471AD00BC350C /* Elephant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Elephant.h; sourceTree = "<group>"; };
+		499365C42E5471AD00BC350C /* Tourist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tourist.m; sourceTree = "<group>"; };
+		499365C52E5471AE00BC350C /* Monkey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monkey.m; sourceTree = "<group>"; };
+		499365C62E5471AE00BC350C /* VisitorPatternTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitorPatternTest.h; sourceTree = "<group>"; };
+		499365C72E5471AE00BC350C /* Veterinarian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Veterinarian.m; sourceTree = "<group>"; };
+		499365C82E5471AF00BC350C /* Tourist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tourist.h; sourceTree = "<group>"; };
+		499365C92E5471AF00BC350C /* Lion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lion.h; sourceTree = "<group>"; };
+		499365CA2E5471AF00BC350C /* VisitorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitorProtocol.h; sourceTree = "<group>"; };
+		499365CB2E5471B000BC350C /* Zoo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zoo.m; sourceTree = "<group>"; };
+		499365D42E55876D00BC350C /* ImageFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFile.m; sourceTree = "<group>"; };
+		499365D52E55876D00BC350C /* InfoVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoVisitor.m; sourceTree = "<group>"; };
+		499365D62E55876D00BC350C /* SizeVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeVisitor.m; sourceTree = "<group>"; };
+		499365D72E55876E00BC350C /* InfoVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoVisitor.h; sourceTree = "<group>"; };
+		499365D82E55876E00BC350C /* ImageFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFile.h; sourceTree = "<group>"; };
+		499365D92E55876E00BC350C /* TextFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFile.m; sourceTree = "<group>"; };
+		499365DA2E55876E00BC350C /* TextFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFile.h; sourceTree = "<group>"; };
+		499365DC2E55876F00BC350C /* VisitorPatternTestForFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitorPatternTestForFile.h; sourceTree = "<group>"; };
+		499365DD2E55876F00BC350C /* FileProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileProtocol.h; sourceTree = "<group>"; };
+		499365DE2E55876F00BC350C /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
+		499365DF2E55877000BC350C /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		499365E02E55877000BC350C /* VisitorFileProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitorFileProtocol.h; sourceTree = "<group>"; };
+		499365E12E55877000BC350C /* SizeVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeVisitor.h; sourceTree = "<group>"; };
+		499365E82E55907F00BC350C /* VisitorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = VisitorPattern.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -668,6 +708,7 @@
 		493E0854238BCBCC0079D893 /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499365BB2E54713E00BC350C /* 大话-访问者模式 */,
 				499365A62E5451E300BC350C /* 大话-解释器模式 */,
 				4993659B2E53519600BC350C /* 大话-享元模式 */,
 				499365852E4F60F900BC350C /* 大话-中介者模式 */,
@@ -1337,6 +1378,50 @@
 			path = "大话-解释器模式";
 			sourceTree = "<group>";
 		};
+		499365BB2E54713E00BC350C /* 大话-访问者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				499365D32E55873700BC350C /* 文件访问 */,
+				499365C62E5471AE00BC350C /* VisitorPatternTest.h */,
+				499365CA2E5471AF00BC350C /* VisitorProtocol.h */,
+				499365C12E5471AD00BC350C /* AnimalProtocol.h */,
+				499365C32E5471AD00BC350C /* Elephant.h */,
+				499365C02E5471AC00BC350C /* Elephant.m */,
+				499365C92E5471AF00BC350C /* Lion.h */,
+				499365BD2E5471AB00BC350C /* Lion.m */,
+				499365BF2E5471AC00BC350C /* Monkey.h */,
+				499365C52E5471AE00BC350C /* Monkey.m */,
+				499365C82E5471AF00BC350C /* Tourist.h */,
+				499365C42E5471AD00BC350C /* Tourist.m */,
+				499365BC2E5471AB00BC350C /* Veterinarian.h */,
+				499365C72E5471AE00BC350C /* Veterinarian.m */,
+				499365BE2E5471AC00BC350C /* Zoo.h */,
+				499365CB2E5471B000BC350C /* Zoo.m */,
+			);
+			path = "大话-访问者模式";
+			sourceTree = "<group>";
+		};
+		499365D32E55873700BC350C /* 文件访问 */ = {
+			isa = PBXGroup;
+			children = (
+				499365DC2E55876F00BC350C /* VisitorPatternTestForFile.h */,
+				499365E82E55907F00BC350C /* VisitorPattern.md */,
+				499365DD2E55876F00BC350C /* FileProtocol.h */,
+				499365E02E55877000BC350C /* VisitorFileProtocol.h */,
+				499365DF2E55877000BC350C /* FileManager.h */,
+				499365DE2E55876F00BC350C /* FileManager.m */,
+				499365D82E55876E00BC350C /* ImageFile.h */,
+				499365D42E55876D00BC350C /* ImageFile.m */,
+				499365D72E55876E00BC350C /* InfoVisitor.h */,
+				499365D52E55876D00BC350C /* InfoVisitor.m */,
+				499365E12E55877000BC350C /* SizeVisitor.h */,
+				499365D62E55876D00BC350C /* SizeVisitor.m */,
+				499365DA2E55876E00BC350C /* TextFile.h */,
+				499365D92E55876E00BC350C /* TextFile.m */,
+			);
+			path = "文件访问";
+			sourceTree = "<group>";
+		};
 		4998362B2B9F3FDB00613369 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -1665,6 +1750,7 @@
 				4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */,
 				49E7923B2609BA51004A006B /* SemaphoreDemo.m in Sources */,
 				499364E42E49C99F00BC350C /* ConcreteProducts.m in Sources */,
+				499365E32E55877000BC350C /* InfoVisitor.m in Sources */,
 				49E7923A2609BA51004A006B /* SerialQueueDemo.m in Sources */,
 				4993650C2E4A3A2400BC350C /* MP3Player.m in Sources */,
 				4993649C2E46EDAC00BC350C /* SmartHomeFacade.m in Sources */,
@@ -1685,6 +1771,7 @@
 				4990BF1E21196E410000ADC5 /* Student.m in Sources */,
 				499365692E4F1DFD00BC350C /* RemoteControl.m in Sources */,
 				49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */,
+				499365E22E55877000BC350C /* ImageFile.m in Sources */,
 				499365922E4F614700BC350C /* ChatRoomMediator.m in Sources */,
 				4946D14223A67F0A003DF518 /* KVCTestClass.m in Sources */,
 				4944358C23B3884F002B4742 /* MyListTest.cpp in Sources */,
@@ -1697,10 +1784,13 @@
 				4993658F2E4F614700BC350C /* Colleague.m in Sources */,
 				49E7923D2609BA51004A006B /* NSLockDemo.m in Sources */,
 				4962F6AE2121863E00CB305F /* Person2.m in Sources */,
+				499365E52E55877000BC350C /* TextFile.m in Sources */,
 				492E198D2E43768300747694 /* Person.m in Sources */,
 				4990BF2821198EE10000ADC5 /* NSObject+addProperty.m in Sources */,
 				499365362E4B5FDB00BC350C /* ConcreteAggregate.m in Sources */,
 				49415D75239A329900660C57 /* iOS_APITestViewController.m in Sources */,
+				499365E72E55877000BC350C /* FileManager.m in Sources */,
+				499365CC2E5471B000BC350C /* Lion.m in Sources */,
 				499365B52E54521F00BC350C /* AddExpression.m in Sources */,
 				49934E3B21479A4C00DAB4D5 /* ChangeAppIconViewController.m in Sources */,
 				495CE757208224F3000EA0E8 /* ViewController.m in Sources */,
@@ -1712,6 +1802,7 @@
 				4993654F2E4C7D3C00BC350C /* EmailMessageSender.m in Sources */,
 				4962F6B72126CC5500CB305F /* RutimeMethodAndClassApi.m in Sources */,
 				49415D78239A5A0500660C57 /* NSExceptionManager.m in Sources */,
+				499365CF2E5471B000BC350C /* Tourist.m in Sources */,
 				49E792392609BA51004A006B /* NSConditionLockDemo.m in Sources */,
 				499364E52E49C99F00BC350C /* ConcreteFactories.m in Sources */,
 				499365262E4B187500BC350C /* File.m in Sources */,
@@ -1729,6 +1820,7 @@
 				492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */,
 				4993654D2E4C7D3C00BC350C /* UrgentMessage.m in Sources */,
 				49E792382609BA51004A006B /* MutexDemo2.m in Sources */,
+				499365D22E5471B000BC350C /* Zoo.m in Sources */,
 				4993656F2E4F1DFD00BC350C /* TVOffCommand.m in Sources */,
 				4993650A2E4A3A2400BC350C /* FLACAdapter.m in Sources */,
 				49CB9DC125E796B30006F119 /* Sync&ASyncViewController.m in Sources */,
@@ -1741,6 +1833,8 @@
 				492E19852E43523800747694 /* DecortorPerson.m in Sources */,
 				499364C82E48A6E000BC350C /* NewsApp.m in Sources */,
 				499364E92E49D79C00BC350C /* ReflectionClass.m in Sources */,
+				499365D02E5471B000BC350C /* Monkey.m in Sources */,
+				499365E42E55877000BC350C /* SizeVisitor.m in Sources */,
 				49749DE324A5FC7E0024E825 /* NSObject+tools.m in Sources */,
 				495CE762208224F5000EA0E8 /* main.m in Sources */,
 				499364FD2E49FEBD00BC350C /* CompletedState.m in Sources */,
@@ -1777,7 +1871,9 @@
 				492E19762E3B54BF00747694 /* NSObject+HashTable.m in Sources */,
 				4967EDE8235D493D00D7BCCF /* BinaryTreeNode.m in Sources */,
 				499365092E4A3A2400BC350C /* FLACPlayer.m in Sources */,
+				499365CD2E5471B000BC350C /* Elephant.m in Sources */,
 				49CB9DC425E796B30006F119 /* SafeReadWriteViewController.m in Sources */,
+				499365D12E5471B000BC350C /* Veterinarian.m in Sources */,
 				499364B02E48947D00BC350C /* MacBookBuilder.m in Sources */,
 				493CBEDB23A72F7600694F6E /* Book.m in Sources */,
 				49E792372609BA51004A006B /* MutexDemo3.m in Sources */,

@@ -41,7 +41,8 @@
 #import "DecortorPatternTest.h"
 #import "FlyweightPatternTest.h"
 #import "InterpretPatternTest.h"
-
+#import "VisitorPatternTest.h"
+#import "VisitorPatternTestForFile.h"
 
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -143,6 +144,14 @@
     }else if (i== 18){
         model.title = @"解释器模式";
         model.subTitle = @"Interpret测试";
+        
+    }else if (i== 19){
+        model.title = @"访问者模式";
+        model.subTitle = @"Visitor测试";
+        
+    }else if (i== 20){
+        model.title = @"访问者模式-1";
+        model.subTitle = @"Visitor-1测试";
         
     }
 }
@@ -265,6 +274,12 @@
         
     }else if(indexPath.row == 18){
         testInterpretPatternMain();
+        
+    }else if(indexPath.row == 19){
+        testVisitorPatternMain();
+        
+    }else if(indexPath.row == 20){
+        testVisitorPatternFileMain();
         
     }
 }
