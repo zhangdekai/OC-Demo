@@ -6,6 +6,8 @@
 
 int testFacadeMain(void) {
     @autoreleasepool {
+        NSLog(@"\n--- 外观模式  结构型模式---\n");
+
         // 创建子系统实例
         AirConditioner *ac = [[AirConditioner alloc] init];
         TV *tv = [[TV alloc] init];

@@ -3,6 +3,8 @@
 
 int testPrototypeMain(void) {
     @autoreleasepool {
+        NSLog(@"原型模式，，，，，\n");
+
         // 1. 创建原始对象（原型）
         ProtoTypeUser *originalUser = [[ProtoTypeUser alloc] initWithName:@"张三" age:25];
         NSLog(@"原始对象: %@", originalUser);

@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "Product.h"
+#import "ProductFactoryProtocol.h"
 
 // 产品类型枚举
 typedef NS_ENUM(NSInteger, ProductType) {
@@ -10,6 +10,6 @@ typedef NS_ENUM(NSInteger, ProductType) {
 // 简单工厂类
 @interface SimpleFactory : NSObject
 
-+ (id<Product>)createProductWithType:(ProductType)type;
++ (id<ProductFactoryProtocol>)createProductWithType:(ProductType)type;
 
 @end

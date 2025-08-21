@@ -16,13 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+
+
 @interface DecortorPerson : NSObject<PersonProtocol>
 
 @property (nonatomic, copy) NSString *name;
 
 - (instancetype)initWithName:(NSString *)name;
 
-- (void)testDecortorMode;
+//- (void)testDecortorMode;
 
 @end
 

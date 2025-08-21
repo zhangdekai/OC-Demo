@@ -3,11 +3,11 @@
 
 @implementation AppleFactory
 
-- (id<Phone>)createPhone {
+- (id<PhoneProtocol>)createPhone {
     return [[IPhone alloc] init];
 }
 
-- (id<Computer>)createComputer {
+- (id<ComputerProtocol>)createComputer {
     return [[Mac alloc] init];
 }
 
@@ -15,11 +15,11 @@
 
 @implementation HuaweiFactory
 
-- (id<Phone>)createPhone {
+- (id<PhoneProtocol>)createPhone {
     return [[HuaweiPhone alloc] init];
 }
 
-- (id<Computer>)createComputer {
+- (id<ComputerProtocol>)createComputer {
     return [[HuaweiComputer alloc] init];
 }
 

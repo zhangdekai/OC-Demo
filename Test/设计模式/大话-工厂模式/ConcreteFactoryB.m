@@ -2,7 +2,7 @@
 #import "ConcreteProductB.h"
 
 @implementation ConcreteFactoryB
-- (id<Product>)createProduct {
+- (id<ProductFactoryProtocol>)createProduct {
     return [[ConcreteProductB alloc] init];
 }
 @end

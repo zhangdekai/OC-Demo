@@ -91,6 +91,7 @@
 @end
 
 @implementation UIComponentFactory
+
 + (instancetype)sharedFactory {
     static UIComponentFactory *factory;
     static dispatch_once_t onceToken;

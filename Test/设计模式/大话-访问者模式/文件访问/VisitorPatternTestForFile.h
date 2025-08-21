@@ -5,6 +5,8 @@
 #import "ImageFile.h"
 #import "SizeVisitor.h"
 #import "InfoVisitor.h"
+#import "NameVisitor.h"
+
 
 int testVisitorPatternFileMain(void) {
     @autoreleasepool {
@@ -35,6 +37,12 @@ int testVisitorPatternFileMain(void) {
         NSLog(@"\n===== 查看文件信息 =====");
         InfoVisitor *infoVisitor = [[InfoVisitor alloc] init];
         [fileManager accept:infoVisitor];
+        
+        //
+        NSLog(@"\n=====增加 访问文件name =====");
+        NameVisitor *nameV = [[NameVisitor alloc]init];
+        [fileManager accept:nameV];
+
     }
     return 0;
 }

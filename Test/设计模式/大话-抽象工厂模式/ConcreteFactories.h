@@ -2,9 +2,9 @@
 #import "AbstractFactory.h"
 
 // 苹果工厂
-@interface AppleFactory : NSObject <DeviceFactory>
+@interface AppleFactory : NSObject <DeviceFactoryProtocol>
 @end
 
 // 华为工厂
-@interface HuaweiFactory : NSObject <DeviceFactory>
+@interface HuaweiFactory : NSObject <DeviceFactoryProtocol>
 @end

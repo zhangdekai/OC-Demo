@@ -4,7 +4,7 @@
 
 @implementation SimpleFactory
 
-+ (id<Product>)createProductWithType:(ProductType)type {
++ (id<ProductFactoryProtocol>)createProductWithType:(ProductType)type {
     switch (type) {
         case ProductTypeA:
             return [[ConcreteProductA alloc] init];

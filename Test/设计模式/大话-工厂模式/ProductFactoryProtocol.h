@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 
 // 产品协议
-@protocol Product <NSObject>
+@protocol ProductFactoryProtocol <NSObject>
 
 - (void)operation;
 

@@ -2,7 +2,9 @@
 #import <Foundation/Foundation.h>
 
 // 抽象工厂协议
-@protocol DeviceFactory <NSObject>
-- (id<Phone>)createPhone;
-- (id<Computer>)createComputer;
+// * 提供一个创建一系列或相关依赖对象的接口，而无需制定它们具体的类。
+
+@protocol DeviceFactoryProtocol <NSObject>
+- (id<PhoneProtocol>)createPhone;
+- (id<ComputerProtocol>)createComputer;
 @end

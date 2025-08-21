@@ -68,14 +68,12 @@
 		49934E382147991E00DAB4D5 /* leopard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49934E362147991E00DAB4D5 /* leopard@3x.png */; };
 		49934E3B21479A4C00DAB4D5 /* ChangeAppIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49934E3A21479A4C00DAB4D5 /* ChangeAppIconViewController.m */; };
 		499364672E44AB2400BC350C /* ConcreteProductB.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364622E44AB2300BC350C /* ConcreteProductB.m */; };
-		499364682E44AB2400BC350C /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364632E44AB2300BC350C /* Client.m */; };
 		499364692E44AB2400BC350C /* ConcreteProductA.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364652E44AB2400BC350C /* ConcreteProductA.m */; };
 		4993646A2E44AB2400BC350C /* SimpleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364662E44AB2400BC350C /* SimpleFactory.m */; };
 		4993646F2E44AE7200BC350C /* ConcreteFactoryA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993646B2E44AE7200BC350C /* ConcreteFactoryA.m */; };
 		499364702E44AE7200BC350C /* ConcreteFactoryB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993646C2E44AE7200BC350C /* ConcreteFactoryB.m */; };
 		499364772E44BBEA00BC350C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364752E44BBEA00BC350C /* User.m */; };
 		499364882E459C4700BC350C /* Tea.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364812E459C4600BC350C /* Tea.m */; };
-		499364892E459C4700BC350C /* Beverage.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364822E459C4600BC350C /* Beverage.m */; };
 		4993648B2E459C4700BC350C /* Coffee.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364842E459C4700BC350C /* Coffee.m */; };
 		4993649C2E46EDAC00BC350C /* SmartHomeFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364942E46EDAB00BC350C /* SmartHomeFacade.m */; };
 		4993649D2E46EDAC00BC350C /* Curtain.m in Sources */ = {isa = PBXBuildFile; fileRef = 499364972E46EDAB00BC350C /* Curtain.m */; };
@@ -151,6 +149,8 @@
 		499365E42E55877000BC350C /* SizeVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365D62E55876D00BC350C /* SizeVisitor.m */; };
 		499365E52E55877000BC350C /* TextFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365D92E55876E00BC350C /* TextFile.m */; };
 		499365E72E55877000BC350C /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365DE2E55876F00BC350C /* FileManager.m */; };
+		499365EB2E55988A00BC350C /* NameVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 499365EA2E55988A00BC350C /* NameVisitor.m */; };
+		499365EE2E55EF0800BC350C /* FactoryPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 499365ED2E55EF0800BC350C /* FactoryPattern.md */; };
 		499836202B9D392400613369 /* SecondVCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998361F2B9D392400613369 /* SecondVCTableViewCell.m */; };
 		499836232B9D42D700613369 /* CommonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 499836222B9D42D700613369 /* CommonDataModel.m */; };
 		499836252B9D7A6800613369 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 499836242B9D7A6800613369 /* README.md */; };
@@ -183,6 +183,11 @@
 		49E7923D2609BA51004A006B /* NSLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E792282609BA50004A006B /* NSLockDemo.m */; };
 		49E7923E2609BA51004A006B /* OSSpinLockDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E7922B2609BA50004A006B /* OSSpinLockDemo2.m */; };
 		49E7923F2609BA51004A006B /* SynchronizedDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E792312609BA50004A006B /* SynchronizedDemo.m */; };
+		49F01C652E57105900A0009B /* ConcreteCondiments.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C5C2E57105700A0009B /* ConcreteCondiments.m */; };
+		49F01C662E57105900A0009B /* Coffee.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C5D2E57105800A0009B /* Coffee.m */; };
+		49F01C682E57105900A0009B /* CondimentDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C612E57105800A0009B /* CondimentDecorator.m */; };
+		49F01C692E57105A00A0009B /* BeverageBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C622E57105900A0009B /* BeverageBase.m */; };
+		49F01C6C2E57126900A0009B /* Beverage.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C6A2E57126800A0009B /* Beverage.m */; };
 		A65317C0F21C3B27266DD3EC /* libPods-Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BC9BA4508E81CCE1B1B4B9 /* libPods-Test.a */; };
 /* End PBXBuildFile section */
 
@@ -297,10 +302,9 @@
 		49934E3A21479A4C00DAB4D5 /* ChangeAppIconViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeAppIconViewController.m; sourceTree = "<group>"; };
 		49934E3C21479C2900DAB4D5 /* Test.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.pch; sourceTree = "<group>"; };
 		4993645F2E44AB2300BC350C /* ConcreteProductB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteProductB.h; sourceTree = "<group>"; };
-		499364602E44AB2300BC350C /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		499364602E44AB2300BC350C /* ProductFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFactoryProtocol.h; sourceTree = "<group>"; };
 		499364612E44AB2300BC350C /* SimpleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleFactory.h; sourceTree = "<group>"; };
 		499364622E44AB2300BC350C /* ConcreteProductB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteProductB.m; sourceTree = "<group>"; };
-		499364632E44AB2300BC350C /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
 		499364642E44AB2400BC350C /* ConcreteProductA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteProductA.h; sourceTree = "<group>"; };
 		499364652E44AB2400BC350C /* ConcreteProductA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteProductA.m; sourceTree = "<group>"; };
 		499364662E44AB2400BC350C /* SimpleFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleFactory.m; sourceTree = "<group>"; };
@@ -308,16 +312,13 @@
 		4993646C2E44AE7200BC350C /* ConcreteFactoryB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteFactoryB.m; sourceTree = "<group>"; };
 		4993646D2E44AE7200BC350C /* ConcreteFactoryA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteFactoryA.h; sourceTree = "<group>"; };
 		4993646E2E44AE7200BC350C /* ConcreteFactoryB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteFactoryB.h; sourceTree = "<group>"; };
-		499364712E44AE9D00BC350C /* Factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
+		499364712E44AE9D00BC350C /* FactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryProtocol.h; sourceTree = "<group>"; };
 		499364742E44BBEA00BC350C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		499364752E44BBEA00BC350C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		4993647B2E44C3D700BC350C /* PrototypeModeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeModeTest.h; sourceTree = "<group>"; };
 		4993647D2E4588C800BC350C /* Prototype.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Prototype.md; sourceTree = "<group>"; };
-		4993647E2E458A0C00BC350C /* Factory.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Factory.md; sourceTree = "<group>"; };
 		499364812E459C4600BC350C /* Tea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tea.m; sourceTree = "<group>"; };
-		499364822E459C4600BC350C /* Beverage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beverage.m; sourceTree = "<group>"; };
 		499364842E459C4700BC350C /* Coffee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coffee.m; sourceTree = "<group>"; };
-		499364852E459C4700BC350C /* Beverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beverage.h; sourceTree = "<group>"; };
 		499364862E459C4700BC350C /* Tea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tea.h; sourceTree = "<group>"; };
 		499364872E459C4700BC350C /* Coffee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coffee.h; sourceTree = "<group>"; };
 		4993648E2E45AD1600BC350C /* TemplateTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateTest.h; sourceTree = "<group>"; };
@@ -525,6 +526,10 @@
 		499365E02E55877000BC350C /* VisitorFileProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitorFileProtocol.h; sourceTree = "<group>"; };
 		499365E12E55877000BC350C /* SizeVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeVisitor.h; sourceTree = "<group>"; };
 		499365E82E55907F00BC350C /* VisitorPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = VisitorPattern.md; sourceTree = "<group>"; };
+		499365E92E55988A00BC350C /* NameVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameVisitor.h; sourceTree = "<group>"; };
+		499365EA2E55988A00BC350C /* NameVisitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameVisitor.m; sourceTree = "<group>"; };
+		499365EC2E55EE0200BC350C /* FactoryMethodPatternTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactoryMethodPatternTest.h; sourceTree = "<group>"; };
+		499365ED2E55EF0800BC350C /* FactoryPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = FactoryPattern.md; sourceTree = "<group>"; };
 		4998361E2B9D392400613369 /* SecondVCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondVCTableViewCell.h; sourceTree = "<group>"; };
 		4998361F2B9D392400613369 /* SecondVCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondVCTableViewCell.m; sourceTree = "<group>"; };
 		499836212B9D42D700613369 /* CommonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModel.h; sourceTree = "<group>"; };
@@ -588,6 +593,17 @@
 		49E792302609BA50004A006B /* SynchronizedDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynchronizedDemo.h; sourceTree = "<group>"; };
 		49E792312609BA50004A006B /* SynchronizedDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynchronizedDemo.m; sourceTree = "<group>"; };
 		49E792322609BA50004A006B /* MutexDemo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutexDemo2.h; sourceTree = "<group>"; };
+		49F01C5B2E57105700A0009B /* Coffee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coffee.h; sourceTree = "<group>"; };
+		49F01C5C2E57105700A0009B /* ConcreteCondiments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteCondiments.m; sourceTree = "<group>"; };
+		49F01C5D2E57105800A0009B /* Coffee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coffee.m; sourceTree = "<group>"; };
+		49F01C5E2E57105800A0009B /* CondimentDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CondimentDecorator.h; sourceTree = "<group>"; };
+		49F01C602E57105800A0009B /* BeverageBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeverageBase.h; sourceTree = "<group>"; };
+		49F01C612E57105800A0009B /* CondimentDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CondimentDecorator.m; sourceTree = "<group>"; };
+		49F01C622E57105900A0009B /* BeverageBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeverageBase.m; sourceTree = "<group>"; };
+		49F01C632E57105900A0009B /* ConcreteCondiments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteCondiments.h; sourceTree = "<group>"; };
+		49F01C642E57105900A0009B /* DecoratorPatternTestForCoffee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecoratorPatternTestForCoffee.h; sourceTree = "<group>"; };
+		49F01C6A2E57126800A0009B /* Beverage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beverage.m; sourceTree = "<group>"; };
+		49F01C6B2E57126900A0009B /* Beverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beverage.h; sourceTree = "<group>"; };
 		63063FD3A09742A0721FFA8D /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		A82F59E1108743402F090498 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -668,12 +684,13 @@
 		492E197D2E4351F100747694 /* 大话-装饰模式 */ = {
 			isa = PBXGroup;
 			children = (
+				49F01C5A2E57101200A0009B /* 咖啡订单系统 */,
 				492E19862E43525900747694 /* Decorator.md */,
+				499365962E4F64D100BC350C /* DecortorPatternTest.h */,
 				492E19832E43523800747694 /* DecortorPerson.h */,
 				492E19842E43523800747694 /* DecortorPerson.m */,
 				492E19882E43553400747694 /* Finery.h */,
 				492E19892E43553400747694 /* Finery.m */,
-				499365962E4F64D100BC350C /* DecortorPatternTest.h */,
 			);
 			path = "大话-装饰模式";
 			sourceTree = "<group>";
@@ -1036,9 +1053,11 @@
 		4993645E2E44AB1000BC350C /* 大话-工厂模式 */ = {
 			isa = PBXGroup;
 			children = (
-				499364632E44AB2300BC350C /* Client.m */,
+				499365ED2E55EF0800BC350C /* FactoryPattern.md */,
+				499365EC2E55EE0200BC350C /* FactoryMethodPatternTest.h */,
+				499364712E44AE9D00BC350C /* FactoryProtocol.h */,
+				499364602E44AB2300BC350C /* ProductFactoryProtocol.h */,
 				4993646D2E44AE7200BC350C /* ConcreteFactoryA.h */,
-				4993647E2E458A0C00BC350C /* Factory.md */,
 				4993646B2E44AE7200BC350C /* ConcreteFactoryA.m */,
 				4993646E2E44AE7200BC350C /* ConcreteFactoryB.h */,
 				4993646C2E44AE7200BC350C /* ConcreteFactoryB.m */,
@@ -1046,8 +1065,6 @@
 				499364652E44AB2400BC350C /* ConcreteProductA.m */,
 				4993645F2E44AB2300BC350C /* ConcreteProductB.h */,
 				499364622E44AB2300BC350C /* ConcreteProductB.m */,
-				499364712E44AE9D00BC350C /* Factory.h */,
-				499364602E44AB2300BC350C /* Product.h */,
 				499364612E44AB2300BC350C /* SimpleFactory.h */,
 				499364662E44AB2400BC350C /* SimpleFactory.m */,
 			);
@@ -1068,14 +1085,14 @@
 		4993647F2E45984F00BC350C /* 大话-模版模式 */ = {
 			isa = PBXGroup;
 			children = (
-				499364852E459C4700BC350C /* Beverage.h */,
-				499364822E459C4600BC350C /* Beverage.m */,
+				499364912E45AE6800BC350C /* TemplateTest.md */,
+				4993648E2E45AD1600BC350C /* TemplateTest.h */,
+				49F01C6B2E57126900A0009B /* Beverage.h */,
+				49F01C6A2E57126800A0009B /* Beverage.m */,
 				499364872E459C4700BC350C /* Coffee.h */,
 				499364842E459C4700BC350C /* Coffee.m */,
-				4993648E2E45AD1600BC350C /* TemplateTest.h */,
 				499364862E459C4700BC350C /* Tea.h */,
 				499364812E459C4600BC350C /* Tea.m */,
-				499364912E45AE6800BC350C /* TemplateTest.md */,
 			);
 			path = "大话-模版模式";
 			sourceTree = "<group>";
@@ -1083,15 +1100,15 @@
 		499364802E459C0700BC350C /* 大话-外观模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499364A22E48918800BC350C /* FacadeTest.md */,
+				499364A12E46EDD300BC350C /* FacadeTest.h */,
+				499364932E46EDAA00BC350C /* SmartHomeFacade.h */,
+				499364942E46EDAB00BC350C /* SmartHomeFacade.m */,
 				499364962E46EDAB00BC350C /* AirConditioner.h */,
 				4993649B2E46EDAC00BC350C /* AirConditioner.m */,
 				499364952E46EDAB00BC350C /* Curtain.h */,
 				499364972E46EDAB00BC350C /* Curtain.m */,
-				499364A12E46EDD300BC350C /* FacadeTest.h */,
-				499364932E46EDAA00BC350C /* SmartHomeFacade.h */,
-				499364942E46EDAB00BC350C /* SmartHomeFacade.m */,
 				499364992E46EDAC00BC350C /* TV.h */,
-				499364A22E48918800BC350C /* FacadeTest.md */,
 				4993649A2E46EDAC00BC350C /* TV.m */,
 			);
 			path = "大话-外观模式";
@@ -1100,6 +1117,7 @@
 		499364922E46ED8300BC350C /* 大话-建造者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499364B32E48975400BC350C /* BuilderMode.md */,
 				499364AD2E48947D00BC350C /* BuilderModeTest.h */,
 				499364A92E48947C00BC350C /* BuilderProtocol.h */,
 				499364A82E48947C00BC350C /* Computer.h */,
@@ -1110,7 +1128,6 @@
 				499364A72E48947C00BC350C /* MacBookBuilder.m */,
 				499364A52E48947B00BC350C /* ThinkPadBuilder.h */,
 				499364AB2E48947C00BC350C /* ThinkPadBuilder.m */,
-				499364B32E48975400BC350C /* BuilderMode.md */,
 			);
 			path = "大话-建造者模式";
 			sourceTree = "<group>";
@@ -1164,9 +1181,9 @@
 		499364DA2E49C96400BC350C /* 大话-抽象工厂模式 */ = {
 			isa = PBXGroup;
 			children = (
-				499364E02E49C99E00BC350C /* AbstractFactory.h */,
-				499364DE2E49C99E00BC350C /* AbstractFactoryModeTest.h */,
 				499364E62E49CFCE00BC350C /* AbstractFactoryMode.md */,
+				499364DE2E49C99E00BC350C /* AbstractFactoryModeTest.h */,
+				499364E02E49C99E00BC350C /* AbstractFactory.h */,
 				499364DB2E49C99D00BC350C /* AbstractProducts.h */,
 				499364DD2E49C99E00BC350C /* ConcreteFactories.h */,
 				499364E22E49C99E00BC350C /* ConcreteFactories.m */,
@@ -1272,19 +1289,19 @@
 		4993653E2E4C7CFB00BC350C /* 大话-桥接模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499365522E4DE8D600BC350C /* BridgePattern.md */,
 				499365412E4C7D3800BC350C /* BridgePatternTest.h */,
-				499365482E4C7D3B00BC350C /* EmailMessageSender.h */,
-				499365462E4C7D3A00BC350C /* EmailMessageSender.m */,
+				499365402E4C7D3800BC350C /* MessageSenderProtocol.h */,
 				4993654A2E4C7D3C00BC350C /* Message.h */,
 				499365452E4C7D3A00BC350C /* Message.m */,
-				499365402E4C7D3800BC350C /* MessageSenderProtocol.h */,
 				499365472E4C7D3B00BC350C /* NormalMessage.h */,
 				4993654B2E4C7D3C00BC350C /* NormalMessage.m */,
-				499365442E4C7D3900BC350C /* SMSMessageSender.h */,
-				499365422E4C7D3900BC350C /* SMSMessageSender.m */,
 				4993653F2E4C7D3700BC350C /* UrgentMessage.h */,
 				499365432E4C7D3900BC350C /* UrgentMessage.m */,
-				499365522E4DE8D600BC350C /* BridgePattern.md */,
+				499365482E4C7D3B00BC350C /* EmailMessageSender.h */,
+				499365462E4C7D3A00BC350C /* EmailMessageSender.m */,
+				499365442E4C7D3900BC350C /* SMSMessageSender.h */,
+				499365422E4C7D3900BC350C /* SMSMessageSender.m */,
 			);
 			path = "大话-桥接模式";
 			sourceTree = "<group>";
@@ -1416,6 +1433,8 @@
 				499365D52E55876D00BC350C /* InfoVisitor.m */,
 				499365E12E55877000BC350C /* SizeVisitor.h */,
 				499365D62E55876D00BC350C /* SizeVisitor.m */,
+				499365E92E55988A00BC350C /* NameVisitor.h */,
+				499365EA2E55988A00BC350C /* NameVisitor.m */,
 				499365DA2E55876E00BC350C /* TextFile.h */,
 				499365D92E55876E00BC350C /* TextFile.m */,
 			);
@@ -1589,6 +1608,22 @@
 			path = "读写安全";
 			sourceTree = "<group>";
 		};
+		49F01C5A2E57101200A0009B /* 咖啡订单系统 */ = {
+			isa = PBXGroup;
+			children = (
+				49F01C642E57105900A0009B /* DecoratorPatternTestForCoffee.h */,
+				49F01C5E2E57105800A0009B /* CondimentDecorator.h */,
+				49F01C612E57105800A0009B /* CondimentDecorator.m */,
+				49F01C602E57105800A0009B /* BeverageBase.h */,
+				49F01C622E57105900A0009B /* BeverageBase.m */,
+				49F01C5B2E57105700A0009B /* Coffee.h */,
+				49F01C5D2E57105800A0009B /* Coffee.m */,
+				49F01C632E57105900A0009B /* ConcreteCondiments.h */,
+				49F01C5C2E57105700A0009B /* ConcreteCondiments.m */,
+			);
+			path = "咖啡订单系统";
+			sourceTree = "<group>";
+		};
 		5EAFA43FE726B378EBC392F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1660,6 +1695,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499365EE2E55EF0800BC350C /* FactoryPattern.md in Resources */,
 				49934E382147991E00DAB4D5 /* leopard@3x.png in Resources */,
 				492E19872E43525900747694 /* Decorator.md in Resources */,
 				495CE75F208224F5000EA0E8 /* LaunchScreen.storyboard in Resources */,
@@ -1732,6 +1768,7 @@
 				4993646F2E44AE7200BC350C /* ConcreteFactoryA.m in Sources */,
 				499364D82E49A79500BC350C /* PublishSubscribeCenter.m in Sources */,
 				499365812E4F3FF600BC350C /* DepartmentManager.m in Sources */,
+				49F01C662E57105900A0009B /* Coffee.m in Sources */,
 				49CB9DC325E796B30006F119 /* SafeQuestionViewController.m in Sources */,
 				499364BA2E489F3700BC350C /* DelegateViewController.m in Sources */,
 				499365A32E5351C700BC350C /* CharacterFlyweightFactory.m in Sources */,
@@ -1745,7 +1782,9 @@
 				499364FC2E49FEBD00BC350C /* Order.m in Sources */,
 				499836292B9DF1E200613369 /* FirstVCCollectionViewCell.m in Sources */,
 				491A0F2324AF448700CC4189 /* TestAViewController.m in Sources */,
+				49F01C652E57105900A0009B /* ConcreteCondiments.m in Sources */,
 				4977E4F12B9719AC00658FAA /* SecondViewController.m in Sources */,
+				49F01C682E57105900A0009B /* CondimentDecorator.m in Sources */,
 				49E7923C2609BA51004A006B /* NSConditionDemo.m in Sources */,
 				4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */,
 				49E7923B2609BA51004A006B /* SemaphoreDemo.m in Sources */,
@@ -1754,6 +1793,7 @@
 				49E7923A2609BA51004A006B /* SerialQueueDemo.m in Sources */,
 				4993650C2E4A3A2400BC350C /* MP3Player.m in Sources */,
 				4993649C2E46EDAC00BC350C /* SmartHomeFacade.m in Sources */,
+				499365EB2E55988A00BC350C /* NameVisitor.m in Sources */,
 				499364672E44AB2400BC350C /* ConcreteProductB.m in Sources */,
 				494B95092B8B59AF0052DC1E /* NotificationTestViewController.m in Sources */,
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,
@@ -1778,6 +1818,8 @@
 				4966B9E623A1EAEE00E02099 /* SortTest.cpp in Sources */,
 				4962F6B12123FF1C00CB305F /* Car.m in Sources */,
 				499364B22E48947D00BC350C /* ThinkPadBuilder.m in Sources */,
+				49F01C6C2E57126900A0009B /* Beverage.m in Sources */,
+				49F01C692E57105A00A0009B /* BeverageBase.m in Sources */,
 				499364CA2E48A6E000BC350C /* NewsSubject.m in Sources */,
 				4993656A2E4F1DFD00BC350C /* TVOnCommand.m in Sources */,
 				499365512E4C7D3C00BC350C /* NormalMessage.m in Sources */,
@@ -1824,7 +1866,6 @@
 				4993656F2E4F1DFD00BC350C /* TVOffCommand.m in Sources */,
 				4993650A2E4A3A2400BC350C /* FLACAdapter.m in Sources */,
 				49CB9DC125E796B30006F119 /* Sync&ASyncViewController.m in Sources */,
-				499364892E459C4700BC350C /* Beverage.m in Sources */,
 				4993653C2E4C564C00BC350C /* SignalModelTest.m in Sources */,
 				4941C4C323A4C60E00C49D7E /* iOSAlgorithmTest.cpp in Sources */,
 				499364A02E46EDAC00BC350C /* AirConditioner.m in Sources */,
@@ -1877,7 +1918,6 @@
 				499364B02E48947D00BC350C /* MacBookBuilder.m in Sources */,
 				493CBEDB23A72F7600694F6E /* Book.m in Sources */,
 				49E792372609BA51004A006B /* MutexDemo3.m in Sources */,
-				499364682E44AB2400BC350C /* Client.m in Sources */,
 				499FBF622110551300E08F8C /* KVOExploreViewController.m in Sources */,
 				499364FA2E49FEBC00BC350C /* ShippedState.m in Sources */,
 				499365272E4B187500BC350C /* Folder.m in Sources */,

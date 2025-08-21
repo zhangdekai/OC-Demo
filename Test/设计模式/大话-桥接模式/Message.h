@@ -5,7 +5,7 @@
 @interface Message : NSObject
 
 // 桥接引用：持有实现化对象
-@property (nonatomic, strong) id<MessageSenderProtocol> sender;
+@property (nonatomic, weak) id<MessageSenderProtocol> sender;
 
 - (instancetype)initWithSender:(id<MessageSenderProtocol>)sender;
 

@@ -2,12 +2,13 @@
 #import "ConcreteFactories.h"
 
 // 客户端使用函数
-void useDevices(id<DeviceFactory> factory) {
-    id<Phone> phone = [factory createPhone];
-    id<Computer> computer = [factory createComputer];
+void useDevices(id<DeviceFactoryProtocol> factory) {
+    id<PhoneProtocol> phone = [factory createPhone];
+    id<ComputerProtocol> computer = [factory createComputer];
     
     [phone makeCall];
     [phone takePhoto];
+    
     [computer surfInternet];
     [computer editDocument];
 }

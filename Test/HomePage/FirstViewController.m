@@ -21,6 +21,7 @@
 #import "CommonDataModel.h"
 #import "FirstVCCollectionViewCell.h"
 #import "DeviceManager.h"
+#import "FactoryMethodPatternTest.h"
 #import "PrototypeModeTest.h"
 #import "TemplateTest.h"
 #import "FacadeTest.h"
@@ -156,6 +157,15 @@
     }
 }
 
+- (void)addFactoryPattern {
+    CommonDataModel *model = [[CommonDataModel alloc]init];
+    model.title = [NSString stringWithFormat:@"工厂模式"];
+    model.subTitle = [NSString stringWithFormat:@"Factory Test"];
+    model.descrip = [NSString stringWithFormat:@"This is description at %d", 1];
+    
+    [_dataList insertObject:model atIndex:0];
+}
+
 - (void)initData {
     
     _dataList = [NSMutableArray array];
@@ -163,11 +173,12 @@
         CommonDataModel *model = [[CommonDataModel alloc]init];
         model.title = [NSString stringWithFormat:@"Title_%d", i];
         model.subTitle = [NSString stringWithFormat:@"SubTitle_%d", i];
-        model.descrip = [NSString stringWithFormat:@"This is description at %d", i];
+        model.descrip = [NSString stringWithFormat:@"This is description at %d", i+2];
         [self setModelData:i model:model];
         [_dataList addObject:model];
     }
     
+    [self addFactoryPattern];
     NSLog(@"_dataList == %@", _dataList);
 }
 
@@ -234,54 +245,63 @@
 }
 
 - (void)didSelectRow:(NSIndexPath * _Nonnull)indexPath {
+    NSInteger row = indexPath.row;
+    
     if(indexPath.row == 0){
-        testPrototypeMain();
-    }else if(indexPath.row == 1){
-        testTemplateMain();
-    } else if(indexPath.row == 2){
-        testFacadeMain();
-    }else if(indexPath.row == 3){
-        testBuilderModeMain();
-    }else if(indexPath.row == 4){
-        testObserveModeMain();
-    }else if(indexPath.row == 5){
-        testObserveModeMain();
-    }else if(indexPath.row == 6){
-        testAbstractFactoryMain();
-    }else if(indexPath.row == 7){
-        testStateModeMain();
-    }else if(indexPath.row == 8){
-        testAdapterModeMain();
-    }else if(indexPath.row == 9){
-        testMementoPatternMain();
-    }else if(indexPath.row == 10){
-        testCompositePatternMain();
-    }else if(indexPath.row == 11){
-        testIteratorPatternMain();
-    }else if(indexPath.row == 12){
-        testBridgePatternMain();
-    }else if(indexPath.row == 13){
-        testCommandPatternMain();
-    }else if(indexPath.row == 14){
-        testChainOfResponsibiltyMain();
-    }else if(indexPath.row == 15){
-        testMediatorPatternMain();
-    }else if(indexPath.row == 16){
-        testDecortorPattern();
-        
-    }else if(indexPath.row == 17){
-        testFlyweightPatternMain();
-        
-    }else if(indexPath.row == 18){
-        testInterpretPatternMain();
-        
-    }else if(indexPath.row == 19){
-        testVisitorPatternMain();
-        
-    }else if(indexPath.row == 20){
-        testVisitorPatternFileMain();
-        
+        testFactoryMethodPatternMain();
+    }else{
+        row -= 1;
+        if(row == 0){
+            testPrototypeMain();
+        }else if(row == 1){
+            testTemplateMain();
+        } else if(row == 2){
+            testFacadeMain();
+        }else if(row == 3){
+            testBuilderModeMain();
+        }else if(row == 4){
+            testObserveModeMain();
+        }else if(row == 5){
+            testObserveModeMain();
+        }else if(row == 6){
+            testAbstractFactoryMain();
+        }else if(row == 7){
+            testStateModeMain();
+        }else if(row == 8){
+            testAdapterModeMain();
+        }else if(row == 9){
+            testMementoPatternMain();
+        }else if(row == 10){
+            testCompositePatternMain();
+        }else if(row == 11){
+            testIteratorPatternMain();
+        }else if(row == 12){
+            testBridgePatternMain();
+        }else if(row == 13){
+            testCommandPatternMain();
+        }else if(row == 14){
+            testChainOfResponsibiltyMain();
+        }else if(row == 15){
+            testMediatorPatternMain();
+        }else if(row == 16){
+            testDecortorPattern();
+            
+        }else if(row == 17){
+            testFlyweightPatternMain();
+            
+        }else if(row == 18){
+            testInterpretPatternMain();
+            
+        }else if(row == 19){
+            testVisitorPatternMain();
+            
+        }else if(row == 20){
+            testVisitorPatternFileMain();
+            
+        }
     }
+    
+    
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{

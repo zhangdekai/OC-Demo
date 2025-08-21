@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
-#import "Product.h"
+#import "ProductFactoryProtocol.h"
 
 // 具体产品A
-@interface ConcreteProductA : NSObject <Product>
+@interface ConcreteProductA : NSObject <ProductFactoryProtocol>
 @end
