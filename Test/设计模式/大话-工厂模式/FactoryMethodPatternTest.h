@@ -9,6 +9,9 @@ int testFactoryMethodPatternMain(void) {
         
         NSLog(@"简单工厂模式，，，，，\n");
         
+        [NSString stringWithFormat:@""];
+        [NSNumber numberWithInt:12];
+        
         // 使用简单工厂创建产品A
         id<ProductFactoryProtocol> productA = [SimpleFactory createProductWithType:ProductTypeA];
         [productA operation];

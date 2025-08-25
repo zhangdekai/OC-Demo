@@ -14,10 +14,10 @@ int testCommandPatternMain(void) {
         FamilyTV *tv = [[FamilyTV alloc] init];
         
         // 创建具体命令
-        id<Command> lightOn = [[LightOnCommand alloc] initWithLight:light];
-        id<Command> lightOff = [[LightOffCommand alloc] initWithLight:light];
-        id<Command> tvOn = [[TVOnCommand alloc] initWithTV:tv];
-        id<Command> tvOff = [[TVOffCommand alloc] initWithTV:tv];
+        id<CommandProtocol> lightOn = [[LightOnCommand alloc] initWithLight:light];
+        id<CommandProtocol> lightOff = [[LightOffCommand alloc] initWithLight:light];
+        id<CommandProtocol> tvOn = [[TVOnCommand alloc] initWithTV:tv];
+        id<CommandProtocol> tvOff = [[TVOffCommand alloc] initWithTV:tv];
         
         // 创建调用者（遥控器）
         RemoteControl *remote = [[RemoteControl alloc] init];

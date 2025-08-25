@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
-#import "Command.h"
+#import "CommandProtocol.h"
 #import "Light.h"
 
 // 具体命令：关闭电灯
-@interface LightOffCommand : NSObject <Command>
+@interface LightOffCommand : NSObject <CommandProtocol>
 
 - (instancetype)initWithLight:(Light *)light;
 

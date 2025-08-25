@@ -2,14 +2,14 @@
 
 @interface RemoteControl ()
 
-@property (nonatomic, strong) id<Command> command;
-@property (nonatomic, strong) id<Command> lastCommand;
+@property (nonatomic, strong) id<CommandProtocol> command;
+@property (nonatomic, strong) id<CommandProtocol> lastCommand;
 
 @end
 
 @implementation RemoteControl
 
-- (void)setCommand:(id<Command>)command {
+- (void)setCommand:(id<CommandProtocol>)command {
     self.command = command;
 }
 

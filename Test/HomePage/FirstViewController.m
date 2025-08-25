@@ -44,6 +44,7 @@
 #import "InterpretPatternTest.h"
 #import "VisitorPatternTest.h"
 #import "VisitorPatternTestForFile.h"
+#import "StrategyPatternTest.h"
 
 
 @interface FirstViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -153,6 +154,10 @@
     }else if (i== 20){
         model.title = @"访问者模式-1";
         model.subTitle = @"Visitor-1测试";
+        
+    }else if (i== 21){
+        model.title = @"策略模式";
+        model.subTitle = @"Strategy测试";
         
     }
 }
@@ -297,6 +302,9 @@
             
         }else if(row == 20){
             testVisitorPatternFileMain();
+            
+        }else if(row == 21){
+            testPaymentStrategy();
             
         }
     }

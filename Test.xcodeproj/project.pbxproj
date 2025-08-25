@@ -14,7 +14,6 @@
 		492E19732E3B2F4900747694 /* test01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 492E19722E3B2F4900747694 /* test01.cpp */; };
 		492E19762E3B54BF00747694 /* NSObject+HashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E19752E3B54BF00747694 /* NSObject+HashTable.m */; };
 		492E197A2E42086700747694 /* StrategyMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E19792E42086700747694 /* StrategyMode.m */; };
-		492E197C2E433EF000747694 /* Strategy.md in Resources */ = {isa = PBXBuildFile; fileRef = 492E197B2E433EF000747694 /* Strategy.md */; };
 		492E19852E43523800747694 /* DecortorPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E19842E43523800747694 /* DecortorPerson.m */; };
 		492E19872E43525900747694 /* Decorator.md in Resources */ = {isa = PBXBuildFile; fileRef = 492E19862E43525900747694 /* Decorator.md */; };
 		492E198A2E43553400747694 /* Finery.m in Sources */ = {isa = PBXBuildFile; fileRef = 492E19892E43553400747694 /* Finery.m */; };
@@ -188,6 +187,11 @@
 		49F01C682E57105900A0009B /* CondimentDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C612E57105800A0009B /* CondimentDecorator.m */; };
 		49F01C692E57105A00A0009B /* BeverageBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C622E57105900A0009B /* BeverageBase.m */; };
 		49F01C6C2E57126900A0009B /* Beverage.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C6A2E57126800A0009B /* Beverage.m */; };
+		49F01C792E5C833E00A0009B /* UnionPayStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C6E2E5C833B00A0009B /* UnionPayStrategy.m */; };
+		49F01C7A2E5C833E00A0009B /* WechatPayStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C722E5C833C00A0009B /* WechatPayStrategy.m */; };
+		49F01C7B2E5C833E00A0009B /* PaymentContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C732E5C833D00A0009B /* PaymentContext.m */; };
+		49F01C7C2E5C833E00A0009B /* AlipayStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C752E5C833D00A0009B /* AlipayStrategy.m */; };
+		49F01C7F2E5C844300A0009B /* StrategyPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 49F01C7E2E5C844300A0009B /* StrategyPattern.md */; };
 		A65317C0F21C3B27266DD3EC /* libPods-Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BC9BA4508E81CCE1B1B4B9 /* libPods-Test.a */; };
 /* End PBXBuildFile section */
 
@@ -206,7 +210,6 @@
 		492E19752E3B54BF00747694 /* NSObject+HashTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HashTable.m"; sourceTree = "<group>"; };
 		492E19782E42086700747694 /* StrategyMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyMode.h; sourceTree = "<group>"; };
 		492E19792E42086700747694 /* StrategyMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyMode.m; sourceTree = "<group>"; };
-		492E197B2E433EF000747694 /* Strategy.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Strategy.md; sourceTree = "<group>"; };
 		492E19832E43523800747694 /* DecortorPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecortorPerson.h; sourceTree = "<group>"; };
 		492E19842E43523800747694 /* DecortorPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecortorPerson.m; sourceTree = "<group>"; };
 		492E19862E43525900747694 /* Decorator.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Decorator.md; sourceTree = "<group>"; };
@@ -448,7 +451,7 @@
 		4993655B2E4F1DFA00BC350C /* TVOnCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVOnCommand.m; sourceTree = "<group>"; };
 		4993655D2E4F1DFB00BC350C /* RemoteControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteControl.h; sourceTree = "<group>"; };
 		4993655F2E4F1DFB00BC350C /* LightOffCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightOffCommand.m; sourceTree = "<group>"; };
-		499365602E4F1DFB00BC350C /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		499365602E4F1DFB00BC350C /* CommandProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandProtocol.h; sourceTree = "<group>"; };
 		499365612E4F1DFC00BC350C /* TVOffCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVOffCommand.h; sourceTree = "<group>"; };
 		499365622E4F1DFC00BC350C /* TVOnCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVOnCommand.h; sourceTree = "<group>"; };
 		499365632E4F1DFC00BC350C /* LightOnCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightOnCommand.m; sourceTree = "<group>"; };
@@ -604,6 +607,18 @@
 		49F01C642E57105900A0009B /* DecoratorPatternTestForCoffee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecoratorPatternTestForCoffee.h; sourceTree = "<group>"; };
 		49F01C6A2E57126800A0009B /* Beverage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Beverage.m; sourceTree = "<group>"; };
 		49F01C6B2E57126900A0009B /* Beverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Beverage.h; sourceTree = "<group>"; };
+		49F01C6D2E571DCA00A0009B /* ObserverPattern.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ObserverPattern.md; sourceTree = "<group>"; };
+		49F01C6E2E5C833B00A0009B /* UnionPayStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnionPayStrategy.m; sourceTree = "<group>"; };
+		49F01C6F2E5C833C00A0009B /* PaymentContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentContext.h; sourceTree = "<group>"; };
+		49F01C702E5C833C00A0009B /* AlipayStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlipayStrategy.h; sourceTree = "<group>"; };
+		49F01C712E5C833C00A0009B /* UnionPayStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnionPayStrategy.h; sourceTree = "<group>"; };
+		49F01C722E5C833C00A0009B /* WechatPayStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WechatPayStrategy.m; sourceTree = "<group>"; };
+		49F01C732E5C833D00A0009B /* PaymentContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentContext.m; sourceTree = "<group>"; };
+		49F01C742E5C833D00A0009B /* WechatPayStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatPayStrategy.h; sourceTree = "<group>"; };
+		49F01C752E5C833D00A0009B /* AlipayStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlipayStrategy.m; sourceTree = "<group>"; };
+		49F01C762E5C833D00A0009B /* PaymentStrategyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentStrategyProtocol.h; sourceTree = "<group>"; };
+		49F01C772E5C833D00A0009B /* StrategyPatternTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyPatternTest.h; sourceTree = "<group>"; };
+		49F01C7E2E5C844300A0009B /* StrategyPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = StrategyPattern.md; sourceTree = "<group>"; };
 		63063FD3A09742A0721FFA8D /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		A82F59E1108743402F090498 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -674,7 +689,17 @@
 		492E19772E42080300747694 /* 大话-策略模式 */ = {
 			isa = PBXGroup;
 			children = (
-				492E197B2E433EF000747694 /* Strategy.md */,
+				49F01C7E2E5C844300A0009B /* StrategyPattern.md */,
+				49F01C772E5C833D00A0009B /* StrategyPatternTest.h */,
+				49F01C762E5C833D00A0009B /* PaymentStrategyProtocol.h */,
+				49F01C6F2E5C833C00A0009B /* PaymentContext.h */,
+				49F01C732E5C833D00A0009B /* PaymentContext.m */,
+				49F01C702E5C833C00A0009B /* AlipayStrategy.h */,
+				49F01C752E5C833D00A0009B /* AlipayStrategy.m */,
+				49F01C712E5C833C00A0009B /* UnionPayStrategy.h */,
+				49F01C6E2E5C833B00A0009B /* UnionPayStrategy.m */,
+				49F01C742E5C833D00A0009B /* WechatPayStrategy.h */,
+				49F01C722E5C833C00A0009B /* WechatPayStrategy.m */,
 				492E19782E42086700747694 /* StrategyMode.h */,
 				492E19792E42086700747694 /* StrategyMode.m */,
 			);
@@ -1149,16 +1174,17 @@
 			isa = PBXGroup;
 			children = (
 				499364CC2E49A74A00BC350C /* 发布订阅模式 */,
+				49F01C6D2E571DCA00A0009B /* ObserverPattern.md */,
+				499364BC2E48A6DE00BC350C /* ObserverModeTest.h */,
+				499364BD2E48A6DE00BC350C /* NewsObserverProtocol.h */,
+				499364C12E48A6DF00BC350C /* NewsSubject.h */,
+				499364C42E48A6E000BC350C /* NewsSubject.m */,
 				499364C32E48A6E000BC350C /* NewsAgency.h */,
 				499364BE2E48A6DE00BC350C /* NewsAgency.m */,
 				499364C22E48A6DF00BC350C /* NewsApp.h */,
 				499364BF2E48A6DE00BC350C /* NewsApp.m */,
-				499364BD2E48A6DE00BC350C /* NewsObserverProtocol.h */,
 				499364C52E48A6E000BC350C /* Newspaper.h */,
 				499364C02E48A6DF00BC350C /* Newspaper.m */,
-				499364C12E48A6DF00BC350C /* NewsSubject.h */,
-				499364C42E48A6E000BC350C /* NewsSubject.m */,
-				499364BC2E48A6DE00BC350C /* ObserverModeTest.h */,
 			);
 			path = "大话-观察者模式";
 			sourceTree = "<group>";
@@ -1166,14 +1192,14 @@
 		499364CC2E49A74A00BC350C /* 发布订阅模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499364D92E49ADBA00BC350C /* PublishSubscribeMode.md */,
+				499364D12E49A79400BC350C /* PublisherSubscribeModeTest.h */,
 				499364CF2E49A79300BC350C /* Publisher.h */,
 				499364D02E49A79300BC350C /* Publisher.m */,
-				499364D12E49A79400BC350C /* PublisherSubscribeModeTest.h */,
 				499364CE2E49A79300BC350C /* PublishSubscribeCenter.h */,
 				499364D42E49A79500BC350C /* PublishSubscribeCenter.m */,
 				499364D22E49A79400BC350C /* Subscriber.h */,
 				499364CD2E49A79300BC350C /* Subscriber.m */,
-				499364D92E49ADBA00BC350C /* PublishSubscribeMode.md */,
 			);
 			path = "发布订阅模式";
 			sourceTree = "<group>";
@@ -1309,23 +1335,23 @@
 		499365562E4E0C7800BC350C /* 大话-命令模式 */ = {
 			isa = PBXGroup;
 			children = (
-				499365602E4F1DFB00BC350C /* Command.h */,
+				499365732E4F355600BC350C /* CommandPattern.md */,
 				499365642E4F1DFC00BC350C /* CommandPatternTest.h */,
+				499365602E4F1DFB00BC350C /* CommandProtocol.h */,
+				4993655D2E4F1DFB00BC350C /* RemoteControl.h */,
+				4993655A2E4F1DFA00BC350C /* RemoteControl.m */,
 				499365652E4F1DFD00BC350C /* Light.h */,
 				499365582E4F1DF900BC350C /* Light.m */,
 				499365572E4F1DF900BC350C /* LightOffCommand.h */,
 				4993655F2E4F1DFB00BC350C /* LightOffCommand.m */,
 				499365592E4F1DFA00BC350C /* LightOnCommand.h */,
 				499365632E4F1DFC00BC350C /* LightOnCommand.m */,
-				4993655D2E4F1DFB00BC350C /* RemoteControl.h */,
-				4993655A2E4F1DFA00BC350C /* RemoteControl.m */,
 				499365712E4F1EE200BC350C /* FamilyTV.h */,
 				499365702E4F1EE200BC350C /* FamilyTV.m */,
 				499365612E4F1DFC00BC350C /* TVOffCommand.h */,
 				499365662E4F1DFD00BC350C /* TVOffCommand.m */,
 				499365622E4F1DFC00BC350C /* TVOnCommand.h */,
 				4993655B2E4F1DFA00BC350C /* TVOnCommand.m */,
-				499365732E4F355600BC350C /* CommandPattern.md */,
 			);
 			path = "大话-命令模式";
 			sourceTree = "<group>";
@@ -1704,9 +1730,9 @@
 				499365992E5084DB00BC350C /* 模式对比.png in Resources */,
 				49934E34214798AD00DAB4D5 /* dusk@3x.png in Resources */,
 				49934E372147991E00DAB4D5 /* leopard@2x.png in Resources */,
+				49F01C7F2E5C844300A0009B /* StrategyPattern.md in Resources */,
 				499365552E4E098000BC350C /* 结构性设计模式.png in Resources */,
 				495CE75A208224F3000EA0E8 /* Main.storyboard in Resources */,
-				492E197C2E433EF000747694 /* Strategy.md in Resources */,
 				499836252B9D7A6800613369 /* README.md in Resources */,
 				49934E33214798AD00DAB4D5 /* dusk@2x.png in Resources */,
 			);
@@ -1758,6 +1784,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4990BAA5212FF2610044BCE1 /* AFNetworkingTestViewController.m in Sources */,
+				49F01C7B2E5C833E00A0009B /* PaymentContext.m in Sources */,
 				499364692E44AB2400BC350C /* ConcreteProductA.m in Sources */,
 				493904B325F3179800C8C209 /* StrongCopyWeakTest.m in Sources */,
 				49E7923E2609BA51004A006B /* OSSpinLockDemo2.m in Sources */,
@@ -1850,6 +1877,7 @@
 				499365262E4B187500BC350C /* File.m in Sources */,
 				49E792332609BA51004A006B /* OSSpinLockDemo.m in Sources */,
 				499364F82E49FEBC00BC350C /* PaidState.m in Sources */,
+				49F01C792E5C833E00A0009B /* UnionPayStrategy.m in Sources */,
 				49E792342609BA51004A006B /* MutexDemo.m in Sources */,
 				499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */,
 				4993649D2E46EDAC00BC350C /* Curtain.m in Sources */,
@@ -1857,6 +1885,7 @@
 				499365832E4F3FF600BC350C /* AbstractApprover.m in Sources */,
 				4993656E2E4F1DFD00BC350C /* LightOnCommand.m in Sources */,
 				492E198A2E43553400747694 /* Finery.m in Sources */,
+				49F01C7C2E5C833E00A0009B /* AlipayStrategy.m in Sources */,
 				492E19732E3B2F4900747694 /* test01.cpp in Sources */,
 				499364F92E49FEBC00BC350C /* PendingPaymentState.m in Sources */,
 				492554A7239DF4070008D6EF /* SDWebImageTestViewController.m in Sources */,
@@ -1865,6 +1894,7 @@
 				499365D22E5471B000BC350C /* Zoo.m in Sources */,
 				4993656F2E4F1DFD00BC350C /* TVOffCommand.m in Sources */,
 				4993650A2E4A3A2400BC350C /* FLACAdapter.m in Sources */,
+				49F01C7A2E5C833E00A0009B /* WechatPayStrategy.m in Sources */,
 				49CB9DC125E796B30006F119 /* Sync&ASyncViewController.m in Sources */,
 				4993653C2E4C564C00BC350C /* SignalModelTest.m in Sources */,
 				4941C4C323A4C60E00C49D7E /* iOSAlgorithmTest.cpp in Sources */,
