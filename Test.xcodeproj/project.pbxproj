@@ -619,6 +619,7 @@
 		49F01C762E5C833D00A0009B /* PaymentStrategyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentStrategyProtocol.h; sourceTree = "<group>"; };
 		49F01C772E5C833D00A0009B /* StrategyPatternTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyPatternTest.h; sourceTree = "<group>"; };
 		49F01C7E2E5C844300A0009B /* StrategyPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = StrategyPattern.md; sourceTree = "<group>"; };
+		49F01C802E5D522F00A0009B /* 大话设计模式-比赛.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "大话设计模式-比赛.md"; sourceTree = "<group>"; };
 		63063FD3A09742A0721FFA8D /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		A82F59E1108743402F090498 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -776,6 +777,7 @@
 				493904D825F4717C00C8C209 /* 通知 */,
 				493E0859238BFBBC0079D893 /* Block */,
 				499365532E4DFC5100BC350C /* DesignPattern起源分类.md */,
+				49F01C802E5D522F00A0009B /* 大话设计模式-比赛.md */,
 				499365542E4E097F00BC350C /* 结构性设计模式.png */,
 			);
 			path = "设计模式";
