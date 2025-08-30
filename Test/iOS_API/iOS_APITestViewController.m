@@ -29,16 +29,23 @@
     
     NSObject *obj = [[NSObject alloc] init];
     
-//    NSURLProtocol *Protocol = [NSURLProtocol alloc]initWithRequest:<#(nonnull NSURLRequest *)#> cachedResponse:<#(nullable NSCachedURLResponse *)#> client:<#(nullable id<NSURLProtocolClient>)#>
+    //    NSURLProtocol *Protocol = [NSURLProtocol alloc]initWithRequest:<#(nonnull NSURLRequest *)#> cachedResponse:<#(nullable NSCachedURLResponse *)#> client:<#(nullable id<NSURLProtocolClient>)#>
     
-
+    
     NSData *data = [[NSData alloc]initWithContentsOfFile:@""];
     
     NSData *base64data = [data base64EncodedDataWithOptions:0];
     
     [base64data writeToFile:@"" atomically:YES];
     
+    
+    
+}
 
+- (void) testView {
+    UIView *subV = [[UIView alloc]init];
+    [subV setNeedsLayout];
+    [subV setNeedsDisplay];
 }
 
 - (void)testLayer {
@@ -49,7 +56,7 @@
     
     CAEmitterLayer *cLayer = [[CAEmitterLayer alloc]init];
     
-
+    
 }
 
 
@@ -62,12 +69,12 @@
     
     CADisplayLink *link = [CADisplayLink displayLinkWithTarget:weakProxy selector:@selector(timeClick:)];
     [link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
-
+    
 }
 
-- (void)timeClick:(NSTimer *)timer {}
-
-
+- (void)timeClick:(NSTimer *)timer {
+    
+}
 
 
 -(void)dealloc {
@@ -75,7 +82,5 @@
         [_timer invalidate];
     }
 }
-
-
 
 @end

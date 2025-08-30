@@ -73,6 +73,7 @@
     
     FirstViewController *first = [[FirstViewController alloc]init];
     first.tabBarItem.title = @"First";
+    
     first.tabBarItem.image = [[UIImage imageNamed:@"home_email"] imageWithRenderingMode:(UIImageRenderingModeAlwaysOriginal)];
     [first.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor],NSFontAttributeName: [UIFont systemFontOfSize:14]} forState:(UIControlStateNormal)];
     [first.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor redColor]} forState:(UIControlStateSelected)];
@@ -94,7 +95,9 @@
 
     UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:first];
     
-    tabBarController.viewControllers = [NSArray arrayWithObjects:vc,naVC,second,third, nil];
+    UINavigationController *naThird = [[UINavigationController alloc] initWithRootViewController:third];
+    
+    tabBarController.viewControllers = [NSArray arrayWithObjects:vc,naVC,second,naThird, nil];
     
     
     return tabBarController;

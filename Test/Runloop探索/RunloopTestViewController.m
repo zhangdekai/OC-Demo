@@ -31,7 +31,6 @@
      
      */
     
-    
     UIButton *takePhoto = [[UIButton alloc]initWithFrame:CGRectMake(100, 200, 100, 30)];
     [takePhoto setTitle:@"测试线程常驻" forState:0];
     [takePhoto setTitleColor:[UIColor blackColor] forState:0];
@@ -40,9 +39,48 @@
     
     NSObject *testAdditionalProperty = [[NSObject alloc]init];
     testAdditionalProperty.name = @"测试哦";
-
-    
 }
+
+/// 保持线程存活
+/// 子线程如果不主动开启 RunLoop，执行完任务就退出。
+/// 通过 RunLoop 可以让子线程常驻，随时处理任务。
+/// 若需子线程长期处理任务（如后台下载、定时回调）
+- (void)startThread {
+    NSThread *thread = [[NSThread alloc] initWithBlock:^{
+        NSLog(@"子线程开始");
+        
+        /// 增加一个 timer 事件
+        /// 
+        
+        // 开启 RunLoop，保持线程存活
+        [[NSRunLoop currentRunLoop] run];
+    }];
+    [thread start];
+}
+
+/// 子线程 Runloop 示例：维持线程存活
+- (void)dispatchThread {
+    // 子线程中启动 Runloop
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        /// 1. 首次获取 Runloop，触发创建（懒加载）
+        NSRunLoop *runloop = [NSRunLoop currentRunLoop];
+        
+        /// 2. 注册事件（必须添加事件，否则 Runloop 会立即退出）
+        /// 若 Runloop 未注册任何 Source/Timer，调用 run() 会立即退出（因为无事件可处理）
+        NSTimer *timer = [NSTimer timerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+            NSLog(@"子线程 Timer 触发");
+        }];
+        [runloop addTimer:timer forMode:NSRunLoopCommonModes];
+        
+        // 3. 启动 Runloop（以特定 Mode 运行，直到超时或被停止）
+        // 方式1：无限运行（需手动调用 CFRunLoopStop 停止）
+        [runloop run];
+        
+        // 方式2：有限运行（到指定时间后自动退出）
+        [runloop runMode:NSRunLoopCommonModes beforeDate:[NSDate distantFuture]];
+    });
+}
+
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
@@ -61,25 +99,8 @@
     [thread start];
 }
 
-- (void)keepSubThread {
-    
-    // 注意：打印方法一定要在RunLoop创建开始运行之前，如果在RunLoop跑起来之后打印，RunLoop先运行起来，已经在跑圈了就出不来了，进入死循环也就无法执行后面的操作了。
-    // 但是此时点击Button还是有操作的，因为Button是在RunLoop跑起来之后加入到子线程的，当Button加入到子线程RunLoop就会跑起来
-    
-    NSLog(@"打印方法：%s",__func__);//p:打印方法：-[RunloopTestViewController keepSubThread]
-    
-    // 1.创建子线程相关的RunLoop，在子线程中创建即可，并且RunLoop中要至少有一个Timer 或 一个Source 保证RunLoop不会因为空转而退出，因此在创建的时候直接加入
-    
-    // 添加Source [NSMachPort port] 添加一个端口
-    [[NSRunLoop currentRunLoop] addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
-    
-    // 添加一个Timer
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(test) userInfo:nil repeats:YES];
-    
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
-    
-    //创建监听者
-    CFRunLoopObserverRef observer = CFRunLoopObserverCreateWithHandler(CFAllocatorGetDefault(), kCFRunLoopAllActivities, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
+- (CFRunLoopObserverRef)addRunloopObserverTest {
+    return CFRunLoopObserverCreateWithHandler(CFAllocatorGetDefault(), kCFRunLoopAllActivities, YES, 0, ^(CFRunLoopObserverRef observer, CFRunLoopActivity activity) {
         switch (activity) {
             case kCFRunLoopEntry:
                 NSLog(@"RunLoop进入");
@@ -103,6 +124,28 @@
                 break;
         }
     });
+}
+
+- (void)keepSubThread {
+    
+    // 注意：打印方法一定要在RunLoop创建开始运行之前，如果在RunLoop跑起来之后打印，RunLoop先运行起来，已经在跑圈了就出不来了，进入死循环也就无法执行后面的操作了。
+    // 但是此时点击Button还是有操作的，因为Button是在RunLoop跑起来之后加入到子线程的，当Button加入到子线程RunLoop就会跑起来
+    
+    NSLog(@"打印方法：%s",__func__);//p:打印方法：-[RunloopTestViewController keepSubThread]
+    
+    // 1.创建子线程相关的RunLoop，在子线程中创建即可，并且RunLoop中要至少有一个Timer 或 一个Source 保证RunLoop不会因为空转而退出，因此在创建的时候直接加入
+    
+    // 添加Source [NSMachPort port] 添加一个端口
+    [[NSRunLoop currentRunLoop] addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
+    
+    // 添加一个Timer
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(test) userInfo:nil repeats:YES];
+    
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    
+    //创建监听者
+    CFRunLoopObserverRef observer = [self addRunloopObserverTest];
+    
     // 给RunLoop添加监听者
     CFRunLoopAddObserver(CFRunLoopGetCurrent(), observer, kCFRunLoopDefaultMode);
 
@@ -110,9 +153,11 @@
     [[NSRunLoop currentRunLoop] run];
     CFRelease(observer);
 }
+
 - (void)btnClick:(UIButton *)sender {
     [self performSelector:@selector(test) onThread:self.thread withObject:nil waitUntilDone:NO];
 }
+
 -(void)test
 {
     NSLog(@"%@",[NSThread currentThread]);
@@ -167,6 +212,7 @@
 }
 
 //MARK: - 使用GCD也可是创建计时器，而且更为精确
+/// GCD定时器
 - (void)aGCDTimer {
     //创建队列
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
@@ -281,5 +327,24 @@
     NSLog(@"-------");
 }
 
+/// NSTimer
+/// 定时器依赖 RunLoop，如果 RunLoop 被阻塞或者处于其他 Mode，定时器可能不触发。
+///
+
+- (void)testTimer {
+    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                     target:self
+                                   selector:@selector(timerAction)
+                                   userInfo:nil
+                                    repeats:YES];
+    /// 如果你希望 Timer 在滚动时也能触发，需要把它加到 NSRunLoopCommonModes：
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    
+}
+
+-(void)timerAction {
+    NSLog(@"test timer in NSRunLoopCommonModes");
+}
 
 @end

@@ -162,6 +162,7 @@
 		49B91E6220FC671E00FC4892 /* TestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B91E6120FC671E00FC4892 /* TestBlock.m */; };
 		49C7497420AD74DC009DC12D /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7497320AD74DC009DC12D /* TableViewCell.m */; };
 		49C7497720AD77FF009DC12D /* SubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7497620AD77FF009DC12D /* SubTableViewCell.m */; };
+		49C8499C2E603DEA00E88689 /* CADisplayLinkTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C8499B2E603DEA00E88689 /* CADisplayLinkTest.m */; };
 		49CB9DBE25E796B30006F119 /* SafeQuestionLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9D9D25E796B20006F119 /* SafeQuestionLockViewController.m */; };
 		49CB9DBF25E796B30006F119 /* Thread&RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9DA025E796B30006F119 /* Thread&RunloopViewController.m */; };
 		49CB9DC025E796B30006F119 /* DispatchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CB9DA425E796B30006F119 /* DispatchGroupViewController.m */; };
@@ -192,6 +193,7 @@
 		49F01C7B2E5C833E00A0009B /* PaymentContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C732E5C833D00A0009B /* PaymentContext.m */; };
 		49F01C7C2E5C833E00A0009B /* AlipayStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C752E5C833D00A0009B /* AlipayStrategy.m */; };
 		49F01C7F2E5C844300A0009B /* StrategyPattern.md in Resources */ = {isa = PBXBuildFile; fileRef = 49F01C7E2E5C844300A0009B /* StrategyPattern.md */; };
+		49F58FD02E60403000A5A350 /* aab.png in Resources */ = {isa = PBXBuildFile; fileRef = 49F58FCF2E60403000A5A350 /* aab.png */; };
 		A65317C0F21C3B27266DD3EC /* libPods-Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19BC9BA4508E81CCE1B1B4B9 /* libPods-Test.a */; };
 /* End PBXBuildFile section */
 
@@ -556,6 +558,8 @@
 		49C7497320AD74DC009DC12D /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		49C7497520AD77FF009DC12D /* SubTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubTableViewCell.h; sourceTree = "<group>"; };
 		49C7497620AD77FF009DC12D /* SubTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubTableViewCell.m; sourceTree = "<group>"; };
+		49C8499A2E603DEA00E88689 /* CADisplayLinkTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADisplayLinkTest.h; sourceTree = "<group>"; };
+		49C8499B2E603DEA00E88689 /* CADisplayLinkTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADisplayLinkTest.m; sourceTree = "<group>"; };
 		49CB9D9D25E796B20006F119 /* SafeQuestionLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeQuestionLockViewController.m; sourceTree = "<group>"; };
 		49CB9D9E25E796B20006F119 /* SafeQuestionLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeQuestionLockViewController.h; sourceTree = "<group>"; };
 		49CB9DA025E796B30006F119 /* Thread&RunloopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Thread&RunloopViewController.m"; sourceTree = "<group>"; };
@@ -620,6 +624,8 @@
 		49F01C772E5C833D00A0009B /* StrategyPatternTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyPatternTest.h; sourceTree = "<group>"; };
 		49F01C7E2E5C844300A0009B /* StrategyPattern.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = StrategyPattern.md; sourceTree = "<group>"; };
 		49F01C802E5D522F00A0009B /* 大话设计模式-比赛.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "大话设计模式-比赛.md"; sourceTree = "<group>"; };
+		49F58FCE2E603F5800A5A350 /* CADisplayLink.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CADisplayLink.md; sourceTree = "<group>"; };
+		49F58FCF2E60403000A5A350 /* aab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aab.png; sourceTree = "<group>"; };
 		63063FD3A09742A0721FFA8D /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		A82F59E1108743402F090498 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -797,6 +803,10 @@
 			children = (
 				49415D73239A329900660C57 /* iOS_APITestViewController.h */,
 				49415D74239A329900660C57 /* iOS_APITestViewController.m */,
+				49C8499A2E603DEA00E88689 /* CADisplayLinkTest.h */,
+				49C8499B2E603DEA00E88689 /* CADisplayLinkTest.m */,
+				49F58FCE2E603F5800A5A350 /* CADisplayLink.md */,
+				49F58FCF2E60403000A5A350 /* aab.png */,
 				49415D79239B92B500660C57 /* YYWeakProxy.h */,
 				49415D7A239B92B500660C57 /* YYWeakProxy.m */,
 			);
@@ -1378,15 +1388,15 @@
 		499365852E4F60F900BC350C /* 大话-中介者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				499365972E507DD000BC350C /* MediatorPattern.md */,
+				4993658B2E4F614600BC350C /* MediatorPatternTest.h */,
+				499365892E4F614600BC350C /* MediatorProtocol.h */,
 				499365942E4F61FC00BC350C /* ChatUser.h */,
 				499365932E4F61FB00BC350C /* ChatUser.m */,
-				499365892E4F614600BC350C /* MediatorProtocol.h */,
 				4993658A2E4F614600BC350C /* ChatRoomMediator.h */,
 				4993658C2E4F614700BC350C /* ChatRoomMediator.m */,
 				4993658E2E4F614700BC350C /* Colleague.h */,
 				499365862E4F614600BC350C /* Colleague.m */,
-				4993658B2E4F614600BC350C /* MediatorPatternTest.h */,
-				499365972E507DD000BC350C /* MediatorPattern.md */,
 				499365982E5084DA00BC350C /* 模式对比.png */,
 			);
 			path = "大话-中介者模式";
@@ -1729,6 +1739,7 @@
 				495CE75F208224F5000EA0E8 /* LaunchScreen.storyboard in Resources */,
 				495CE75C208224F5000EA0E8 /* Assets.xcassets in Resources */,
 				4998362A2B9DF1E200613369 /* FirstVCCollectionViewCell.xib in Resources */,
+				49F58FD02E60403000A5A350 /* aab.png in Resources */,
 				499365992E5084DB00BC350C /* 模式对比.png in Resources */,
 				49934E34214798AD00DAB4D5 /* dusk@3x.png in Resources */,
 				49934E372147991E00DAB4D5 /* leopard@2x.png in Resources */,
@@ -1850,6 +1861,7 @@
 				49F01C6C2E57126900A0009B /* Beverage.m in Sources */,
 				49F01C692E57105A00A0009B /* BeverageBase.m in Sources */,
 				499364CA2E48A6E000BC350C /* NewsSubject.m in Sources */,
+				49C8499C2E603DEA00E88689 /* CADisplayLinkTest.m in Sources */,
 				4993656A2E4F1DFD00BC350C /* TVOnCommand.m in Sources */,
 				499365512E4C7D3C00BC350C /* NormalMessage.m in Sources */,
 				4993658F2E4F614700BC350C /* Colleague.m in Sources */,

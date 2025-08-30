@@ -3,10 +3,11 @@ inhibit_all_warnings!
 
 target 'Test' do
 
-pod 'AFNetworking'
+pod 'AFNetworking' # 2023 年 1 月 17 日存档,不再维护
 pod 'Texture', '~> 3.0.0'
 pod 'SDWebImage'#5.2.3
 pod 'MMKV', '~> 1.1.2'
+pod 'Masonry' #https://github.com/SnapKit/Masonry
 
 
 end

@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Masonry (1.1.0)
   - MMKV (1.1.2):
     - MMKVCore (~> 1.1.2)
   - MMKVCore (1.1.2)
@@ -58,6 +59,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Masonry
   - MMKV (~> 1.1.2)
   - SDWebImage
   - Texture (~> 3.0.0)
@@ -65,6 +67,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - Masonry
     - MMKV
     - MMKVCore
     - PINCache
@@ -75,6 +78,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMKV: 319aede3b690572ad00bada5831146c63da3d009
   MMKVCore: ae976ab3f019a3e4448f884353e0557b324ff136
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
@@ -83,6 +87,6 @@ SPEC CHECKSUMS:
   SDWebImage: 981fd7e860af070920f249fd092420006014c3eb
   Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
 
-PODFILE CHECKSUM: 43a8b54ec573ef82d620db900e6ce96d26cc6c17
+PODFILE CHECKSUM: e6efe396288d6e4dc13ad4a4a6ef17700c86c6d7
 
 COCOAPODS: 1.12.1
