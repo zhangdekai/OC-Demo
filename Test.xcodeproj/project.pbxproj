@@ -160,6 +160,7 @@
 		499FBF622110551300E08F8C /* KVOExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF612110551300E08F8C /* KVOExploreViewController.m */; };
 		499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF682112A7D000E08F8C /* RunloopTestViewController.m */; };
 		49B9165E2E63ED8200D43368 /* ShadowCornerMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B9165D2E63ED8200D43368 /* ShadowCornerMask.m */; };
+		49B916612E6401E000D43368 /* TextureGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B916602E6401E000D43368 /* TextureGridCell.m */; };
 		49B91E6220FC671E00FC4892 /* TestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B91E6120FC671E00FC4892 /* TestBlock.m */; };
 		49C7497420AD74DC009DC12D /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7497320AD74DC009DC12D /* TableViewCell.m */; };
 		49C7497720AD77FF009DC12D /* SubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7497620AD77FF009DC12D /* SubTableViewCell.m */; };
@@ -555,6 +556,8 @@
 		499FBF682112A7D000E08F8C /* RunloopTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopTestViewController.m; sourceTree = "<group>"; };
 		49B9165C2E63ED8200D43368 /* ShadowCornerMask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowCornerMask.h; sourceTree = "<group>"; };
 		49B9165D2E63ED8200D43368 /* ShadowCornerMask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowCornerMask.m; sourceTree = "<group>"; };
+		49B9165F2E6401E000D43368 /* TextureGridCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureGridCell.h; sourceTree = "<group>"; };
+		49B916602E6401E000D43368 /* TextureGridCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextureGridCell.m; sourceTree = "<group>"; };
 		49B91E6020FC671E00FC4892 /* TestBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBlock.h; sourceTree = "<group>"; };
 		49B91E6120FC671E00FC4892 /* TestBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBlock.m; sourceTree = "<group>"; };
 		49C7497220AD74DC009DC12D /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
@@ -821,6 +824,8 @@
 			children = (
 				49437D3B2372DF17000C8C49 /* TextureTestViewController.h */,
 				49437D3C2372DF17000C8C49 /* TextureTestViewController.m */,
+				49B9165F2E6401E000D43368 /* TextureGridCell.h */,
+				49B916602E6401E000D43368 /* TextureGridCell.m */,
 			);
 			path = TextureTest;
 			sourceTree = "<group>";
@@ -1901,6 +1906,7 @@
 				49E792342609BA51004A006B /* MutexDemo.m in Sources */,
 				499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */,
 				4993649D2E46EDAC00BC350C /* Curtain.m in Sources */,
+				49B916612E6401E000D43368 /* TextureGridCell.m in Sources */,
 				499365352E4B5FDB00BC350C /* ConcreteIterator.m in Sources */,
 				499365832E4F3FF600BC350C /* AbstractApprover.m in Sources */,
 				4993656E2E4F1DFD00BC350C /* LightOnCommand.m in Sources */,

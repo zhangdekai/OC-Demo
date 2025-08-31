@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Texture/AsyncDisplayKit/AsyncDisplayKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TextureTestViewController : UIViewController
+@interface TextureTestViewController : ASDKViewController//UIViewController
 
 @end
 

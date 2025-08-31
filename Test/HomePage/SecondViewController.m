@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "SecondVCTableViewCell.h"
+#import "TextureTestViewController.h"
 
 @interface SecondViewController ()<UITableViewDelegate,UITableViewDataSource,SecondVCCellActionsDelagate>
 
@@ -42,6 +43,11 @@
         model.subTitle = [NSString stringWithFormat:@"SubTitle_%d", i];
         model.descrip = [NSString stringWithFormat:@"This is description at %d", i];
         [_dataList addObject:model];
+        if(i == 0){
+            model.title = @"TextureTestViewController";
+            model.descrip = @"Test TextureTestViewController";
+
+        }
     }
     
     NSLog(@"_dataList == %@", _dataList);
@@ -132,6 +138,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     NSLog(@"didSelectRowAtIndexPath indexPath.row == %ld", indexPath.row);
+    if(indexPath.row == 0){
+        TextureTestViewController *vc = [[TextureTestViewController alloc]init];
+        [self presentViewController:vc animated:YES  completion:nil];
+//        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 
