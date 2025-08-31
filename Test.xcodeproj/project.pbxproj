@@ -26,7 +26,7 @@
 		49415D78239A5A0500660C57 /* NSExceptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D77239A5A0500660C57 /* NSExceptionManager.m */; };
 		49415D7B239B92B500660C57 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49415D7A239B92B500660C57 /* YYWeakProxy.m */; };
 		4941C4C323A4C60E00C49D7E /* iOSAlgorithmTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4941C4C223A4C60E00C49D7E /* iOSAlgorithmTest.cpp */; };
-		49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */; };
+		49437D3D2372DF17000C8C49 /* TextureTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49437D3C2372DF17000C8C49 /* TextureTestViewController.m */; };
 		4944358C23B3884F002B4742 /* MyListTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4944358A23B3884F002B4742 /* MyListTest.cpp */; };
 		4945FBE723B10255002E9401 /* HashCTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4945FBE523B10255002E9401 /* HashCTest.cpp */; };
 		4946D13923A5C5FD003DF518 /* TestBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4946D13823A5C5FD003DF518 /* TestBridgeViewController.m */; };
@@ -159,6 +159,7 @@
 		499FBF532108669D00E08F8C /* NSObjectTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF522108669D00E08F8C /* NSObjectTestView.m */; };
 		499FBF622110551300E08F8C /* KVOExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF612110551300E08F8C /* KVOExploreViewController.m */; };
 		499FBF692112A7D000E08F8C /* RunloopTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499FBF682112A7D000E08F8C /* RunloopTestViewController.m */; };
+		49B9165E2E63ED8200D43368 /* ShadowCornerMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B9165D2E63ED8200D43368 /* ShadowCornerMask.m */; };
 		49B91E6220FC671E00FC4892 /* TestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B91E6120FC671E00FC4892 /* TestBlock.m */; };
 		49C7497420AD74DC009DC12D /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7497320AD74DC009DC12D /* TableViewCell.m */; };
 		49C7497720AD77FF009DC12D /* SubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C7497620AD77FF009DC12D /* SubTableViewCell.m */; };
@@ -234,8 +235,8 @@
 		49415D79239B92B500660C57 /* YYWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		49415D7A239B92B500660C57 /* YYWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
 		4941C4C223A4C60E00C49D7E /* iOSAlgorithmTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = iOSAlgorithmTest.cpp; sourceTree = "<group>"; };
-		49437D3B2372DF17000C8C49 /* TextUreTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextUreTestViewController.h; sourceTree = "<group>"; };
-		49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextUreTestViewController.m; sourceTree = "<group>"; };
+		49437D3B2372DF17000C8C49 /* TextureTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureTestViewController.h; sourceTree = "<group>"; };
+		49437D3C2372DF17000C8C49 /* TextureTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextureTestViewController.m; sourceTree = "<group>"; };
 		4944358A23B3884F002B4742 /* MyListTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyListTest.cpp; sourceTree = "<group>"; };
 		4944358B23B3884F002B4742 /* MyListTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyListTest.hpp; sourceTree = "<group>"; };
 		4945FBE523B10255002E9401 /* HashCTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HashCTest.cpp; sourceTree = "<group>"; };
@@ -552,6 +553,8 @@
 		499FBF612110551300E08F8C /* KVOExploreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOExploreViewController.m; sourceTree = "<group>"; };
 		499FBF672112A7D000E08F8C /* RunloopTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopTestViewController.h; sourceTree = "<group>"; };
 		499FBF682112A7D000E08F8C /* RunloopTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopTestViewController.m; sourceTree = "<group>"; };
+		49B9165C2E63ED8200D43368 /* ShadowCornerMask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowCornerMask.h; sourceTree = "<group>"; };
+		49B9165D2E63ED8200D43368 /* ShadowCornerMask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowCornerMask.m; sourceTree = "<group>"; };
 		49B91E6020FC671E00FC4892 /* TestBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBlock.h; sourceTree = "<group>"; };
 		49B91E6120FC671E00FC4892 /* TestBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBlock.m; sourceTree = "<group>"; };
 		49C7497220AD74DC009DC12D /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
@@ -816,8 +819,8 @@
 		49437D3A2372DEEF000C8C49 /* TextureTest */ = {
 			isa = PBXGroup;
 			children = (
-				49437D3B2372DF17000C8C49 /* TextUreTestViewController.h */,
-				49437D3C2372DF17000C8C49 /* TextUreTestViewController.m */,
+				49437D3B2372DF17000C8C49 /* TextureTestViewController.h */,
+				49437D3C2372DF17000C8C49 /* TextureTestViewController.m */,
 			);
 			path = TextureTest;
 			sourceTree = "<group>";
@@ -1484,6 +1487,8 @@
 			children = (
 				4998362C2B9F3FFD00613369 /* DeviceManager.h */,
 				4998362D2B9F3FFD00613369 /* DeviceManager.m */,
+				49B9165C2E63ED8200D43368 /* ShadowCornerMask.h */,
+				49B9165D2E63ED8200D43368 /* ShadowCornerMask.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1834,6 +1839,7 @@
 				4993650C2E4A3A2400BC350C /* MP3Player.m in Sources */,
 				4993649C2E46EDAC00BC350C /* SmartHomeFacade.m in Sources */,
 				499365EB2E55988A00BC350C /* NameVisitor.m in Sources */,
+				49B9165E2E63ED8200D43368 /* ShadowCornerMask.m in Sources */,
 				499364672E44AB2400BC350C /* ConcreteProductB.m in Sources */,
 				494B95092B8B59AF0052DC1E /* NotificationTestViewController.m in Sources */,
 				4990BF1921183D4E0000ADC5 /* Person+Test2.m in Sources */,
@@ -1850,7 +1856,7 @@
 				4977E4E72B9706B800658FAA /* FirstViewController.m in Sources */,
 				4990BF1E21196E410000ADC5 /* Student.m in Sources */,
 				499365692E4F1DFD00BC350C /* RemoteControl.m in Sources */,
-				49437D3D2372DF17000C8C49 /* TextUreTestViewController.m in Sources */,
+				49437D3D2372DF17000C8C49 /* TextureTestViewController.m in Sources */,
 				499365E22E55877000BC350C /* ImageFile.m in Sources */,
 				499365922E4F614700BC350C /* ChatRoomMediator.m in Sources */,
 				4946D14223A67F0A003DF518 /* KVCTestClass.m in Sources */,

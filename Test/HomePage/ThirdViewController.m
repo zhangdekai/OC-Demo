@@ -24,9 +24,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"UIView Test";
-
+    
     [self AddBtn];
     [self AddBtn1];
+    
 }
 
 - (void)AddBtn {
