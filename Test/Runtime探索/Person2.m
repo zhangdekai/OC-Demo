@@ -37,10 +37,10 @@ void cook(id self, SEL _cmd,id Num)//方法有问题
         
         Method otherMethod = class_getInstanceMethod(self, @selector(other));
         
-//        struct method_t *method = (struct method_t *)class_getInstanceMethod(self, @selector(other));
+        //        struct method_t *method = (struct method_t *)class_getInstanceMethod(self, @selector(other));
         
-//        NSLog(@"%s,%p,%s",method->sel,method->imp,method->types);
-
+        //        NSLog(@"%s,%p,%s",method->sel,method->imp,method->types);
+        
         /**
          // 动态添加test方法的实现
          
@@ -53,7 +53,7 @@ void cook(id self, SEL _cmd,id Num)//方法有问题
         class_addMethod(self, sel, method_getImplementation(otherMethod), method_getTypeEncoding(otherMethod));
         
         // 返回YES表示有动态添加方法
-
+        
         return YES;
     } else if (sel == @selector(eat:)) {
         
@@ -79,7 +79,7 @@ void cook(id self, SEL _cmd,id Num)//方法有问题
 {
     if (aSelector == @selector(driving)) {
         // 返回能够处理消息的对象
-//        return [[Car alloc]init];
+        //        return [[Car alloc]init];
         
         // 返回nil则会调用methodSignatureForSelector方法
         return nil;
@@ -115,7 +115,7 @@ void cook(id self, SEL _cmd,id Num)//方法有问题
     //   anInvocation.target = [[Car alloc] init];
     //   [anInvocation invoke];
     
-//    [anInvocation invokeWithTarget:[[Car alloc]init]];
+    //    [anInvocation invokeWithTarget:[[Car alloc]init]];
     
     
     int time;
@@ -143,7 +143,7 @@ void cook(id self, SEL _cmd,id Num)//方法有问题
     // 获取方法的返回值
     [anInvocation getReturnValue:&result];
     NSLog(@"修改方法的返回值为 = %d",result);    // result = 99
-
+    
     /*
      
      只要来到forwardInvocation方法中，我们便对方法调用有了绝对的掌控权，可以选择是否调用方法，以及修改方法的参数返回值等等。
@@ -154,12 +154,11 @@ void cook(id self, SEL _cmd,id Num)//方法有问题
 /*
  当类对象进行消息转发时，对调用相应的+号的forwardingTargetForSelector、methodSignatureForSelector、forwardInvocation方法，需要注意的是+号方法仅仅没有提示，而不是系统不会对类方法进行消息转发。
  */
-+ (id)forwardingTargetForSelector:(SEL)aSelector
-{
++ (id)forwardingTargetForSelector:(SEL)aSelector {
     if (aSelector == @selector(driving2)) {
-//        return [Car class];
+        //        return [Car class];
         return nil;
-
+        
     }
     return [super forwardingTargetForSelector:aSelector];
 }
@@ -178,6 +177,8 @@ void cook(id self, SEL _cmd,id Num)//方法有问题
 {
     [anInvocation invokeWithTarget:[Car class]];
 }
+
+#pragma -  doesNotRecognizeSelector
 
 - (void)doesNotRecognizeSelector:(SEL)aSelector
 {

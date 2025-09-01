@@ -125,7 +125,7 @@ int someMethodsAboutRuntimeAPI() {
     return 0;
 }
 //属性相关API
-int somePropertyAboutRuntimeApi()
+int somePropertyAboutRuntimeApi(void)
 {
     //    Person1 *person = [[Person1 alloc]init];
     //    person.tall = YES;
@@ -184,8 +184,7 @@ int someIVarsAboutRuntimeApi()
 }
 
 // Rutime 类相关API
-int someClassAboutRuntimeAPI()
-{
+int someClassAboutRuntimeAPI(void) {
     // 创建类 superclass:继承自哪个类 name:类名 size_t:格外的大小，创建类是否需要扩充空间
     // 返回一个类对象
     Class newClass = objc_allocateClassPair([NSObject class], "Student3", 0);//"Student3"//和项目中的Class 最好不要重名，应该是优先OC的Class创建或编译。

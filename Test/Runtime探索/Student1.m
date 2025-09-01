@@ -33,6 +33,26 @@
         NSLog(@"%d",[Student1 isKindOfClass:object_getClass([Student1 class])]);// 1
         NSLog(@"%d",[Student1 isKindOfClass:[NSObject class]]);// 1
         
+        /*
+         isKindOfClass： 适合用来判断“是否属于某个类族”。
+         
+         判断对象是否是 某个类或其子类 的实例。
+
+         换句话说，它会 顺着继承链 往上找。
+         
+         isMemberOfClass：
+         
+         判断对象是否是 某个类的实例（不包括子类）。
+
+         不会检查继承链，只对比当前对象所属的类。
+         
+         Dog *d = [Dog new];
+
+         [d isMemberOfClass:[Dog class]];    // YES
+         [d isMemberOfClass:[Animal class]]; // NO
+         [d isMemberOfClass:[NSObject class]];// NO
+         */
+        
      }
     return self;
 }

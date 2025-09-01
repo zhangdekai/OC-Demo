@@ -19,9 +19,7 @@
 
 @implementation KVCTestClass
 
-+ (void)load {
-    
-}
++ (void)load { }
 
 + (void)initialize
 {
@@ -34,7 +32,7 @@
     
     [self setValue:@"测试01" forKey:@"key"];
     
-    //使用valueForKeyPath:用来访问多层嵌套的字典是比较方便的
+    //1. 使用valueForKeyPath:用来访问多层嵌套的字典是比较方便的
     Person *person = [[Person alloc]init];
     person.name = @"你好呀";
     [self setValue:@"person类的属性" forKeyPath:@"person.name"];
@@ -186,6 +184,7 @@
 }
 
 #pragma mark - 简单集合运算 @avg， @count ， @max ， @min ，@sum5 对象运算符:
+
 - (void)test02 {
     // 简单集合运算符共有@avg， @count ， @max ， @min ，@sum5种
     
