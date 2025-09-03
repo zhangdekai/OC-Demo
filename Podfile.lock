@@ -33,6 +33,7 @@ PODS:
   - PINRemoteImage/PINCache (3.0.3):
     - PINCache (~> 3.0.3)
     - PINRemoteImage/Core
+  - ReactiveObjC (3.1.1)
   - SDWebImage (5.19.0):
     - SDWebImage/Core (= 5.19.0)
   - SDWebImage/Core (5.19.0)
@@ -61,9 +62,9 @@ DEPENDENCIES:
   - AFNetworking
   - Masonry
   - MMKV (~> 1.1.2)
+  - ReactiveObjC
   - SDWebImage
   - Texture
-  - Texture (~> 3.0.0)
 
 SPEC REPOS:
   trunk:
@@ -74,6 +75,7 @@ SPEC REPOS:
     - PINCache
     - PINOperation
     - PINRemoteImage
+    - ReactiveObjC
     - SDWebImage
     - Texture
 
@@ -85,9 +87,10 @@ SPEC CHECKSUMS:
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: daa34d4aa1d8449089be7d405b9d974abc4724c6
   PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 981fd7e860af070920f249fd092420006014c3eb
   Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
 
-PODFILE CHECKSUM: a9cc79e22dca3ef097d63e0702c50625200b2f03
+PODFILE CHECKSUM: ea05916b3dcbc743587c526fbc31e7457b11dd55
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.16.2

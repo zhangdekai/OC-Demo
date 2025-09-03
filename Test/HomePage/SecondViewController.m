@@ -9,6 +9,7 @@
 #import "SecondViewController.h"
 #import "SecondVCTableViewCell.h"
 #import "TextureTestViewController.h"
+#import "MVCUserListViewController.h"
 
 @interface SecondViewController ()<UITableViewDelegate,UITableViewDataSource,SecondVCCellActionsDelagate>
 
@@ -27,7 +28,7 @@
     [self initData];
     
     NSLog(@"SecondViewController viewDidLoad");
-
+    
     [self initTableView];
     
     [_tableView reloadData];
@@ -46,7 +47,11 @@
         if(i == 0){
             model.title = @"TextureTestViewController";
             model.descrip = @"Test TextureTestViewController";
-
+            
+        }else if(i == 1){
+            model.title = @"MVC Demo";
+            model.descrip = @"Test MVC";
+            
         }
     }
     
@@ -63,15 +68,15 @@
     [_tableView registerClass:[SecondVCTableViewCell class] forCellReuseIdentifier:@"SecondVCTableViewCell"];
     
     _tableView.backgroundColor = [UIColor whiteColor];
-            
+    
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
     _tableView.tableHeaderView = [self tableHeaderView];
     
-//        _tableView.rowHeight = 48;
-//        _tableView.estimatedRowHeight = 50;
-//        _tableView.sectionHeaderHeight = 30;
+    //        _tableView.rowHeight = 48;
+    //        _tableView.estimatedRowHeight = 50;
+    //        _tableView.sectionHeaderHeight = 30;
     
 }
 
@@ -115,7 +120,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-
+    
     
     SecondVCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SecondVCTableViewCell"];
     
@@ -141,7 +146,12 @@
     if(indexPath.row == 0){
         TextureTestViewController *vc = [[TextureTestViewController alloc]init];
         [self presentViewController:vc animated:YES  completion:nil];
-//        [self.navigationController pushViewController:vc animated:YES];
+        //        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 1){
+        
+        MVCUserListViewController *vc = [[MVCUserListViewController alloc]init];
+        [self presentViewController:vc animated:YES  completion:nil];
+        
     }
 }
 
@@ -159,7 +169,7 @@
 
 - (void)handleCommitButtonAction {
     NSLog(@"哈哈- 这里是cell delegate  commit  action 实现的地方");
-
+    
 }
 
 @end

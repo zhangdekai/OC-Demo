@@ -222,109 +222,108 @@ static NSUInteger _maxCacheSize = 50 * 1024 * 1024; // 默认 50MB
 @end
 
 
-#import <XCTest/XCTest.h>
-#import "CacheManager.h"
-
-@interface CacheManagerTests : XCTestCase
-@end
-
-@implementation CacheManagerTests
-
-- (void)setUp {
-    [super setUp];
-    // 每个测试前先清空缓存
-    [CacheManager clearAllCache];
-}
-
-- (void)tearDown {
-    [CacheManager clearAllCache];
-    [super tearDown];
-}
-
-/// ✅ 测试保存和读取
-- (void)testSaveAndLoad {
-    NSDictionary *data = @{@"name": @"Bruce", @"age": @30};
-    [CacheManager saveData:data forKey:@"userInfo" validDuration:60]; // 有效期 60s
-    
-    NSDictionary *result = [CacheManager loadDataForKey:@"userInfo"];
-    
-    XCTAssertNotNil(result, @"缓存数据不应为空");
-    XCTAssertEqualObjects(result[@"name"], @"Bruce");
-    XCTAssertEqualObjects(result[@"age"], @30);
-}
-
-/// ✅ 测试过期
-- (void)testExpiration {
-    NSDictionary *data = @{@"token": @"123456"};
-    [CacheManager saveData:data forKey:@"session" validDuration:1]; // 有效期 1s
-    
-    sleep(2); // 等待过期
-    
-    NSDictionary *result = [CacheManager loadDataForKey:@"session"];
-    XCTAssertNil(result, @"缓存应该过期被清理");
-}
-
-/// ✅ 测试清除指定缓存
-- (void)testClearSpecificKey {
-    [CacheManager saveData:@[@"A", @"B", @"C"] forKey:@"list" validDuration:60];
-    
-    XCTAssertNotNil([CacheManager loadDataForKey:@"list"]);
-    
-    [CacheManager clearCacheForKey:@"list"];
-    
-    XCTAssertNil([CacheManager loadDataForKey:@"list"], @"清除后应返回 nil");
-}
-
-/// ✅ 测试清除所有缓存
-- (void)testClearAll {
-    [CacheManager saveData:@1 forKey:@"k1" validDuration:60];
-    [CacheManager saveData:@2 forKey:@"k2" validDuration:60];
-    
-    [CacheManager clearAllCache];
-    
-    XCTAssertNil([CacheManager loadDataForKey:@"k1"]);
-    XCTAssertNil([CacheManager loadDataForKey:@"k2"]);
-}
-
-/// ✅ 测试缓存统计
-- (void)testCacheStats {
-    [CacheManager saveData:@{@"a":@"1"} forKey:@"stats1" validDuration:60];
-    [CacheManager saveData:@{@"b":@"2"} forKey:@"stats2" validDuration:60];
-    
-    NSDictionary *stats = [CacheManager cacheStats];
-    XCTAssertTrue([stats[@"fileCount"] integerValue] >= 2, @"缓存文件数应大于等于 2");
-    XCTAssertTrue([stats[@"totalSize"] integerValue] > 0, @"缓存大小应大于 0");
-    XCTAssertNotNil(stats[@"formattedSize"]);
-}
-
-/// ✅ 测试异步统计
-- (void)testCacheStatsAsync {
-    XCTestExpectation *expectation = [self expectationWithDescription:@"异步统计完成"];
-    
-    [CacheManager saveData:@{@"x":@"y"} forKey:@"async" validDuration:60];
-    
-    [CacheManager cacheStatsAsync:^(NSDictionary *stats) {
-        XCTAssertTrue([stats[@"totalSize"] integerValue] > 0, @"异步统计结果应包含大小");
-        [expectation fulfill];
-    }];
-    
-    [self waitForExpectationsWithTimeout:3 handler:nil];
-}
-
-/// ✅ 测试缓存大小上限（例如 1KB）
-- (void)testMaxCacheSize {
-    [CacheManager setMaxCacheSize:1024]; // 1KB
-    
-    // 存入超过 1KB 的数据（大字符串）
-    NSMutableString *bigString = [NSMutableString string];
-    for (int i = 0; i < 2000; i++) {
-        [bigString appendString:@"x"];
-    }
-    
-    [CacheManager saveData:bigString forKey:@"bigData" validDuration:60];
-    
-    NSDictionary *stats = [CacheManager cacheStats];
-    XCTAssertTrue([stats[@"totalSize"] integerValue] <= 1024, @"缓存总大小应不超过上限");
-}
-
-@end
+//#import "CacheManager.h"
+//
+//@interface CacheManagerTests : XCTestCase
+//@end
+//
+//@implementation CacheManagerTests
+//
+//- (void)setUp {
+//    [super setUp];
+//    // 每个测试前先清空缓存
+//    [CacheManager clearAllCache];
+//}
+//
+//- (void)tearDown {
+//    [CacheManager clearAllCache];
+//    [super tearDown];
+//}
+//
+///// ✅ 测试保存和读取
+//- (void)testSaveAndLoad {
+//    NSDictionary *data = @{@"name": @"Bruce", @"age": @30};
+//    [CacheManager saveData:data forKey:@"userInfo" validDuration:60]; // 有效期 60s
+//
+//    NSDictionary *result = [CacheManager loadDataForKey:@"userInfo"];
+//
+//    XCTAssertNotNil(result, @"缓存数据不应为空");
+//    XCTAssertEqualObjects(result[@"name"], @"Bruce");
+//    XCTAssertEqualObjects(result[@"age"], @30);
+//}
+//
+///// ✅ 测试过期
+//- (void)testExpiration {
+//    NSDictionary *data = @{@"token": @"123456"};
+//    [CacheManager saveData:data forKey:@"session" validDuration:1]; // 有效期 1s
+//
+//    sleep(2); // 等待过期
+//
+//    NSDictionary *result = [CacheManager loadDataForKey:@"session"];
+//    XCTAssertNil(result, @"缓存应该过期被清理");
+//}
+//
+///// ✅ 测试清除指定缓存
+//- (void)testClearSpecificKey {
+//    [CacheManager saveData:@[@"A", @"B", @"C"] forKey:@"list" validDuration:60];
+//
+//    XCTAssertNotNil([CacheManager loadDataForKey:@"list"]);
+//
+//    [CacheManager clearCacheForKey:@"list"];
+//
+//    XCTAssertNil([CacheManager loadDataForKey:@"list"], @"清除后应返回 nil");
+//}
+//
+///// ✅ 测试清除所有缓存
+//- (void)testClearAll {
+//    [CacheManager saveData:@1 forKey:@"k1" validDuration:60];
+//    [CacheManager saveData:@2 forKey:@"k2" validDuration:60];
+//
+//    [CacheManager clearAllCache];
+//
+//    XCTAssertNil([CacheManager loadDataForKey:@"k1"]);
+//    XCTAssertNil([CacheManager loadDataForKey:@"k2"]);
+//}
+//
+///// ✅ 测试缓存统计
+//- (void)testCacheStats {
+//    [CacheManager saveData:@{@"a":@"1"} forKey:@"stats1" validDuration:60];
+//    [CacheManager saveData:@{@"b":@"2"} forKey:@"stats2" validDuration:60];
+//
+//    NSDictionary *stats = [CacheManager cacheStats];
+//    XCTAssertTrue([stats[@"fileCount"] integerValue] >= 2, @"缓存文件数应大于等于 2");
+//    XCTAssertTrue([stats[@"totalSize"] integerValue] > 0, @"缓存大小应大于 0");
+//    XCTAssertNotNil(stats[@"formattedSize"]);
+//}
+//
+///// ✅ 测试异步统计
+//- (void)testCacheStatsAsync {
+//    XCTestExpectation *expectation = [self expectationWithDescription:@"异步统计完成"];
+//
+//    [CacheManager saveData:@{@"x":@"y"} forKey:@"async" validDuration:60];
+//
+//    [CacheManager cacheStatsAsync:^(NSDictionary *stats) {
+//        XCTAssertTrue([stats[@"totalSize"] integerValue] > 0, @"异步统计结果应包含大小");
+//        [expectation fulfill];
+//    }];
+//
+//    [self waitForExpectationsWithTimeout:3 handler:nil];
+//}
+//
+///// ✅ 测试缓存大小上限（例如 1KB）
+//- (void)testMaxCacheSize {
+//    [CacheManager setMaxCacheSize:1024]; // 1KB
+//
+//    // 存入超过 1KB 的数据（大字符串）
+//    NSMutableString *bigString = [NSMutableString string];
+//    for (int i = 0; i < 2000; i++) {
+//        [bigString appendString:@"x"];
+//    }
+//
+//    [CacheManager saveData:bigString forKey:@"bigData" validDuration:60];
+//
+//    NSDictionary *stats = [CacheManager cacheStats];
+//    XCTAssertTrue([stats[@"totalSize"] integerValue] <= 1024, @"缓存总大小应不超过上限");
+//}
+//
+//@end

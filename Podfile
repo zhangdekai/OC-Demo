@@ -10,6 +10,9 @@ pod 'Masonry' #https://github.com/SnapKit/Masonry
 # AsyncDisplayKit ==> Texture https://texturegroup.org/docs/installation.html
 # 异步渲染kit
 pod "Texture"
+#pod "MBProgressHUD"
+#pod 'ReactiveCocoa', '~2.5.0'
+pod 'ReactiveObjC'
 
 
 end
