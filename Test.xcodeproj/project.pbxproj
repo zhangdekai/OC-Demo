@@ -67,6 +67,8 @@
 		4977E4412E682BBC0071F10F /* RACUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4977E4362E682BBB0071F10F /* RACUserModel.m */; };
 		4977E4422E682BBC0071F10F /* RACNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4977E43A2E682BBB0071F10F /* RACNetworkManager.m */; };
 		4977E4432E682BBC0071F10F /* RACUserCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4977E43B2E682BBB0071F10F /* RACUserCellViewModel.m */; };
+		4977E4472E6939570071F10F /* AppResponderChainExplore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4977E4462E6939570071F10F /* AppResponderChainExplore.m */; };
+		4977E44A2E69676B0071F10F /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4977E4482E69676B0071F10F /* GCDTimer.m */; };
 		4977E4E72B9706B800658FAA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4977E4E62B9706B800658FAA /* FirstViewController.m */; };
 		4977E4F12B9719AC00658FAA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4977E4F02B9719AC00658FAA /* SecondViewController.m */; };
 		4977E4F42B9719B700658FAA /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4977E4F32B9719B700658FAA /* ThirdViewController.m */; };
@@ -344,6 +346,10 @@
 		4977E4392E682BBB0071F10F /* RACUserListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACUserListView.h; sourceTree = "<group>"; };
 		4977E43A2E682BBB0071F10F /* RACNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACNetworkManager.m; sourceTree = "<group>"; };
 		4977E43B2E682BBB0071F10F /* RACUserCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACUserCellViewModel.m; sourceTree = "<group>"; };
+		4977E4452E6939570071F10F /* AppResponderChainExplore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppResponderChainExplore.h; sourceTree = "<group>"; };
+		4977E4462E6939570071F10F /* AppResponderChainExplore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppResponderChainExplore.m; sourceTree = "<group>"; };
+		4977E4482E69676B0071F10F /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
+		4977E4492E69676B0071F10F /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
 		4977E4E52B9706B800658FAA /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		4977E4E62B9706B800658FAA /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		4977E4EE2B97129400658FAA /* UIConstValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIConstValue.h; sourceTree = "<group>"; };
@@ -997,6 +1003,7 @@
 		495CE751208224F3000EA0E8 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				4977E4442E6939110071F10F /* 事件响应链 */,
 				49DE8C0F2E671984004DFC2A /* 架构 */,
 				4918A6772E659ACB000D7C90 /* 沙盒缓存 */,
 				4998362B2B9F3FDB00613369 /* Common */,
@@ -1134,6 +1141,15 @@
 				4977E4322E682BBA0071F10F /* RACUserListViewController.m */,
 			);
 			path = RAC;
+			sourceTree = "<group>";
+		};
+		4977E4442E6939110071F10F /* 事件响应链 */ = {
+			isa = PBXGroup;
+			children = (
+				4977E4452E6939570071F10F /* AppResponderChainExplore.h */,
+				4977E4462E6939570071F10F /* AppResponderChainExplore.m */,
+			);
+			path = "事件响应链";
 			sourceTree = "<group>";
 		};
 		4977E4E42B97068A00658FAA /* HomePage */ = {
@@ -1649,6 +1665,8 @@
 				49B9165D2E63ED8200D43368 /* ShadowCornerMask.m */,
 				49DE8C242E672587004DFC2A /* MBProgressHUD.h */,
 				49DE8C232E672587004DFC2A /* MBProgressHUD.m */,
+				4977E4492E69676B0071F10F /* GCDTimer.h */,
+				4977E4482E69676B0071F10F /* GCDTimer.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1718,8 +1736,8 @@
 			isa = PBXGroup;
 			children = (
 				49CB9D8225E796B20006F119 /* Locks */,
-				49CB9D9D25E796B20006F119 /* SafeQuestionLockViewController.m */,
 				49CB9D9E25E796B20006F119 /* SafeQuestionLockViewController.h */,
+				49CB9D9D25E796B20006F119 /* SafeQuestionLockViewController.m */,
 			);
 			path = "存取钱加锁-安全";
 			sourceTree = "<group>";
@@ -2020,6 +2038,7 @@
 				493904B325F3179800C8C209 /* StrongCopyWeakTest.m in Sources */,
 				49E7923E2609BA51004A006B /* OSSpinLockDemo2.m in Sources */,
 				491A0F2624AF44A200CC4189 /* TestBViewController.m in Sources */,
+				4977E4472E6939570071F10F /* AppResponderChainExplore.m in Sources */,
 				4977E43E2E682BBC0071F10F /* RACUserListViewController.m in Sources */,
 				4993656D2E4F1DFD00BC350C /* LightOffCommand.m in Sources */,
 				499365B62E54521F00BC350C /* NumberExpression.m in Sources */,
@@ -2127,6 +2146,7 @@
 				499364E52E49C99F00BC350C /* ConcreteFactories.m in Sources */,
 				499365262E4B187500BC350C /* File.m in Sources */,
 				49E792332609BA51004A006B /* OSSpinLockDemo.m in Sources */,
+				4977E44A2E69676B0071F10F /* GCDTimer.m in Sources */,
 				499364F82E49FEBC00BC350C /* PaidState.m in Sources */,
 				49F01C792E5C833E00A0009B /* UnionPayStrategy.m in Sources */,
 				49E792342609BA51004A006B /* MutexDemo.m in Sources */,

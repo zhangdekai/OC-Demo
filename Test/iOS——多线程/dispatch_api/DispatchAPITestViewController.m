@@ -14,11 +14,27 @@
 
 @property (nonatomic, strong) dispatch_semaphore_t sem;
 
+// 共享数据（需要线程安全访问）
+@property (nonatomic, strong) NSMutableDictionary *sharedData;
+// 自定义并发队列（核心：用于管理读写任务）
+@property (nonatomic, strong) dispatch_queue_t concurrentQueue;
+
+
 @end
 
 
 
 @implementation DispatchAPITestViewController
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _sharedData = [NSMutableDictionary dictionary];
+        // 创建自定义并发队列（标识符用逆域名格式）
+        _concurrentQueue = dispatch_queue_create("com.example.readWriteQueue", DISPATCH_QUEUE_CONCURRENT);
+    }
+    return self;
+}
 
 
 
@@ -27,10 +43,10 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-//    [self testBarrier];
-//    [self testDispatchApply];
-//    [self testSignl];
-//    [self testNSInvocationOperation];
+    //    [self testBarrier];
+    //    [self testDispatchApply];
+    //    [self testSignl];
+    //    [self testNSInvocationOperation];
     [self addButton];
     
     _tempS = @"1111";
@@ -64,21 +80,21 @@
     _sem = dispatch_semaphore_create(0);
     
     __block BOOL a = false;
-
+    
     NSLog(@"out a = %d",a);
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_global_queue(0, 0), ^{
-            
-            NSLog(@"3秒后");
-            
-            a = true;
-
-            dispatch_semaphore_signal(self.sem);
-
-        });
+        
+        NSLog(@"3秒后");
+        
+        a = true;
+        
+        dispatch_semaphore_signal(self.sem);
+        
+    });
     // 此处需要配合 延迟中 异步线程 dispatch_get_global_queue 来使用，否则，使用 main的话，会阻塞主线程。
     dispatch_semaphore_wait(_sem, DISPATCH_TIME_FOREVER);
-
+    
     return a;
 }
 
@@ -86,11 +102,11 @@
     
     completion(true);
     
-//    [UIView animateWithDuration:(NSTimeInterval) animations:^{
-//        <#code#>
-//    } completion:^(BOOL finished) {
-//        <#code#>
-//    }]
+    //    [UIView animateWithDuration:(NSTimeInterval) animations:^{
+    //        <#code#>
+    //    } completion:^(BOOL finished) {
+    //        <#code#>
+    //    }]
 }
 
 
@@ -143,25 +159,25 @@
     NSArray *array = @[@"1",@"2",@"3",@"4"];
     
     dispatch_apply(array.count, dispatch_get_global_queue(0, 0), ^(size_t index) {
-           
-           NSLog(@"queue 并行 ——Thread：%@",[NSThread currentThread]);
-
-           NSLog(@"元素：%@----第%ld次", array[index],index);
-           
-       });
+        
+        NSLog(@"queue 并行 ——Thread：%@",[NSThread currentThread]);
+        
+        NSLog(@"元素：%@----第%ld次", array[index],index);
+        
+    });
     
     NSLog(@"----2");
-
+    
     
     dispatch_queue_t queue = dispatch_queue_create("com.iosmuti.serial", DISPATCH_QUEUE_SERIAL);
     
     dispatch_apply(array.count, queue, ^(size_t index) {
         
         NSLog(@"queue 串行——Thread：%@",[NSThread currentThread]);
-
+        
         
         NSLog(@"元素：%@----第%ld次", array[index],index);
-
+        
     });
     
     NSLog(@"----3");
@@ -171,14 +187,14 @@
     dispatch_apply(array.count, main, ^(size_t index) {//ps:同步 阻塞主线程
         
         NSLog(@"queue 串行——Thread：%@",[NSThread currentThread]);
-
+        
         
         NSLog(@"元素：%@----第%ld次", array[index],index);
-
+        
     });
     
     NSLog(@"----4");
-
+    
     
     /*
      queue 并行 ——Thread：<NSThread: 0x600000eb72c0>{number = 6, name = (null)}
@@ -200,7 +216,8 @@
      */
 }
 
-//MARK: - 信号量  //可实现类似 dispatch enter的功能。
+//MARK: - 信号量
+//可实现类似 dispatch enter的功能。
 - (void)testSignl {
     
     dispatch_group_t group = dispatch_group_create();
@@ -292,7 +309,7 @@
 - (void)testNSInvocationOperation {
     // 处理事务
     NSInvocationOperation *op = [[NSInvocationOperation alloc] initWithTarget:self
-    selector:@selector(handleInvocation:) object:@"Felix"];
+                                                                     selector:@selector(handleInvocation:) object:@"Felix"];
     // 创建队列
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     // 操作加入队列
@@ -301,6 +318,41 @@
 
 - (void)handleInvocation:(id)operation {
     NSLog(@"%@ --- %@",operation, [NSThread currentThread]);
+}
+
+
+
+#pragma mark - 读操作（并发执行）
+- (id)readDataForKey:(NSString *)key {
+    __block id result;
+    
+    /*
+     使用 dispatch_sync 而非 dispatch_async，因为读操作需要返回结果（同步等待结果）。
+     多个读任务会在并发队列中同时执行，不相互阻塞，效率高。
+     */
+    
+    // 用异步方式提交读任务到并发队列
+    // 多个读操作会并发执行，不阻塞
+    dispatch_sync(_concurrentQueue, ^{
+        // 读操作：从共享字典中获取值
+        result = self.sharedData[key];
+    });
+    
+    return result;
+}
+
+#pragma mark - 写操作（独占执行）
+- (void)writeData:(id)data forKey:(NSString *)key {
+    // 用栅栏函数提交写任务到并发队列
+    // 特性：
+    // 1. 等待队列中所有先前任务（读/写）完成
+    // 2. 独占执行当前写任务（期间不会有其他任务执行）
+    // 3. 写任务完成后，队列恢复正常并发
+    dispatch_barrier_async(_concurrentQueue, ^{
+        // 写操作：向共享字典中设置值
+        self.sharedData[key] = data;
+        NSLog(@"写入完成：%@ = %@", key, data);
+    });
 }
 
 @end

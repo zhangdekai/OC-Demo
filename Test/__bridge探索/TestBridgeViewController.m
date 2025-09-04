@@ -14,6 +14,20 @@
  iOS __bridge那些事: https://www.jianshu.com/p/5fbe5478e24b
  
  
+ __bridge可以实现Objective-C与C语言变量 和 Objective-C与Core Foundation对象之间的互相转换
+
+ __bridge不会改变对象的持有状况，既不会retain，也不会release
+
+ __bridge转换需要慎重分析对象的持有情况，稍不注意就会内存泄漏
+
+ __bridge_retained用于将OC变量转换为C语言变量 或 将OC对象转换为Core Foundation对象
+
+ __bridge_retained类似于retain，“被转换的变量”所持有的对象在变量赋值给“转换目标变量”后持有该对象
+
+ __bridge_transfer用于将C语言变量转换为OC变量 或 将Core Foundation对象转换为OC对象
+
+ __bridge_transfer类似于release，“被转换的变量”所持有的对象在变量赋值给“转换目标变量”后随之释放
+
  */
 
 @interface TestBridgeViewController ()

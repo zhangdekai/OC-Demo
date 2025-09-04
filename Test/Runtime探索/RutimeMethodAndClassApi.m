@@ -41,13 +41,15 @@
         
         /*
          
-         4.获取isa指向的Class，若将类对象传入获取的就是元类对象，若是实例对象则为类对象
+         4.获取isa指向的Class，
+         若将类对象传入获取的就是元类对象，若是实例对象则为类对象
          
          Person1 *person = [[Person1 alloc]init];
          
          object_getClass(person);//获取类对象
          [Person1 class];//获取类对象
          object_getClass([Person1 class]);//最终获取元类对象
+        
          //     打印内容
          //    Runtime应用[21115:3807804] 0x100001298,0x100001298,0x100001270
          NSLog(@"%p,%p,%p",object_getClass(person), [Person1 class],
@@ -83,7 +85,7 @@ void run(id self, SEL _cmd) {
 }
 
 //MARK: - 方法相关API
-int someMethodsAboutRuntimeAPI() {
+int someMethodsAboutRuntimeAPI(void) {
     /*
      
      1. 获得一个实例方法、类方法
@@ -155,7 +157,7 @@ int somePropertyAboutRuntimeApi(void)
 
 
 //Runtime 成员变量相关API
-int someIVarsAboutRuntimeApi()
+int someIVarsAboutRuntimeApi(void)
 {
     //获取成员变量的信息
     Ivar nameIVar = class_getInstanceVariable([Car class], "_name");
@@ -220,16 +222,17 @@ int someClassAboutRuntimeAPI(void) {
     return 1;
 }
 
-//MARK: - 一份做好封装的Method Swizzling交换方法
+//MARK: -一份做好封装的Method Swizzling交换方法
 /*
  使用Method Swizzling有以下注意事项：
 
- 尽可能在+load方法中交换方法
- 最好使用单例保证只交换一次
- 自定义方法名不能产生冲突
- 对于系统方法要调用原始实现，避免对系统产生影响
- 做好注释（因为方法交换比较绕）
- 迫不得已情况下才去使用方法交换
+ * 尽可能在+load方法中交换方法
+ * 最好使用单例保证只交换一次
+ * 自定义方法名不能产生冲突
+ * 对于系统方法要调用原始实现，避免对系统产生影响
+ * 做好注释（因为方法交换比较绕）
+ * 迫不得已情况下才去使用方法交换
+ 
  */
 
 + (void)FXMethodSwizzlingWithClass:(Class)cls oriSEL:(SEL)oriSEL swizzledSEL:(SEL)swizzledSEL {
@@ -240,7 +243,9 @@ int someClassAboutRuntimeAPI(void) {
     Method swiMethod = class_getInstanceMethod(cls, swizzledSEL);
     
     if (!oriMethod) {
+        
         class_addMethod(cls, oriSEL, method_getImplementation(swiMethod), method_getTypeEncoding(swiMethod));
+        
         method_setImplementation(swiMethod, imp_implementationWithBlock(^(id self, SEL _cmd) {
             NSLog(@"方法未实现");
         }));

@@ -87,6 +87,7 @@
     NSLog(@"write");
 }
 
+#pragma  pthread_rwlock_rdlock 读写锁
 
 - (void)read1 {
     

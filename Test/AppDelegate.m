@@ -28,7 +28,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    
+    /// UIWindow : The backdrop for your app’s user interface and the object that dispatches events to your views.
+    /// 
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     [[DeviceManager shareInstance] configDevice:[self hasSafeArea]];
