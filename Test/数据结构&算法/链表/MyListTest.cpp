@@ -66,11 +66,12 @@ struct MListNode {//节点
 };
 
 // Definition for singly-linked list.
-  
+
 struct ListNode {
-     int val;
-      ListNode *next;
-      ListNode(int x) : val(x), next(NULL) {}
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {};
+    ListNode(int x, ListNode *next) : val(x), next(next) {};
 };
 
 #pragma mark - 链表的实现
@@ -224,25 +225,47 @@ public:
     //MARK: - 反转链表  1→2→3→∅，我们想要把它改成 ∅←1←2←3
     MListNode * reverseList(MListNode *head) {
         
-        MListNode *p = NULL;
+        MListNode *prev = NULL;
         MListNode *curr = head;
         
+        
         while (curr) {
-            MListNode *temp = curr->next;
-            curr->next = p;
-            p = curr;
-            curr = temp;
+            MListNode *next = curr->next;
+            ///  p     c  next
+            ///  null->1->2-->3-->null
+            curr->next = prev;
+            prev = curr; // 指针反转就行。
+            
+            curr = next; // 移动curr 到下一节点。2->3-> null; 3->null； null 结束
         }
-        return p;
+        return prev;
+        /*
+         第一轮：
+         ///  p     c  next
+         ///  null->1->2-->3-->null
+         ...
+         ///        p  c
+         ///  null<-1  2-->3-->null
+         第二轮：
+         ///        p  c   next
+         ///  null<-1  2-->3-->null
+         ...
+         ///        p     c
+         ///  null<-1<-2  3-->null
+         
+         */
     }
     
-    //MARK: - 删除排序链表中的重复元素
+    //MARK: - 删除排序链表中的重复元素，位置是连续的。
+    /// 由于给定的链表是排好序的，因此重复的元素在链表中出现的位置是连续的，
+    /// 因此我们只需要对链表进行一次遍历，就可以删除重复的元素。
     MListNode * deleteDuplicates(MListNode *head) {
         
         MListNode *current = head;
         
         while (current && current->next) {
             if (current->next->val == current->val) {
+                // 修改指针指向
                 current->next = current->next->next;
             } else {
                 current = current->next;
@@ -255,11 +278,52 @@ public:
      
      链接：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/solution/shan-chu-pai-xu-lian-biao-zhong-de-zhong-fu-yuan-s/
      */
+    
+    ListNode* deleteDuplicates1(ListNode* head) {
+        if (!head) {
+            return head;
+        }
+        
+        ListNode* dummy = new ListNode(0, head);
+        
+        ListNode* cur = dummy;
+        while (cur->next && cur->next->next) {
+            if (cur->next->val == cur->next->next->val) {
+                int x = cur->next->val;
+                while (cur->next && cur->next->val == x) {
+                    cur->next = cur->next->next;
+                }
+            }
+            else {
+                cur = cur->next;
+            }
+        }
+        
+        return dummy->next;
+    }
+    
+    //    作者：力扣官方题解
+    //    链接：https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/solutions/678122/shan-chu-pai-xu-lian-biao-zhong-de-zhong-oayn/
+    //    来源：力扣（LeetCode）
+    //    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+    //
+    
 };
 
 //MARK: - 链表的中间节点
 class Solution02 {
 public:
+    
+    //3: 快慢指针，一个走一步，一个走2步，快的走完，慢的在中间。牛逼
+    MListNode* middleNode03(MListNode* head) {
+        MListNode* slow = head;
+        MListNode* fast = head;
+        while (fast != NULL && fast->next != NULL) {
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        return slow;
+    }
     //1: 使用数组
     MListNode* middleNode(MListNode* head) {
         vector<MListNode*> A = {head};
@@ -284,16 +348,7 @@ public:
         }
         return cur;
     }
-    //3: 快慢指针，一个走一步，一个走2步，快的走完，慢的在中间。牛逼
-    MListNode* middleNode03(MListNode* head) {
-        MListNode* slow = head;
-        MListNode* fast = head;
-            while (fast != NULL && fast->next != NULL) {
-                slow = slow->next;
-                fast = fast->next->next;
-            }
-            return slow;
-        }
+    
     /*
      
      链接：https://leetcode-cn.com/problems/middle-of-the-linked-list/solution/lian-biao-de-zhong-jian-jie-dian-by-leetcode-solut/
