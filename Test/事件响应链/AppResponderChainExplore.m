@@ -74,6 +74,25 @@
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+
+    
+    [super touchesBegan:touches withEvent:event];
+}
+
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+}
+
+- (void)btnAction{
+    
+}
+
+- (void)someView {
     
     UIView *view = [[UIView alloc]init];
     
@@ -89,19 +108,7 @@
     
     UIImageView *imgView = [[UIImageView alloc]init];
     
-    [super touchesBegan:touches withEvent:event];
-}
-
-- (void)btnAction{
-    
-}
-
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
-}
-
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
+    UIViewController *vc = [[UIViewController alloc]init];
 }
 
 @end

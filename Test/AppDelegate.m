@@ -15,12 +15,14 @@
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
 #import "DeviceManager.h"
+#import <FlutterPluginRegistrant/FlutterPluginRegistrant-umbrella.h>
 
 
 @interface AppDelegate ()
 
 @property(nonatomic, strong) UITabBarController *tabBarController;
 
+//@property(nonatomic, strong) Flu *tabBarController222;
 
 @end
 

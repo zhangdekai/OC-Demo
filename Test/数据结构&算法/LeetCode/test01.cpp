@@ -16,8 +16,14 @@
 
 using namespace std;
 
+#pragma mark - LeetCode 面试经典150
 
-#pragma mark 1：只出现一次的数字
+/*
+ https://leetcode.cn/studyplan/top-interview-150/
+ */
+
+
+#pragma mark - 1：只出现一次的数字
 /*
  
  leetcode:https://leetcode-cn.com/problems/single-number/
@@ -154,106 +160,50 @@ void testSingleNumber(){
  
  输入: [2,2,1,1,1,2,2]
  输出: 2
+ 
+ 1. 排序之后直接取最中间的值
+ 
  */
 
-int majorityElement(vector<int>& nums) {
-    
-    set<int> s1;
-    
-    for (int i = 0; i < nums.size(); i++) {
-        
-        s1.insert(nums[i]);
-        
-    }
-    
-    int *temp1 = (int*)malloc(sizeof(int)*s1.size());
-    int j = 0;
-    int count =  int(nums.size() / 2);
-    
-    for (set<int>::iterator t = s1.begin(); t != s1.end(); t++) {
-        int temp = 0;
-        for (int i = 0; i < nums.size(); i++) {
-            if (*t == nums[i]) {
-                temp++;
-            }
-        }
-        if (temp > count) {
-            return *t;
-        }
-        temp1[j] = temp;
-        j++;
-    }
-    
-    
-    return 0;
-    
-}
-
-int majorityElement1(int* nums, int numsSize){
-    
-    set<int> s1;
-    
-    for (int i = 0; i < numsSize; i++) {
-        
-        s1.insert(nums[i]);
-        
-    }
-    
-    int *temp1 = (int*)malloc(sizeof(int)*s1.size());
-    int j = 0;
-    int count = numsSize / 2;
-    
-    for (set<int>::iterator t = s1.begin(); t != s1.end(); t++) {
-        int temp = 0;
-        for (int i = 0; i < numsSize; i++) {
-            if (*t == nums[i]) {
-                temp++;
-            }
-        }
-        if (temp > count) {
-            return *t;
-        }
-        temp1[j] = temp;
-        j++;
-    }
-    
-    
-    return 0;
-}
-
+/*
+ 哈希表 存储元素的次数，取key最大的 value.
+ 时间复杂度：O(n)，其中 n 是数组 nums 的长度。
+ 空间复杂度：O(n)。哈希表最多包含 n/2个键值对，所以占用的空间为 O(n)
+ */
 int majorityElement2(vector<int>& nums) {
-    
+        
     unordered_map<int,int> counts;
-
-    set<int> aa;
     
-    aa.insert(12);
-
-    int temp = 0, cnts = 0;
+    int majority = 0, cnts = 0;
     
     for (int i = 0 ; i < nums.size(); i++) {
         
-        counts[nums[i]]++;
+        counts[nums[i]]++; // counts[nums[i]] = counts[nums[i]] + 1(次数)；
         
         if (counts[nums[i]] > cnts) {
-            temp = nums[i];//key
+            majority = nums[i];//key
             cnts = counts[nums[i]];//value 次数
         }
     }
-    
-    if (cnts > (nums.size() / 2)) {
-        return temp;
-    }
-    
-    return 0;
+    return majority;
 }
+/*
+ 如果将数组 nums 中的所有元素按照单调递增或单调递减的顺序排序，那么下标为 n/2 的元素（下标从 0 开始）一定是众数
+ 
+ 时间复杂度：O(nlogn)。将数组排序的时间复杂度为 O(nlogn)。
+ 空间复杂度：O(logn)。如果使用语言自带的排序算法，需要使用 O(logn) 的栈空间。如果自己编写堆排序，则只需要使用 O(1) 的额外空间。
+ */
+int majorityElementSort(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        return nums[nums.size() / 2];
+    }
 
 void testmajorityElement(){
     
     int a[3] = {3,2,3};
-    int temp = majorityElement1(a, 3);
+//    int temp = majorityElement1(a, 3);
     
-    printf("1:最多的数字是:%d \n",temp);
+//    printf("1:最多的数字是:%d \n",temp);
     
     
     vector<int>s1 = {2,2,1,1,1,2,2};

@@ -275,7 +275,6 @@
 		49437D3B2372DF17000C8C49 /* TextureTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureTestViewController.h; sourceTree = "<group>"; };
 		49437D3C2372DF17000C8C49 /* TextureTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextureTestViewController.m; sourceTree = "<group>"; };
 		4944358A23B3884F002B4742 /* MyListTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyListTest.cpp; sourceTree = "<group>"; };
-		4944358B23B3884F002B4742 /* MyListTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyListTest.hpp; sourceTree = "<group>"; };
 		4945FBE523B10255002E9401 /* HashCTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HashCTest.cpp; sourceTree = "<group>"; };
 		4945FBE623B10255002E9401 /* HashCTest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashCTest.hpp; sourceTree = "<group>"; };
 		4946D13723A5C5FD003DF518 /* TestBridgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBridgeViewController.h; sourceTree = "<group>"; };
@@ -945,7 +944,6 @@
 			isa = PBXGroup;
 			children = (
 				4944358A23B3884F002B4742 /* MyListTest.cpp */,
-				4944358B23B3884F002B4742 /* MyListTest.hpp */,
 			);
 			path = "链表";
 			sourceTree = "<group>";
@@ -1917,10 +1915,12 @@
 			buildConfigurationList = 495CE765208224F5000EA0E8 /* Build configuration list for PBXNativeTarget "Test" */;
 			buildPhases = (
 				F881B4534FCF05FDA14376F0 /* [CP] Check Pods Manifest.lock */,
+				564AF8C50C1EDFA0DDA2BB88 /* [CP-User] Run Flutter Build flutter_main_module Script */,
 				495CE74B208224F3000EA0E8 /* Sources */,
 				495CE74C208224F3000EA0E8 /* Frameworks */,
 				495CE74D208224F3000EA0E8 /* Resources */,
 				B4072564A7F455AE0CC7D95E /* [CP] Copy Pods Resources */,
+				C4F4165B93FC4C6E4E09B330 /* [CP-User] Embed Flutter Build flutter_main_module Script */,
 			);
 			buildRules = (
 			);
@@ -1990,6 +1990,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		564AF8C50C1EDFA0DDA2BB88 /* [CP-User] Run Flutter Build flutter_main_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build flutter_main_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/flutter_main_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
 		B4072564A7F455AE0CC7D95E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2006,6 +2016,16 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C4F4165B93FC4C6E4E09B330 /* [CP-User] Embed Flutter Build flutter_main_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Embed Flutter Build flutter_main_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/flutter_main_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
 		};
 		F881B4534FCF05FDA14376F0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2382,8 +2402,25 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TX7C33PXSE;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/FlutterFrameworks/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Test/Test.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/FlutterPluginRegistrant\"",
+					"\"${PODS_ROOT}/Headers/Public/MMKV\"",
+					"\"${PODS_ROOT}/Headers/Public/MMKVCore\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/PINCache\"",
+					"\"${PODS_ROOT}/Headers/Public/PINOperation\"",
+					"\"${PODS_ROOT}/Headers/Public/PINRemoteImage\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveObjC\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"$(SRCROOT)/Pods/Headers/Public/Flutter/**",
+					"\"${PODS_ROOT}/Headers/Public/Texture\"",
+				);
 				INFOPLIST_FILE = Test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2407,8 +2444,25 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TX7C33PXSE;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/FlutterFrameworks/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Test/Test.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/FlutterPluginRegistrant\"",
+					"\"${PODS_ROOT}/Headers/Public/MMKV\"",
+					"\"${PODS_ROOT}/Headers/Public/MMKVCore\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/PINCache\"",
+					"\"${PODS_ROOT}/Headers/Public/PINOperation\"",
+					"\"${PODS_ROOT}/Headers/Public/PINRemoteImage\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveObjC\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"$(SRCROOT)/Pods/Headers/Public/Flutter/**",
+					"\"${PODS_ROOT}/Headers/Public/Texture\"",
+				);
 				INFOPLIST_FILE = Test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -14,56 +14,61 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
   - Masonry (1.1.0)
   - MMKV (1.1.2):
     - MMKVCore (~> 1.1.2)
   - MMKVCore (1.1.2)
-  - PINCache (3.0.3):
-    - PINCache/Arc-exception-safe (= 3.0.3)
-    - PINCache/Core (= 3.0.3)
-  - PINCache/Arc-exception-safe (3.0.3):
+  - PINCache (3.0.4):
+    - PINCache/Arc-exception-safe (= 3.0.4)
+    - PINCache/Core (= 3.0.4)
+  - PINCache/Arc-exception-safe (3.0.4):
     - PINCache/Core
-  - PINCache/Core (3.0.3):
-    - PINOperation (~> 1.2.1)
-  - PINOperation (1.2.2)
-  - PINRemoteImage/Core (3.0.3):
+  - PINCache/Core (3.0.4):
+    - PINOperation (~> 1.2.3)
+  - PINOperation (1.2.3)
+  - PINRemoteImage/Core (3.0.4):
     - PINOperation
-  - PINRemoteImage/iOS (3.0.3):
+  - PINRemoteImage/iOS (3.0.4):
     - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.3):
-    - PINCache (~> 3.0.3)
+  - PINRemoteImage/PINCache (3.0.4):
+    - PINCache (~> 3.0.4)
     - PINRemoteImage/Core
   - ReactiveObjC (3.1.1)
-  - SDWebImage (5.19.0):
-    - SDWebImage/Core (= 5.19.0)
-  - SDWebImage/Core (5.19.0)
-  - Texture (3.0.0):
-    - Texture/AssetsLibrary (= 3.0.0)
-    - Texture/Core (= 3.0.0)
-    - Texture/MapKit (= 3.0.0)
-    - Texture/Photos (= 3.0.0)
-    - Texture/PINRemoteImage (= 3.0.0)
-    - Texture/Video (= 3.0.0)
-  - Texture/AssetsLibrary (3.0.0):
+  - SDWebImage (5.2.3):
+    - SDWebImage/Core (= 5.2.3)
+  - SDWebImage/Core (5.2.3)
+  - Texture (3.2.0):
+    - Texture/AssetsLibrary (= 3.2.0)
+    - Texture/Core (= 3.2.0)
+    - Texture/MapKit (= 3.2.0)
+    - Texture/Photos (= 3.2.0)
+    - Texture/PINRemoteImage (= 3.2.0)
+    - Texture/Video (= 3.2.0)
+  - Texture/AssetsLibrary (3.2.0):
     - Texture/Core
-  - Texture/Core (3.0.0)
-  - Texture/MapKit (3.0.0):
+  - Texture/Core (3.2.0)
+  - Texture/MapKit (3.2.0):
     - Texture/Core
-  - Texture/Photos (3.0.0):
+  - Texture/Photos (3.2.0):
     - Texture/Core
-  - Texture/PINRemoteImage (3.0.0):
+  - Texture/PINRemoteImage (3.2.0):
     - PINRemoteImage/iOS (~> 3.0.0)
     - PINRemoteImage/PINCache
     - Texture/Core
-  - Texture/Video (3.0.0):
+  - Texture/Video (3.2.0):
     - Texture/Core
 
 DEPENDENCIES:
   - AFNetworking
+  - Flutter (from `flutter_main_module/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `flutter_main_module/.ios/Flutter/FlutterPluginRegistrant`)
   - Masonry
   - MMKV (~> 1.1.2)
   - ReactiveObjC
-  - SDWebImage
+  - SDWebImage (= 5.2.3)
   - Texture
 
 SPEC REPOS:
@@ -79,18 +84,26 @@ SPEC REPOS:
     - SDWebImage
     - Texture
 
+EXTERNAL SOURCES:
+  Flutter:
+    :path: flutter_main_module/.ios/Flutter
+  FlutterPluginRegistrant:
+    :path: flutter_main_module/.ios/Flutter/FlutterPluginRegistrant
+
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  FlutterPluginRegistrant: 0b732256b4829f9783c18c68e2f9adacc1536955
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMKV: 319aede3b690572ad00bada5831146c63da3d009
   MMKVCore: ae976ab3f019a3e4448f884353e0557b324ff136
-  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
-  PINOperation: daa34d4aa1d8449089be7d405b9d974abc4724c6
-  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
+  PINCache: d9a87a0ff397acffe9e2f0db972ac14680441158
+  PINOperation: fb563bcc9c32c26d6c78aaff967d405aa2ee74a7
+  PINRemoteImage: 6256a644f4996991f124811763c7286b2a63ff94
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SDWebImage: 981fd7e860af070920f249fd092420006014c3eb
-  Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
+  SDWebImage: 46a7f73228f84ce80990c786e4372cf4db5875ce
+  Texture: 61e86ea2ee124f545be40293b54b5b8986006da2
 
-PODFILE CHECKSUM: ea05916b3dcbc743587c526fbc31e7457b11dd55
+PODFILE CHECKSUM: c56240ad1c19b8256ee0f5bfd3c7628ab69b1275
 
 COCOAPODS: 1.16.2

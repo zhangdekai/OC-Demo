@@ -112,9 +112,9 @@ void select(int arr[], int s){
     }
 
 }
-#pragma mark 快速排序：O(n^2) O(log n)
+#pragma mark - 快速排序：O(n^2) O(log n)
 /*
- 快速排序：O(n^2) O(log n)
+ 快速排序：最差：O(n^2) O(log n)
  
  利用了 divide & conquer 的思想。（分而治之）
 
@@ -154,6 +154,83 @@ void quick_sort(int arr[], int low, int high) {
         quick_sort(arr, low, pos-1);
         quick_sort(arr, pos+1, high);
     }
+}
+/*
+ 时间复杂度：
+ 平均情况：O (n log n)
+ 最坏情况：O (n²)（当数组已经有序且每次选择最边上的元素作为基准时）
+ 可以通过随机选择基准元素来避免最坏情况
+ 空间复杂度：O (log n)（主要是递归调用栈的开销）
+ 
+ */
+
+// 划分函数：选择基准元素，将数组分为两部分
+// 返回基准元素最终的位置索引
+int partition1(vector<int>& arr, int low, int high) {
+    // 选择最右边的元素作为基准
+    int pivot = arr[high];
+    
+    // i是小于基准区域的边界索引
+    int i = low - 1;
+    
+    // 遍历数组，将小于基准的元素放到左边
+    for (int j = low; j <= high - 1; j++) {
+        // 如果当前元素小于或等于基准
+        if (arr[j] <= pivot) {
+            i++;  // 扩展小于基准的区域
+            swap(arr[i], arr[j]);  // 将当前元素放入小于基准的区域
+        }
+    }
+    
+    // 将基准元素放到正确的位置（小于基准区域的后面）
+    swap(arr[i + 1], arr[high]);
+    
+    // 返回基准元素的索引
+    return i + 1;
+}
+
+// 快速排序函数
+// 参数：
+//   arr: 要排序的数组
+//   low: 排序区间的起始索引
+//   high: 排序区间的结束索引
+void quickSort(vector<int>& arr, int low, int high) {
+    // 当区间有效（low < high）时才进行排序
+    if (low < high) {
+        // 进行划分，获取基准元素的位置
+        int pi = partition1(arr, low, high);
+        
+        // 递归排序基准元素左边的子数组
+        quickSort(arr, low, pi - 1);
+        
+        // 递归排序基准元素右边的子数组
+        quickSort(arr, pi + 1, high);
+    }
+}
+
+// 打印数组元素
+void printArray(const vector<int>& arr) {
+    for (int num : arr) {
+        cout << num << " ";
+    }
+    cout << endl;
+}
+
+int mainTestQuickSort() {
+    // 测试数组
+    vector<int> arr = {10, 7, 8, 9, 1, 5};
+    int n = arr.size();
+    
+    cout << "排序前的数组: ";
+    printArray(arr);
+    
+    // 调用快速排序函数
+    quickSort(arr, 0, n - 1);
+    
+    cout << "排序后的数组: ";
+    printArray(arr);
+    
+    return 0;
 }
 
 #pragma mark - 快速排序：非递归

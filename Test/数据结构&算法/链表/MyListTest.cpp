@@ -6,7 +6,7 @@
 //  Copyright © 2019 张德凯. All rights reserved.
 //
 
-#include "MyListTest.hpp"
+#include <stdio.h>
 #include <unordered_set>
 #include <string>
 #include <vector>
@@ -63,6 +63,14 @@ struct MListNode {//节点
     MListNode *next;
     MListNode(int val): val(val),next(nullptr){}
     
+};
+
+// Definition for singly-linked list.
+  
+struct ListNode {
+     int val;
+      ListNode *next;
+      ListNode(int x) : val(x), next(NULL) {}
 };
 
 #pragma mark - 链表的实现
@@ -163,6 +171,9 @@ private:
 
 //MARK: - 链表上判断有环
 /*
+ 
+ 而链表有环，核心定义是：链表中存在至少一个节点，其指针域指向了链表中 “之前已经出现过的节点”，导致链表的遍历无法到达null，而是陷入无限循环的路径。
+ 
  * 1:哈希表：遍历，存储元素，遇到重复的 hash.contain()，便说明是链表有环 O(n), O(n)。
  * 2:快慢指针：while 循环，快指针从head->next开始，每次都两步，
  慢指针从head开始，每次走一步，如果是环的话，肯定会相遇。
@@ -172,14 +183,15 @@ class MyLinkListWithCycle {
     //instance variables
     
 public:
-    // 快慢指针
+    /// 快慢指针 O(n) O(1)
+    ///  若链表有环：快慢指针最终会在环内 “相遇”（因为快指针在环内绕圈时，会逐渐追上慢指针）。
     bool hasCycle(MListNode* head) {
         if (head == nullptr || head->next == nullptr) {
             return false;
         }
         MListNode* slow = head;
         MListNode* fast = head->next;
-        while (slow != fast) {
+        while (slow != fast) { //slow == fast 时，说明追上了，有环。
             if (fast == nullptr || fast->next == nullptr) {
                 return false;
             }
@@ -189,13 +201,14 @@ public:
         return true;
     }
     
-    //哈希表实现
+    ///哈希表实现  O(n)  O(n)
+    ///判断有环的依据是 “节点地址重复”，而非 “节点值重复”。
     bool hasCycle1(MListNode *head) {
         
         unordered_set<MListNode*> seen;
         
         while (head != nullptr) {
-            if (seen.count(head)) {
+            if (seen.count(head)) {// 节点地址重复
                 return true;
             }
             seen.insert(head);

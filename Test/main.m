@@ -13,8 +13,6 @@
 #import "Person1.h"
 #import "Car.h"
 #import <objc/runtime.h>
-
-#include "MyListTest.hpp"
 #import "NSObject+HashTable.h"
 #import "DecortorPerson.h"
 
