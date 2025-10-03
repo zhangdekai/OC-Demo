@@ -222,4 +222,79 @@ vector<vector<int>> outPutThree(vector<int> &nums){
     return result;
 }
 
+#pragma mark - Hot 100 - 字母异味词分组
+/*
+ 给你一个字符串数组，请你将 字母异位词 组合在一起。可以按任意顺序返回结果列表。
 
+  
+
+ 示例 1:
+
+ 输入: strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+
+ 输出: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+ 解释：
+ 
+ 大白话- 输出字母相同，数量相同的 集合。
+
+ 在 strs 中没有字符串可以通过重新排列来形成 "bat"。
+ 字符串 "nat" 和 "tan" 是字母异位词，因为它们可以重新排列以形成彼此。
+ 字符串 "ate" ，"eat" 和 "tea" 是字母异位词，因为它们可以重新排列以形成彼此。
+ 示例 2:
+
+ 输入: strs = [""]
+
+ 输出: [[""]]
+
+ 示例 3:
+
+ 输入: strs = ["a"]
+
+ 输出: [["a"]]
+
+  
+
+ 提示：
+
+ 1 <= strs.length <= 104
+ 0 <= strs[i].length <= 100
+ strs[i] 仅包含小写字母
+ 
+ */
+
+class Solution {
+public:
+    
+    /*
+     复杂度分析
+
+     时间复杂度：O(nklogk)，其中 n 是 strs 中的字符串的数量，k 是 strs 中的字符串的的最大长度。需要遍历 n 个字符串，对于每个字符串，需要 O(klogk) 的时间进行排序以及 O(1) 的时间更新哈希表，因此总时间复杂度是 O(nklogk)。
+
+     空间复杂度：O(nk)，其中 n 是 strs 中的字符串的数量，k 是 strs 中的字符串的的最大长度。需要用哈希表存储全部字符串。
+
+     作者：力扣官方题解
+     链接：https://leetcode.cn/problems/group-anagrams/solutions/520469/zi-mu-yi-wei-ci-fen-zu-by-leetcode-solut-gyoc/
+     来源：力扣（LeetCode）
+     著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     */
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        
+        unordered_map<string, vector<string>> map;
+        
+        for (string& str : strs) {
+            /// 排序
+            string key = str;
+            sort(key.begin(),key.end());
+            map[key].emplace_back(str);// unordered_map 会自动对键（key） 进行去重，这是由其容器特性决定的
+        }
+        
+        vector<vector<string>> res;
+        
+        for (auto it = map.begin(); it != map.end(); ++it) {
+            res.emplace_back(it->second); //  it->second == it->value
+        }
+        
+        return res;
+    }
+};
