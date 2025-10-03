@@ -5,7 +5,7 @@ inhibit_all_warnings!
 # flutter setup 增加一个 flutter_main module
 # 只初始化一个flutter 引擎，共用一个。
 
-flutter_application_path = './flutter_main_module'
+flutter_application_path = './my_flutter_module'
 load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 #eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
 

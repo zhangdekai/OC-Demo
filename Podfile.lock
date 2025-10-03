@@ -63,8 +63,8 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - Flutter (from `flutter_main_module/.ios/Flutter`)
-  - FlutterPluginRegistrant (from `flutter_main_module/.ios/Flutter/FlutterPluginRegistrant`)
+  - Flutter (from `my_flutter_module/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `my_flutter_module/.ios/Flutter/FlutterPluginRegistrant`)
   - Masonry
   - MMKV (~> 1.1.2)
   - ReactiveObjC
@@ -86,14 +86,14 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Flutter:
-    :path: flutter_main_module/.ios/Flutter
+    :path: my_flutter_module/.ios/Flutter
   FlutterPluginRegistrant:
-    :path: flutter_main_module/.ios/Flutter/FlutterPluginRegistrant
+    :path: my_flutter_module/.ios/Flutter/FlutterPluginRegistrant
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  FlutterPluginRegistrant: 0b732256b4829f9783c18c68e2f9adacc1536955
+  FlutterPluginRegistrant: 31c463909264601dccf8080d30b71b19413ad188
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMKV: 319aede3b690572ad00bada5831146c63da3d009
   MMKVCore: ae976ab3f019a3e4448f884353e0557b324ff136
@@ -104,6 +104,6 @@ SPEC CHECKSUMS:
   SDWebImage: 46a7f73228f84ce80990c786e4372cf4db5875ce
   Texture: 61e86ea2ee124f545be40293b54b5b8986006da2
 
-PODFILE CHECKSUM: c56240ad1c19b8256ee0f5bfd3c7628ab69b1275
+PODFILE CHECKSUM: 173686979882148bc52d697a4f2b703bfe6cf987
 
 COCOAPODS: 1.16.2

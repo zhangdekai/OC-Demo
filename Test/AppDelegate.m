@@ -22,6 +22,10 @@
 
 @property(nonatomic, strong) UITabBarController *tabBarController;
 
+//@property(nonatomic, strong) FlutterViewController *flutterViewController;
+
+
+
 //@property(nonatomic, strong) Flu *tabBarController222;
 
 @end
@@ -31,7 +35,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     /// UIWindow : The backdrop for your app’s user interface and the object that dispatches events to your views.
-    /// 
+    ///
+    
+    [self initFlutterEngine];
+    
+    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     [[DeviceManager shareInstance] configDevice:[self hasSafeArea]];
@@ -45,6 +53,14 @@
     [NSExceptionManager getCrash];
     
     return YES;
+}
+
+- (void)initFlutterEngine {
+    
+    // 预热 Flutter 引擎
+       self.flutterEngine = [[FlutterEngine alloc] initWithName:@"my_flutter_engine"];
+       [self.flutterEngine run];
+    
 }
 
 - (BOOL)hasSafeArea {

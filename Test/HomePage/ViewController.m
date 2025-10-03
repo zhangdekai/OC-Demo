@@ -33,6 +33,9 @@
 
 #import "TestAViewController.h"
 #import "DispatchAPITestViewController.h"
+#import <Flutter/Flutter.h>
+
+#import "AppDelegate.h"
 
 
 @interface ViewController ()<UITableViewDelegate> {
@@ -55,6 +58,19 @@
     
 //    [self addCustomView];
         
+}
+
+- (void)openFlutterPage {
+    
+    AppDelegate *_delegate = (AppDelegate *)UIApplication.sharedApplication.delegate;
+    
+    // 获取预加载的引擎
+    FlutterEngine *engine = [_delegate flutterEngine];
+    
+    // 使用已预热的引擎创建 FlutterViewController
+    FlutterViewController *flutterVC = [[FlutterViewController alloc] initWithEngine:engine nibName:nil bundle:nil];
+    
+    [self presentViewController:flutterVC animated:YES completion:nil];
 }
 
 
